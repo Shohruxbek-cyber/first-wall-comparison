@@ -41,20 +41,20 @@ Each stage runs in `work/STAGE/` (at most 4 calculations at once; `--jobs N` cha
 
 | Stage | Paper | Contents | Time |
 |---|---|---|---|
-| `verification` | Tables C.1, C.2; Fig. C.1 | solver tests, grid and time-step convergence | 1.7 h |
-| `benchmarks` | Tables 2, 3, E.2; Section 2.3; Fig. D.1 | source term and its particle count, SRIM and TRIM checks, published benchmarks | 3 min |
+| `verification` | Supplementary Tables S1, S2; Supplementary Fig. S1 | solver tests, grid and time-step convergence | 1.7 h |
+| `benchmarks` | Tables 2, 3; Section 2.3; Supplementary Table S5; Supplementary Fig. S2 | source term and its particle count, SRIM and TRIM checks, published benchmarks | 3 min |
 | `tungsten_single` | Sections 4.1, 4.3, 4.4; Figs. 1, 3 | single shots, sensitivity variants, sputtering, heat-flux factors | 3 min |
-| `tungsten_repeated` | Tables 4, H.1; Fig. 2 | 600 Demo and 100 Prototype shots, converged pre-shot state, coolant and steel variants | 4 h |
-| `damage_surface` | Table H.4; Section 4.5; Fig. 4 | reduced conductivity, damaged surface layer, erosion lifetimes | 5.5 h |
-| `lithium_single` | Sections 5.1, 5.2; Figs. 5, 6, H.1 | film-thickness scans and variants | 13 min |
-| `lithium_repeated` | Tables 5, E.3; Section 5.3; Figs. 7, E.1 | repeated shots for nine films, helium in the steel, direct runs at the minimum films, steel-face pulse | 5.7 h |
-| `tungsten_grades` | Tables H.2, H.3; Figs. H.2, H.3 | K-doped and ODS tungsten | 2.7 h |
-| `vapor_shielding` | Table D.2; Section 6; Fig. 8 | shielding cases, the static bound, direct runs with shielding | 3.1 h |
+| `tungsten_repeated` | Table 4; Fig. 2; Supplementary Table S9 | 600 Demo and 100 Prototype shots, converged pre-shot state, coolant and steel variants | 4 h |
+| `damage_surface` | Section 4.5; Fig. 4; Supplementary Table S12 | reduced conductivity, damaged surface layer, erosion lifetimes | 5.5 h |
+| `lithium_single` | Sections 5.1, 5.2; Figs. 5, 6; Supplementary Fig. S4 | film-thickness scans and variants | 13 min |
+| `lithium_repeated` | Table 5; Section 5.3; Fig. 7; Supplementary Table S6; Supplementary Fig. S3 | repeated shots for nine films, helium in the steel, direct runs at the minimum films, steel-face pulse | 5.7 h |
+| `tungsten_grades` | Supplementary Tables S10, S11; Supplementary Figs. S5, S6 | K-doped and ODS tungsten | 2.7 h |
+| `vapor_shielding` | Section 6; Fig. 8; Supplementary Table S4 | shielding cases, the static bound, direct runs with shielding | 3.1 h |
 | `neutron_heating` | Sections 4.2, 5.3, 7.5 | neutron heating; coolant 3.5 mm behind the surface; direct runs of both | 5.6 h |
 | `lithium_films` | Table 5; Section 5.4 | minimum films from the direct runs, steel at those films, partial film renewal | 5.6 h |
-| `helium` | Table 4; Tables S1.4–S1.6 | helium-retention model, its tests and sensitivity | 1.8 h |
-| `figures` | Figs. 1–8, C.1, D.1, E.1, H.1–H.3 | all figures, drawn from the stage outputs | 1 min |
-| `article` | Tables 1, A.1, B.1, B.2, D.1, E.1, F.1, G.1, J.1, S1.1–S1.3 | the PDF and its text tables; needs the paper source | – |
+| `helium` | Table 4; Supplementary Tables S16–S18 | helium-retention model, its tests and sensitivity | 1.8 h |
+| `figures` | Figs. 1–8; Supplementary Figs. S1–S6 | all figures, drawn from the stage outputs | 1 min |
+| `article` | Tables 1, A.1, B.1, B.2, C.1; Supplementary Tables S3, S7, S8, S13–S15, S19 | the PDF and its text tables; needs the paper source | – |
 
 ## Files
 
