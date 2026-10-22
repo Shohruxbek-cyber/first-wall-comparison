@@ -9,7 +9,7 @@ authors:
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/Shohruxbek-cyber/first-wall-comparison"
-# doi: the Zenodo DOI of this release, once it exists (left blank until then)
+doi: "10.5281/zenodo.23577156"
 preferred-citation:
   type: article
   title: "Comparative analysis of tungsten armor and a liquid-lithium film as first walls for the HiPER laser-fusion chamber: thermal response, vapor shielding and helium transmission to the steel"
