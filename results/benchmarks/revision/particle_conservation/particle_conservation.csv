@@ -1,0 +1,49 @@
+species,construction,number,per_fusion,energy_MJ,mean_keV
+burn Protons,raw (log-midpoint edges),1.623111e+18,0.029720,0.693227,2665.734
+burn Deuterons,raw (log-midpoint edges),7.000113e+18,0.128176,4.420217,3941.197
+burn Tritons,raw (log-midpoint edges),8.088066e+18,0.148097,3.915240,3021.366
+burn 3He,raw (log-midpoint edges),2.715077e+16,0.000497,0.004852,1115.409
+burn 4He,raw (log-midpoint edges),3.551749e+19,0.650346,11.813970,2076.075
+debris Protons,raw (log-midpoint edges),7.496732e+18,0.137270,0.114212,95.089
+debris Deuterons,raw (log-midpoint edges),4.513392e+20,8.264288,10.420603,144.105
+debris Tritons,raw (log-midpoint edges),4.542282e+20,8.317187,13.690545,188.121
+debris 3He,raw (log-midpoint edges),3.968181e+17,0.007266,0.011805,185.677
+debris 4He,raw (log-midpoint edges),2.897616e+19,0.530571,1.074594,231.469
+debris 12C,raw (log-midpoint edges),7.255603e+18,0.132854,0.772964,664.929
+debris Au,raw (log-midpoint edges),9.166193e+16,0.001678,0.226125,15397.494
+burn Protons,table with the 0.5 MeV burn-alpha edges,1.623111e+18,0.029720,0.693227,2665.734
+burn Deuterons,table with the 0.5 MeV burn-alpha edges,7.000113e+18,0.128176,4.420217,3941.197
+burn Tritons,table with the 0.5 MeV burn-alpha edges,8.088066e+18,0.148097,3.915240,3021.366
+burn 3He,table with the 0.5 MeV burn-alpha edges,2.715077e+16,0.000497,0.004852,1115.409
+burn 4He,table with the 0.5 MeV burn-alpha edges,3.382676e+19,0.619388,10.339087,1907.706
+debris Protons,table with the 0.5 MeV burn-alpha edges,7.496732e+18,0.137270,0.114212,95.089
+debris Deuterons,table with the 0.5 MeV burn-alpha edges,4.513392e+20,8.264288,10.420603,144.105
+debris Tritons,table with the 0.5 MeV burn-alpha edges,4.542282e+20,8.317187,13.690545,188.121
+debris 3He,table with the 0.5 MeV burn-alpha edges,3.968181e+17,0.007266,0.011805,185.677
+debris 4He,table with the 0.5 MeV burn-alpha edges,2.897616e+19,0.530571,1.074594,231.469
+debris 12C,table with the 0.5 MeV burn-alpha edges,7.255603e+18,0.132854,0.772964,664.929
+debris Au,table with the 0.5 MeV burn-alpha edges,9.166193e+16,0.001678,0.226125,15397.494
+burn Protons,normalized (before 22 Oct 2026),1.264348e+18,0.023151,0.540000,2665.734
+burn Deuterons,normalized (before 22 Oct 2026),7.569886e+18,0.138609,4.780000,3941.197
+burn Tritons,normalized (before 22 Oct 2026),8.924216e+18,0.163408,4.320000,3021.366
+burn 3He,normalized (before 22 Oct 2026),1.342972e+16,0.000246,0.002400,1115.409
+burn 4He,normalized (before 22 Oct 2026),2.964308e+19,0.542782,9.860000,2076.075
+debris Protons,normalized (before 22 Oct 2026),7.220281e+18,0.132208,0.110000,95.089
+debris Deuterons,normalized (before 22 Oct 2026),3.841792e+20,7.034548,8.870000,144.105
+debris Tritons,normalized (before 22 Oct 2026),3.682785e+20,6.743397,11.100000,188.121
+debris 3He,normalized (before 22 Oct 2026),6.722974e+16,0.001231,0.002000,185.677
+debris 4He,normalized (before 22 Oct 2026),3.586312e+19,0.656675,1.330000,231.469
+debris 12C,normalized (before 22 Oct 2026),5.256566e+18,0.096251,0.560000,664.929
+debris Au,normalized (before 22 Oct 2026),6.080382e+16,0.001113,0.150000,15397.494
+burn Protons,conserving (production),1.623111e+18,0.029720,0.540000,2076.516
+burn Deuterons,conserving (production),7.000113e+18,0.128176,4.780000,4261.990
+burn Tritons,conserving (production),8.088066e+18,0.148097,4.320000,3333.716
+burn 3He,conserving (production),2.715077e+16,0.000497,0.002400,551.720
+burn 4He,conserving (production),2.941564e+19,0.538618,9.860000,2092.128
+debris Protons,conserving (production),7.496732e+18,0.137270,0.110000,91.582
+debris Deuterons,conserving (production),4.513392e+20,8.264288,8.870000,122.662
+debris Tritons,conserving (production),4.542282e+20,8.317187,11.100000,152.524
+debris 3He,conserving (production),3.968181e+17,0.007266,0.002000,31.458
+debris 4He,conserving (production),2.519757e+19,0.461382,1.330000,329.445
+debris 12C,conserving (production),7.255603e+18,0.132854,0.560000,481.730
+debris Au,conserving (production),9.166193e+16,0.001678,0.150000,10213.907

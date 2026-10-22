@@ -1,0 +1,17 @@
+{
+ "assumptions": "cold neutral Li vapour, SRIM Li stopping per unit mass, normal incidence",
+ "lower_xray_vapour_only": {
+  "column_kg_m2": 1.9859047120804343e-14,
+  "ion_energy_fraction_stopped": 6.991068524547727e-12
+ },
+ "upper_full_per_shot_vapour": {
+  "column_kg_m2": 0.0007427146002371727,
+  "ion_energy_fraction_stopped": 0.24096854484918862
+ },
+ "xray_energy_fraction_absorbed_by_full_per_shot_vapour": 0.0015775312950231696,
+ "vapour_sound_speed_m_s": {
+  "T_surface_K": 2218.070512280874,
+  "gamma": 1.6666666666666667,
+  "value": 2104.502307245719
+ }
+}

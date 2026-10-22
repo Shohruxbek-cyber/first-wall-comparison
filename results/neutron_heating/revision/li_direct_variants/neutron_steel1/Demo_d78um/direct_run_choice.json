@@ -1,0 +1,7 @@
+{
+ "case": "neutron_steel1",
+ "limit_K": 873.0,
+ "interpolated_um": 77.69055308378738,
+ "how": "interpolated between [56.23413251903491, 100.0] um",
+ "run_um": 78.0
+}

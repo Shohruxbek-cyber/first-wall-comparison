@@ -1,0 +1,59 @@
+{
+ "note": "mean stopping depth of the implanted helium (production helium sources, production grid), weighted with the implanted number per cell",
+ "scenarios": {
+  "Experimental": {
+   "burn": {
+    "implanted_He_per_m2_per_shot": 1.2118302301948054e+16,
+    "mean_stopping_depth_um": 2.9221466987726377,
+    "fraction_within_5um": 0.9106379394538205
+   },
+   "debris": {
+    "implanted_He_per_m2_per_shot": 1.0162505876066634e+16,
+    "mean_stopping_depth_um": 0.5362424936515753,
+    "fraction_within_5um": 0.9999999999999998
+   },
+   "all": {
+    "implanted_He_per_m2_per_shot": 2.2280808178014692e+16,
+    "mean_stopping_depth_um": 1.8339112402312316,
+    "fraction_within_5um": 0.9513968947907309
+   },
+   "incident_He_per_m2_per_shot": 2.275178749410208e+16
+  },
+  "Prototype": {
+   "burn": {
+    "implanted_He_per_m2_per_shot": 1.7926482695189434e+16,
+    "mean_stopping_depth_um": 2.9221466987726368,
+    "fraction_within_5um": 0.9106379394538204
+   },
+   "debris": {
+    "implanted_He_per_m2_per_shot": 1.50332927160749e+16,
+    "mean_stopping_depth_um": 0.5362424936515754,
+    "fraction_within_5um": 1.0
+   },
+   "all": {
+    "implanted_He_per_m2_per_shot": 3.2959775411264344e+16,
+    "mean_stopping_depth_um": 1.8339112402312325,
+    "fraction_within_5um": 0.9513968947907306
+   },
+   "incident_He_per_m2_per_shot": 3.365649037589064e+16
+  },
+  "Demo": {
+   "burn": {
+    "implanted_He_per_m2_per_shot": 5.5213566701183464e+16,
+    "mean_stopping_depth_um": 2.922146698772637,
+    "fraction_within_5um": 0.9106379394538202
+   },
+   "debris": {
+    "implanted_He_per_m2_per_shot": 4.6302541565510696e+16,
+    "mean_stopping_depth_um": 0.5362424936515756,
+    "fraction_within_5um": 1.0
+   },
+   "all": {
+    "implanted_He_per_m2_per_shot": 1.015161082666942e+17,
+    "mean_stopping_depth_um": 1.8339112402312319,
+    "fraction_within_5um": 0.9513968947907309
+   },
+   "incident_He_per_m2_per_shot": 1.036619903577432e+17
+  }
+ }
+}

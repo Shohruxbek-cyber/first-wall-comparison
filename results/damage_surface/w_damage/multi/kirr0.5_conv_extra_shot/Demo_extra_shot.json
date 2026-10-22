@@ -1,0 +1,93 @@
+{
+ "source_checkpoint": "runs\\w_damage\\multi\\kirr0.5_conv\\Demo_checkpoint.npz",
+ "scenario": "Demo",
+ "shot_number": 551,
+ "k_irr": 0.5,
+ "skin_um": 0.0,
+ "skin_factor": 1.0,
+ "k_status": "SOURCED (conductivity about halved after irradiation: Reza et al. 2020; Saito et al. 2026)",
+ "skin_status": "no separate skin",
+ "preshot_surface_T_K": 921.9402080014044,
+ "peak_surface_T_K": 3830.612554771119,
+ "t_peak_us": 2.2076086736433354,
+ "max_melt_depth_um": 0.7696670646659053,
+ "melt_duration_us": 1.465200327288585,
+ "melt_start_us": 1.6779143479084269,
+ "melt_end_us": 3.139655383677109,
+ "peak_interface_T_K": 929.728416268105,
+ "ablated_nm_this_shot": 0.0006435982817190297,
+ "note": "melt duration = total time with a molten layer at the surface (sum of time steps ending molten); the melt front is the solver's melt_depth()",
+ "diagnostics": {
+  "d_1300_um": 33.47561248947973,
+  "d_1800_um": 12.685504310803239,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 2077.7285360951796,
+    "time_above_900K_us": 100000.00000000143,
+    "peak_K": 3764.743247064079,
+    "time_avg_K": 938.1333484839881
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 2077.70815859022,
+    "time_above_900K_us": 100000.00000000143,
+    "peak_K": 3607.4624573576834,
+    "time_avg_K": 938.129002684475
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 2077.632125391114,
+    "time_above_900K_us": 100000.00000000143,
+    "peak_K": 3278.9001481977916,
+    "time_avg_K": 938.1178107297064
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 2077.3050232878536,
+    "time_above_900K_us": 100000.00000000143,
+    "peak_K": 2807.3947652164757,
+    "time_avg_K": 938.0927326456305
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 2076.9909836972024,
+    "time_above_900K_us": 100000.00000000143,
+    "peak_K": 2615.54566546412,
+    "time_avg_K": 938.0797032326781
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 921.9402080014044,
+    "peak_K": 3830.612554771119,
+    "time_avg_K": 938.1349816656584
+   },
+   "5um": {
+    "pre_shot_K": 921.9401291809523,
+    "peak_K": 2615.54566546412,
+    "time_avg_K": 938.0797032326781
+   },
+   "50um": {
+    "pre_shot_K": 921.9323275609318,
+    "peak_K": 1188.0284738200091,
+    "time_avg_K": 937.4926977578967
+   },
+   "500um": {
+    "pre_shot_K": 921.1586290403014,
+    "peak_K": 948.5486790652652,
+    "time_avg_K": 931.3679759730061
+   },
+   "interface": {
+    "pre_shot_K": 918.8692993561577,
+    "peak_K": 929.728416268105,
+    "time_avg_K": 924.5481016288026
+   }
+  },
+  "cycle_s": 0.1,
+  "max_near_surface_gradient_K_per_um": 580.7931980536414,
+  "elastic_stress_proxy_MPa": 6212.139614869069,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction"
+ },
+ "wall_s": 19.682873487472534
+}

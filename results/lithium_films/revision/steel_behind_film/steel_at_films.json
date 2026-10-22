@@ -1,0 +1,418 @@
+{
+ "note": "Helium, hydrogen isotopes and displacement damage in the steel behind lithium films of given thickness\n(revision of 21 Oct 2026): the minimum films of the thermal criteria and the helium-exclusion\nfilms, with ife_wall.he.steel.SteelBehindFilm exactly as in scripts/steel_behind_film.py (production grid of\n2400 cells over 120 um of steel, 24 sub-bins per energy bin).",
+ "requested_um": {
+  "Experimental": [
+   7.103032443710915
+  ],
+  "Prototype": [
+   11.809082554670962,
+   12.06504424034297,
+   14.74969186551369,
+   15.067780857709812
+  ],
+  "Demo": [
+   30.09660135875881,
+   36.95240833230277,
+   43.53917576635636,
+   45.0,
+   55.75091385001893,
+   56.0,
+   47.765663614267375,
+   52.27854412487775,
+   59.90051167068906,
+   155.64622183352006,
+   183.21658391329694,
+   183.0
+  ]
+ },
+ "labels": {
+  "Experimental": [
+   "925 K, single shot"
+  ],
+  "Prototype": [
+   "925 K, single shot",
+   "925 K, repeated shots",
+   "873 K, single shot",
+   "873 K, repeated shots"
+  ],
+  "Demo": [
+   "925 K, single shot",
+   "873 K, single shot",
+   "925 K, repeated shots (with the direct runs)",
+   "925 K, film of the direct run",
+   "873 K, repeated shots (with the direct runs)",
+   "873 K, film of the direct run",
+   "925 K, repeated shots, neutron heating 0.5 (with the direct runs)",
+   "925 K, repeated shots, neutron heating 1 (with the direct runs)",
+   "range of a 4 MeV burn alpha (top of the main burn-alpha population)",
+   "helium, 10^6 shots to 10^19 m^-2",
+   "helium, 10^6 shots to 10^18 m^-2",
+   "helium, direct run film"
+  ]
+ },
+ "scenarios": {
+  "Experimental": [
+   {
+    "delta_um": 7.103032443710914,
+    "film_areal_mass_kg_m2": 0.003565722286742879,
+    "He_per_m2_per_shot": {
+     "burn": 1.2031285733936052e+16,
+     "debris": 1746919086142172.2,
+     "total": 1.3778204820078224e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 6854902612350335.0,
+     "debris": 2.807180446731323e+16,
+     "total": 3.4926707079663576e+16
+    },
+    "ion_energy_into_steel_J_m2": 7214.601647878058,
+    "dpa_per_shot_peak": 2.8380273021038814e-05,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 2.8856792865531483e-06,
+    "shots_to_1e18_He_m2": 72.57839559350684,
+    "shots_to_1e19_He_m2": 725.7839559350683,
+    "label": "925 K, single shot"
+   }
+  ],
+  "Prototype": [
+   {
+    "delta_um": 11.809082554670962,
+    "film_areal_mass_kg_m2": 0.005928159442444823,
+    "He_per_m2_per_shot": {
+     "burn": 1.6495954587616714e+16,
+     "debris": 78842221454770.62,
+     "total": 1.6574796809071482e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 1.0069401967167848e+16,
+     "debris": 3475651593886001.0,
+     "total": 1.354505356105385e+16
+    },
+    "ion_energy_into_steel_J_m2": 9125.196197786428,
+    "dpa_per_shot_peak": 5.68053540329293e-06,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 2.0677904047807796e-06,
+    "shots_to_1e18_He_m2": 60.33256464735026,
+    "shots_to_1e19_He_m2": 603.3256464735026,
+    "label": "925 K, single shot"
+   },
+   {
+    "delta_um": 12.06504424034297,
+    "film_areal_mass_kg_m2": 0.006056652208652171,
+    "He_per_m2_per_shot": {
+     "burn": 1.6378010567543382e+16,
+     "debris": 69182707358984.336,
+     "total": 1.6447193274902364e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 1.004909679240232e+16,
+     "debris": 3021388602021415.5,
+     "total": 1.3070485394423736e+16
+    },
+    "ion_energy_into_steel_J_m2": 9061.449434665808,
+    "dpa_per_shot_peak": 5.422959493786464e-06,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 2.0360239845216086e-06,
+    "shots_to_1e18_He_m2": 60.80064745915964,
+    "shots_to_1e19_He_m2": 608.0064745915964,
+    "label": "925 K, repeated shots"
+   },
+   {
+    "delta_um": 14.74969186551369,
+    "film_areal_mass_kg_m2": 0.007404345316487872,
+    "He_per_m2_per_shot": {
+     "burn": 1.4824395243430824e+16,
+     "debris": 33988384283414.58,
+     "total": 1.4858383627714238e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 9861412563982670.0,
+     "debris": 1091853476931744.6,
+     "total": 1.0953266040914414e+16
+    },
+    "ion_energy_into_steel_J_m2": 8433.724696412602,
+    "dpa_per_shot_peak": 3.9389388886023075e-06,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 1.7561610806237575e-06,
+    "shots_to_1e18_He_m2": 67.30207168260041,
+    "shots_to_1e19_He_m2": 673.0207168260041,
+    "label": "873 K, single shot"
+   },
+   {
+    "delta_um": 15.067780857709812,
+    "film_areal_mass_kg_m2": 0.007564025990570326,
+    "He_per_m2_per_shot": {
+     "burn": 1.4707589284634884e+16,
+     "debris": 30980509895154.117,
+     "total": 1.4738569794530038e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 9861412563982670.0,
+     "debris": 992237746544381.6,
+     "total": 1.0853650310527052e+16
+    },
+    "ion_energy_into_steel_J_m2": 8363.59824941533,
+    "dpa_per_shot_peak": 3.906003752288343e-06,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 1.7262837614426888e-06,
+    "shots_to_1e18_He_m2": 67.84918848578731,
+    "shots_to_1e19_He_m2": 678.4918848578731,
+    "label": "873 K, repeated shots"
+   }
+  ],
+  "Demo": [
+   {
+    "delta_um": 30.09660135875881,
+    "film_areal_mass_kg_m2": 0.015108493882096924,
+    "He_per_m2_per_shot": {
+     "burn": 2.055180315915773e+16,
+     "debris": 0.0,
+     "total": 2.055180315915773e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.553826746717639e+16,
+     "debris": 0.0,
+     "total": 2.553826746717639e+16
+    },
+    "ion_energy_into_steel_J_m2": 18573.55883680599,
+    "dpa_per_shot_peak": 1.1460949024366995e-05,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 2.0468186386461562e-06,
+    "shots_to_1e18_He_m2": 48.65753103295988,
+    "shots_to_1e19_He_m2": 486.5753103295988,
+    "label": "925 K, single shot"
+   },
+   {
+    "delta_um": 36.95240833230277,
+    "film_areal_mass_kg_m2": 0.018550108982815987,
+    "He_per_m2_per_shot": {
+     "burn": 1.0882714338509054e+16,
+     "debris": 0.0,
+     "total": 1.0882714338509054e+16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.4114974763622396e+16,
+     "debris": 0.0,
+     "total": 2.4114974763622396e+16
+    },
+    "ion_energy_into_steel_J_m2": 16975.12606900937,
+    "dpa_per_shot_peak": 5.111267588823206e-06,
+    "dpa_peak_depth_um": 0.275,
+    "dpa_per_shot_mean_0_5um": 1.2458569301901886e-06,
+    "shots_to_1e18_He_m2": 91.88884031086323,
+    "shots_to_1e19_He_m2": 918.8884031086322,
+    "label": "873 K, single shot"
+   },
+   {
+    "delta_um": 43.53917576635636,
+    "film_areal_mass_kg_m2": 0.02185666623471089,
+    "He_per_m2_per_shot": {
+     "burn": 4799378937434094.0,
+     "debris": 0.0,
+     "total": 4799378937434094.0
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.3363137589810588e+16,
+     "debris": 0.0,
+     "total": 2.3363137589810588e+16
+    },
+    "ion_energy_into_steel_J_m2": 15978.913161782957,
+    "dpa_per_shot_peak": 3.1692616838564967e-06,
+    "dpa_peak_depth_um": 0.7250000000000001,
+    "dpa_per_shot_mean_0_5um": 6.302507569336491e-07,
+    "shots_to_1e18_He_m2": 208.360292662082,
+    "shots_to_1e19_He_m2": 2083.60292662082,
+    "label": "925 K, repeated shots (with the direct runs)"
+   },
+   {
+    "delta_um": 44.99999999999999,
+    "film_areal_mass_kg_m2": 0.02259,
+    "He_per_m2_per_shot": {
+     "burn": 4429168405073078.5,
+     "debris": 0.0,
+     "total": 4429168405073078.5
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.3028188824803636e+16,
+     "debris": 0.0,
+     "total": 2.3028188824803636e+16
+    },
+    "ion_energy_into_steel_J_m2": 15813.635424042186,
+    "dpa_per_shot_peak": 3.1847623722741023e-06,
+    "dpa_peak_depth_um": 0.525,
+    "dpa_per_shot_mean_0_5um": 5.773243962510858e-07,
+    "shots_to_1e18_He_m2": 225.77601674721163,
+    "shots_to_1e19_He_m2": 2257.7601674721163,
+    "label": "925 K, film of the direct run"
+   },
+   {
+    "delta_um": 55.75091385001893,
+    "film_areal_mass_kg_m2": 0.027986958752709505,
+    "He_per_m2_per_shot": {
+     "burn": 168846445178290.22,
+     "debris": 0.0,
+     "total": 168846445178290.22
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.204135772949561e+16,
+     "debris": 0.0,
+     "total": 2.204135772949561e+16
+    },
+    "ion_energy_into_steel_J_m2": 15157.024027284677,
+    "dpa_per_shot_peak": 2.245868096132543e-07,
+    "dpa_peak_depth_um": 2.025,
+    "dpa_per_shot_mean_0_5um": 2.0700670024284717e-07,
+    "shots_to_1e18_He_m2": 5922.541033920311,
+    "shots_to_1e19_He_m2": 59225.4103392031,
+    "label": "873 K, repeated shots (with the direct runs)"
+   },
+   {
+    "delta_um": 56.0,
+    "film_areal_mass_kg_m2": 0.028111999999999998,
+    "He_per_m2_per_shot": {
+     "burn": 167503232884709.16,
+     "debris": 0.0,
+     "total": 167503232884709.16
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.204135772949561e+16,
+     "debris": 0.0,
+     "total": 2.204135772949561e+16
+    },
+    "ion_energy_into_steel_J_m2": 15146.716618230941,
+    "dpa_per_shot_peak": 2.2421130779188125e-07,
+    "dpa_peak_depth_um": 2.025,
+    "dpa_per_shot_mean_0_5um": 2.068283875121875e-07,
+    "shots_to_1e18_He_m2": 5970.034027273314,
+    "shots_to_1e19_He_m2": 59700.34027273314,
+    "label": "873 K, film of the direct run"
+   },
+   {
+    "delta_um": 47.765663614267375,
+    "film_areal_mass_kg_m2": 0.023978363134362222,
+    "He_per_m2_per_shot": {
+     "burn": 4119172492616237.5,
+     "debris": 0.0,
+     "total": 4119172492616237.5
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.2742670869454852e+16,
+     "debris": 0.0,
+     "total": 2.2742670869454852e+16
+    },
+    "ion_energy_into_steel_J_m2": 15551.932373181055,
+    "dpa_per_shot_peak": 4.06781622559792e-06,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 4.4686431552673506e-07,
+    "shots_to_1e18_He_m2": 242.76720671264323,
+    "shots_to_1e19_He_m2": 2427.6720671264325,
+    "label": "925 K, repeated shots, neutron heating 0.5 (with the direct runs)"
+   },
+   {
+    "delta_um": 52.27854412487775,
+    "film_areal_mass_kg_m2": 0.026243829150688628,
+    "He_per_m2_per_shot": {
+     "burn": 316606372775644.2,
+     "debris": 0.0,
+     "total": 316606372775644.2
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.2428629819981612e+16,
+     "debris": 0.0,
+     "total": 2.2428629819981612e+16
+    },
+    "ion_energy_into_steel_J_m2": 15302.558808074926,
+    "dpa_per_shot_peak": 2.842925772820854e-07,
+    "dpa_peak_depth_um": 0.025,
+    "dpa_per_shot_mean_0_5um": 2.168790648642275e-07,
+    "shots_to_1e18_He_m2": 3158.496120065868,
+    "shots_to_1e19_He_m2": 31584.96120065868,
+    "label": "925 K, repeated shots, neutron heating 1 (with the direct runs)"
+   },
+   {
+    "delta_um": 59.90051167068906,
+    "film_areal_mass_kg_m2": 0.03007005685868591,
+    "He_per_m2_per_shot": {
+     "burn": 165297186974572.47,
+     "debris": 0.0,
+     "total": 165297186974572.47
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 2.1672294312938356e+16,
+     "debris": 0.0,
+     "total": 2.1672294312938356e+16
+    },
+    "ion_energy_into_steel_J_m2": 14988.230973720529,
+    "dpa_per_shot_peak": 2.16318213460855e-07,
+    "dpa_peak_depth_um": 1.475,
+    "dpa_per_shot_mean_0_5um": 2.0122449040781326e-07,
+    "shots_to_1e18_He_m2": 6049.7097276908235,
+    "shots_to_1e19_He_m2": 60497.09727690824,
+    "label": "range of a 4 MeV burn alpha (top of the main burn-alpha population)"
+   },
+   {
+    "delta_um": 155.64622183352003,
+    "film_areal_mass_kg_m2": 0.07813440336042705,
+    "He_per_m2_per_shot": {
+     "burn": 12720175510487.814,
+     "debris": 0.0,
+     "total": 12720175510487.814
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 1.5188464622148222e+16,
+     "debris": 0.0,
+     "total": 1.5188464622148222e+16
+    },
+    "ion_energy_into_steel_J_m2": 11872.682529264337,
+    "dpa_per_shot_peak": 1.664172719279491e-07,
+    "dpa_peak_depth_um": 1.6250000000000002,
+    "dpa_per_shot_mean_0_5um": 1.1507821925858825e-07,
+    "shots_to_1e18_He_m2": 78615.26746824347,
+    "shots_to_1e19_He_m2": 786152.6746824348,
+    "label": "helium, 10^6 shots to 10^19 m^-2"
+   },
+   {
+    "delta_um": 183.21658391329694,
+    "film_areal_mass_kg_m2": 0.09197472512447506,
+    "He_per_m2_per_shot": {
+     "burn": 945246350062.6523,
+     "debris": 0.0,
+     "total": 945246350062.6523
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 1.3795381573474098e+16,
+     "debris": 0.0,
+     "total": 1.3795381573474098e+16
+    },
+    "ion_energy_into_steel_J_m2": 11230.554158396186,
+    "dpa_per_shot_peak": 1.5150440086109046e-07,
+    "dpa_peak_depth_um": 1.0250000000000001,
+    "dpa_per_shot_mean_0_5um": 1.0486178672249485e-07,
+    "shots_to_1e18_He_m2": 1057925.2698872823,
+    "shots_to_1e19_He_m2": 10579252.698872823,
+    "label": "helium, 10^6 shots to 10^18 m^-2"
+   },
+   {
+    "delta_um": 183.0,
+    "film_areal_mass_kg_m2": 0.091866,
+    "He_per_m2_per_shot": {
+     "burn": 1994853697644.0156,
+     "debris": 0.0,
+     "total": 1994853697644.0156
+    },
+    "H_isotopes_per_m2_per_shot": {
+     "burn": 1.3795381573474098e+16,
+     "debris": 0.0,
+     "total": 1.3795381573474098e+16
+    },
+    "ion_energy_into_steel_J_m2": 11235.370433244778,
+    "dpa_per_shot_peak": 1.517944342493983e-07,
+    "dpa_peak_depth_um": 1.0750000000000002,
+    "dpa_per_shot_mean_0_5um": 1.048015188835174e-07,
+    "shots_to_1e18_He_m2": 501289.8946830192,
+    "shots_to_1e19_He_m2": 5012898.946830192,
+    "label": "helium, direct run film"
+   }
+  ]
+ }
+}

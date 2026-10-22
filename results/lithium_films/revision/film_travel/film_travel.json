@@ -1,0 +1,149 @@
+{
+ "note": "How far a free lithium film travels along the wall before viscous drag stops it (revision of 21 Oct 2026), as an injection-spacing estimate for film renewal.\n\nA film of thickness delta and mean speed U on a no-slip wall, with a free surface and no driving force, has the\nhalf-parabolic (Nusselt) profile once the momentum has diffused across it (time ~ delta^2/nu); the wall shear is\n3 mu U / delta, so U decays as exp(-t/tau) with tau = delta^2 / (3 nu), and the film stops within\nL = U tau = U delta^2 / (3 nu).  Properties at the 600 K film temperature: density from ife_wall.library.lithium\n(Davison 1968, Eq. 1), viscosity from Davison 1968, Eq. (10): log10 mu [N s m^-2] = -3.080 + 57.63/T - 5.172e-4 T.\nSpeeds: 15 m/s (the IFMIF/EVEDA free-surface flow, Wakai et al. 2016) and the pi R f speeds of Table 5.",
+ "T_K": 600.0,
+ "rho_kg_m3": 502.0,
+ "mu_Pa_s": 0.00050784361904768,
+ "nu_m2_s": 1.0116406753937848e-06,
+ "cases": [
+  {
+   "scenario": "Prototype",
+   "delta_um": 12.1,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.000144725299764177,
+   "decay_time_s": 4.8241766588059e-05,
+   "travel_m": 0.0007236264988208851,
+   "shot_period_s": 1.0,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Prototype",
+   "delta_um": 12.1,
+   "U_m_s": 20.420352248333657,
+   "momentum_diffusion_time_s": 0.000144725299764177,
+   "decay_time_s": 4.8241766588059e-05,
+   "travel_m": 0.0009851138668100581,
+   "shot_period_s": 1.0,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 43.54,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.001873917929666163,
+   "decay_time_s": 0.000624639309888721,
+   "travel_m": 0.009369589648330815,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 43.54,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.001873917929666163,
+   "decay_time_s": 0.000624639309888721,
+   "travel_m": 0.12755354736083727,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 45.0,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.0020016988731811924,
+   "decay_time_s": 0.0006672329577270641,
+   "travel_m": 0.010008494365905962,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 45.0,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.0020016988731811924,
+   "decay_time_s": 0.0006672329577270641,
+   "travel_m": 0.1362513202848417,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 55.75,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.0030722988661860354,
+   "decay_time_s": 0.0010240996220620118,
+   "travel_m": 0.015361494330930177,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 55.75,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.0030722988661860354,
+   "decay_time_s": 0.0010240996220620118,
+   "travel_m": 0.20912475019891652,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 56.0,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.0030999148969364054,
+   "decay_time_s": 0.0010333049656454684,
+   "travel_m": 0.015499574484682026,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 56.0,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.0030999148969364054,
+   "decay_time_s": 0.0010333049656454684,
+   "travel_m": 0.21100451378432772,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 183.0,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.03310365114269875,
+   "decay_time_s": 0.011034550380899585,
+   "travel_m": 0.16551825571349377,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 183.0,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.03310365114269875,
+   "decay_time_s": 0.011034550380899585,
+   "travel_m": 2.2532940567995383,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 183.2,
+   "U_m_s": 15.0,
+   "momentum_diffusion_time_s": 0.0331760483898453,
+   "decay_time_s": 0.0110586827966151,
+   "travel_m": 0.16588024194922651,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  },
+  {
+   "scenario": "Demo",
+   "delta_um": 183.2,
+   "U_m_s": 204.20352248333657,
+   "momentum_diffusion_time_s": 0.0331760483898453,
+   "decay_time_s": 0.0110586827966151,
+   "travel_m": 2.258221981094679,
+   "shot_period_s": 0.1,
+   "path_piR_m": 20.420352248333657
+  }
+ ]
+}

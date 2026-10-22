@@ -1,0 +1,91 @@
+{
+ "note": "Mean W/steel interface temperature at periodic steady state with neutron heating (revision of\n20 Oct 2026), from the 1D heat balance of Section 2.7 extended to volumetric heating:\n\n    T_if = T_c + (q_s + q_nW) (1/h + L_s/k_s) + q_nS (1/h + L_s/(2 k_s)),\n\nwhere q_s is the repetition rate times the energy absorbed per shot from the x-rays and ions (the\nledger of the stored single shot), q_nW the neutron heat of the 1 mm of tungsten, which crosses\nthe whole steel, and q_nS the neutron heat of the steel, deposited uniformly in it (exact in this\nmodel: constant k_s, linear boundary condition, no net storage per cycle).  Neutron heating of\ntungsten from ife_wall.neutron (Sharafat et al. 2005, scaled by yield and 1/R^2); steel factor\n0.5 and 1 (ASSUMPTION), and the case without neutrons for reference.  Also gives the coolant\nheat-transfer coefficient and the steel conductivity at which the mean interface is at 925 K.",
+ "Prototype": {
+  "h_W_m2K": 10000.0,
+  "neutron_heating_W_J_m3_per_shot": 1298701.2987012987,
+  "cases": {
+   "no neutrons": {
+    "q_xray_ion_W_m2": 26609.156944079758,
+    "q_neutron_W_W_m2": 0.0,
+    "q_neutron_steel_W_m2": 0.0,
+    "mean_interface_K": 610.7242965865534,
+    "h_for_925K_W_m2K": null,
+    "steel_k_for_925K_W_mK": null
+   },
+   "steel factor 0.5": {
+    "q_xray_ion_W_m2": 26609.156944079758,
+    "q_neutron_W_W_m2": 1298.7012987012986,
+    "q_neutron_steel_W_m2": 6493.506493506494,
+    "mean_interface_K": 612.8809278340938,
+    "h_for_925K_W_m2K": null,
+    "steel_k_for_925K_W_mK": null
+   },
+   "steel factor 1": {
+    "q_xray_ion_W_m2": 26609.156944079758,
+    "q_neutron_W_W_m2": 1298.7012987012986,
+    "q_neutron_steel_W_m2": 12987.012987012988,
+    "mean_interface_K": 614.5141431036726,
+    "h_for_925K_W_m2K": null,
+    "steel_k_for_925K_W_mK": null
+   }
+  },
+  "steel_2.5mm_cases": {
+   "no neutrons": {
+    "q_neutron_steel_W_m2": 0.0,
+    "mean_interface_K": 604.6767609174443
+   },
+   "steel factor 0.5": {
+    "q_neutron_steel_W_m2": 1623.3766233766235,
+    "mean_interface_K": 605.1288467104392
+   },
+   "steel factor 1": {
+    "q_neutron_steel_W_m2": 3246.753246753247,
+    "mean_interface_K": 605.3526759115412
+   }
+  }
+ },
+ "Demo": {
+  "h_W_m2K": 10000.0,
+  "neutron_heating_W_J_m3_per_shot": 4000000.0,
+  "cases": {
+   "no neutrons": {
+    "q_xray_ion_W_m2": 819562.033877659,
+    "q_neutron_W_W_m2": 0.0,
+    "q_neutron_steel_W_m2": 0.0,
+    "mean_interface_K": 930.3083348658444,
+    "h_for_925K_W_m2K": 10692.561315560404,
+    "steel_k_for_925K_W_mK": 33.720755077951424
+   },
+   "steel factor 0.5": {
+    "q_xray_ion_W_m2": 819562.033877659,
+    "q_neutron_W_W_m2": 40000.0,
+    "q_neutron_steel_W_m2": 200000.0,
+    "mean_interface_K": 996.7325772900867,
+    "h_for_925K_W_m2K": 30959.95821288829,
+    "steel_k_for_925K_W_mK": 43.806857291482174
+   },
+   "steel factor 1": {
+    "q_xray_ion_W_m2": 819562.033877659,
+    "q_neutron_W_W_m2": 40000.0,
+    "q_neutron_steel_W_m2": 400000.0,
+    "mean_interface_K": 1047.035607593117,
+    "h_for_925K_W_m2K": 321268.0163552788,
+    "steel_k_for_925K_W_mK": 53.232607692961054
+   }
+  },
+  "steel_2.5mm_cases": {
+   "no neutrons": {
+    "q_neutron_steel_W_m2": 0.0,
+    "mean_interface_K": 744.0442362572855
+   },
+   "steel factor 0.5": {
+    "q_neutron_steel_W_m2": 50000.0,
+    "mean_interface_K": 757.9684786815279
+   },
+   "steel factor 1": {
+    "q_neutron_steel_W_m2": 100000.0,
+    "mean_interface_K": 764.8624180754673
+   }
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "note": "Ion penetration in lithium against Hassanein and Morozov (2002), Fig. 8 (revision of 20 Oct 2026,\nbenchmark papers): \"Ranges and stopping power in 1 mm Li over 1 cm CFC composite wall\", HEIGHTS-IFE,\nNRL direct-drive target ions.  Their film sits on carbon composite, not steel; the comparison uses\nonly the part of the curves inside the lithium.\n\nReference values were read by eye from the figure of the ISFNT-6 preprint (page 16), with a reading\nuncertainty of about 0.5 um for the debris panel and 0.005 cm / 0.3 MeV for the fast-ion panel:\nthe starting energy of each curve and its end point (debris ions, all stopping in the lithium), or\nthe energy left after 1 mm of lithium (fast H, D, T), or the end point (fast 4He).  Their lithium\ndensity is not stated, so depths of this work are given for the SRIM solid density (534 kg/m^3)\nand for liquid lithium at 600 K (502 kg/m^3, the film of this work).  This work: SRIM-2012 tables\nfor ions in Li, continuous-slowing-down (CSDA) path and the projected range of the production depth\nmodel (f_TRIM = 1 in lithium).",
+ "debris_end_point_um": {
+  "12C": {
+   "E0_MeV": 3.42,
+   "HM2002_um": 13.3,
+   "csda, SRIM solid, 534 kg/m3": 12.10344296805925,
+   "csda, liquid at 600 K, 502 kg/m3": 12.874977181162627,
+   "projected, SRIM solid, 534 kg/m3": 11.90656374717589,
+   "projected, liquid at 600 K, 502 kg/m3": 12.665547890422163
+  },
+  "4He": {
+   "E0_MeV": 1.1,
+   "HM2002_um": 14.5,
+   "csda, SRIM solid, 534 kg/m3": 12.398547511562654,
+   "csda, liquid at 600 K, 502 kg/m3": 13.188893169670234,
+   "projected, SRIM solid, 534 kg/m3": 12.120577129025653,
+   "projected, liquid at 600 K, 502 kg/m3": 12.893203559561153
+  },
+  "3He": {
+   "E0_MeV": 0.83,
+   "HM2002_um": 10.0,
+   "csda, SRIM solid, 534 kg/m3": 9.387028658333268,
+   "csda, liquid at 600 K, 502 kg/m3": 9.985404987151325,
+   "projected, SRIM solid, 534 kg/m3": 9.121096535173784,
+   "projected, liquid at 600 K, 502 kg/m3": 9.702521015503587
+  },
+  "Tritons": {
+   "E0_MeV": 0.83,
+   "HM2002_um": 28.5,
+   "csda, SRIM solid, 534 kg/m3": 23.740608938394764,
+   "csda, liquid at 600 K, 502 kg/m3": 25.253954528093235,
+   "projected, SRIM solid, 534 kg/m3": 23.497166625053076,
+   "projected, liquid at 600 K, 502 kg/m3": 24.99499397963813
+  },
+  "Deuterons": {
+   "E0_MeV": 0.55,
+   "HM2002_um": 19.2,
+   "csda, SRIM solid, 534 kg/m3": 15.70743485489913,
+   "csda, liquid at 600 K, 502 kg/m3": 16.708705602621784,
+   "projected, SRIM solid, 534 kg/m3": 15.500134299775342,
+   "projected, liquid at 600 K, 502 kg/m3": 16.488190669482137
+  },
+  "Protons": {
+   "E0_MeV": 0.27,
+   "HM2002_um": 9.5,
+   "csda, SRIM solid, 534 kg/m3": 7.692287197178672,
+   "csda, liquid at 600 K, 502 kg/m3": 8.18263219779564,
+   "projected, SRIM solid, 534 kg/m3": 7.533691752413347,
+   "projected, liquid at 600 K, 502 kg/m3": 8.013927083244477
+  }
+ },
+ "fast_energy_after_1mm_MeV": {
+  "Protons": {
+   "E0_MeV": 23.1,
+   "HM2002_MeV": 22.3,
+   "not_compared": "above the 20 MeV end of the SRIM table"
+  },
+  "Deuterons": {
+   "E0_MeV": 16.3,
+   "HM2002_MeV": 14.0,
+   "csda, SRIM solid, 534 kg/m3": 13.71832759021943,
+   "csda, liquid at 600 K, 502 kg/m3": 13.883925045340582
+  },
+  "Tritons": {
+   "E0_MeV": 16.7,
+   "HM2002_MeV": 13.4,
+   "csda, SRIM solid, 534 kg/m3": 13.104574407101659,
+   "csda, liquid at 600 K, 502 kg/m3": 13.341329891371316
+  }
+ },
+ "fast_end_point_um": {
+  "4He": {
+   "E0_MeV": 18.4,
+   "HM2002_um": 750.0,
+   "csda, SRIM solid, 534 kg/m3": 680.118895277395,
+   "csda, liquid at 600 K, 502 kg/m3": 723.4730878050377,
+   "projected, SRIM solid, 534 kg/m3": 678.2478180603449,
+   "projected, liquid at 600 K, 502 kg/m3": 721.4827387335143
+  }
+ }
+}

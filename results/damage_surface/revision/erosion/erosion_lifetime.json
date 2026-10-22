@@ -1,0 +1,74 @@
+{
+ "shots_per_full_power_year": 315600000.0,
+ "evaporation_nm_per_shot_last_shot": 6.862864877279877e-06,
+ "last_shot_of_the_600_shot_run": 600,
+ "damaged_runs_n_shots": {
+  "conductivity 0.5": 550,
+  "conductivity 0.5 with a 5 um skin at 0.25": 550
+ },
+ "cases": {
+  "sputtering (H and He isotopes)": {
+   "nm_per_shot": 0.00010937570896359069,
+   "shots_to_1mm": 9142797879.67256,
+   "full_power_years": 28.969575030648162,
+   "shots_to_100um_left": 8228518091.705304,
+   "full_power_years_to_100um_left": 26.072617527583347
+  },
+  "sputtering with C and Au proxies, low": {
+   "nm_per_shot": 0.00012052197469898013,
+   "shots_to_1mm": 8297242079.692394,
+   "full_power_years": 26.29037414351202,
+   "shots_to_100um_left": 7467517871.723155,
+   "full_power_years_to_100um_left": 23.66133672916082
+  },
+  "sputtering with C and Au proxies, high": {
+   "nm_per_shot": 0.00017251138139474527,
+   "shots_to_1mm": 5796718986.973808,
+   "full_power_years": 18.367297170385957,
+   "shots_to_100um_left": 5217047088.276427,
+   "full_power_years_to_100um_left": 16.530567453347363
+  },
+  "sputtering + evaporation": {
+   "nm_per_shot": 0.00011623857384087057,
+   "shots_to_1mm": 8602996122.173607,
+   "full_power_years": 27.259176559485446,
+   "shots_to_100um_left": 7742696509.956246,
+   "full_power_years_to_100um_left": 24.533258903536904
+  },
+  "sputtering with proxies (high) + evaporation": {
+   "nm_per_shot": 0.00017937424627202515,
+   "shots_to_1mm": 5574936317.688979,
+   "full_power_years": 17.664563744261656,
+   "shots_to_100um_left": 5017442685.920081,
+   "full_power_years_to_100um_left": 15.898107369835492
+  },
+  "conductivity 0.5: evaporation, last shot of the run": {
+   "nm_per_shot": 0.0006436575722759175,
+   "shots_to_1mm": 1553621122.5855489,
+   "full_power_years": 4.922753873845212,
+   "shots_to_100um_left": 1398259010.326994,
+   "full_power_years_to_100um_left": 4.43047848646069
+  },
+  "conductivity 0.5: evaporation + sputtering": {
+   "nm_per_shot": 0.0007530332812395082,
+   "shots_to_1mm": 1327962554.7943637,
+   "full_power_years": 4.207739400489112,
+   "shots_to_100um_left": 1195166299.3149273,
+   "full_power_years_to_100um_left": 3.7869654604402005
+  },
+  "conductivity 0.5 with a 5 um skin at 0.25: evaporation, last shot of the run": {
+   "nm_per_shot": 0.0030338715450080197,
+   "shots_to_1mm": 329611845.84278655,
+   "full_power_years": 1.0443974836590195,
+   "shots_to_100um_left": 296650661.2585079,
+   "full_power_years_to_100um_left": 0.9399577352931175
+  },
+  "conductivity 0.5 with a 5 um skin at 0.25: evaporation + sputtering": {
+   "nm_per_shot": 0.0031432472539716103,
+   "shots_to_1mm": 318142328.36327547,
+   "full_power_years": 1.00805553980759,
+   "shots_to_100um_left": 286328095.5269479,
+   "full_power_years_to_100um_left": 0.9072499858268311
+  }
+ }
+}

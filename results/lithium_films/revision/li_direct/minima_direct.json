@@ -1,0 +1,623 @@
+{
+ "note": "Repeated-shot minimum lithium films with the direct runs of 21 Oct 2026.\n\nThe minimum film is the thickness at which the peak steel temperature of the quasi-steady shot crosses the limit,\ninterpolated linearly in temperature and logarithmically in film thickness between the two computed films that\nbracket it (Section 2.7).  The points are the converged repeated-shot runs of the production scan\n(runs/li_multi/Demo_d*um) and the direct runs at 46, 58 and 180 um (results/revision/li_direct); the same rule is\napplied to the bounding runs with the latent heat of the vapor returned to the film\n(results/revision/li_return_latent).  Limits: 925 K (structural) and 873 K (Li/steel compatibility).\nSince 22 Oct 2026 also the variants, each with its own runs and its direct runs\nat the thicknesses interpolated from them (results/revision/li_direct_variants/<variant>/Demo_d*um): steel neutron\nheating at 0.5 and 1 times the tungsten value, vapor shielding (f_rr = 0, s = 1) and the coolant 3.5 mm behind the\nsurface.",
+ "points": {
+  "production_only": {
+   "17.78279410038923": {
+    "peak_K": 1211.5000001116866,
+    "converged": true,
+    "evap_kg_m2": 0.0008445305441124318,
+    "n_shots": 390,
+    "source": "runs/li_multi/Demo_d17.8um"
+   },
+   "31.622776601683796": {
+    "peak_K": 1005.6983374055598,
+    "converged": true,
+    "evap_kg_m2": 0.000786308361176713,
+    "n_shots": 370,
+    "source": "runs/li_multi/Demo_d31.6um"
+   },
+   "56.23413251903491": {
+    "peak_K": 871.3164921738476,
+    "converged": true,
+    "evap_kg_m2": 0.0007580820659601195,
+    "n_shots": 320,
+    "source": "runs/li_multi/Demo_d56.2um"
+   },
+   "100.0": {
+    "peak_K": 796.1413878422969,
+    "converged": true,
+    "evap_kg_m2": 0.000747552122235845,
+    "n_shots": 260,
+    "source": "runs/li_multi/Demo_d100um"
+   },
+   "1000.0": {
+    "peak_K": 667.1032963272961,
+    "converged": true,
+    "evap_kg_m2": 0.0007427799276578106,
+    "n_shots": 100,
+    "source": "runs/li_multi/Demo_d1000um"
+   }
+  },
+  "production_and_direct": {
+   "17.78279410038923": {
+    "peak_K": 1211.5000001116866,
+    "converged": true,
+    "evap_kg_m2": 0.0008445305441124318,
+    "n_shots": 390,
+    "source": "runs/li_multi/Demo_d17.8um"
+   },
+   "31.622776601683796": {
+    "peak_K": 1005.6983374055598,
+    "converged": true,
+    "evap_kg_m2": 0.000786308361176713,
+    "n_shots": 370,
+    "source": "runs/li_multi/Demo_d31.6um"
+   },
+   "44.99999999999999": {
+    "peak_K": 916.6720050353825,
+    "converged": true,
+    "evap_kg_m2": 0.0007659040984355214,
+    "n_shots": 340,
+    "source": "results/revision/li_direct/Demo_d45um"
+   },
+   "56.0": {
+    "peak_K": 872.0912395986027,
+    "converged": true,
+    "evap_kg_m2": 0.0007581964082374604,
+    "n_shots": 320,
+    "source": "results/revision/li_direct/Demo_d56um"
+   },
+   "56.23413251903491": {
+    "peak_K": 871.3164921738476,
+    "converged": true,
+    "evap_kg_m2": 0.0007580820659601195,
+    "n_shots": 320,
+    "source": "runs/li_multi/Demo_d56.2um"
+   },
+   "100.0": {
+    "peak_K": 796.1413878422969,
+    "converged": true,
+    "evap_kg_m2": 0.000747552122235845,
+    "n_shots": 260,
+    "source": "runs/li_multi/Demo_d100um"
+   },
+   "183.0": {
+    "peak_K": 753.936086820545,
+    "converged": true,
+    "evap_kg_m2": 0.0007439912320792441,
+    "n_shots": 200,
+    "source": "results/revision/li_direct/Demo_d183um"
+   },
+   "1000.0": {
+    "peak_K": 667.1032963272961,
+    "converged": true,
+    "evap_kg_m2": 0.0007427799276578106,
+    "n_shots": 100,
+    "source": "runs/li_multi/Demo_d1000um"
+   }
+  },
+  "return_latent": {
+   "44.99999999999999": {
+    "peak_K": 943.5013614697749,
+    "converged": true,
+    "evap_kg_m2": 0.0008159775790932966,
+    "n_shots": 360,
+    "source": "results/revision/li_return_latent/Demo_d45um"
+   },
+   "56.23413251903491": {
+    "peak_K": 897.1563771691438,
+    "converged": true,
+    "evap_kg_m2": 0.0007922838210933092,
+    "n_shots": 340,
+    "source": "results/revision/li_return_latent/Demo_d56.2um"
+   },
+   "100.0": {
+    "peak_K": 827.5314044952376,
+    "converged": true,
+    "evap_kg_m2": 0.0007573261760968897,
+    "n_shots": 280,
+    "source": "results/revision/li_return_latent/Demo_d100um"
+   }
+  },
+  "neutron_steel0.5_own_runs": {
+   "31.622776601683796": {
+    "peak_K": 1026.1904002175647,
+    "converged": true,
+    "evap_kg_m2": 0.0008376563521828584,
+    "n_shots": 380,
+    "source": "results/neutron/li_multi_Demo_d31.6um_steel0.5"
+   },
+   "56.23413251903491": {
+    "peak_K": 891.2223475678517,
+    "converged": true,
+    "evap_kg_m2": 0.0007805027961237943,
+    "n_shots": 350,
+    "source": "results/neutron/li_multi_Demo_d56.2um_steel0.5"
+   },
+   "100.0": {
+    "peak_K": 820.3815644498738,
+    "converged": true,
+    "evap_kg_m2": 0.0007540224615617541,
+    "n_shots": 290,
+    "source": "results/neutron/li_multi_Demo_d100um_steel0.5"
+   }
+  },
+  "neutron_steel0.5_with_direct": {
+   "31.622776601683796": {
+    "peak_K": 1026.1904002175647,
+    "converged": true,
+    "evap_kg_m2": 0.0008376563521828584,
+    "n_shots": 380,
+    "source": "results/neutron/li_multi_Demo_d31.6um_steel0.5"
+   },
+   "49.0": {
+    "peak_K": 918.7402715471852,
+    "converged": true,
+    "evap_kg_m2": 0.0007909637746464915,
+    "n_shots": 360,
+    "source": "results/revision/li_direct_variants/neutron_steel0.5/Demo_d49um"
+   },
+   "56.23413251903491": {
+    "peak_K": 891.2223475678517,
+    "converged": true,
+    "evap_kg_m2": 0.0007805027961237943,
+    "n_shots": 350,
+    "source": "results/neutron/li_multi_Demo_d56.2um_steel0.5"
+   },
+   "65.0": {
+    "peak_K": 864.5191204120038,
+    "converged": true,
+    "evap_kg_m2": 0.0007711800026347637,
+    "n_shots": 330,
+    "source": "results/revision/li_direct_variants/neutron_steel0.5/Demo_d65um"
+   },
+   "100.0": {
+    "peak_K": 820.3815644498738,
+    "converged": true,
+    "evap_kg_m2": 0.0007540224615617541,
+    "n_shots": 290,
+    "source": "results/neutron/li_multi_Demo_d100um_steel0.5"
+   }
+  },
+  "neutron_steel1_own_runs": {
+   "31.622776601683796": {
+    "peak_K": 1044.9622083212118,
+    "converged": true,
+    "evap_kg_m2": 0.0009384271384244025,
+    "n_shots": 380,
+    "source": "results/neutron/li_multi_Demo_d31.6um_steel1"
+   },
+   "56.23413251903491": {
+    "peak_K": 910.1567915743852,
+    "converged": true,
+    "evap_kg_m2": 0.0008277385552452055,
+    "n_shots": 360,
+    "source": "results/neutron/li_multi_Demo_d56.2um_steel1"
+   },
+   "100.0": {
+    "peak_K": 843.9794307604733,
+    "converged": true,
+    "evap_kg_m2": 0.0007672666672760287,
+    "n_shots": 300,
+    "source": "results/neutron/li_multi_Demo_d100um_steel1"
+   }
+  },
+  "neutron_steel1_with_direct": {
+   "31.622776601683796": {
+    "peak_K": 1044.9622083212118,
+    "converged": true,
+    "evap_kg_m2": 0.0009384271384244025,
+    "n_shots": 380,
+    "source": "results/neutron/li_multi_Demo_d31.6um_steel1"
+   },
+   "53.0": {
+    "peak_K": 921.729342958943,
+    "converged": true,
+    "evap_kg_m2": 0.0008366870379911129,
+    "n_shots": 360,
+    "source": "results/revision/li_direct_variants/neutron_steel1/Demo_d53um"
+   },
+   "56.23413251903491": {
+    "peak_K": 910.1567915743852,
+    "converged": true,
+    "evap_kg_m2": 0.0008277385552452055,
+    "n_shots": 360,
+    "source": "results/neutron/li_multi_Demo_d56.2um_steel1"
+   },
+   "78.0": {
+    "peak_K": 880.8314464370651,
+    "converged": true,
+    "evap_kg_m2": 0.0007868489058896477,
+    "n_shots": 330,
+    "source": "results/revision/li_direct_variants/neutron_steel1/Demo_d78um"
+   },
+   "100.0": {
+    "peak_K": 843.9794307604733,
+    "converged": true,
+    "evap_kg_m2": 0.0007672666672760287,
+    "n_shots": 300,
+    "source": "results/neutron/li_multi_Demo_d100um_steel1"
+   }
+  },
+  "vapor_frr0_s1_own_runs": {
+   "31.622776601683796": {
+    "peak_K": 991.7969237459538,
+    "converged": true,
+    "evap_kg_m2": 0.0006232090652586453,
+    "n_shots": 360,
+    "source": "results/vapor_shielding/multi/Demo_d31.6um_frr0_s1"
+   },
+   "56.23413251903491": {
+    "peak_K": 863.0628194074241,
+    "converged": true,
+    "evap_kg_m2": 0.0006005805333332281,
+    "n_shots": 320,
+    "source": "results/vapor_shielding/multi/Demo_d56.2um_frr0_s1"
+   }
+  },
+  "vapor_frr0_s1_with_direct": {
+   "31.622776601683796": {
+    "peak_K": 991.7969237459538,
+    "converged": true,
+    "evap_kg_m2": 0.0006232090652586453,
+    "n_shots": 360,
+    "source": "results/vapor_shielding/multi/Demo_d31.6um_frr0_s1"
+   },
+   "42.99999999999999": {
+    "peak_K": 916.4282196261178,
+    "converged": true,
+    "evap_kg_m2": 0.000608583922778988,
+    "n_shots": 340,
+    "source": "results/revision/li_direct_variants/vapor_frr0_s1/Demo_d43um"
+   },
+   "54.0": {
+    "peak_K": 870.3939387797438,
+    "converged": true,
+    "evap_kg_m2": 0.0006015424203766051,
+    "n_shots": 320,
+    "source": "results/revision/li_direct_variants/vapor_frr0_s1/Demo_d54um"
+   },
+   "56.23413251903491": {
+    "peak_K": 863.0628194074241,
+    "converged": true,
+    "evap_kg_m2": 0.0006005805333332281,
+    "n_shots": 320,
+    "source": "results/vapor_shielding/multi/Demo_d56.2um_frr0_s1"
+   }
+  },
+  "steel_3.5mm_own_runs": {
+   "31.622776601683796": {
+    "peak_K": 961.1934716665212,
+    "converged": true,
+    "evap_kg_m2": 0.0007535204031216963,
+    "n_shots": 120,
+    "source": "results/cooling_3p5mm/li_multi_Demo_d31.6um"
+   },
+   "56.23413251903491": {
+    "peak_K": 833.8016441334274,
+    "converged": true,
+    "evap_kg_m2": 0.0007454832601761774,
+    "n_shots": 110,
+    "source": "results/cooling_3p5mm/li_multi_Demo_d56.2um"
+   }
+  },
+  "steel_3.5mm_with_direct": {
+   "31.622776601683796": {
+    "peak_K": 961.1934716665212,
+    "converged": true,
+    "evap_kg_m2": 0.0007535204031216963,
+    "n_shots": 120,
+    "source": "results/cooling_3p5mm/li_multi_Demo_d31.6um"
+   },
+   "37.0": {
+    "peak_K": 920.0933081081679,
+    "converged": true,
+    "evap_kg_m2": 0.0007498954208493697,
+    "n_shots": 120,
+    "source": "results/revision/li_direct_variants/steel_3.5mm/Demo_d37um"
+   },
+   "47.0": {
+    "peak_K": 866.8344989774071,
+    "converged": true,
+    "evap_kg_m2": 0.0007467351290284252,
+    "n_shots": 110,
+    "source": "results/revision/li_direct_variants/steel_3.5mm/Demo_d47um"
+   },
+   "56.23413251903491": {
+    "peak_K": 833.8016441334274,
+    "converged": true,
+    "evap_kg_m2": 0.0007454832601761774,
+    "n_shots": 110,
+    "source": "results/cooling_3p5mm/li_multi_Demo_d56.2um"
+   }
+  }
+ },
+ "minima": {
+  "production_only": {
+   "925K": {
+    "delta_um": 44.68160798322281,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     1005.6983374055598,
+     871.3164921738476
+    ],
+    "evap_kg_m2_at_minimum": 0.000769358042544237
+   },
+   "873K": {
+    "delta_um": 55.830054520958655,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     1005.6983374055598,
+     871.3164921738476
+    ],
+    "evap_kg_m2_at_minimum": 0.0007584356791198323
+   }
+  },
+  "production_and_direct": {
+   "925K": {
+    "delta_um": 43.53917576635636,
+    "bracket_um": [
+     31.622776601683796,
+     44.99999999999999
+    ],
+    "bracket_K": [
+     1005.6983374055598,
+     916.6720050353825
+    ],
+    "evap_kg_m2_at_minimum": 0.0007678128213138133
+   },
+   "873K": {
+    "delta_um": 55.75091385001893,
+    "bracket_um": [
+     44.99999999999999,
+     56.0
+    ],
+    "bracket_K": [
+     916.6720050353825,
+     872.0912395986027
+    ],
+    "evap_kg_m2_at_minimum": 0.0007583535263032811
+   }
+  },
+  "return_latent": {
+   "925K": {
+    "delta_um": 49.187075880738306,
+    "bracket_um": [
+     44.99999999999999,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     943.5013614697749,
+     897.1563771691438
+    ],
+    "evap_kg_m2_at_minimum": 0.0008065188040402826
+   },
+   "873K": {
+    "delta_um": 68.66532413793983,
+    "bracket_um": [
+     56.23413251903491,
+     100.0
+    ],
+    "bracket_K": [
+     897.1563771691438,
+     827.5314044952376
+    ],
+    "evap_kg_m2_at_minimum": 0.0007801552697266381
+   }
+  },
+  "neutron_steel0.5_own_runs": {
+   "925K": {
+    "delta_um": 48.68935100360443,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     1026.1904002175647,
+     891.2223475678517
+    ],
+    "evap_kg_m2_at_minimum": 0.0007948062769396188
+   },
+   "873K": {
+    "delta_um": 65.20897961523838,
+    "bracket_um": [
+     56.23413251903491,
+     100.0
+    ],
+    "bracket_K": [
+     891.2223475678517,
+     820.3815644498738
+    ],
+    "evap_kg_m2_at_minimum": 0.0007736912697845261
+   }
+  },
+  "neutron_steel0.5_with_direct": {
+   "925K": {
+    "delta_um": 47.765663614267375,
+    "bracket_um": [
+     31.622776601683796,
+     49.0
+    ],
+    "bracket_K": [
+     1026.1904002175647,
+     918.7402715471852
+    ],
+    "evap_kg_m2_at_minimum": 0.0007936839468766829
+   },
+   "873K": {
+    "delta_um": 62.077215547480826,
+    "bracket_um": [
+     56.23413251903491,
+     65.0
+    ],
+    "bracket_K": [
+     891.2223475678517,
+     864.5191204120038
+    ],
+    "evap_kg_m2_at_minimum": 0.0007741408990291498
+   }
+  },
+  "neutron_steel1_own_runs": {
+   "925K": {
+    "delta_um": 52.780427146751116,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     1044.9622083212118,
+     910.1567915743852
+    ],
+    "evap_kg_m2_at_minimum": 0.0008399262977715346
+   },
+   "873K": {
+    "delta_um": 77.69055308378738,
+    "bracket_um": [
+     56.23413251903491,
+     100.0
+    ],
+    "bracket_K": [
+     910.1567915743852,
+     843.9794307604733
+    ],
+    "evap_kg_m2_at_minimum": 0.0007937852317861666
+   }
+  },
+  "neutron_steel1_with_direct": {
+   "925K": {
+    "delta_um": 52.27854412487775,
+    "bracket_um": [
+     31.622776601683796,
+     53.0
+    ],
+    "bracket_K": [
+     1044.9622083212118,
+     921.729342958943
+    ],
+    "evap_kg_m2_at_minimum": 0.0008393872671455822
+   },
+   "873K": {
+    "delta_um": 82.22912153593089,
+    "bracket_um": [
+     78.0,
+     100.0
+    ],
+    "bracket_K": [
+     880.8314464370651,
+     843.9794307604733
+    ],
+    "evap_kg_m2_at_minimum": 0.0007826874712976779
+   }
+  },
+  "vapor_frr0_s1_own_runs": {
+   "925K": {
+    "delta_um": 42.63033837344381,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     991.7969237459538,
+     863.0628194074241
+    ],
+    "evap_kg_m2_at_minimum": 0.00061146768305638
+   },
+   "873K": {
+    "delta_um": 53.7900714498568,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     991.7969237459538,
+     863.0628194074241
+    ],
+    "evap_kg_m2_at_minimum": 0.0006023272640029536
+   }
+  },
+  "vapor_frr0_s1_with_direct": {
+   "925K": {
+    "delta_um": 41.523018340642636,
+    "bracket_um": [
+     31.622776601683796,
+     42.99999999999999
+    ],
+    "bracket_K": [
+     991.7969237459538,
+     916.4282196261178
+    ],
+    "evap_kg_m2_at_minimum": 0.0006102472591828225
+   },
+   "873K": {
+    "delta_um": 53.308132457453475,
+    "bracket_um": [
+     42.99999999999999,
+     54.0
+    ],
+    "bracket_K": [
+     916.4282196261178,
+     870.3939387797438
+    ],
+    "evap_kg_m2_at_minimum": 0.0006019410490942868
+   }
+  },
+  "steel_3.5mm_own_runs": {
+   "925K": {
+    "delta_um": 37.24155893965548,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     961.1934716665212,
+     833.8016441334274
+    ],
+    "evap_kg_m2_at_minimum": 0.0007512369591118924
+   },
+   "873K": {
+    "delta_um": 47.10589013285744,
+    "bracket_um": [
+     31.622776601683796,
+     56.23413251903491
+    ],
+    "bracket_K": [
+     961.1934716665212,
+     833.8016441334274
+    ],
+    "evap_kg_m2_at_minimum": 0.0007479562821543504
+   }
+  },
+  "steel_3.5mm_with_direct": {
+   "925K": {
+    "delta_um": 36.312783979481566,
+    "bracket_um": [
+     31.622776601683796,
+     37.0
+    ],
+    "bracket_K": [
+     961.1934716665212,
+     920.0933081081679
+    ],
+    "evap_kg_m2_at_minimum": 0.0007503281848479462
+   },
+   "873K": {
+    "delta_um": 45.71622187185098,
+    "bracket_um": [
+     37.0,
+     47.0
+    ],
+    "bracket_K": [
+     920.0933081081679,
+     866.8344989774071
+    ],
+    "evap_kg_m2_at_minimum": 0.00074710097991341
+   }
+  }
+ }
+}

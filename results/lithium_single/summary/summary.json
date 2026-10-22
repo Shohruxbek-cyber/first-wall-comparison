@@ -1,0 +1,923 @@
+{
+ "W": {
+  "Experimental": {
+   "peak_surface_T_K_single": 868.1755176637932,
+   "melt_depth_um": 0.0,
+   "ablated_nm_per_shot": 8.829116828984658e-44,
+   "shots_to_ablate_1mm_evaporation_only": 1.1326161148045419e+49,
+   "He_shots_to_1e18_to_1e19": [
+    45.1699037112361,
+    825.5623807065833
+   ]
+  },
+  "Prototype": {
+   "peak_surface_T_K_single": 1370.7778295463681,
+   "melt_depth_um": 0.0,
+   "ablated_nm_per_shot": 7.482053734326148e-25,
+   "shots_to_ablate_1mm_evaporation_only": 1.3365314330906264e+30,
+   "He_shots_to_1e18_to_1e19": [
+    30.5348549087956,
+    558.0801693576502
+   ],
+   "multishot_n": 100,
+   "multishot_last_preshot_K": 609.4651501469062,
+   "multishot_last_peak_K": 1380.5737666487234,
+   "preshot_rise_per_shot_K": 0.0003691654907874585,
+   "max_interface_T_K": 615.0915470462504
+  },
+  "Demo": {
+   "peak_surface_T_K_single": 3026.862757912932,
+   "melt_depth_um": 0.0,
+   "ablated_nm_per_shot": 3.3805630542995857e-07,
+   "shots_to_ablate_1mm_evaporation_only": 2958087111341.2456,
+   "He_shots_to_1e18_to_1e19": [
+    9.913913931427144,
+    181.19486018105528
+   ],
+   "multishot_n": 600,
+   "multishot_last_preshot_K": 920.8779593775862,
+   "multishot_last_peak_K": 3317.4617954738724,
+   "preshot_rise_per_shot_K": 0.03497244151258085,
+   "max_interface_T_K": 933.8281982463832
+  }
+ },
+ "Li": {
+  "Experimental": {
+   "baseline_T_li_K": 600,
+   "min_delta_um": 7.103032443710915,
+   "grid_bracket_um": [
+    5.623413251903491,
+    10.0
+   ],
+   "min_delta_range_um": [
+    7.103032443710915,
+    7.103032443710915
+   ],
+   "vaporized_kg_m2_thick_film": 7.99930985995894e-07,
+   "vaporized_range_kg_m2": [
+    7.99930985995894e-07,
+    7.99930985995894e-07
+   ],
+   "flow_speed_m_s": null,
+   "sensitivity": {},
+   "rows": [
+    {
+     "delta_um": 1.0,
+     "absorbed_frac_in_Li": 0.16068122925290118,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1204.2771491198514,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1185.5075250721086,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 5.777353821840354e-07,
+     "vaporized_um": 0.0011508672951873215,
+     "vaporized_kg_per_shot_chamber": 0.00018150092323882572,
+     "vapour_number_density_m3": 3.0079571702115193e+19,
+     "vaporized_energy_J_m2": 14.518195156857367,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.1738335583508023e-12,
+     "wall_s": 15.554329872131348
+    },
+    {
+     "delta_um": 1.778279410038923,
+     "absorbed_frac_in_Li": 0.268594156632419,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1211.5623673190637,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1154.1607255027975,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 6.026984570754528e-07,
+     "vaporized_um": 0.0012005945360068781,
+     "vaporized_kg_per_shot_chamber": 0.0001893433045078146,
+     "vapour_number_density_m3": 3.1379264648500244e+19,
+     "vaporized_energy_J_m2": 15.161347166825843,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.511766625916451e-12,
+     "wall_s": 9.408015966415405
+    },
+    {
+     "delta_um": 3.162277660168379,
+     "absorbed_frac_in_Li": 0.406511843223645,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1231.8940254715633,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1082.6879364456743,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 7.295490147212518e-07,
+     "vaporized_um": 0.0014532848898829718,
+     "vaporized_kg_per_shot_chamber": 0.00022919458250819568,
+     "vapour_number_density_m3": 3.79836904147322e+19,
+     "vaporized_energy_J_m2": 18.414780149018725,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.494256097464701e-12,
+     "wall_s": 6.801629304885864
+    },
+    {
+     "delta_um": 5.623413251903491,
+     "absorbed_frac_in_Li": 0.5234294680152979,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1252.9383880698472,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 972.804585414807,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 9.56918252673543e-07,
+     "vaporized_um": 0.001906211658712237,
+     "vaporized_kg_per_shot_chamber": 0.0003006247352685184,
+     "vapour_number_density_m3": 4.9821582824899035e+19,
+     "vaporized_energy_J_m2": 24.247507800554637,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.444453841096628e-12,
+     "wall_s": 6.406955003738403
+    },
+    {
+     "delta_um": 10.0,
+     "absorbed_frac_in_Li": 0.593984400946961,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1247.1279214659273,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 854.9940681863053,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 9.82275295675737e-07,
+     "vaporized_um": 0.0019567236965652136,
+     "vaporized_kg_per_shot_chamber": 0.0003085908852697637,
+     "vapour_number_density_m3": 5.114178757028738e+19,
+     "vaporized_energy_J_m2": 24.86492528649247,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.717867554380372e-12,
+     "wall_s": 4.380883693695068
+    },
+    {
+     "delta_um": 17.78279410038923,
+     "absorbed_frac_in_Li": 0.6606455812384251,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1230.6079027848707,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 757.3238304115565,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.371079036970856e-07,
+     "vaporized_um": 0.001667545624894593,
+     "vaporized_kg_per_shot_chamber": 0.00026298520405167164,
+     "vapour_number_density_m3": 4.358370283030871e+19,
+     "vaporized_energy_J_m2": 21.123867752901607,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.1021812794866312e-12,
+     "wall_s": 4.738796234130859
+    },
+    {
+     "delta_um": 31.622776601683796,
+     "absorbed_frac_in_Li": 0.7350543105056991,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.734574606952,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 693.2585464641936,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.006673663006563e-07,
+     "vaporized_um": 0.0015949549129495144,
+     "vaporized_kg_per_shot_chamber": 0.000251537071593923,
+     "vapour_number_density_m3": 4.168644018848155e+19,
+     "vaporized_energy_J_m2": 20.19314709753615,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.6391464558285722e-12,
+     "wall_s": 5.42594838142395
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "absorbed_frac_in_Li": 0.7683929342111366,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6708937206083,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 654.7910558119095,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.997039521024093e-07,
+     "vaporized_um": 0.0015930357611601779,
+     "vaporized_kg_per_shot_chamber": 0.0002512344060971653,
+     "vapour_number_density_m3": 4.163628039673493e+19,
+     "vaporized_energy_J_m2": 20.16855710236203,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.391608164929129e-12,
+     "wall_s": 6.780180931091309
+    },
+    {
+     "delta_um": 100.0,
+     "absorbed_frac_in_Li": 0.7888788149402074,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6725252551903,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 632.1988699170523,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.997569958662467e-07,
+     "vaporized_um": 0.0015931414260283798,
+     "vaporized_kg_per_shot_chamber": 0.00025125107028704433,
+     "vapour_number_density_m3": 4.163904210001103e+19,
+     "vaporized_energy_J_m2": 20.16972048598076,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.9402470264439434e-12,
+     "wall_s": 10.215877532958984
+    },
+    {
+     "delta_um": 177.82794100389228,
+     "absorbed_frac_in_Li": 0.8188261374316401,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6725252528101,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 618.8286903019732,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.998513353782586e-07,
+     "vaporized_um": 0.0015933293533431446,
+     "vaporized_kg_per_shot_chamber": 0.0002512807079188323,
+     "vapour_number_density_m3": 4.164395385062111e+19,
+     "vaporized_energy_J_m2": 20.171886983413007,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 2.381431818762819e-12,
+     "wall_s": 14.390435457229614
+    },
+    {
+     "delta_um": 316.22776601683796,
+     "absorbed_frac_in_Li": 0.8476639240146181,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6725252528104,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 612.8735007941721,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.99930985995894e-07,
+     "vaporized_um": 0.0015934880199121395,
+     "vaporized_kg_per_shot_chamber": 0.00025130573089835405,
+     "vapour_number_density_m3": 4.164810082956366e+19,
+     "vaporized_energy_J_m2": 20.17371836020278,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 5.027332959959396e-12,
+     "wall_s": 14.097496747970581
+    },
+    {
+     "delta_um": 562.3413251903492,
+     "absorbed_frac_in_Li": 0.8795817737250425,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6725252528108,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 611.5649997915737,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.99947635441531e-07,
+     "vaporized_um": 0.001593521186138508,
+     "vaporized_kg_per_shot_chamber": 0.000251310961475964,
+     "vapour_number_density_m3": 4.164896767658269e+19,
+     "vaporized_energy_J_m2": 20.17410043900794,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.166587739032071e-12,
+     "wall_s": 7.420843839645386
+    },
+    {
+     "delta_um": 1000.0,
+     "absorbed_frac_in_Li": 0.9132183985767324,
+     "incident_J_m2": 18075.206217473416,
+     "peak_Li_surface_K": 1227.6725252528108,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 610.2722583114709,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 7.999359915928634e-07,
+     "vaporized_um": 0.0015934979912208434,
+     "vaporized_kg_per_shot_chamber": 0.0002513073034530206,
+     "vapour_number_density_m3": 4.1648361444055335e+19,
+     "vaporized_energy_J_m2": 20.173832440980767,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.151202617378239e-12,
+     "wall_s": 5.412905931472778
+    }
+   ]
+  },
+  "Prototype": {
+   "baseline_T_li_K": 600,
+   "min_delta_um": 11.809082554670962,
+   "grid_bracket_um": [
+    10.0,
+    17.78279410038923
+   ],
+   "min_delta_range_um": [
+    8.176966228540678,
+    33.94007089959099
+   ],
+   "vaporized_kg_m2_thick_film": 8.889629722122542e-06,
+   "vaporized_range_kg_m2": [
+    9.751588858479018e-07,
+    4.5594014789034415e-05
+   ],
+   "flow_speed_m_s": 13.0,
+   "sensitivity": {
+    "T500K": {
+     "min_delta_um": 8.176966228540678,
+     "vaporized_kg_m2_thick": 3.4253739448630404e-06
+    },
+    "T600K_alpha_evap-0.1": {
+     "min_delta_um": 11.964472321962223,
+     "vaporized_kg_m2_thick": 9.751588858479018e-07
+    },
+    "T600K_lv-handbook_147kJmol": {
+     "min_delta_um": 11.816495248895654,
+     "vaporized_kg_m2_thick": 8.928776896090444e-06
+    },
+    "T600K_steel_thickness-0.0035": {
+     "min_delta_um": 11.809082554670962,
+     "vaporized_kg_m2_thick": 8.889629722122542e-06
+    },
+    "T600K_xray_tau-1e-10": {
+     "min_delta_um": 11.808999353570268,
+     "vaporized_kg_m2_thick": 8.889614366866106e-06
+    },
+    "T600K_xray_tau-5e-08": {
+     "min_delta_um": 11.80920870006979,
+     "vaporized_kg_m2_thick": 8.889653034787793e-06
+    },
+    "T800K": {
+     "min_delta_um": 33.94007089959099,
+     "vaporized_kg_m2_thick": 4.5594014789034415e-05
+    }
+   },
+   "rows": [
+    {
+     "delta_um": 1.0,
+     "absorbed_frac_in_Li": 0.1606812292529012,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1382.3509807044907,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1361.7761406866503,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 5.112923555496665e-06,
+     "vaporized_um": 0.010185106684256305,
+     "vaporized_kg_per_shot_chamber": 0.0027146002005731555,
+     "vapour_number_density_m3": 2.047710841032183e+20,
+     "vaporized_energy_J_m2": 132.01021308250628,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 2.0550323721328863e-12,
+     "wall_s": 8.86901330947876
+    },
+    {
+     "delta_um": 1.778279410038923,
+     "absorbed_frac_in_Li": 0.268594156632419,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1394.715974234474,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1329.4151251215324,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 5.45021999518744e-06,
+     "vaporized_um": 0.010857011942604461,
+     "vaporized_kg_per_shot_chamber": 0.002893680715448611,
+     "vapour_number_density_m3": 2.1827970727545084e+20,
+     "vaporized_energy_J_m2": 140.96538368738936,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.8909454387484546e-12,
+     "wall_s": 7.061970233917236
+    },
+    {
+     "delta_um": 3.162277660168379,
+     "absorbed_frac_in_Li": 0.40651184322364486,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1427.7996554674487,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1248.4608046695341,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 6.8122233574242615e-06,
+     "vaporized_um": 0.01357016605064594,
+     "vaporized_kg_per_shot_chamber": 0.0036168080143761687,
+     "vapour_number_density_m3": 2.7282754121238325e+20,
+     "vaporized_energy_J_m2": 177.0751043756647,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.869176027905758e-12,
+     "wall_s": 5.122394800186157
+    },
+    {
+     "delta_um": 5.623413251903491,
+     "absorbed_frac_in_Li": 0.5234294680152979,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1468.3375284171025,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1114.8667976550112,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 9.510441328330298e-06,
+     "vaporized_um": 0.018945102247669914,
+     "vaporized_kg_per_shot_chamber": 0.005049370611001988,
+     "vapour_number_density_m3": 3.8089037709328155e+20,
+     "vaporized_energy_J_m2": 248.80379148860874,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.3021797929490765e-12,
+     "wall_s": 5.555864334106445
+    },
+    {
+     "delta_um": 10.0,
+     "absorbed_frac_in_Li": 0.5939844009469609,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1471.643385606938,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 963.8874921946574,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 1.0709215309640819e-05,
+     "vaporized_um": 0.021333098226376135,
+     "vaporized_kg_per_shot_chamber": 0.005685834672078941,
+     "vapour_number_density_m3": 4.2890092234850815e+20,
+     "vaporized_energy_J_m2": 280.3267555493039,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.8042759716175502e-12,
+     "wall_s": 9.197834730148315
+    },
+    {
+     "delta_um": 17.78279410038923,
+     "absorbed_frac_in_Li": 0.660645581238425,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1450.5529098476206,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 829.2656398601084,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 9.445319734823314e-06,
+     "vaporized_um": 0.01881537795781537,
+     "vaporized_kg_per_shot_chamber": 0.005014795658163968,
+     "vapour_number_density_m3": 3.782822764330207e+20,
+     "vaporized_energy_J_m2": 246.3254872272968,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 2.9479863858471826e-12,
+     "wall_s": 11.970177412033081
+    },
+    {
+     "delta_um": 31.622776601683796,
+     "absorbed_frac_in_Li": 0.7350543105056989,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.8689720252846,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 736.7305713155199,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.915298578335626e-06,
+     "vaporized_um": 0.017759558920987305,
+     "vaporized_kg_per_shot_chamber": 0.004733391971585726,
+     "vapour_number_density_m3": 3.570550850554093e+20,
+     "vaporized_energy_J_m2": 232.26123585143654,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.180543205452998e-12,
+     "wall_s": 19.046666622161865
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "absorbed_frac_in_Li": 0.7683929342111364,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.764726396695,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 680.4377920350709,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.889991303441564e-06,
+     "vaporized_um": 0.017709146022791958,
+     "vaporized_kg_per_shot_chamber": 0.004719955601423389,
+     "vapour_number_density_m3": 3.5604153614166026e+20,
+     "vaporized_energy_J_m2": 231.60176266395968,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 2.1442869505189886e-12,
+     "wall_s": 11.811438083648682
+    },
+    {
+     "delta_um": 100.0,
+     "absorbed_frac_in_Li": 0.7888788149402072,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.775470554976,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 647.3013074686698,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.889359919954714e-06,
+     "vaporized_um": 0.01770788828676238,
+     "vaporized_kg_per_shot_chamber": 0.004719620381520053,
+     "vapour_number_density_m3": 3.560162494187739e+20,
+     "vaporized_energy_J_m2": 231.58614650669267,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.6616863244146165e-12,
+     "wall_s": 7.617085695266724
+    },
+    {
+     "delta_um": 177.82794100389228,
+     "absorbed_frac_in_Li": 0.8188261374316399,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.775472838845,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 627.6586469504296,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.88948416512334e-06,
+     "vaporized_um": 0.01770813578709829,
+     "vaporized_kg_per_shot_chamber": 0.0047196863469028735,
+     "vapour_number_density_m3": 3.5602122540122256e+20,
+     "vaporized_energy_J_m2": 231.58892980220944,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 3.809646844619905e-14,
+     "wall_s": 6.894796133041382
+    },
+    {
+     "delta_um": 316.22776601683796,
+     "absorbed_frac_in_Li": 0.8476639240146179,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.7754728388456,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 618.9963304225338,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.889629722122542e-06,
+     "vaporized_um": 0.01770842574127996,
+     "vaporized_kg_per_shot_chamber": 0.004719763627357967,
+     "vapour_number_density_m3": 3.560270549162157e+20,
+     "vaporized_energy_J_m2": 231.5922741966429,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.6991024816512839e-12,
+     "wall_s": 8.86939787864685
+    },
+    {
+     "delta_um": 562.3413251903492,
+     "absorbed_frac_in_Li": 0.8795817737250422,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.7754728388454,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 617.0696269823209,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.889654461339828e-06,
+     "vaporized_um": 0.017708475022589296,
+     "vaporized_kg_per_shot_chamber": 0.004719776762129782,
+     "vapour_number_density_m3": 3.560280457145894e+20,
+     "vaporized_energy_J_m2": 231.59284056685527,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 7.707731780418796e-13,
+     "wall_s": 16.89213538169861
+    },
+    {
+     "delta_um": 1000.0,
+     "absorbed_frac_in_Li": 0.9132183985767323,
+     "incident_J_m2": 26738.470735907427,
+     "peak_Li_surface_K": 1444.775472838846,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 615.165265671166,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 8.889629912431205e-06,
+     "vaporized_um": 0.01770842612038089,
+     "vaporized_kg_per_shot_chamber": 0.004719763728398386,
+     "vapour_number_density_m3": 3.5602706253802177e+20,
+     "vaporized_energy_J_m2": 231.59227463050345,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 9.588064385451247e-13,
+     "wall_s": 11.647429704666138
+    }
+   ]
+  },
+  "Demo": {
+   "baseline_T_li_K": 600,
+   "min_delta_um": 30.09660135875881,
+   "grid_bracket_um": [
+    17.78279410038923,
+    31.622776601683796
+   ],
+   "min_delta_range_um": [
+    23.846558173801938,
+    78.96129105903964
+   ],
+   "vaporized_kg_m2_thick_film": 0.0007427146002371727,
+   "vaporized_range_kg_m2": [
+    0.00041665235830768777,
+    0.0009521149412574944
+   ],
+   "flow_speed_m_s": 130.0,
+   "sensitivity": {
+    "T500K": {
+     "min_delta_um": 23.846558173801938,
+     "vaporized_kg_m2_thick": 0.000661659161700184
+    },
+    "T600K_alpha_evap-0.1": {
+     "min_delta_um": 35.20140227258306,
+     "vaporized_kg_m2_thick": 0.00041665235830768777
+    },
+    "T600K_dx0-1e-9": {
+     "min_delta_um": 30.09660135875881,
+     "vaporized_kg_m2_thick": 0.0007427146002371727
+    },
+    "T600K_lv-handbook_147kJmol": {
+     "min_delta_um": 30.146797800099062,
+     "vaporized_kg_m2_thick": 0.0007698856025096536
+    },
+    "T600K_steel_thickness-0.0035": {
+     "min_delta_um": 30.09660135875881,
+     "vaporized_kg_m2_thick": 0.0007427146002371727
+    },
+    "T600K_xray_tau-1e-10": {
+     "min_delta_um": 30.096359734994543,
+     "vaporized_kg_m2_thick": 0.0007427142414789217
+    },
+    "T600K_xray_tau-5e-08": {
+     "min_delta_um": 30.09696891621034,
+     "vaporized_kg_m2_thick": 0.0007427151443586644
+    },
+    "T800K": {
+     "min_delta_um": 78.96129105903964,
+     "vaporized_kg_m2_thick": 0.0009521149412574944
+    }
+   },
+   "rows": [
+    {
+     "delta_um": 1.0,
+     "absorbed_frac_in_Li": 0.16068122925290118,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 1782.917492045046,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1799.9999999989388,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 8.978177329262686e-06,
+     "vaporized_um": 0.01788481539693762,
+     "vaporized_kg_per_shot_chamber": 0.004766776133900237,
+     "vapour_number_density_m3": 3.595733605302202e+20,
+     "vaporized_energy_J_m2": 243.22130803122622,
+     "burn_through": false,
+     "status": "stopped at t=1.390e-06 s: time step underflow at t=1.390e-06 s",
+     "energy_rel_residual": null,
+     "wall_s": 15.080508947372437
+    },
+    {
+     "delta_um": 1.778279410038923,
+     "absorbed_frac_in_Li": 0.2685941566324189,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 1797.5064067049518,
+     "Li_surface_above_1800K_extrapolated": false,
+     "peak_substrate_K": 1799.9999999987333,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 9.496856892147135e-06,
+     "vaporized_um": 0.018918041617822977,
+     "vaporized_kg_per_shot_chamber": 0.005042158237731153,
+     "vapour_number_density_m3": 3.803463244208792e+20,
+     "vaporized_energy_J_m2": 258.4479880638218,
+     "burn_through": false,
+     "status": "stopped at t=1.420e-06 s: time step underflow at t=1.420e-06 s",
+     "energy_rel_residual": null,
+     "wall_s": 9.353968620300293
+    },
+    {
+     "delta_um": 3.162277660168379,
+     "absorbed_frac_in_Li": 0.406511843223645,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 1896.75538653936,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 1799.9999999998668,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 1.8562897160683177e-05,
+     "vaporized_um": 0.03697788279020553,
+     "vaporized_kg_per_shot_chamber": 0.009855583368039322,
+     "vapour_number_density_m3": 7.434385698184777e+20,
+     "vaporized_energy_J_m2": 513.9283098773377,
+     "burn_through": false,
+     "status": "stopped at t=1.527e-06 s: time step underflow at t=1.527e-06 s",
+     "energy_rel_residual": null,
+     "wall_s": 9.640448093414307
+    },
+    {
+     "delta_um": 5.623413251903491,
+     "absorbed_frac_in_Li": 0.5234294680152977,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2219.9603742176178,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 1790.7317456223186,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 0.0007021015899285821,
+     "vaporized_um": 1.3986087448776536,
+     "vaporized_kg_per_shot_chamber": 0.3727662062918757,
+     "vapour_number_density_m3": 2.8118962108421995e+22,
+     "vaporized_energy_J_m2": 20329.24532725653,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 7.841935451468304e-13,
+     "wall_s": 17.132282495498657
+    },
+    {
+     "delta_um": 10.0,
+     "absorbed_frac_in_Li": 0.5939844009469607,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2232.8195670217556,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 1421.2837681109268,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 0.0007570848378151111,
+     "vaporized_um": 1.5081371271217352,
+     "vaporized_kg_per_shot_chamber": 0.4019584158214853,
+     "vapour_number_density_m3": 3.0321025009428313e+22,
+     "vaporized_energy_J_m2": 21966.61939389085,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 8.944541966461595e-13,
+     "wall_s": 13.660591125488281
+    },
+    {
+     "delta_um": 17.78279410038923,
+     "absorbed_frac_in_Li": 0.6606455812384249,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2221.594053819861,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 1115.6493510189846,
+     "substrate_pass": false,
+     "vaporized_kg_m2": 0.0007564869555242316,
+     "vaporized_um": 1.5069461265422939,
+     "vaporized_kg_per_shot_chamber": 0.4016409826799324,
+     "vapour_number_density_m3": 3.0297079999584012e+22,
+     "vaporized_energy_J_m2": 21881.048966138027,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 9.534719168974647e-13,
+     "wall_s": 24.404298543930054
+    },
+    {
+     "delta_um": 31.622776601683796,
+     "absorbed_frac_in_Li": 0.7350543105056988,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.194282220553,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 907.077373159045,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007451822561389213,
+     "vaporized_um": 1.4844268050576124,
+     "vaporized_kg_per_shot_chamber": 0.395638988148684,
+     "vapour_number_density_m3": 2.984433011520478e+22,
+     "vaporized_energy_J_m2": 21531.44146934264,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.811534521906861e-13,
+     "wall_s": 23.101496934890747
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "absorbed_frac_in_Li": 0.7683929342111363,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.1523885535357,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 781.131229604216,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007430217045278772,
+     "vaporized_um": 1.4801229173862096,
+     "vaporized_kg_per_shot_chamber": 0.3944918883000301,
+     "vapour_number_density_m3": 2.9757800658847306e+22,
+     "vaporized_energy_J_m2": 21470.99525683657,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 7.331273120923639e-13,
+     "wall_s": 16.383926391601562
+    },
+    {
+     "delta_um": 100.0,
+     "absorbed_frac_in_Li": 0.7888788149402071,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.070513734935,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 707.2252694067357,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007427404611917823,
+     "vaporized_um": 1.4795626716967776,
+     "vaporized_kg_per_shot_chamber": 0.3943425680122757,
+     "vapour_number_density_m3": 2.974653694598247e+22,
+     "vaporized_energy_J_m2": 21463.816989236544,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.1130317978700204e-12,
+     "wall_s": 11.946381330490112
+    },
+    {
+     "delta_um": 177.82794100389228,
+     "absorbed_frac_in_Li": 0.81882613743164,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.0705122808727,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 674.205751559253,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007427163859846283,
+     "vaporized_um": 1.4795147131167894,
+     "vaporized_kg_per_shot_chamber": 0.39432978578280176,
+     "vapour_number_density_m3": 2.974557274101922e+22,
+     "vaporized_energy_J_m2": 21463.224620166755,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 7.841935387951381e-13,
+     "wall_s": 13.136173486709595
+    },
+    {
+     "delta_um": 316.22776601683796,
+     "absorbed_frac_in_Li": 0.8476639240146178,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.0705122808745,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 657.6059631939717,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007427146002371727,
+     "vaporized_um": 1.4795111558509417,
+     "vaporized_kg_per_shot_chamber": 0.39432883767740795,
+     "vapour_number_density_m3": 2.974550122235902e+22,
+     "vaporized_energy_J_m2": 21463.181557193133,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 5.931810934240615e-13,
+     "wall_s": 20.671967029571533
+    },
+    {
+     "delta_um": 562.3413251903492,
+     "absorbed_frac_in_Li": 0.8795817737250422,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.0705122808713,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 651.8403130054901,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007427140628790199,
+     "vaporized_um": 1.4795100854163743,
+     "vaporized_kg_per_shot_chamber": 0.39432855237829606,
+     "vapour_number_density_m3": 2.974547970132309e+22,
+     "vaporized_energy_J_m2": 21463.168937688235,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 1.0574596999098172e-12,
+     "wall_s": 20.255507707595825
+    },
+    {
+     "delta_um": 1000.0,
+     "absorbed_frac_in_Li": 0.9132183985767324,
+     "incident_J_m2": 82354.48986659489,
+     "peak_Li_surface_K": 2218.070512280874,
+     "Li_surface_above_1800K_extrapolated": true,
+     "peak_substrate_K": 646.125363222897,
+     "substrate_pass": true,
+     "vaporized_kg_m2": 0.0007427137678894641,
+     "vaporized_um": 1.4795094977877772,
+     "vaporized_kg_per_shot_chamber": 0.3943283957597395,
+     "vapour_number_density_m3": 2.9745467887078175e+22,
+     "vaporized_energy_J_m2": 21463.16209544835,
+     "burn_through": false,
+     "status": "ok",
+     "energy_rel_residual": 4.15067722313906e-13,
+     "wall_s": 17.348267078399658
+    }
+   ]
+  }
+ },
+ "tornado": {
+  "W_Demo": {
+   "baseline": {
+    "peak_T_K": 3026.862757912932,
+    "ablated_nm": 3.3805630542995857e-07
+   },
+   "variants": {
+    "alpha_evap-0.1": {
+     "peak_T_K": 3026.862759351924,
+     "ablated_nm": 3.380563097231779e-08
+    },
+    "depth_mode-csda": {
+     "peak_T_K": 2986.981123572877,
+     "ablated_nm": 2.1270328904803618e-07
+    },
+    "k_scale-0.85": {
+     "peak_T_K": 3207.272074220454,
+     "ablated_nm": 2.21569344530804e-06
+    },
+    "k_scale-1.15": {
+     "peak_T_K": 2879.2613549404537,
+     "ablated_nm": 6.096471938588897e-08
+    },
+    "normalize_ions-false": {
+     "peak_T_K": 3552.7571643415895,
+     "ablated_nm": 4.4939158716633245e-05
+    },
+    "stretch-false": {
+     "peak_T_K": 3026.862757912932,
+     "ablated_nm": 3.3805630542995857e-07
+    },
+    "w_lv-raffray_slope": {
+     "peak_T_K": 3026.8627576638905,
+     "ablated_nm": 3.380563046893032e-07
+    },
+    "xray_tau-1e-08": {
+     "peak_T_K": 3026.7850598006717,
+     "ablated_nm": 3.3779151223301044e-07
+    },
+    "xray_tau-1e-10": {
+     "peak_T_K": 3026.717689767416,
+     "ablated_nm": 3.3747048684962855e-07
+    },
+    "xray_tau-5e-08": {
+     "peak_T_K": 3027.080327513582,
+     "ablated_nm": 3.38928835945031e-07
+    }
+   }
+  }
+ }
+}

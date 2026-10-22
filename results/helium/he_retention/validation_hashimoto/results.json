@@ -1,0 +1,252 @@
+{
+ "assumptions": "Helium model against the high-temperature implantation and flash-anneal experiments of\nHashimoto et al., Fusion Sci. Technol. 47 (2005) 881 (abstract): 3He implanted into tungsten at\n850 C up to 1e19 m^-2; a single 2000 C flash anneal did not change the retention, whereas the same\ndose given as 1000 cycles of 1e16 m^-2, each followed by a flash, lowered the NRA helium yield by\n95 % (single crystal) and 70 % (polycrystal).  Revision of 20 Oct 2026 (appendix on the helium model).\n\nModel set-up (unchanged package, as part (b) of scripts/verify_he_6_benchmarks.py): the production\n1 mm grid with a closed back face, 1.3 MeV 3He (the energy of the abstracts of Gilliam et al. 2005,\nsame group) as one sub-bin with its NRT Frenkel pairs (xi = 1), no neutrons, rtol 1e-3.  Single\ncrystal: dislocation density 2e10 m^-2; polycrystal: 5e12 m^-2 (the only microstructural\ndifference the model can express).  ASSUMED (not in the abstract): the single-step implantation\nat a constant rate over t_imp (200, 2000 or 20000 s; 2000 s followed by a 600 s hold), the flash\nas a linear ramp from 850 to 2000 C in 4 s and back to 850 C 18 s after its start, then 60 s at\n850 C; in the cyclic case each 1e16 m^-2 packet in the first 2 s of an 18 s cycle (ramp from 2 to\n6 s, back at 18 s), run for N_CYCLES cycles, by which the retained helium has reached its plateau.\nReported: helium in the whole 1 mm and within 5 um of the surface (NRA probes the near surface).",
+ "single_step": {
+  "single crystal": [
+   {
+    "t_implant_s": 2000.0,
+    "hold_s": 0.0,
+    "before_flash": {
+     "whole_m2": 8.246605910081023e+17,
+     "trapped_m2": 8.238147304057513e+17,
+     "mobile_m2": 845860602350844.6,
+     "first_5um_m2": 8.238165423628503e+17,
+     "implanted_m2": 9.970359928762657e+18,
+     "released_m2": 9.145699337754546e+18
+    },
+    "after_flash": {
+     "whole_m2": 545641112795960.25,
+     "trapped_m2": 2547956243471.7026,
+     "mobile_m2": 543093156552488.6,
+     "first_5um_m2": 24568141768.62632,
+     "implanted_m2": 9.970359928762657e+18,
+     "released_m2": 9.969814287649853e+18
+    },
+    "after_over_before_whole": 0.0006616553752483115,
+    "after_over_before_first_5um": 2.9822345759361154e-08,
+    "mean_He_depth_um": 1.722894006193751,
+    "frenkel_pairs_per_He": 13.313923027804341
+   }
+  ],
+  "polycrystal": [
+   {
+    "t_implant_s": 2000.0,
+    "hold_s": 0.0,
+    "before_flash": {
+     "whole_m2": 1.946896646529855e+18,
+     "trapped_m2": 1.9459544018704614e+18,
+     "mobile_m2": 942244659393887.0,
+     "first_5um_m2": 1.9459574098965207e+18,
+     "implanted_m2": 9.970348836097434e+18,
+     "released_m2": 8.023452189567613e+18
+    },
+    "after_flash": {
+     "whole_m2": 1206439590187467.8,
+     "trapped_m2": 6472123.393288055,
+     "mobile_m2": 1206439583715344.5,
+     "first_5um_m2": 37650253932.8247,
+     "implanted_m2": 9.970348836097434e+18,
+     "released_m2": 9.9691423965073e+18
+    },
+    "after_over_before_whole": 0.0006196731564245198,
+    "after_over_before_first_5um": 1.9347933177441333e-08,
+    "mean_He_depth_um": 1.722894006193751,
+    "frenkel_pairs_per_He": 13.313923027804341
+   },
+   {
+    "t_implant_s": 200.0,
+    "hold_s": 0.0,
+    "before_flash": {
+     "whole_m2": 5.454537065530153e+18,
+     "trapped_m2": 5.446649843475922e+18,
+     "mobile_m2": 7887222054231002.0,
+     "first_5um_m2": 5.44667732450113e+18,
+     "implanted_m2": 9.970363979719602e+18,
+     "released_m2": 4.515826914189385e+18
+    },
+    "after_flash": {
+     "whole_m2": 3942494015452568.0,
+     "trapped_m2": 2266622.9997543376,
+     "mobile_m2": 3942494013185944.5,
+     "first_5um_m2": 123017112542.63309,
+     "implanted_m2": 9.970363979719602e+18,
+     "released_m2": 9.966421485704088e+18
+    },
+    "after_over_before_whole": 0.0007227916811432242,
+    "after_over_before_first_5um": 2.2585716981848273e-08,
+    "mean_He_depth_um": 1.722894006193751,
+    "frenkel_pairs_per_He": 13.313923027804341
+   },
+   {
+    "t_implant_s": 20000.0,
+    "hold_s": 0.0,
+    "before_flash": {
+     "whole_m2": 4.2859724035220806e+17,
+     "trapped_m2": 4.2854945822675046e+17,
+     "mobile_m2": 47782125457619.1,
+     "first_5um_m2": 4.285485760334649e+17,
+     "implanted_m2": 9.97035794126094e+18,
+     "released_m2": 9.54176070090901e+18
+    },
+    "after_flash": {
+     "whole_m2": 343806895675051.9,
+     "trapped_m2": -1073442.126382632,
+     "mobile_m2": 343806896748494.06,
+     "first_5um_m2": 10729601807.949635,
+     "implanted_m2": 9.97035794126094e+18,
+     "released_m2": 9.9700141343655e+18
+    },
+    "after_over_before_whole": 0.0008021677773578801,
+    "after_over_before_first_5um": 2.5037072593403672e-08,
+    "mean_He_depth_um": 1.722894006193751,
+    "frenkel_pairs_per_He": 13.313923027804341
+   },
+   {
+    "t_implant_s": 2000.0,
+    "hold_s": 600.0,
+    "before_flash": {
+     "whole_m2": 1.5734949002876204e+18,
+     "trapped_m2": 1.5734627762487055e+18,
+     "mobile_m2": 32124038914668.938,
+     "first_5um_m2": 1.573462903575351e+18,
+     "implanted_m2": 9.970348835508302e+18,
+     "released_m2": 8.396853935220563e+18
+    },
+    "after_flash": {
+     "whole_m2": 862598585563955.1,
+     "trapped_m2": 268906587.03007644,
+     "mobile_m2": 862598316657368.1,
+     "first_5um_m2": 27161056592.918518,
+     "implanted_m2": 9.970348835508302e+18,
+     "released_m2": 9.96948623692262e+18
+    },
+    "after_over_before_whole": 0.0005482055171620068,
+    "after_over_before_first_5um": 1.7261961836660364e-08,
+    "mean_He_depth_um": 1.722894006193751,
+    "frenkel_pairs_per_He": 13.313923027804341
+   }
+  ]
+ },
+ "cyclic": {
+  "single crystal": [
+   {
+    "cycle": 10,
+    "whole_m2": 56424865861063.37,
+    "trapped_m2": 8822263657.166656,
+    "mobile_m2": 56416043597406.2,
+    "first_5um_m2": 1973029823.3070624,
+    "implanted_m2": 9.97032048546782e+16,
+    "released_m2": 9.964677998881723e+16
+   },
+   {
+    "cycle": 20,
+    "whole_m2": 56782318788757.98,
+    "trapped_m2": 9645834057.323748,
+    "mobile_m2": 56772672954700.66,
+    "first_5um_m2": 1984127331.6128798,
+    "implanted_m2": 1.9940623634256157e+17,
+    "released_m2": 1.9934945402377642e+17
+   },
+   {
+    "cycle": 30,
+    "whole_m2": 56790714393762.93,
+    "trapped_m2": 3223172560.215099,
+    "mobile_m2": 56787491221202.72,
+    "first_5um_m2": 1776022860.8273957,
+    "implanted_m2": 2.991092674789244e+17,
+    "released_m2": 2.9905247676453395e+17
+   },
+   {
+    "cycle": 40,
+    "whole_m2": 56775527648627.375,
+    "trapped_m2": 8869445191.080126,
+    "mobile_m2": 56766658203436.3,
+    "first_5um_m2": 1984423582.7143214,
+    "implanted_m2": 3.9881229545699654e+17,
+    "released_m2": 3.987555199293486e+17
+   },
+   {
+    "cycle": 50,
+    "whole_m2": 56751654366242.75,
+    "trapped_m2": 9335604418.964264,
+    "mobile_m2": 56742318761823.78,
+    "first_5um_m2": 1932078640.873995,
+    "implanted_m2": 4.985153274207396e+17,
+    "released_m2": 4.984585757663711e+17
+   },
+   {
+    "cycle": 60,
+    "whole_m2": 56751711496577.445,
+    "trapped_m2": 8301693279.164955,
+    "mobile_m2": 56743409803298.27,
+    "first_5um_m2": 1979883026.2776217,
+    "implanted_m2": 5.982183580366431e+17,
+    "released_m2": 5.98161606325138e+17
+   }
+  ],
+  "single crystal / single step": {
+   "whole": 6.881826549659855e-05,
+   "first_5um": 2.403305741590197e-09
+  },
+  "polycrystal": [
+   {
+    "cycle": 10,
+    "whole_m2": 57082164472269.52,
+    "trapped_m2": 27279.771669182057,
+    "mobile_m2": 57082164444989.75,
+    "first_5um_m2": 1985100447.9055812,
+    "implanted_m2": 9.970338751937456e+16,
+    "released_m2": 9.964630535490227e+16
+   },
+   {
+    "cycle": 20,
+    "whole_m2": 57463140807986.7,
+    "trapped_m2": 16940.130318128027,
+    "mobile_m2": 57463140791046.57,
+    "first_5um_m2": 1996706075.3808668,
+    "implanted_m2": 1.9940687764572368e+17,
+    "released_m2": 1.993494145049157e+17
+   },
+   {
+    "cycle": 30,
+    "whole_m2": 57438108778558.68,
+    "trapped_m2": 61438.88948890064,
+    "mobile_m2": 57438108717119.8,
+    "first_5um_m2": 1996132521.4777398,
+    "implanted_m2": 2.9911036071262886e+17,
+    "released_m2": 2.990529226038487e+17
+   },
+   {
+    "cycle": 40,
+    "whole_m2": 57437811900902.04,
+    "trapped_m2": 2414.7918362506716,
+    "mobile_m2": 57437811898487.25,
+    "first_5um_m2": 1995942700.0200205,
+    "implanted_m2": 3.9881385132722906e+17,
+    "released_m2": 3.987564135153226e+17
+   },
+   {
+    "cycle": 50,
+    "whole_m2": 57437518273458.125,
+    "trapped_m2": -2859.6774892080507,
+    "mobile_m2": 57437518276317.81,
+    "first_5um_m2": 1995891981.3567374,
+    "implanted_m2": 4.985173394344181e+17,
+    "released_m2": 4.984599019161393e+17
+   },
+   {
+    "cycle": 60,
+    "whole_m2": 57437064977258.664,
+    "trapped_m2": 150.44993585565095,
+    "mobile_m2": 57437064977108.2,
+    "first_5um_m2": 1995874751.655365,
+    "implanted_m2": 5.982207994096105e+17,
+    "released_m2": 5.98163362344621e+17
+   }
+  ],
+  "polycrystal / single step": {
+   "whole": 2.9501856238560164e-05,
+   "first_5um": 1.0256518161728414e-09
+  }
+ },
+ "wall_s": 47.085367918014526
+}

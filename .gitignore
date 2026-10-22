@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# work copies made by reproduce.py, and the outputs of scripts run directly from the repository root
+work/
+runs/
+docs/figures/
+docs/article/
+
+# third-party tables, not distributed (python fetch_data.py --download)
+data/raw/
+data/xcom_*.csv
+data/pstar_*.csv
+data/astar_*.csv
+data/henke_*.csv
+
+# SRIM-2012 stopping tables and TRIM output, not distributed (data/srim/README.md);
+# their inputs and the four TRIM summary tables are part of the repository
+data/srim/*.txt
+data/srim/trim*/*/*.txt
+
+# text copies of two papers read by scripts/he_compare_sharafat.py and scripts/parse_aries_spectra.py
+references/

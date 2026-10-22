@@ -1,0 +1,109 @@
+{
+ "production_peak_surface_T_K": 3026.862757912932,
+ "static": {
+  "Demo single shot from 600 K": {
+   "nm_per_shot": 3.3805630542995857e-07,
+   "column_kg_m2": 6.507583879526702e-12,
+   "share_of_ion_energy_s1": 3.705130144604908e-10,
+   "share_of_ion_energy_s2": 7.386761069637282e-10
+  },
+  "Demo degraded conductivity 0.5, last shot of the run": {
+   "nm_per_shot": 0.0006436575722759175,
+   "column_kg_m2": 1.2390408266311413e-08,
+   "share_of_ion_energy_s1": 7.009831077019662e-07,
+   "share_of_ion_energy_s2": 1.4019638654542856e-06
+  },
+  "Demo conductivity 0.5 with a 5 um skin at 0.25, last shot of the run": {
+   "nm_per_shot": 0.0030338715450080197,
+   "column_kg_m2": 5.8402027241404384e-08,
+   "share_of_ion_energy_s1": 3.304065976956322e-06,
+   "share_of_ion_energy_s2": 6.608126077745931e-06
+  }
+ },
+ "coupled_refresh_every_step": [
+  {
+   "f_rr": 0.0,
+   "stopping_factor": 1.0,
+   "peak_surface_T_K": 3026.8627576639733,
+   "evaporated_kg_m2": 6.507583863939256e-12,
+   "vapor": {
+    "f_rr": 0.0,
+    "stopping_factor": 1.0,
+    "tau_rr_s": 0.0,
+    "column_kg_m2": 6.507583863939256e-12,
+    "max_column_kg_m2": 6.507583863939256e-12,
+    "ion_energy_incident_J_m2": 78399.15991280506,
+    "ion_energy_in_vapor_J_m2": 1.3183307402736687e-05,
+    "reradiated_to_wall_J_m2": 0.0,
+    "stored_in_vapor_J_m2": 0.0,
+    "lost_from_wall_J_m2": 1.3183307402736687e-05,
+    "fraction_of_ion_energy_in_vapor": 1.6815623301830096e-10
+   },
+   "wall_s": 85.53644967079163,
+   "peak_change_K": -2.4895871320040897e-07
+  },
+  {
+   "f_rr": 1.0,
+   "stopping_factor": 1.0,
+   "peak_surface_T_K": 3026.862757912933,
+   "evaporated_kg_m2": 6.50758387952672e-12,
+   "vapor": {
+    "f_rr": 1.0,
+    "stopping_factor": 1.0,
+    "tau_rr_s": 0.0,
+    "column_kg_m2": 6.50758387952672e-12,
+    "max_column_kg_m2": 6.50758387952672e-12,
+    "ion_energy_incident_J_m2": 78399.15991280481,
+    "ion_energy_in_vapor_J_m2": 1.318330742530025e-05,
+    "reradiated_to_wall_J_m2": 1.318330742530025e-05,
+    "stored_in_vapor_J_m2": 0.0,
+    "lost_from_wall_J_m2": 0.0,
+    "fraction_of_ion_energy_in_vapor": 1.6815623330610512e-10
+   },
+   "wall_s": 87.68429327011108,
+   "peak_change_K": 9.094947017729282e-13
+  },
+  {
+   "f_rr": 0.0,
+   "stopping_factor": 2.0,
+   "peak_surface_T_K": 3026.862757459597,
+   "evaporated_kg_m2": 6.507583850783697e-12,
+   "vapor": {
+    "f_rr": 0.0,
+    "stopping_factor": 2.0,
+    "tau_rr_s": 0.0,
+    "column_kg_m2": 6.507583850783697e-12,
+    "max_column_kg_m2": 6.507583850783697e-12,
+    "ion_energy_incident_J_m2": 78399.15991280509,
+    "ion_energy_in_vapor_J_m2": 2.636661533685717e-05,
+    "reradiated_to_wall_J_m2": 0.0,
+    "stored_in_vapor_J_m2": 0.0,
+    "lost_from_wall_J_m2": 2.636661533685717e-05,
+    "fraction_of_ion_energy_in_vapor": 3.3631247281452897e-10
+   },
+   "wall_s": 85.3560061454773,
+   "peak_change_K": -4.5333490561461076e-07
+  },
+  {
+   "f_rr": 1.0,
+   "stopping_factor": 2.0,
+   "peak_surface_T_K": 3026.8627579575173,
+   "evaporated_kg_m2": 6.507583881958829e-12,
+   "vapor": {
+    "f_rr": 1.0,
+    "stopping_factor": 2.0,
+    "tau_rr_s": 0.0,
+    "column_kg_m2": 6.507583881958829e-12,
+    "max_column_kg_m2": 6.507583881958829e-12,
+    "ion_energy_incident_J_m2": 78399.159912805,
+    "ion_energy_in_vapor_J_m2": 2.6366615446228087e-05,
+    "reradiated_to_wall_J_m2": 2.6366615446228087e-05,
+    "stored_in_vapor_J_m2": 0.0,
+    "lost_from_wall_J_m2": 0.0,
+    "fraction_of_ion_energy_in_vapor": 3.363124742095815e-10
+   },
+   "wall_s": 84.78366708755493,
+   "peak_change_K": 4.458524927031249e-08
+  }
+ ]
+}

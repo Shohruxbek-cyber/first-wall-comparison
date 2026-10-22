@@ -1,0 +1,512 @@
+{
+ "note": "Particle conservation of the ion spectra (revision of 22 Oct 2026).\n\nFor each ion species, the number of ions per shot over the whole chamber (whole target, 154 MJ) against what the\ntarget can produce:\n  * fusions: 154 MJ / 17.6 MeV = 5.461e19; one alpha per D-T fusion;\n  * D and T: the fuel left after burn, from the target of Raffray (2005) Fig. 1 (DT ice 0.150-0.169 cm, DT in\n    20 mg/cm^3 CH foam 0.169-0.195 cm, DT vapor 0.3 mg/cm^3 inside 0.150 cm) and the solid-DT density of the\n    Peterson et al. (2002) target (2.976 mg between 1.875 and 2.1125 mm: 0.2506 g/cm^3);\n  * C and H: the CH foam (20 mg/cm^3) and the 1 um CH layer (density 1.05 g/cm^3: ASSUMPTION, polystyrene);\n  * Au: the 300 A gold layer (density 19.3 g/cm^3: ASSUMPTION, bulk gold).\nFour constructions of the bins (ife_wall.ions): the table with log-midpoint edges (\"raw\"), the table with the\n0.5 MeV edges of the burn alphas, the per-species energy normalization used before 22 Oct 2026 (\"normalized\"),\nand the number- and energy-conserving production spectra (\"conserving\").  Also the helium per shot at the wall\nof each scenario (burn only; burn and debris), and the cause of the helium excess step by step.",
+ "fusions": 5.461320440153167e+19,
+ "Q_DT_MeV": 17.6,
+ "target_inventory": {
+  "DT_mass_mg": 4.192458990478551,
+  "DT_density_g_cm3": 0.2505559925394161,
+  "D_initial": 5.019248503426527e+20,
+  "T_initial": 5.019248503426527e+20,
+  "fusions": 5.461320440153167e+19,
+  "burn_up_fraction": 0.10880753237112782,
+  "D_left_after_burn": 4.47311645941121e+20,
+  "T_left_after_burn": 4.47311645941121e+20,
+  "CH_mass_mg": 0.2669901156769696,
+  "C_atoms": 1.2360652568610335e+19,
+  "H_atoms": 1.2360652568610335e+19,
+  "Au_atoms": 8.467619745233659e+16,
+  "foam_solid_volume_fraction": 0.019047619047619046
+ },
+ "constructions": {
+  "raw (log-midpoint edges)": {
+   "burn Protons": {
+    "number": 1.6231107341527567e+18,
+    "per_fusion": 0.029720115344618662,
+    "energy_MJ": 0.6932267917438256,
+    "mean_keV": 2665.7339023679947
+   },
+   "burn Deuterons": {
+    "number": 7.000112775381766e+18,
+    "per_fusion": 0.12817619570378924,
+    "energy_MJ": 4.420217104498474,
+    "mean_keV": 3941.197242684321
+   },
+   "burn Tritons": {
+    "number": 8.088066066566565e+18,
+    "per_fusion": 0.14809726246972846,
+    "energy_MJ": 3.9152397411119435,
+    "mean_keV": 3021.365573885979
+   },
+   "burn 3He": {
+    "number": 2.7150774509914504e+16,
+    "per_fusion": 0.0004971467030261466,
+    "energy_MJ": 0.004852064716388677,
+    "mean_keV": 1115.4085474118647
+   },
+   "burn 4He": {
+    "number": 3.5517494250363785e+19,
+    "per_fusion": 0.6503462786989966,
+    "energy_MJ": 11.81396964890803,
+    "mean_keV": 2076.0754756315123
+   },
+   "debris Protons": {
+    "number": 7.496731874962365e+18,
+    "per_fusion": 0.13726958447345958,
+    "energy_MJ": 0.11421169193171964,
+    "mean_keV": 95.08854304662242
+   },
+   "debris Deuterons": {
+    "number": 4.513392453868111e+20,
+    "per_fusion": 8.264287919610755,
+    "energy_MJ": 10.420602594328015,
+    "mean_keV": 144.10509681715405
+   },
+   "debris Tritons": {
+    "number": 4.542282393590361e+20,
+    "per_fusion": 8.317187104045793,
+    "energy_MJ": 13.690544649552658,
+    "mean_keV": 188.12053338002858
+   },
+   "debris 3He": {
+    "number": 3.968181285389919e+17,
+    "per_fusion": 0.007265974097060359,
+    "energy_MJ": 0.011804838146832612,
+    "mean_keV": 185.6770120036399
+   },
+   "debris 4He": {
+    "number": 2.8976157439033238e+19,
+    "per_fusion": 0.5305705416219925,
+    "energy_MJ": 1.0745939925577244,
+    "mean_keV": 231.46920601953474
+   },
+   "debris 12C": {
+    "number": 7.255602684090148e+18,
+    "per_fusion": 0.13285436669756479,
+    "energy_MJ": 0.7729642483757956,
+    "mean_keV": 664.9293767215505
+   },
+   "debris Au": {
+    "number": 9.166192762556747e+16,
+    "per_fusion": 0.0016783839847895237,
+    "energy_MJ": 0.22612543285940528,
+    "mean_keV": 15397.493569234857
+   },
+   "4He per fusion": 1.1809168203209892,
+   "all He per fusion": 1.1886799411210756,
+   "D total": 4.583393581621929e+20,
+   "T total": 4.6231630542560264e+20,
+   "ion energy MJ": 47.15835279873082
+  },
+  "table with the 0.5 MeV burn-alpha edges": {
+   "burn Protons": {
+    "number": 1.6231107341527567e+18,
+    "per_fusion": 0.029720115344618662,
+    "energy_MJ": 0.6932267917438256,
+    "mean_keV": 2665.7339023679947
+   },
+   "burn Deuterons": {
+    "number": 7.000112775381766e+18,
+    "per_fusion": 0.12817619570378924,
+    "energy_MJ": 4.420217104498475,
+    "mean_keV": 3941.1972426843213
+   },
+   "burn Tritons": {
+    "number": 8.088066066566565e+18,
+    "per_fusion": 0.14809726246972846,
+    "energy_MJ": 3.9152397411119444,
+    "mean_keV": 3021.3655738859798
+   },
+   "burn 3He": {
+    "number": 2.7150774509914504e+16,
+    "per_fusion": 0.0004971467030261466,
+    "energy_MJ": 0.004852064716388677,
+    "mean_keV": 1115.4085474118647
+   },
+   "burn 4He": {
+    "number": 3.382675767900936e+19,
+    "per_fusion": 0.6193878943690158,
+    "energy_MJ": 10.339087323110355,
+    "mean_keV": 1907.7059634621585
+   },
+   "debris Protons": {
+    "number": 7.496731874962365e+18,
+    "per_fusion": 0.13726958447345958,
+    "energy_MJ": 0.11421169193171965,
+    "mean_keV": 95.08854304662242
+   },
+   "debris Deuterons": {
+    "number": 4.513392453868111e+20,
+    "per_fusion": 8.264287919610755,
+    "energy_MJ": 10.420602594328013,
+    "mean_keV": 144.10509681715402
+   },
+   "debris Tritons": {
+    "number": 4.542282393590361e+20,
+    "per_fusion": 8.317187104045793,
+    "energy_MJ": 13.690544649552658,
+    "mean_keV": 188.12053338002858
+   },
+   "debris 3He": {
+    "number": 3.968181285389919e+17,
+    "per_fusion": 0.007265974097060359,
+    "energy_MJ": 0.01180483814683261,
+    "mean_keV": 185.67701200363987
+   },
+   "debris 4He": {
+    "number": 2.8976157439033238e+19,
+    "per_fusion": 0.5305705416219925,
+    "energy_MJ": 1.0745939925577244,
+    "mean_keV": 231.46920601953474
+   },
+   "debris 12C": {
+    "number": 7.255602684090148e+18,
+    "per_fusion": 0.13285436669756479,
+    "energy_MJ": 0.7729642483757956,
+    "mean_keV": 664.9293767215505
+   },
+   "debris Au": {
+    "number": 9.166192762556747e+16,
+    "per_fusion": 0.0016783839847895237,
+    "energy_MJ": 0.22612543285940526,
+    "mean_keV": 15397.493569234855
+   },
+   "4He per fusion": 1.1499584359910082,
+   "all He per fusion": 1.1577215567910946,
+   "D total": 4.583393581621929e+20,
+   "T total": 4.6231630542560264e+20,
+   "ion energy MJ": 45.683470472933145
+  },
+  "normalized (before 22 Oct 2026)": {
+   "burn Protons": {
+    "number": 1.2643478395254843e+18,
+    "per_fusion": 0.023150955036984146,
+    "energy_MJ": 0.54,
+    "mean_keV": 2665.7339023679947
+   },
+   "burn Deuterons": {
+    "number": 7.569885884625873e+18,
+    "per_fusion": 0.1386090775587885,
+    "energy_MJ": 4.78,
+    "mean_keV": 3941.197242684321
+   },
+   "burn Tritons": {
+    "number": 8.924216067965313e+18,
+    "per_fusion": 0.16340766240984436,
+    "energy_MJ": 4.320000000000001,
+    "mean_keV": 3021.36557388598
+   },
+   "burn 3He": {
+    "number": 1.3429717580579562e+16,
+    "per_fusion": 0.0002459060538151267,
+    "energy_MJ": 0.0024,
+    "mean_keV": 1115.4085474118647
+   },
+   "burn 4He": {
+    "number": 2.9643083884251927e+19,
+    "per_fusion": 0.5427823583891475,
+    "energy_MJ": 9.86,
+    "mean_keV": 2076.075475631512
+   },
+   "debris Protons": {
+    "number": 7.220280973850413e+18,
+    "per_fusion": 0.13220760533963313,
+    "energy_MJ": 0.11,
+    "mean_keV": 95.08854304662243
+   },
+   "debris Deuterons": {
+    "number": 3.841792324716494e+20,
+    "per_fusion": 7.0345484518186385,
+    "energy_MJ": 8.87,
+    "mean_keV": 144.10509681715402
+   },
+   "debris Tritons": {
+    "number": 3.682785152780643e+20,
+    "per_fusion": 6.743396936945448,
+    "energy_MJ": 11.099999999999998,
+    "mean_keV": 188.12053338002858
+   },
+   "debris 3He": {
+    "number": 6.722974488988877e+16,
+    "per_fusion": 0.001231016301398408,
+    "energy_MJ": 0.0019999999999999996,
+    "mean_keV": 185.6770120036399
+   },
+   "debris 4He": {
+    "number": 3.586311635912484e+19,
+    "per_fusion": 0.6566748234630054,
+    "energy_MJ": 1.33,
+    "mean_keV": 231.46920601953474
+   },
+   "debris 12C": {
+    "number": 5.256565891149843e+18,
+    "per_fusion": 0.09625082338150477,
+    "energy_MJ": 0.5599999999999998,
+    "mean_keV": 664.9293767215504
+   },
+   "debris Au": {
+    "number": 6.080381569632557e+16,
+    "per_fusion": 0.0011133537459050889,
+    "energy_MJ": 0.14999999999999997,
+    "mean_keV": 15397.493569234855
+   },
+   "4He per fusion": 1.1994571818521529,
+   "all He per fusion": 1.2009341042073665,
+   "D total": 3.9174911835627527e+20,
+   "T total": 3.7720273134602964e+20,
+   "ion energy MJ": 41.6244
+  },
+  "conserving (production)": {
+   "burn Protons": {
+    "number": 1.623110734152757e+18,
+    "per_fusion": 0.029720115344618665,
+    "energy_MJ": 0.5400000000000001,
+    "mean_keV": 2076.5156863854554
+   },
+   "burn Deuterons": {
+    "number": 7.000112775381766e+18,
+    "per_fusion": 0.12817619570378924,
+    "energy_MJ": 4.78,
+    "mean_keV": 4261.9903897613085
+   },
+   "burn Tritons": {
+    "number": 8.088066066566566e+18,
+    "per_fusion": 0.14809726246972849,
+    "energy_MJ": 4.320000000000001,
+    "mean_keV": 3333.716487941177
+   },
+   "burn 3He": {
+    "number": 2.7150774509914508e+16,
+    "per_fusion": 0.0004971467030261466,
+    "energy_MJ": 0.0023999999999999994,
+    "mean_keV": 551.7198698414956
+   },
+   "burn 4He": {
+    "number": 2.9415635052807987e+19,
+    "per_fusion": 0.5386176360672036,
+    "energy_MJ": 9.859999999999996,
+    "mean_keV": 2092.12819521666
+   },
+   "debris Protons": {
+    "number": 7.496731874962365e+18,
+    "per_fusion": 0.13726958447345958,
+    "energy_MJ": 0.11,
+    "mean_keV": 91.58203996646614
+   },
+   "debris Deuterons": {
+    "number": 4.513392453868111e+20,
+    "per_fusion": 8.264287919610755,
+    "energy_MJ": 8.87,
+    "mean_keV": 122.66202431171243
+   },
+   "debris Tritons": {
+    "number": 4.542282393590361e+20,
+    "per_fusion": 8.317187104045793,
+    "energy_MJ": 11.099999999999998,
+    "mean_keV": 152.52409410801252
+   },
+   "debris 3He": {
+    "number": 3.968181285389919e+17,
+    "per_fusion": 0.007265974097060359,
+    "energy_MJ": 0.0019999999999999996,
+    "mean_keV": 31.45778191858724
+   },
+   "debris 4He": {
+    "number": 2.519756934872367e+19,
+    "per_fusion": 0.4613823639327962,
+    "energy_MJ": 1.33,
+    "mean_keV": 329.4447553312635
+   },
+   "debris 12C": {
+    "number": 7.255602684090148e+18,
+    "per_fusion": 0.13285436669756479,
+    "energy_MJ": 0.5599999999999998,
+    "mean_keV": 481.73049626356857
+   },
+   "debris Au": {
+    "number": 9.166192762556747e+16,
+    "per_fusion": 0.0016783839847895237,
+    "energy_MJ": 0.14999999999999997,
+    "mean_keV": 10213.906530457587
+   },
+   "4He per fusion": 0.9999999999999999,
+   "all He per fusion": 1.0077631208000863,
+   "D total": 4.583393581621929e+20,
+   "T total": 4.6231630542560264e+20,
+   "ion energy MJ": 41.624399999999994
+  }
+ },
+ "conserving_fit": {
+  "burn Protons": {
+   "number_factor": 1.0,
+   "tilt_exponent": -0.7279064770033471,
+   "energy_stretch": 1.0
+  },
+  "burn Deuterons": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.1191117352237748,
+   "energy_stretch": 1.0
+  },
+  "burn Tritons": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.12263025660002162,
+   "energy_stretch": 1.0
+  },
+  "burn 3He": {
+   "number_factor": 1.0,
+   "tilt_exponent": -1.9467385640010206,
+   "energy_stretch": 1.0
+  },
+  "burn 4He": {
+   "number_factor": 0.8695966468894353,
+   "tilt_exponent": 0.4627496034619201,
+   "energy_stretch": 1.0
+  },
+  "debris Protons": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.9631238110522209
+  },
+  "debris Deuterons": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.8511983754977841
+  },
+  "debris Tritons": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.8107785544063577
+  },
+  "debris 3He": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.16942206027082427
+  },
+  "debris 4He": {
+   "number_factor": 0.8695966468894353,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 1.4232768193945429
+  },
+  "debris 12C": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.724483701771084
+  },
+  "debris Au": {
+   "number_factor": 1.0,
+   "tilt_exponent": 0.0,
+   "energy_stretch": 0.6633486472672152
+  }
+ },
+ "checks": {
+  "4He_per_fusion": {
+   "raw (log-midpoint edges)": 1.1809168203209892,
+   "table with the 0.5 MeV burn-alpha edges": 1.1499584359910082,
+   "normalized (before 22 Oct 2026)": 1.1994571818521529,
+   "conserving (production)": 0.9999999999999999
+  },
+  "D_against_fuel_left": {
+   "raw (log-midpoint edges)": 1.0246533089874512,
+   "table with the 0.5 MeV burn-alpha edges": 1.0246533089874512,
+   "normalized (before 22 Oct 2026)": 0.8757856449993717,
+   "conserving (production)": 1.0246533089874512
+  },
+  "T_against_fuel_left": {
+   "raw (log-midpoint edges)": 1.0335440841315735,
+   "table with the 0.5 MeV burn-alpha edges": 1.0335440841315735,
+   "normalized (before 22 Oct 2026)": 0.8432660646525628,
+   "conserving (production)": 1.0335440841315735
+  },
+  "C_against_target_C": {
+   "raw (log-midpoint edges)": 0.5869918795805026,
+   "table with the 0.5 MeV burn-alpha edges": 0.5869918795805026,
+   "normalized (before 22 Oct 2026)": 0.42526604982804894,
+   "conserving (production)": 0.5869918795805026
+  },
+  "H_against_target_H": {
+   "raw (log-midpoint edges)": 0.6064996838435689,
+   "table with the 0.5 MeV burn-alpha edges": 0.6064996838435689,
+   "normalized (before 22 Oct 2026)": 0.5841342869053849,
+   "conserving (production)": 0.6064996838435689
+  },
+  "Au_against_target_Au": {
+   "raw (log-midpoint edges)": 1.0824993372802678,
+   "table with the 0.5 MeV burn-alpha edges": 1.0824993372802678,
+   "normalized (before 22 Oct 2026)": 0.7180744710525226,
+   "conserving (production)": 1.0824993372802678
+  }
+ },
+ "cause_of_the_helium_excess": {
+  "1_log_midpoint_edges_on_the_0.5_MeV_burn_alpha_bins": {
+   "burn_4He_number_log_midpoint": 3.5517494250363785e+19,
+   "burn_4He_number_0.5MeV_edges": 3.382675767900936e+19,
+   "burn_4He_energy_MJ_log_midpoint": 11.81396964890803,
+   "burn_4He_energy_MJ_0.5MeV_edges": 10.339087323110355,
+   "edges_of_the_3.54_MeV_bin_keV_log_midpoint": [
+    3308.014611787558,
+    4829.307605205952
+   ]
+  },
+  "2_energy_normalization_scaled_numbers": {
+   "burn Protons": 0.7789658542215593,
+   "burn Deuterons": 1.0813948471298782,
+   "burn Tritons": 1.1033807086288674,
+   "burn 3He": 0.4946347875150119,
+   "burn 4He": 0.8346051575400286,
+   "debris Protons": 0.9631238110522207,
+   "debris Deuterons": 0.8511983754977842,
+   "debris Tritons": 0.8107785544063577,
+   "debris 3He": 0.16942206027082427,
+   "debris 4He": 1.2376767497409547,
+   "debris 12C": 0.724483701771084,
+   "debris Au": 0.6633486472672152
+  },
+  "3_the_table_itself": {
+   "4He_per_fusion_0.5MeV_edges": 1.1499584359910082,
+   "4He_per_fusion_log_midpoint": 1.1809168203209892,
+   "neutrons_per_fusion_log_midpoint": 1.0157090980571306,
+   "neutron_energy_MJ_log_midpoint": 109.35684790552568
+  }
+ },
+ "helium_at_the_wall_per_shot": {
+  "normalized": {
+   "Experimental": {
+    "burn_He_per_m2": 1.2259690219749794e+16,
+    "burn_and_debris_He_per_m2": 2.711291668587075e+16,
+    "burn_4He_per_m2": 1.2254138516016606e+16,
+    "burn_and_debris_4He_per_m2": 2.7079572914028388e+16
+   },
+   "Prototype": {
+    "burn_He_per_m2": 1.8135636419748216e+16,
+    "burn_and_debris_He_per_m2": 4.010786491992715e+16,
+    "burn_4He_per_m2": 1.8127423840261252e+16,
+    "burn_and_debris_4He_per_m2": 4.0058539813651464e+16
+   },
+   "Demo": {
+    "burn_He_per_m2": 5.585776017282451e+16,
+    "burn_and_debris_He_per_m2": 1.2353222395337563e+17,
+    "burn_4He_per_m2": 5.583246542800466e+16,
+    "burn_and_debris_4He_per_m2": 1.2338030262604653e+17
+   }
+  },
+  "conserving": {
+   "Experimental": {
+    "burn_He_per_m2": 1.2171337409905568e+16,
+    "burn_and_debris_He_per_m2": 2.275178749410208e+16,
+    "burn_4He_per_m2": 1.2160113565822384e+16,
+    "burn_and_debris_4He_per_m2": 2.2576523217121612e+16
+   },
+   "Prototype": {
+    "burn_He_per_m2": 1.8004936996901728e+16,
+    "burn_and_debris_He_per_m2": 3.3656490375890652e+16,
+    "burn_4He_per_m2": 1.7988333677252048e+16,
+    "burn_and_debris_4He_per_m2": 3.3397223693966884e+16
+   },
+   "Demo": {
+    "burn_He_per_m2": 5.545520595045733e+16,
+    "burn_and_debris_He_per_m2": 1.0366199035774322e+17,
+    "burn_4He_per_m2": 5.540406772593631e+16,
+    "burn_and_debris_4He_per_m2": 1.02863448977418e+17
+   }
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "note": "(t1 - t0)/dt - 1 in double precision for 10 consecutive steps per pulse and shot; the solver spreads a step's source energy over t1 - t0 and applies it over dt, so the deposited energy of such a step differs from the booked one by this relative amount",
+ "results": {
+  "Demo": {
+   "shots_with_neutron_heating": [
+    601,
+    1090
+   ],
+   "clock_at_last_neutron_pulse_s": 108.9000001265544,
+   "neutron_steps_0.5ns": {
+    "max_abs": 1.0575400665513435e-05,
+    "mean": -9.41533089283482e-06
+   },
+   "xray_steps_2ns": {
+    "max_abs": 3.469973307912433e-06,
+    "mean": -3.179955864735982e-06
+   },
+   "replayed_neutron_error_steel0.5": {
+    "shots_with_neutron_heating": [
+     601,
+     990
+    ],
+    "neutron_J_m2_per_shot": 24000.0,
+    "error_J_m2_total": 196.57992443470332,
+    "error_per_shot_rel_to_neutron_energy": 2.1002128678921295e-05,
+    "run_residual_J_m2": -324.5631370395422,
+    "run_residual_per_shot_rel_to_neutron_energy": -3.467554882901092e-05,
+    "share_of_run_residual_explained": 0.605675451093368
+   },
+   "replayed_neutron_error_steel1": {
+    "shots_with_neutron_heating": [
+     601,
+     1090
+    ],
+    "neutron_J_m2_per_shot": 44000.0,
+    "error_J_m2_total": 457.89725731816606,
+    "error_per_shot_rel_to_neutron_energy": 2.123827724110232e-05,
+    "run_residual_J_m2": -742.9487640038133,
+    "run_residual_per_shot_rel_to_neutron_energy": -3.4459590167152754e-05,
+    "share_of_run_residual_explained": 0.6163241390301524
+   }
+  },
+  "Prototype": {
+   "shots_with_neutron_heating": [
+    1,
+    100
+   ],
+   "clock_at_last_neutron_pulse_s": 99.0000001265544,
+   "neutron_steps_0.5ns": {
+    "max_abs": 1.0575400665513435e-05,
+    "mean": -3.186583617043048e-06
+   },
+   "xray_steps_2ns": {
+    "max_abs": 3.469973307912433e-06,
+    "mean": -1.1981741801481149e-06
+   },
+   "replayed_neutron_error_steel0.5": {
+    "shots_with_neutron_heating": [
+     1,
+     100
+    ],
+    "neutron_J_m2_per_shot": 7792.207792207792,
+    "error_J_m2_total": 7.492732671514732,
+    "error_per_shot_rel_to_neutron_energy": 9.615673595110573e-06,
+    "run_residual_J_m2": -14.060935825109482,
+    "run_residual_per_shot_rel_to_neutron_energy": -1.8044867642223837e-05,
+    "share_of_run_residual_explained": 0.5328758174213765
+   },
+   "replayed_neutron_error_steel1": {
+    "shots_with_neutron_heating": [
+     1,
+     100
+    ],
+    "neutron_J_m2_per_shot": 14285.714285714286,
+    "error_J_m2_total": 13.736676564449096,
+    "error_per_shot_rel_to_neutron_energy": 9.615673595114367e-06,
+    "run_residual_J_m2": -25.385830567684025,
+    "run_residual_per_shot_rel_to_neutron_energy": -1.7770081397378818e-05,
+    "share_of_run_residual_explained": 0.5411159003769522
+   }
+  }
+ }
+}

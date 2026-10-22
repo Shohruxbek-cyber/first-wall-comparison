@@ -1,0 +1,249 @@
+{
+ "scenario": "Experimental",
+ "yield_MJ": 20.0,
+ "R_m": 5.0,
+ "T_init_K": 300.0,
+ "options": {
+  "xray_tau": 2e-08,
+  "xray_mode": "pe+incoh",
+  "depth_mode": "projected",
+  "stretch": true,
+  "normalize_ions": true,
+  "ion_spectra": "conserving",
+  "alpha_evap": 1.0,
+  "w_lv": "raffray_table",
+  "k_scale": 1.0,
+  "h": null,
+  "w_thickness": 0.001,
+  "steel_thickness": 0.01,
+  "dx0": 1e-09,
+  "k_irr": 1.0,
+  "skin_um": 0.0,
+  "skin_factor": 1.0,
+  "T_init": null,
+  "trim_multilayer": false,
+  "w_material": "W_ODS_La2O3",
+  "alloy_k_proxy": 0.8,
+  "vapor_shielding": false,
+  "vapor_f_rr": 0.0,
+  "vapor_stopping_factor": 1.0,
+  "vapor_tau_rr": 0.0,
+  "neutron_heating": false,
+  "neutron_steel_factor": 1.0,
+  "grid_growth": 1.05,
+  "grid_growth_steel": 1.15,
+  "steel_k": null
+ },
+ "grade": "W_ODS_La2O3",
+ "thermal_status": "PROXY k factor 0.8 (not sourced: Ding2016,Nogami2026,Zhu2014)",
+ "k_factor_effective": 0.8,
+ "warnings": [
+  "W_ODS_La2O3: conductivity not sourced; running with the PROXY factor 0.8 on pure-W k(T)"
+ ],
+ "k_irr": 1.0,
+ "skin_um": 0.0,
+ "skin_factor": 1.0,
+ "T_init": null,
+ "k_status": "undamaged (Tolias 2017)",
+ "skin_status": "no separate skin",
+ "peak_surface_T_K": 932.8115274926822,
+ "t_peak_us": 1.6454467599112974,
+ "melt_depth_um": 0.0,
+ "ablated_nm_per_shot": 2.912731056112309e-40,
+ "above_6000K_extrapolated": false,
+ "ledger_J_m2": {
+  "incident": 18075.20621688308,
+  "deposited": 17987.790096437628,
+  "not_absorbed": 87.41612044548457,
+  "vaporized": 2.2971653418883788e-38
+ },
+ "energy_rel_residual": 2.6494373192813563e-14,
+ "diagnostics": {
+  "d_1300_um": 0.0,
+  "d_1800_um": 0.0,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 0.0,
+    "time_above_900K_us": 0.4388728138578192,
+    "peak_K": 916.6127570346134,
+    "time_avg_K": null
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 0.0,
+    "time_above_900K_us": 0.0,
+    "peak_K": 886.6045062407368,
+    "time_avg_K": null
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 0.0,
+    "time_above_900K_us": 0.0,
+    "peak_K": 829.0892384585127,
+    "time_avg_K": null
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 0.0,
+    "time_above_900K_us": 0.0,
+    "peak_K": 733.1997709688053,
+    "time_avg_K": null
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 0.0,
+    "time_above_900K_us": 0.0,
+    "peak_K": 693.855968307527,
+    "time_avg_K": null
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 300.0,
+    "peak_K": 932.8115274926822,
+    "time_avg_K": null
+   },
+   "5um": {
+    "pre_shot_K": 300.0,
+    "peak_K": 693.8559683075268,
+    "time_avg_K": null
+   },
+   "50um": {
+    "pre_shot_K": 300.0,
+    "peak_K": 365.1529783751314,
+    "time_avg_K": null
+   },
+   "500um": {
+    "pre_shot_K": 300.0,
+    "peak_K": 300.0039910260495,
+    "time_avg_K": null
+   },
+   "interface": {
+    "pre_shot_K": 300.0,
+    "peak_K": 300.000133742234,
+    "time_avg_K": null
+   }
+  },
+  "cycle_s": null,
+  "max_near_surface_gradient_K_per_um": 93.09196380784714,
+  "elastic_stress_proxy_MPa": 1370.8516842366319,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction",
+  "recrystallization": {
+   "T_ref_K": 1823.15,
+   "Q_J_per_mol": [
+    322000.0,
+    336000.0,
+    350000.0
+   ],
+   "thresholds_K": [
+    1723.15,
+    1823.15,
+    1923.15
+   ],
+   "surface": {
+    "time_above_s": {
+     "1723.15": 0.0,
+     "1823.15": 0.0,
+     "1923.15": 0.0
+    },
+    "t_eq_s": {
+     "322000": 6.328757017016135e-16,
+     "336000": 2.573433680928078e-16,
+     "350000": 1.0471908985587961e-16
+    }
+   },
+   "He_layer": [
+    {
+     "depth_um": 0.5,
+     "time_above_s": {
+      "1723.15": 0.0,
+      "1823.15": 0.0,
+      "1923.15": 0.0
+     },
+     "t_eq_s": {
+      "322000": 3.090914712317235e-16,
+      "336000": 1.2169495645059346e-16,
+      "350000": 4.794889386302465e-17
+     }
+    },
+    {
+     "depth_um": 1.0,
+     "time_above_s": {
+      "1723.15": 0.0,
+      "1823.15": 0.0,
+      "1923.15": 0.0
+     },
+     "t_eq_s": {
+      "322000": 7.083965492338968e-17,
+      "336000": 2.6122473021161605e-17,
+      "350000": 9.640829318189172e-18
+     }
+    },
+    {
+     "depth_um": 2.0,
+     "time_above_s": {
+      "1723.15": 0.0,
+      "1823.15": 0.0,
+      "1923.15": 0.0
+     },
+     "t_eq_s": {
+      "322000": 3.3724373463832413e-18,
+      "336000": 1.0869849061884228e-18,
+      "350000": 3.5072320195544597e-19
+     }
+    },
+    {
+     "depth_um": 4.0,
+     "time_above_s": {
+      "1723.15": 0.0,
+      "1823.15": 0.0,
+      "1923.15": 0.0
+     },
+     "t_eq_s": {
+      "322000": 9.589947271262652e-21,
+      "336000": 2.37753012136034e-21,
+      "350000": 5.901371571926768e-22
+     }
+    },
+    {
+     "depth_um": 5.0,
+     "time_above_s": {
+      "1723.15": 0.0,
+      "1823.15": 0.0,
+      "1923.15": 0.0
+     },
+     "t_eq_s": {
+      "322000": 5.791064684615406e-22,
+      "336000": 1.2651817882499648e-22,
+      "350000": 2.767558304001471e-23
+     }
+    }
+   ],
+   "depth_any_time_above_um": {
+    "1723.15": 0.0,
+    "1823.15": 0.0,
+    "1923.15": 0.0
+   },
+   "note": "diagnostic only: time above threshold and Arrhenius-equivalent time at T_ref (isokinetic, single Q, no incubation); accumulated over this recorder's span"
+  }
+ },
+ "rx_spec": {
+  "thresholds_K": [
+   1723.15,
+   1823.15,
+   1923.15
+  ],
+  "Q_J_per_mol": [
+   322000.0,
+   336000.0,
+   350000.0
+  ],
+  "T_ref_K": 1823.15
+ },
+ "wall_s": 6.481781005859375,
+ "git": "0694a93",
+ "run_date": "2026-10-22 09:07",
+ "variant": "W_ODS_La2O3_p0.8",
+ "start": "cold"
+}

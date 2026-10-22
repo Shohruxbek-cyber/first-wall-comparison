@@ -1,0 +1,17 @@
+[project]
+name = "ife_wall"
+version = "1.0.0"
+description = "One-dimensional thermal model of tungsten and liquid-lithium first walls in the HiPER laser-fusion scenarios"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Shohruxbek Bozorov" }]
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "matplotlib", "numba"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+article = ["pymupdf", "Markdown", "pillow"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

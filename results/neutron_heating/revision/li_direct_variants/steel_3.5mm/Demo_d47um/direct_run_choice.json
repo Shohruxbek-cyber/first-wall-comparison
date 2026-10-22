@@ -1,0 +1,7 @@
+{
+ "case": "steel_3.5mm",
+ "limit_K": 873.0,
+ "interpolated_um": 47.10589013285744,
+ "how": "interpolated between [31.622776601683796, 56.23413251903491] um",
+ "run_um": 47.0
+}

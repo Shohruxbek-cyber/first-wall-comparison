@@ -1,0 +1,138 @@
+{
+ "W single, peak surface": {
+  "baseline": 3026.862757912932,
+  "errors": {
+   "growth": {
+    "order_used": 1.9907485555178381,
+    "error_of_baseline": 0.23135569425220243,
+    "flag": null
+   },
+   "time step": {
+    "order_used": 0.9332626076575411,
+    "error_of_baseline": 1.0291267430026667,
+    "flag": null
+   }
+  },
+  "extrapolated": 3025.6022754756773,
+  "extrapolated_minus_baseline": -1.260482437254869
+ },
+ "W single, evaporated depth": {
+  "baseline": 3.3805630542995857e-07,
+  "errors": {
+   "growth": {
+    "order_used": 2.1182020765395864,
+    "error_of_baseline": 8.106951482172228e-10,
+    "flag": null
+   },
+   "time step": {
+    "order_used": 0.8937539441524449,
+    "error_of_baseline": 2.6717356009743414e-09,
+    "flag": null
+   }
+  },
+  "extrapolated": 3.3457387468076703e-07,
+  "extrapolated_minus_baseline": -3.4824307491915643e-09
+ },
+ "W cycle, next pre-shot": {
+  "baseline": 920.9344572991072,
+  "errors": {
+   "growth": {
+    "order_used": 2.0,
+    "error_of_baseline": -0.07912553658252364,
+    "flag": "observed order -0.09357353829764695 replaced by the nominal 2.0; grid settings start from an interpolated state (upper bound)"
+   },
+   "time step": {
+    "order_used": 0.9532753367679544,
+    "error_of_baseline": 0.0414002486122845,
+    "flag": null
+   }
+  },
+  "extrapolated": 920.9721825870774,
+  "extrapolated_minus_baseline": 0.037725287970239135
+ },
+ "W cycle, peak surface": {
+  "baseline": 3317.4865886098164,
+  "errors": {
+   "growth": {
+    "order_used": 2.0316744217180007,
+    "error_of_baseline": 0.22565389005680062,
+    "flag": "grid settings start from an interpolated state (upper bound)"
+   },
+   "time step": {
+    "order_used": 0.9695372064526055,
+    "error_of_baseline": 0.9729196023751971,
+    "flag": null
+   }
+  },
+  "extrapolated": 3316.2880151173845,
+  "extrapolated_minus_baseline": -1.1985734924319977
+ },
+ "W cycle, peak interface": {
+  "baseline": 933.8563445160023,
+  "errors": {
+   "growth": {
+    "order_used": 0.8664878136056721,
+    "error_of_baseline": -0.0603750800519691,
+    "flag": "grid settings start from an interpolated state (upper bound)"
+   },
+   "time step": {
+    "order_used": 0.9680974335838818,
+    "error_of_baseline": -0.04618269606406579,
+    "flag": null
+   }
+  },
+  "extrapolated": 933.9629022921183,
+  "extrapolated_minus_baseline": 0.1065577761160349
+ },
+ "Li 31.6 um, peak steel": {
+  "baseline": 907.077373159045,
+  "errors": {
+   "growth": {
+    "order_used": 1.2259782447733438,
+    "error_of_baseline": 0.49211697091641077,
+    "flag": null
+   },
+   "time step": {
+    "order_used": 0.8525379360709269,
+    "error_of_baseline": -0.38754671728230206,
+    "flag": null
+   }
+  },
+  "extrapolated": 906.9728029054108,
+  "extrapolated_minus_baseline": -0.10457025363410871
+ },
+ "Li 31.6 um, evaporated": {
+  "baseline": 0.0007451822561389213,
+  "errors": {
+   "growth": {
+    "order_used": 0.9920178576369726,
+    "error_of_baseline": -1.0381328333271483e-06,
+    "flag": null
+   },
+   "time step": {
+    "order_used": 0.8597852168753792,
+    "error_of_baseline": -1.0167835119905612e-06,
+    "flag": null
+   }
+  },
+  "extrapolated": 0.000747237172484239,
+  "extrapolated_minus_baseline": 2.0549163453177093e-06
+ },
+ "Li minimum film": {
+  "baseline": 30.09660135875877,
+  "errors": {
+   "growth": {
+    "order_used": 1.235592871219607,
+    "error_of_baseline": 0.0432536706641558,
+    "flag": null
+   },
+   "time step": {
+    "order_used": 0.8462699197617126,
+    "error_of_baseline": -0.03204535071244789,
+    "flag": null
+   }
+  },
+  "extrapolated": 30.085393038807062,
+  "extrapolated_minus_baseline": -0.011208319951707908
+ }
+}

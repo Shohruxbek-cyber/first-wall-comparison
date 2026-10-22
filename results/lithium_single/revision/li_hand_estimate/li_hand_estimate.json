@@ -1,0 +1,30 @@
+{
+ "assumptions": "Outside check of the lithium evaporation (revision of 20 Oct 2026): a hand estimate\nof the peak surface temperature and of the evaporated mass of a thick Demo film from an energy\nbalance, independent of the solver, to compare with the computed 2224 K and 7.14e-4 kg/m^2.\n\nAssumptions:\n  * Only the debris ions heat the surface.  They stop within about a micrometre, less than the\n    diffusion length over their arrival window, so their energy E_d is treated as a surface heat\n    flux.  Burn ions (MeV, ranges of hundreds of micrometres) and x-rays (9 % absorbed in 1 mm of\n    lithium) are ignored.\n  * Mean flux q_mean = 0.8 E_d / (t90 - t10) over the 10-90 % debris arrival window; peak flux\n    q_peak = the largest debris arrival power.\n  * Semi-infinite liquid lithium with the solver's Davison (1968) correlations, evaluated at the\n    mean of 600 K and the peak temperature; HKL flux with alpha = 1.\n  * Peak surface temperature: (i) without evaporation, T0 + 2 q_mean sqrt(dt / pi) / e with\n    e = sqrt(k rho cp); (ii) capped by evaporation where j(T) (L_v + cp (T - T0)) = q, for q_mean\n    and q_peak (conduction neglected, so these caps are upper estimates for that flux).\n  * Evaporated mass: (E_d - Q_cond) / (L_v + cp (T_cap - T0)), with Q_cond = 2 e (T_cap - T0)\n    sqrt(dt / pi) the energy conducted into the liquid if the surface were held at the q_mean cap\n    for the whole window (an overestimate, so the mass is a low estimate); and the upper bound\n    E_d / (L_v + cp (T_cap - T0)) with no conduction at all.",
+ "debris_energy_J_m2": 41666.57575241311,
+ "debris_window_10_90_us": [
+  1.2783349740361103,
+  2.6554368759699685
+ ],
+ "debris_deposition_depth": {
+  "mean_um": 2.273540482162468,
+  "d50_um": 1.777592233906317,
+  "d90_um": 4.903170039563455,
+  "fraction_of_debris_energy_in_film": 1.0000000000000002
+ },
+ "diffusion_length_over_window_um": 7.1802424505899864,
+ "q_mean_W_m2": 24205369664.453106,
+ "q_peak_W_m2": 38787783007.60052,
+ "t_q_peak_us": 1.5921372521258783,
+ "effusivity_SI": 10613.822599593741,
+ "properties_at_K": 1459.1327566716375,
+ "T_surface_no_evaporation_K": 3619.798697247696,
+ "T_surface_evaporation_cap_mean_flux_K": 2318.265513343275,
+ "T_surface_evaporation_cap_peak_flux_K": 2466.612144772587,
+ "conducted_J_m2_if_held_at_cap": 24149.058107347977,
+ "evaporated_kg_m2_estimate": 0.0005956259862079437,
+ "evaporated_kg_m2_upper_bound_no_conduction": 0.0014167358513510876,
+ "model_thick_film": {
+  "evaporated_kg_m2": 0.0007427146002371727,
+  "peak_surface_K_1mm": 2218.070512280874
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "git": "0694a93",
+  "run_date": "2026-10-22 07:03",
+  "command": "python scripts/run_vapor_shielding.py --workers=1",
+  "wall_s_total": 1985.5734107494354,
+  "workers": 1
+ },
+ "case": "frr0_s1",
+ "peak_surface_T_K": 3026.862757912932,
+ "t_peak_us": 2.1496343750226665,
+ "evaporated_kg_m2_to_50us": 6.507583879526702e-12,
+ "ablated_nm_per_shot": 3.3805630542995857e-07,
+ "energy_rel_residual_50us": 1.8126816082914563e-12,
+ "pre_shot2_surface_T_K": 610.1301641238024,
+ "vapor": {
+  "f_rr": 0.0,
+  "stopping_factor": 1.0,
+  "tau_rr_s": 0.0,
+  "column_kg_m2": 0.0,
+  "max_column_kg_m2": 0.0,
+  "ion_energy_incident_J_m2": 78399.15991993227,
+  "ion_energy_in_vapor_J_m2": 0.0,
+  "reradiated_to_wall_J_m2": 0.0,
+  "stored_in_vapor_J_m2": 0.0,
+  "lost_from_wall_J_m2": 0.0,
+  "fraction_of_ion_energy_in_vapor": 0.0
+ },
+ "static_share_of_final_column": 3.705130144604908e-10,
+ "wall_s": 8.131159543991089
+}

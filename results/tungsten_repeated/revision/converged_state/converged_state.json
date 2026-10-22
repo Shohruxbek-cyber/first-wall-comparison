@@ -1,0 +1,36 @@
+{
+ "note": "Converged pre-shot state of the repeated-shot tungsten runs (revision of 22 Oct 2026).\n\nReads the final checkpoint of runs/w_multi/baseline (Demo after 600 shots, Prototype after 100: the state just\nbefore the next shot) and gives the tungsten surface temperature, the W/steel interface, the temperature of the\nlast steel cell (its centre, which the per-shot record calls the back face) and the true back-face temperature of\nthe steel, T_face = T_c + q/h with q the coolant flux of the solver's own boundary conductance.  These are the\nhot-start temperature of the single-shot studies and the start of the helium-model cycles (--Tback of\nscripts/record_he_thermal.py, which places it at the face).  Also the same quantities of the last recorded\npre-shot state of the per-shot table.",
+ "ion_spectra": "conserving",
+ "scenarios": {
+  "Demo": {
+   "shots_done": 600,
+   "t_s": 60.0,
+   "surface_K": 920.906303187411,
+   "interface_K": 919.5475729094536,
+   "last_steel_cell_centre_K": 701.858417526349,
+   "back_face_K": 680.4895943674551,
+   "coolant_flux_W_m2": 804895.9436745505,
+   "last_steel_cell_thickness_mm": 1.7522045421777532,
+   "per_shot_table_last_row": {
+    "shot": 600,
+    "preshot_surface_K": 920.8779593775862,
+    "preshot_last_steel_cell_K": 701.8458255867017
+   }
+  },
+  "Prototype": {
+   "shots_done": 100,
+   "t_s": 100.0,
+   "surface_K": 609.465392486085,
+   "interface_K": 609.4511846838094,
+   "last_steel_cell_centre_K": 603.3662915882268,
+   "back_face_K": 602.6600790689572,
+   "coolant_flux_W_m2": 26600.790689572485,
+   "last_steel_cell_thickness_mm": 1.7522045421777532,
+   "per_shot_table_last_row": {
+    "shot": 100,
+    "preshot_surface_K": 609.4651501469062,
+    "preshot_last_steel_cell_K": 603.3661825622369
+   }
+  }
+ }
+}

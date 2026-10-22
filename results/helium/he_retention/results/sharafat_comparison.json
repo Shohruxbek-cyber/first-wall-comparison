@@ -1,0 +1,994 @@
+{
+ "definitions": {
+  "N_at": 6.306e+28,
+  "L_5um": 5e-06,
+  "quoted_full_cascade_over_quickKP": 2.0,
+  "note_quoted": "QUOTED from Wielunska 2020 (20 MeV W in W) and Stoller 2013 (not read here): not computed"
+ },
+ "text_check": {
+  "table5_tokens_missing": [],
+  "text_226_present": true,
+  "text_2725_present": true,
+  "SRIM_range_only": true,
+  "Ed_stated": false
+ },
+ "sharafat_table5_printed": {
+  "He_per_shot": 1.96e+20,
+  "area_m2": 531.0,
+  "depth_m": 5e-06,
+  "volume_m3": 0.002655,
+  "He_per_m3": 7.382e+22,
+  "frac_appm": 1.17,
+  "vac_per_He": 308.0,
+  "vac_per_H": 60.0,
+  "dpa_per_shot": 0.00043,
+  "on_time_us": 2.9,
+  "inst_dpa_rate": 148.0,
+  "inst_He_per_dpa_appm": 2721.0,
+  "qss_dpa_rate": 0.00215,
+  "qss_He_rate": 5.85e-06
+ },
+ "sharafat_rederived": [
+  {
+   "name": "He per m2 per shot",
+   "formula": "He / area",
+   "computed": 3.691148775894539e+17,
+   "printed": null,
+   "rel_diff": null
+  },
+  {
+   "name": "implanted volume (m3)",
+   "formula": "area x 5 um",
+   "computed": 0.0026550000000000002,
+   "printed": 0.002655,
+   "rel_diff": 2.220446049250313e-16
+  },
+  {
+   "name": "He per m3",
+   "formula": "He / volume",
+   "computed": 7.382297551789077e+22,
+   "printed": 7.382e+22,
+   "rel_diff": 4.030774709784524e-05
+  },
+  {
+   "name": "fractional He (appm)",
+   "formula": "He per m3 / N_at, N_at = 6.306e28",
+   "computed": 1.170678330445461,
+   "printed": 1.17,
+   "rel_diff": 0.0005797696115052986
+  },
+  {
+   "name": "dpa from He only",
+   "formula": "frac x 308",
+   "computed": 0.000360568925777202,
+   "printed": 0.00043,
+   "rel_diff": -0.16146761447162328
+  },
+  {
+   "name": "dpa from He + 1 H per He",
+   "formula": "frac x (308 + 60)",
+   "computed": 0.00043080962560392965,
+   "printed": 0.00043,
+   "rel_diff": 0.0018828502416969872
+  },
+  {
+   "name": "instantaneous damage rate (dpa/s)",
+   "formula": "dpa per shot / 2.9 us",
+   "computed": 148.27586206896552,
+   "printed": 148.0,
+   "rel_diff": 0.0018639328984157988
+  },
+  {
+   "name": "instantaneous He/dpa (appm/dpa)",
+   "formula": "1.17 appm / 4.3e-4",
+   "computed": 2720.9302325581393,
+   "printed": 2721.0,
+   "rel_diff": -2.564036819574511e-05
+  },
+  {
+   "name": "quasi-steady dpa rate (dpa/s)",
+   "formula": "dpa per shot x 5 Hz",
+   "computed": 0.00215,
+   "printed": 0.00215,
+   "rel_diff": 0.0
+  },
+  {
+   "name": "quasi-steady He rate (He/at/s)",
+   "formula": "frac x 5 Hz",
+   "computed": 5.849999999999999e-06,
+   "printed": 5.85e-06,
+   "rel_diff": -1.1102230246251565e-16
+  }
+ ],
+ "sharafat_derived": {
+  "He_per_m2": 3.691148775894539e+17,
+  "He_per_m3": 7.382297551789077e+22,
+  "frac_appm": 1.170678330445461,
+  "implied_vac_per_He_total": 367.52136752136755,
+  "implied_H_per_He": 0.9920227920227925,
+  "implied_H_per_He_band": [
+   0.8950354609929074,
+   1.089842632331902
+  ],
+  "he_only_dpa": 0.000360568925777202,
+  "dpa_averaged_over_5um": true,
+  "text_226_implied_on_time_us": 1.902654867256637,
+  "text_vs_table_dpa_rate": [
+   226.0,
+   148.0
+  ],
+  "text_vs_table_He_per_dpa": [
+   2725.0,
+   2721.0
+  ]
+ },
+ "ours": {
+  "nrt_Ed90": {
+   "disp_per_m2_total": 1.2101460484818029e+19,
+   "total_over_Nat_5um": 3.838078174696488e-05,
+   "mean_first_5um_exact": 3.716545439792547e-05,
+   "mean_first_5um_cells_below_5um": 3.692269090286169e-05,
+   "depth_covered_by_cell_rule_um": 5.034140755728372,
+   "frac_displacements_deeper_than_5um": 0.031664997264823413,
+   "peak_dpa": 0.00035542233629669046,
+   "peak_cell_index": 0,
+   "peak_cell_edges_nm": [
+    0.0,
+    1.0
+   ],
+   "peak_cell_center_nm": 0.5,
+   "profile_samples": {
+    "0.5 nm": 0.00035542233629669046,
+    "10 nm": 0.0003515977290172315,
+    "100 nm": 0.00025467140417990324,
+    "1000 nm": 4.299319978190709e-05,
+    "3000 nm": 4.847346754900002e-06,
+    "5000 nm": 1.2097120385607596e-06
+   },
+   "mean_first_5um_by_class": {
+    "He": 5.581640030197352e-06,
+    "He_burn": 3.895866340557375e-06,
+    "He_debris": 1.6857736896399764e-06,
+    "H_isotopes": 2.1181096990776768e-05,
+    "H_burn": 1.4549862481675685e-06,
+    "H_debris": 1.9726110742609202e-05,
+    "C": 3.5728272434187364e-06,
+    "Au": 8.045217482572021e-06
+   },
+   "He_per_m2_incident": 1.036619903577432e+17,
+   "He_per_m2_incident_burn": 5.545520595045734e+16,
+   "He_per_m2_implanted": 1.015161082666942e+17,
+   "by_species": [
+    {
+     "group": "burn",
+     "species": "3He",
+     "ions_per_m2": 51138224521021.6,
+     "disp_per_m2": 465685726095807.7,
+     "fraction": 3.84817788464489e-05,
+     "disp_per_ion": 9.106411700006838,
+     "mean_E_MeV": 0.5517120826209109
+    },
+    {
+     "group": "burn",
+     "species": "4He",
+     "ions_per_m2": 5.540406772593632e+16,
+     "disp_per_m2": 1.227900971451645e+18,
+     "fraction": 0.10146717191632502,
+     "disp_per_ion": 22.162650178063142,
+     "mean_E_MeV": 2.092114734701535
+    },
+    {
+     "group": "burn",
+     "species": "Deuterons",
+     "ions_per_m2": 1.3184645566896268e+16,
+     "disp_per_m2": 1.782132059842301e+17,
+     "fraction": 0.014726586613889186,
+     "disp_per_ion": 13.516723303634654,
+     "mean_E_MeV": 4.261985658491484
+    },
+    {
+     "group": "burn",
+     "species": "Protons",
+     "ions_per_m2": 3057113568354161.0,
+     "disp_per_m2": 1.4808734879459532e+16,
+     "fraction": 0.001223714682871372,
+     "disp_per_ion": 4.844025106804265,
+     "mean_E_MeV": 2.0765046109500758
+    },
+    {
+     "group": "burn",
+     "species": "Tritons",
+     "ions_per_m2": 1.5233795201750192e+16,
+     "disp_per_m2": 2.657352231835448e+17,
+     "fraction": 0.021958938222119948,
+     "disp_per_ion": 17.443796484346514,
+     "mean_E_MeV": 3.333709950359267
+    },
+    {
+     "group": "debris",
+     "species": "12C",
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 1.1265124298499278e+18,
+     "fraction": 0.0930889648619852,
+     "disp_per_ion": 82.43261413454972,
+     "mean_E_MeV": 0.4817293041647471
+    },
+    {
+     "group": "debris",
+     "species": "3He",
+     "ions_per_m2": 747403155804209.0,
+     "disp_per_m2": 1323401491555062.5,
+     "fraction": 0.00010935882435143635,
+     "disp_per_ion": 1.7706661809998339,
+     "mean_E_MeV": 0.031457714236083095
+    },
+    {
+     "group": "debris",
+     "species": "4He",
+     "ions_per_m2": 4.745938125148168e+16,
+     "disp_per_m2": 5.302010428519296e+17,
+     "fraction": 0.043812979723984305,
+     "disp_per_ion": 11.171680474350406,
+     "mean_E_MeV": 0.32944401315233307
+    },
+    {
+     "group": "debris",
+     "species": "Au",
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 2.5366570722549586e+18,
+     "fraction": 0.20961577947036553,
+     "disp_per_ion": 14692.961838714775,
+     "mean_E_MeV": 10.213889513271775
+    },
+    {
+     "group": "debris",
+     "species": "Deuterons",
+     "ions_per_m2": 8.50093158753573e+17,
+     "disp_per_m2": 1.9791465490127475e+18,
+     "fraction": 0.16354609028354053,
+     "disp_per_ion": 2.328152542616176,
+     "mean_E_MeV": 0.12266178809981781
+    },
+    {
+     "group": "debris",
+     "species": "Protons",
+     "ions_per_m2": 1.4120022898637072e+16,
+     "disp_per_m2": 8821715240776323.0,
+     "fraction": 0.0007289793865660816,
+     "disp_per_ion": 0.6247663551330243,
+     "mean_E_MeV": 0.09158189347398486
+    },
+    {
+     "group": "debris",
+     "species": "Tritons",
+     "ions_per_m2": 8.555345513126536e+17,
+     "disp_per_m2": 4.2316744528911585e+18,
+     "fraction": 0.34968295423515494,
+     "disp_per_ion": 4.946234428987662,
+     "mean_E_MeV": 0.1525237717742716
+    }
+   ],
+   "by_class": {
+    "He": {
+     "ions_per_m2": 1.0366199035774323e+17,
+     "disp_per_m2": 1.7598911015212255e+18,
+     "fraction": 0.14542799224350722,
+     "disp_per_ion": 16.977207320134838
+    },
+    "He_burn": {
+     "ions_per_m2": 5.545520595045734e+16,
+     "disp_per_m2": 1.2283666571777408e+18,
+     "fraction": 0.10150565369517148,
+     "disp_per_ion": 22.150610319167164
+    },
+    "He_debris": {
+     "ions_per_m2": 4.820678440728589e+16,
+     "disp_per_m2": 5.315244443434847e+17,
+     "fraction": 0.04392233854833574,
+     "disp_per_ion": 11.025926140453189
+    },
+    "H_isotopes": {
+     "ions_per_m2": 1.7512232873018642e+18,
+     "disp_per_m2": 6.678399881191917e+18,
+     "fraction": 0.551867263424142,
+     "disp_per_ion": 3.8135627418942257
+    },
+    "H_burn": {
+     "ions_per_m2": 3.147555433700062e+16,
+     "disp_per_m2": 4.587571640472344e+17,
+     "fraction": 0.037909239518880505,
+     "disp_per_ion": 14.575030486689451
+    },
+    "H_debris": {
+     "ions_per_m2": 1.7197477329648635e+18,
+     "disp_per_m2": 6.219642717144682e+18,
+     "fraction": 0.5139580239052616,
+     "disp_per_ion": 3.6166017828800694
+    },
+    "C": {
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 1.1265124298499278e+18,
+     "fraction": 0.0930889648619852,
+     "disp_per_ion": 82.43261413454972
+    },
+    "Au": {
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 2.5366570722549586e+18,
+     "fraction": 0.20961577947036553,
+     "disp_per_ion": 14692.961838714775
+    }
+   }
+  },
+  "nrt_Ed25": {
+   "disp_per_m2_total": 5.1011451321817465e+19,
+   "total_over_Nat_5um": 0.00016178703241933858,
+   "mean_first_5um_exact": 0.00015659828391328118,
+   "mean_first_5um_cells_below_5um": 0.00015557474998425128,
+   "depth_covered_by_cell_rule_um": 5.034140755728372,
+   "frac_displacements_deeper_than_5um": 0.0320714733960169,
+   "peak_dpa": 0.001461467673153341,
+   "peak_cell_index": 0,
+   "peak_cell_edges_nm": [
+    0.0,
+    1.0
+   ],
+   "peak_cell_center_nm": 0.5,
+   "profile_samples": {
+    "0.5 nm": 0.001461467673153341,
+    "10 nm": 0.00144555003379672,
+    "100 nm": 0.001049665158088141,
+    "1000 nm": 0.0001894833407539943,
+    "3000 nm": 1.9939208729064167e-05,
+    "5000 nm": 5.024223220350727e-06
+   },
+   "mean_first_5um_by_class": {
+    "He": 2.2759490970282706e-05,
+    "He_burn": 1.58329017210349e-05,
+    "He_debris": 6.926589249247807e-06,
+    "H_isotopes": 9.668570645306559e-05,
+    "H_burn": 6.234232066759118e-06,
+    "H_debris": 9.045147438630647e-05,
+    "C": 1.3326951269605355e-05,
+    "Au": 2.9014883726384934e-05
+   },
+   "He_per_m2_incident": 1.036619903577432e+17,
+   "He_per_m2_incident_burn": 5.545520595045734e+16,
+   "He_per_m2_implanted": 1.015161082666942e+17,
+   "by_species": [
+    {
+     "group": "burn",
+     "species": "3He",
+     "ions_per_m2": 51138224521021.6,
+     "disp_per_m2": 1943530690127497.2,
+     "fraction": 3.809989011812832e-05,
+     "disp_per_ion": 38.00543934270855,
+     "mean_E_MeV": 0.5517120826209109
+    },
+    {
+     "group": "burn",
+     "species": "4He",
+     "ions_per_m2": 5.540406772593632e+16,
+     "disp_per_m2": 4.990170381952177e+18,
+     "fraction": 0.09782451297985113,
+     "disp_per_ion": 90.06866439187691,
+     "mean_E_MeV": 2.092114734701535
+    },
+    {
+     "group": "burn",
+     "species": "Deuterons",
+     "ions_per_m2": 1.3184645566896268e+16,
+     "disp_per_m2": 7.682571335788923e+17,
+     "fraction": 0.015060483747701385,
+     "disp_per_ion": 58.269077441703566,
+     "mean_E_MeV": 4.261985658491484
+    },
+    {
+     "group": "burn",
+     "species": "Protons",
+     "ions_per_m2": 3057113568354161.0,
+     "disp_per_m2": 6.672492962152955e+16,
+     "fraction": 0.001308038252050113,
+     "disp_per_ion": 21.826120662390647,
+     "mean_E_MeV": 2.0765046109500758
+    },
+    {
+     "group": "burn",
+     "species": "Tritons",
+     "ions_per_m2": 1.5233795201750192e+16,
+     "disp_per_m2": 1.1306713074487287e+18,
+     "fraction": 0.022165048791018098,
+     "disp_per_ion": 74.22124903706381,
+     "mean_E_MeV": 3.333709950359267
+    },
+    {
+     "group": "debris",
+     "species": "12C",
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 4.201987735306569e+18,
+     "fraction": 0.08237342060309878,
+     "disp_per_ion": 307.480702746246,
+     "mean_E_MeV": 0.4817293041647471
+    },
+    {
+     "group": "debris",
+     "species": "3He",
+     "ions_per_m2": 747403155804209.0,
+     "disp_per_m2": 6077141498526619.0,
+     "fraction": 0.00011913288763708319,
+     "disp_per_ion": 8.131008614738304,
+     "mean_E_MeV": 0.031457714236083095
+    },
+    {
+     "group": "debris",
+     "species": "4He",
+     "ions_per_m2": 4.745938125148168e+16,
+     "disp_per_m2": 2.1778764487893074e+18,
+     "fraction": 0.04269387348047938,
+     "disp_per_ion": 45.88927186490267,
+     "mean_E_MeV": 0.32944401315233307
+    },
+    {
+     "group": "debris",
+     "species": "Au",
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 9.148392838929171e+18,
+     "fraction": 0.17933998351104408,
+     "disp_per_ion": 52989.81416848277,
+     "mean_E_MeV": 10.213889513271775
+    },
+    {
+     "group": "debris",
+     "species": "Deuterons",
+     "ions_per_m2": 8.50093158753573e+17,
+     "disp_per_m2": 9.477117754949005e+18,
+     "fraction": 0.18578412316012005,
+     "disp_per_ion": 11.148328459488585,
+     "mean_E_MeV": 0.12266178809981781
+    },
+    {
+     "group": "debris",
+     "species": "Protons",
+     "ions_per_m2": 1.4120022898637072e+16,
+     "disp_per_m2": 4.881856373797184e+16,
+     "fraction": 0.0009570118566121303,
+     "disp_per_ion": 3.45739975695677,
+     "mean_E_MeV": 0.09158189347398486
+    },
+    {
+     "group": "debris",
+     "species": "Tritons",
+     "ions_per_m2": 8.555345513126536e+17,
+     "disp_per_m2": 1.899341355531546e+19,
+     "fraction": 0.37233627084026966,
+     "disp_per_ion": 22.200638800821906,
+     "mean_E_MeV": 0.1525237717742716
+    }
+   ],
+   "by_class": {
+    "He": {
+     "ions_per_m2": 1.0366199035774323e+17,
+     "disp_per_m2": 7.176067502930139e+18,
+     "fraction": 0.14067561923808575,
+     "disp_per_ion": 69.22563881095796
+    },
+    "He_burn": {
+     "ions_per_m2": 5.545520595045734e+16,
+     "disp_per_m2": 4.992113912642305e+18,
+     "fraction": 0.09786261286996928,
+     "disp_per_ion": 90.02065409516588
+    },
+    "He_debris": {
+     "ions_per_m2": 4.820678440728589e+16,
+     "disp_per_m2": 2.183953590287834e+18,
+     "fraction": 0.04281300636811646,
+     "disp_per_ion": 45.30386370176052
+    },
+    "H_isotopes": {
+     "ions_per_m2": 1.7512232873018642e+18,
+     "disp_per_m2": 3.0485003244651586e+19,
+     "fraction": 0.5976109766477714,
+     "disp_per_ion": 17.407833407480712
+    },
+    "H_burn": {
+     "ions_per_m2": 3.147555433700062e+16,
+     "disp_per_m2": 1.9656533706491505e+18,
+     "fraction": 0.03853357079076959,
+     "disp_per_ion": 62.45015892661995
+    },
+    "H_debris": {
+     "ions_per_m2": 1.7197477329648635e+18,
+     "disp_per_m2": 2.8519349874002436e+19,
+     "fraction": 0.5590774058570018,
+     "disp_per_ion": 16.58344961143503
+    },
+    "C": {
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 4.201987735306569e+18,
+     "fraction": 0.08237342060309878,
+     "disp_per_ion": 307.480702746246
+    },
+    "Au": {
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 9.148392838929171e+18,
+     "fraction": 0.17933998351104408,
+     "disp_per_ion": 52989.81416848277
+    }
+   }
+  },
+  "arc_dpa": {
+   "disp_per_m2_total": 9.30474655412998e+18,
+   "total_over_Nat_5um": 2.95107724520456e-05,
+   "mean_first_5um_exact": 2.8570723842386667e-05,
+   "mean_first_5um_cells_below_5um": 2.8384670635916196e-05,
+   "depth_covered_by_cell_rule_um": 5.034140755728372,
+   "frac_displacements_deeper_than_5um": 0.03185442235327718,
+   "peak_dpa": 0.0002586185902647101,
+   "peak_cell_index": 0,
+   "peak_cell_edges_nm": [
+    0.0,
+    1.0
+   ],
+   "peak_cell_center_nm": 0.5,
+   "profile_samples": {
+    "0.5 nm": 0.0002586185902647101,
+    "10 nm": 0.0002555576831003921,
+    "100 nm": 0.00018407518326244395,
+    "1000 nm": 3.724473257364817e-05,
+    "3000 nm": 3.855881761721753e-06,
+    "5000 nm": 1.0106263026622993e-06
+   },
+   "mean_first_5um_by_class": {
+    "He": 4.322798527042967e-06,
+    "He_burn": 2.8997075261900957e-06,
+    "He_debris": 1.4230910008528715e-06,
+    "H_isotopes": 2.152498240949789e-05,
+    "H_burn": 1.129808589707266e-06,
+    "H_debris": 2.0395173819790623e-05,
+    "C": 1.9328544111860017e-06,
+    "Au": 1.7301371043187396e-06
+   },
+   "He_per_m2_incident": 1.036619903577432e+17,
+   "He_per_m2_incident_burn": 5.545520595045734e+16,
+   "He_per_m2_implanted": 1.015161082666942e+17,
+   "by_species": [
+    {
+     "group": "burn",
+     "species": "3He",
+     "ions_per_m2": 51138224521021.6,
+     "disp_per_m2": 397327656957478.4,
+     "fraction": 4.270160983386717e-05,
+     "disp_per_ion": 7.769680325803006,
+     "mean_E_MeV": 0.5517120826209109
+    },
+    {
+     "group": "burn",
+     "species": "4He",
+     "ions_per_m2": 5.540406772593632e+16,
+     "disp_per_m2": 9.138804553507799e+17,
+     "fraction": 0.09821658763452804,
+     "disp_per_ion": 16.494825973273525,
+     "mean_E_MeV": 2.092114734701535
+    },
+    {
+     "group": "burn",
+     "species": "Deuterons",
+     "ions_per_m2": 1.3184645566896268e+16,
+     "disp_per_m2": 1.3755171941352594e+17,
+     "fraction": 0.01478296250341957,
+     "disp_per_ion": 10.43272029692538,
+     "mean_E_MeV": 4.261985658491484
+    },
+    {
+     "group": "burn",
+     "species": "Protons",
+     "ions_per_m2": 3057113568354161.0,
+     "disp_per_m2": 1.2765536917671552e+16,
+     "fraction": 0.001371938165473779,
+     "disp_per_ion": 4.175682921895523,
+     "mean_E_MeV": 2.0765046109500758
+    },
+    {
+     "group": "burn",
+     "species": "Tritons",
+     "ions_per_m2": 1.5233795201750192e+16,
+     "disp_per_m2": 2.0591139200350358e+17,
+     "fraction": 0.022129715280864725,
+     "disp_per_ion": 13.516749390187856,
+     "mean_E_MeV": 3.333709950359267
+    },
+    {
+     "group": "debris",
+     "species": "12C",
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 6.094289958469464e+17,
+     "fraction": 0.06549657127162126,
+     "disp_per_ion": 44.595003060685194,
+     "mean_E_MeV": 0.4817293041647471
+    },
+    {
+     "group": "debris",
+     "species": "3He",
+     "ions_per_m2": 747403155804209.0,
+     "disp_per_m2": 1488427196366292.8,
+     "fraction": 0.00015996429217146634,
+     "disp_per_ion": 1.9914649607877808,
+     "mean_E_MeV": 0.031457714236083095
+    },
+    {
+     "group": "debris",
+     "species": "4He",
+     "ions_per_m2": 4.745938125148168e+16,
+     "disp_per_m2": 4.472121653725442e+17,
+     "fraction": 0.04806279921445532,
+     "disp_per_ion": 9.423050903314975,
+     "mean_E_MeV": 0.32944401315233307
+    },
+    {
+     "group": "debris",
+     "species": "Au",
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 5.4551222899169875e+17,
+     "fraction": 0.058627306592200425,
+     "disp_per_ion": 3159.745339957273,
+     "mean_E_MeV": 10.213889513271775
+    },
+    {
+     "group": "debris",
+     "species": "Deuterons",
+     "ions_per_m2": 8.50093158753573e+17,
+     "disp_per_m2": 2.166162131785869e+18,
+     "fraction": 0.23280184142408503,
+     "disp_per_ion": 2.5481467642463422,
+     "mean_E_MeV": 0.12266178809981781
+    },
+    {
+     "group": "debris",
+     "species": "Protons",
+     "ions_per_m2": 1.4120022898637072e+16,
+     "disp_per_m2": 1.0949186880975804e+16,
+     "fraction": 0.0011767313399972112,
+     "disp_per_ion": 0.7754369068362253,
+     "mean_E_MeV": 0.09158189347398486
+    },
+    {
+     "group": "debris",
+     "species": "Tritons",
+     "ions_per_m2": 8.555345513126536e+17,
+     "disp_per_m2": 4.2534869867131397e+18,
+     "fraction": 0.45713088067134927,
+     "disp_per_ion": 4.971730224322303,
+     "mean_E_MeV": 0.1525237717742716
+    }
+   ],
+   "by_class": {
+    "He": {
+     "ions_per_m2": 1.0366199035774323e+17,
+     "disp_per_m2": 1.362978375576648e+18,
+     "fraction": 0.1464820527509887,
+     "disp_per_ion": 13.14829447971175
+    },
+    "He_burn": {
+     "ions_per_m2": 5.545520595045734e+16,
+     "disp_per_m2": 9.142777830077373e+17,
+     "fraction": 0.0982592892443619,
+     "disp_per_ion": 16.486780047747658
+    },
+    "He_debris": {
+     "ions_per_m2": 4.820678440728589e+16,
+     "disp_per_m2": 4.4870059256891046e+17,
+     "fraction": 0.048222763506626784,
+     "disp_per_ion": 9.307830797797305
+    },
+    "H_isotopes": {
+     "ions_per_m2": 1.7512232873018642e+18,
+     "disp_per_m2": 6.786826953714686e+18,
+     "fraction": 0.7293940693851896,
+     "disp_per_ion": 3.8754777891123475
+    },
+    "H_burn": {
+     "ions_per_m2": 3.147555433700062e+16,
+     "disp_per_m2": 3.5622864833470106e+17,
+     "fraction": 0.03828461594975807,
+     "disp_per_ion": 11.317629056525996
+    },
+    "H_debris": {
+     "ions_per_m2": 1.7197477329648635e+18,
+     "disp_per_m2": 6.430598305379984e+18,
+     "fraction": 0.6911094534354315,
+     "disp_per_ion": 3.7392683718172806
+    },
+    "C": {
+     "ions_per_m2": 1.3665858370222134e+16,
+     "disp_per_m2": 6.094289958469464e+17,
+     "fraction": 0.06549657127162126,
+     "disp_per_ion": 44.595003060685194
+    },
+    "Au": {
+     "ions_per_m2": 172644365383912.66,
+     "disp_per_m2": 5.4551222899169875e+17,
+     "fraction": 0.058627306592200425,
+     "disp_per_ion": 3159.745339957273
+    }
+   }
+  }
+ },
+ "tieout_vs_sources_json": {
+  "disp_per_m2": [
+   1.2101460484818029e+19,
+   1.2101460484818029e+19
+  ],
+  "mean_dpa_0_5um": [
+   3.692269090286169e-05,
+   3.692269090286169e-05
+  ],
+  "peak_dpa": [
+   0.00035542233629669046,
+   0.00035542233629669046
+  ],
+  "He_incident_total": [
+   1.036619903577432e+17,
+   1.036619903577432e+17
+  ]
+ },
+ "observed_ratios_their_over_ours": {
+  "nrt_Ed90": {
+   "total_over_Nat_5um": 11.203523754020566,
+   "mean5_exact": 11.56988410247991,
+   "vs_peak": 1.2098282974569596,
+   "own_peak_over_own_mean5": 9.563244740431042
+  },
+  "nrt_Ed25": {
+   "total_over_Nat_5um": 2.65781499029833,
+   "mean5_exact": 2.7458793880405445,
+   "vs_peak": 0.29422477684518944,
+   "own_peak_over_own_mean5": 9.332590604649615
+  },
+  "arc_dpa": {
+   "total_over_Nat_5um": 14.570950343598806,
+   "mean5_exact": 15.050371225179283,
+   "vs_peak": 1.66268016371086,
+   "own_peak_over_own_mean5": 9.05187392841029
+  }
+ },
+ "per_ion_spectrum_average": {
+  "nrt_Ed90": {
+   "He": 16.977207320134838,
+   "He_burn": 22.150610319167164,
+   "He_debris": 11.025926140453189,
+   "H_isotopes": 3.8135627418942257
+  },
+  "nrt_Ed25": {
+   "He": 69.22563881095796,
+   "He_burn": 90.02065409516588,
+   "He_debris": 45.30386370176052,
+   "H_isotopes": 17.407833407480712
+  },
+  "arc_dpa": {
+   "He": 13.14829447971175,
+   "He_burn": 16.486780047747658,
+   "He_debris": 9.307830797797305,
+   "H_isotopes": 3.8754777891123475
+  }
+ },
+ "He_mean_energy_MeV": {
+  "burn": 2.092114734701535,
+  "debris": 0.32944401315233307
+ },
+ "single_energy_vs_trim": [
+  {
+   "run": "trim_supplementary/S1_he4_1keV_W",
+   "species": "4He",
+   "E_keV": 1.0,
+   "trim_kp_printed": 1.0,
+   "trim_kp_depth_sum": 1.453797374532,
+   "ours_Ed25": 1.5560308994412786,
+   "ours_Ed25_over_trim": 1.070321715185508,
+   "ours_Ed90": 0.0,
+   "ours_arc": 0.007474795335323833
+  },
+  {
+   "run": "trim_supplementary/S2_he4_10keV_W",
+   "species": "4He",
+   "E_keV": 10.0,
+   "trim_kp_printed": 18.0,
+   "trim_kp_depth_sum": 18.003343096080005,
+   "ours_Ed25": 20.348114000315753,
+   "ours_Ed25_over_trim": 1.1302408609180088,
+   "ours_Ed90": 3.8371520331536293,
+   "ours_arc": 5.071069298619916
+  },
+  {
+   "run": "trim/B4",
+   "species": "4He",
+   "E_keV": 100.0,
+   "trim_kp_printed": 70.0,
+   "trim_kp_depth_sum": 69.66489441379998,
+   "ours_Ed25": 69.89991212249521,
+   "ours_Ed25_over_trim": 1.0033735457531774,
+   "ours_Ed90": 16.117198828065035,
+   "ours_arc": 15.989685421559873
+  },
+  {
+   "run": "trim/B5",
+   "species": "4He",
+   "E_keV": 2000.0,
+   "trim_kp_printed": 147.0,
+   "trim_kp_depth_sum": 146.74952520000002,
+   "ours_Ed25": 141.0512468499993,
+   "ours_Ed25_over_trim": 0.9611700389337906,
+   "ours_Ed90": 33.86759094480816,
+   "ours_arc": 27.802422970352435
+  },
+  {
+   "run": "trim/B1",
+   "species": "Deuterons",
+   "E_keV": 1.0,
+   "trim_kp_printed": 0.0,
+   "trim_kp_depth_sum": 0.215601955,
+   "ours_Ed25": 0.24897114028827697,
+   "ours_Ed25_over_trim": 1.1547721832498083,
+   "ours_Ed90": 0.0,
+   "ours_arc": 0.0
+  },
+  {
+   "run": "trim/B2",
+   "species": "Deuterons",
+   "E_keV": 10.0,
+   "trim_kp_printed": 7.0,
+   "trim_kp_depth_sum": 7.3148995130999985,
+   "ours_Ed25": 8.340351176818853,
+   "ours_Ed25_over_trim": 1.1401867054882173,
+   "ours_Ed90": 1.0864016877496028,
+   "ours_arc": 1.6962939061411915
+  },
+  {
+   "run": "trim/B3",
+   "species": "Deuterons",
+   "E_keV": 100.0,
+   "trim_kp_printed": 24.0,
+   "trim_kp_depth_sum": 24.488582742000002,
+   "ours_Ed25": 24.3800540661466,
+   "ours_Ed25_over_trim": 0.9955681928596355,
+   "ours_Ed90": 4.658136989968806,
+   "ours_arc": 5.523431714048136
+  }
+ ],
+ "He_single_energy_ours": {
+  "E3p5MeV": {
+   "Ed25": 161.44315955701092,
+   "Ed90": 38.90915916117794
+  },
+  "E2MeV": {
+   "Ed25": 141.0512468499993,
+   "Ed90": 33.86759094480816
+  }
+ },
+ "full_cascade_local_datapoint": {
+  "run": "D 1 keV in W, 5000 ions, Ed = 25 eV",
+  "KP_printed": 0.0,
+  "KP_depth_sum": 0.215601955,
+  "FC_printed": 0.0,
+  "FC_depth_sum": 0.34200015,
+  "ratio_FC_over_KP": 1.5862571839851822,
+  "poisson_rel_err_estimate": 0.03888997863716355
+ },
+ "budget": {
+  "observed_ratio_printed_4p3e4": 11.203523754020566,
+  "observed_ratio_rederived_4p31e4": 11.22461831142868,
+  "product_of_factors": 11.22461831142868,
+  "observed_ratio_vs_mean_first_5um_exact": 11.56988410247991,
+  "observed_ratio_vs_mean_first_5um_cell_rule": 11.645955088464932,
+  "factors": [
+   {
+    "name": "Ed 90 -> 25 eV, our whole model, all ions (4.71e19 / 1.12e19 displacements)",
+    "value": 4.215313629773385,
+    "status": "computed; our Ed = 25 code reproduces TRIM K-P to about 4% at 2 MeV and 0.5% at 100 keV He"
+   },
+   {
+    "name": "He ions per m2 (3.69e17 / 1.235e17 incident)",
+    "value": 3.56075429687987,
+    "status": "UNEXPLAINED; implausible for one target (see 6)"
+   },
+   {
+    "name": "full cascade / quick K-P (their model not stated)",
+    "value": 2.0,
+    "status": "QUOTED (Wielunska 2020 for 20 MeV W in W, Stoller 2013), not computed; the one local point (D 1 keV) gives 1.59"
+   },
+   {
+    "name": "residual vacancies per He: 308 / (our 62.0 at Ed 25 x 2)",
+    "value": 2.224609301483583,
+    "status": "UNEXPLAINED (their per-He model and energy are not stated)"
+   },
+   {
+    "name": "ion share at Ed 25: (1 + 60/308) / (all-ion / He displacements, ours)",
+    "value": 0.16807996064810243,
+    "status": "computed for ours; INFERRED for theirs (1 H per He)"
+   }
+  ],
+  "parts": {
+   "F_Ed_all_ions": 4.215313629773385,
+   "F_count": 3.56075429687987,
+   "F_FC_quoted": 2.0,
+   "F_res": 2.224609301483583,
+   "F_share": 0.16807996064810243,
+   "F_vac_per_He_Ed90": 18.14197083136956,
+   "F_Ed_per_He": 4.0775633769198825,
+   "v_S_He": 308.0,
+   "v_ours_Ed90": 16.977207320134838,
+   "v_ours_Ed25": 69.22563881095796,
+   "share_theirs": 1.1948051948051948,
+   "share_ours_Ed90": 6.876255283271615,
+   "share_ours_Ed25": 7.108552323537706,
+   "F_res_if_local_FC_1p59": 2.8048532406260342,
+   "H_per_ion": {
+    "theirs": 60.0,
+    "ours_Ed90": 3.8135627418942257,
+    "ours_Ed25": 17.407833407480712,
+    "residual_after_FC2_at_Ed25": 1.7233620806083785
+   },
+   "share_ours_Ed25_is_1_plus": {
+    "H_over_He": 4.248148896621153,
+    "C_over_He": 0.5855557704259066,
+    "Au_over_He": 1.2748476564906461
+   },
+   "net_unexplained_after_Ed_and_FC": 1.3314096289475992,
+   "He_channel_unexplained": 7.921287129136595
+  },
+  "depth_note": {
+   "deeper_than_5um_fraction": 0.031664997264823413,
+   "text": "their volume is area x 5 um and all their vacancies are put in it, so the like-for-like denominator is total displacements/(N_at x 5 um); our 'mean of the first 5 um' leaves out the displacements deeper than 5 um (3.6%)"
+  },
+  "partial_ratios": {
+   "He_only_vs_He_only_Ed90": 64.59910059166845,
+   "He_only_vs_He_only_Ed25": 15.842574258273194,
+   "HeH_vs_HeH_Ed90": 16.067115992770333,
+   "all_ions_Ed90": 11.203523754020566,
+   "all_ions_Ed25": 2.65781499029833,
+   "all_ions_arc": 14.570950343598806,
+   "their_avg_over_our_peak_Ed90": 1.2098282974569596,
+   "our_peak_over_our_mean5_Ed90": 9.563244740431042
+  },
+  "hypothesis_single_energy_alpha": {
+   "text": "308 is within ~5-10% of 2 x (K-P, Ed = 25 eV) for ONE He of 2-3.5 MeV; the spectrum average is lower because the debris He (mean 0.23 MeV) make ~40 vacancies each (Ed 25)",
+   "two_x_trim_kp_2MeV": 294.0,
+   "two_x_ours_Ed25_2MeV": 282.1024936999986,
+   "two_x_ours_Ed25_3p5MeV": 322.88631911402183,
+   "ratio_308_over_these": [
+    1.0476190476190477,
+    1.091801763112176,
+    0.9538960983083183
+   ],
+   "ours_Ed25_3p5MeV_over_spectrum_average": 2.3321295741001604,
+   "residual_to_compare": 2.224609301483583
+  }
+ },
+ "He_count": {
+  "He_per_m2_theirs": 3.691148775894539e+17,
+  "He_per_m2_ours_incident_total": 1.0366199035774323e+17,
+  "He_per_m2_ours_burn": 5.545520595045734e+16,
+  "ratio_total": 3.56075429687987,
+  "ratio_burn": 6.656090645830696,
+  "ratio_vs_raw_table_count": 3.018808291861697,
+  "area_m2_4piR2": 530.929158456675,
+  "He_per_target_ARIES_normalized": 5.503717330458058e+19,
+  "He_per_target_burn_ARIES": 2.9442785827317916e+19,
+  "He_per_target_theirs": 1.96e+20,
+  "N_DT_reactions_154MJ": 5.461320440153167e+19,
+  "He_per_DT_ARIES": 1.0077631208000866,
+  "burn_He_per_DT_ARIES": 0.5391147827702301,
+  "He_per_DT_theirs": 3.5888756601600003,
+  "alpha_energy_available_MJ": 30.625,
+  "theirs_if_all_3p5MeV_MJ": 109.9093170924,
+  "ARIES_He_ion_energy_MJ": 11.194333527455075,
+  "ARIES_mean_He_energy_MeV": 1.269497143457696,
+  "theirs_mean_energy_if_ARIES_energy_MeV": 0.3564772157864858,
+  "text_sec63_He_per_m2_per_shot": 1e+16,
+  "table5_over_text_sec63": 36.91148775894539,
+  "month_of_ETF_shots_30d_5Hz": 12960000.0,
+  "He_per_W_atom_after_month_in_5um": {
+   "table5": 15.1632,
+   "ours": 4.260892467606571,
+   "text_1e16": 0.41103710751665073
+  }
+ }
+}

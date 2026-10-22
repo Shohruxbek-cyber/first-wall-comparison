@@ -1,0 +1,658 @@
+[
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "energy share (%)",
+  "garoz": "0.4",
+  "ours": 0.35064935064935077,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "2.55",
+  "ours": 2.0765156863854553,
+  "verdict": "-18.6%"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "500",
+  "ours": 185.01426279326682,
+  "verdict": "-63.0%"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.02",
+  "ours": 0.022323030979122988,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.03",
+  "ours": 0.03302223517621743,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.1",
+  "ours": 0.1017084843427497,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "H",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 0.2938055136235934,
+  "verdict": "-"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "energy share (%)",
+  "garoz": "3.1",
+  "ours": 3.103896103896104,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "3.46",
+  "ours": 4.2619903897613085,
+  "verdict": "+23.2%"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "600",
+  "ours": 288.8820794986989,
+  "verdict": "-51.9%"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.2",
+  "ours": 0.19760016311149606,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.3",
+  "ours": 0.2923079335968876,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.90",
+  "ours": 0.9003084354784138,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "D",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 0.25550025263555426,
+  "verdict": "-"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "energy share (%)",
+  "garoz": "2.8",
+  "ours": 2.805194805194806,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "2.66",
+  "ours": 3.333716487941177,
+  "verdict": "+25.3%"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "600",
+  "ours": 469.4670374331579,
+  "verdict": "-21.8%"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.2",
+  "ours": 0.1785842478329839,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.3",
+  "ours": 0.2641778814097394,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.8",
+  "ours": 0.8136678747419976,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "T",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 0.3371681343249993,
+  "verdict": "-"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "energy share (%)",
+  "garoz": "6.4",
+  "ours": 6.402597402597401,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "3.81",
+  "ours": 2.09212819521666,
+  "verdict": "-45.1%"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "600",
+  "ours": 291.4845691228471,
+  "verdict": "-51.4%"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.4",
+  "ours": 0.4076020101002825,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.6",
+  "ours": 0.6029615534027849,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "1.9",
+  "ours": 1.857121584480577,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "He",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 0.5936776114078774,
+  "verdict": "-"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "energy share (%)",
+  "garoz": "12.7",
+  "ours": 12.6638961038961,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "3.40",
+  "ours": 2.6373490425234793,
+  "verdict": "-22.4%"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "600",
+  "ours": 532.5058146957689,
+  "verdict": "-11.2%"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.8",
+  "ours": 0.8062086654949038,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "1.2",
+  "ours": 1.1926163690753013,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "3.7",
+  "ours": 3.6732584167519278,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "burn",
+  "species": "total",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 0.5120541511028539,
+  "verdict": "-"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "energy share (%)",
+  "garoz": "0.1",
+  "ours": 0.07142857142857142,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.09",
+  "ours": 0.09158203996646615,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "1500",
+  "ours": 1115.588156443525,
+  "verdict": "-25.6%"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.00",
+  "ours": 0.004547284088339867,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.01",
+  "ours": 0.006726751609970218,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.02",
+  "ours": 0.020718394958708267,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "H",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.315051151076166,
+  "verdict": "-"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "energy share (%)",
+  "garoz": "5.8",
+  "ours": 5.759740259740259,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.14",
+  "ours": 0.12266202431171243,
+  "verdict": "-12.4%"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "2000",
+  "ours": 1291.5672679036009,
+  "verdict": "-35.4%"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.4",
+  "ours": 0.3666764533052238,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.5",
+  "ours": 0.5424207889130529,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "1.7",
+  "ours": 1.6706560298522033,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "D",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.6796631578692438,
+  "verdict": "-"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "energy share (%)",
+  "garoz": "7.2",
+  "ours": 7.207792207792206,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.19",
+  "ours": 0.15252409410801251,
+  "verdict": "-19.7%"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "2000",
+  "ours": 1421.372746954744,
+  "verdict": "-28.9%"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.5",
+  "ours": 0.4588623034597501,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.7",
+  "ours": 0.6787903897333581,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "2.1",
+  "ours": 2.0906744003787434,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "T",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.865907665371562,
+  "verdict": "-"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "energy share (%)",
+  "garoz": "0.9",
+  "ours": 0.8636363636363636,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.23",
+  "ours": 0.3294447553312635,
+  "verdict": "+43.2%"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "1500",
+  "ours": 1097.1201806578156,
+  "verdict": "-26.9%"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.05",
+  "ours": 0.05498079852265476,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.1",
+  "ours": 0.08133254219327626,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.25",
+  "ours": 0.25050422995529087,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "He",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.4649660136337537,
+  "verdict": "-"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "energy share (%)",
+  "garoz": "14.4",
+  "ours": 14.364935064935068,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.17",
+  "ours": 0.14595539870543764,
+  "verdict": "-14.1%"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "2000",
+  "ours": 1385.7799595824115,
+  "verdict": "-30.7%"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.9",
+  "ours": 0.914500169111405,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "1.3",
+  "ours": 1.3528109010523741,
+  "verdict": "+4.1%"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "4.0",
+  "ours": 4.166657575241312,
+  "verdict": "+4.2%"
+ },
+ {
+  "group": "debris",
+  "species": "total",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.7759742459384087,
+  "verdict": "-"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "energy share (%)",
+  "garoz": "27.1",
+  "ours": 27.02883116883116,
+  "verdict": "-0.3%"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "mean energy (MeV, number-weighted)",
+  "garoz": "0.29",
+  "ours": 0.26185200466966335,
+  "verdict": "-9.7%"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "pulse width (ns); ours = t10-t90 at Demo",
+  "garoz": "3000",
+  "ours": 2043.0781752023854,
+  "verdict": "-31.9%"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "1.7",
+  "ours": 1.720708834606308,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "2.5",
+  "ours": 2.5454272701276746,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "7.7",
+  "ours": 7.839915991993238,
+  "verdict": "+1.8%"
+ },
+ {
+  "group": "all",
+  "species": "total",
+  "quantity": "median arrival Demo (us)",
+  "garoz": "-",
+  "ours": 1.230621592227332,
+  "verdict": "-"
+ },
+ {
+  "group": "x-ray",
+  "species": "-",
+  "quantity": "mean energy (MeV), number-weighted",
+  "garoz": "0.007",
+  "ours": 0.007091767378494215,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "x-ray",
+  "species": "-",
+  "quantity": "mean energy (MeV), energy-weighted",
+  "garoz": "0.007",
+  "ours": 0.019035061258685048,
+  "verdict": "+171.9%"
+ },
+ {
+  "group": "x-ray",
+  "species": "-",
+  "quantity": "fluence Exp. (J/cm2)",
+  "garoz": "0.1",
+  "ours": 0.08681178714103381,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "x-ray",
+  "species": "-",
+  "quantity": "fluence Proto. (J/cm2)",
+  "garoz": "0.1",
+  "ours": 0.12841980346306778,
+  "verdict": "within rounding"
+ },
+ {
+  "group": "x-ray",
+  "species": "-",
+  "quantity": "fluence Demo (J/cm2)",
+  "garoz": "0.4",
+  "ours": 0.39553299466624875,
+  "verdict": "within rounding"
+ }
+]

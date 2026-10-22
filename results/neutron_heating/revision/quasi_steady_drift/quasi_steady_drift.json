@@ -1,0 +1,109 @@
+{
+ "note": "exponential fit T_inf - A exp(-(n - n0)/tau) to the last two thirds of each run (of its neutron-heated shots); drift_left = asymptote - last shot",
+ "runs": {
+  "Demo, production (600 shots)": {
+   "file": "runs/w_multi/baseline/Demo_per_shot.csv",
+   "last_shot": 600,
+   "fitted_shots": [
+    201,
+    600
+   ],
+   "preshot_surface_T_K": {
+    "last_shot": 920.8779593775862,
+    "asymptote": 924.8266128715084,
+    "drift_left": 3.9486534939221656,
+    "tau_shots": 144.03168491946985
+   },
+   "peak_surface_T_K": {
+    "last_shot": 3317.4617954738724,
+    "asymptote": 3320.9326459008303,
+    "drift_left": 3.4708504269578953,
+    "tau_shots": 143.55504126905763
+   },
+   "peak_interface_T_K": {
+    "last_shot": 933.8281982463832,
+    "asymptote": 937.7505298280471,
+    "drift_left": 3.9223315816639115,
+    "tau_shots": 144.0529095054836
+   }
+  },
+  "Demo, neutron heating, steel factor 0.5": {
+   "file": "results/neutron/w_multi_Demo_steel0.5/Demo_per_shot.csv",
+   "last_shot": 990,
+   "fitted_shots": [
+    731,
+    990
+   ],
+   "preshot_surface_T_K": {
+    "last_shot": 985.9428438965247,
+    "asymptote": 991.234321906613,
+    "drift_left": 5.291478010088326,
+    "tau_shots": 151.3671727210818
+   },
+   "peak_surface_T_K": {
+    "last_shot": 3376.0393787545704,
+    "asymptote": 3380.669571965732,
+    "drift_left": 4.630193211161441,
+    "tau_shots": 151.05820710058043
+   },
+   "peak_interface_T_K": {
+    "last_shot": 999.2556777386282,
+    "asymptote": 1004.5112735192887,
+    "drift_left": 5.255595780660542,
+    "tau_shots": 151.38621781425317
+   }
+  },
+  "Demo, neutron heating, steel factor 1": {
+   "file": "results/neutron/w_multi_Demo_steel1/Demo_per_shot.csv",
+   "last_shot": 1090,
+   "fitted_shots": [
+    764,
+    1090
+   ],
+   "preshot_surface_T_K": {
+    "last_shot": 1036.479882177318,
+    "asymptote": 1041.5551709000474,
+    "drift_left": 5.0752887227295105,
+    "tau_shots": 155.12829175511735
+   },
+   "peak_surface_T_K": {
+    "last_shot": 3420.2207065358307,
+    "asymptote": 3424.6274849745546,
+    "drift_left": 4.406778438723904,
+    "tau_shots": 154.79811776759993
+   },
+   "peak_interface_T_K": {
+    "last_shot": 1049.6069972803064,
+    "asymptote": 1054.6482956670357,
+    "drift_left": 5.041298386729295,
+    "tau_shots": 155.1408368540413
+   }
+  },
+  "Demo, coolant 3.5 mm behind the surface": {
+   "file": "results/cooling_3p5mm/w_multi_Demo/Demo_per_shot.csv",
+   "last_shot": 120,
+   "fitted_shots": [
+    41,
+    120
+   ],
+   "preshot_surface_T_K": {
+    "last_shot": 737.6233746789923,
+    "asymptote": 738.3229378692944,
+    "drift_left": 0.6995631903021149,
+    "tau_shots": 23.009334701749804
+   },
+   "peak_surface_T_K": {
+    "last_shot": 3153.169684145374,
+    "asymptote": 3153.799731213016,
+    "drift_left": 0.6300470676419536,
+    "tau_shots": 22.992952101845113
+   },
+   "peak_interface_T_K": {
+    "last_shot": 751.6880190108058,
+    "asymptote": 752.377039296,
+    "drift_left": 0.6890202851942604,
+    "tau_shots": 23.01143846150418
+   }
+  }
+ }
+}

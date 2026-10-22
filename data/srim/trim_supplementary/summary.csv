@@ -1,0 +1,4 @@
+run,ion,Z1,ion_mass_amu,E_keV,target,density_g_cm3,thickness_um,ions,backscattered,transmitted,backscatter_fraction,backscattered_energy_fraction,mean_range_um,straggling_um,table_projected_range_um,trim_over_table_range,half_energy_depth_um,energy90_depth_um,energy_closure,range_plus_3strag_over_thickness,displacement_eV,lattice_eV,surface_eV,seed,trim_version
+B1_fullcascade,d,1,2.014,1.0,W,19.35,0.05,5000,2005,0,0.401,0.211,0.01118,0.00644,0.0052,2.15,0.00628,0.01472,1.059,0.61,25.0,3.0,8.68,4711,SRIM-2012.03
+S1_he4_1keV_W,he4,2,4.003,1.0,W,19.35,0.04,5000,2018,0,0.4036,0.2008,0.00657,0.0036,0.0032,2.052,0.00379,0.00853,1.136,0.43,25.0,3.0,8.68,4711,SRIM-2012.03
+S2_he4_10keV_W,he4,2,4.003,10.0,W,19.35,0.12,5000,1298,0,0.2596,0.1091,0.03284,0.01753,0.0218,1.507,0.01925,0.04316,1.028,0.71,25.0,3.0,8.68,4711,SRIM-2012.03

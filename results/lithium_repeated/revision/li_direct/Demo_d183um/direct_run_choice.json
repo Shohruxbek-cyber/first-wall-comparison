@@ -1,0 +1,7 @@
+{
+ "case": "he",
+ "limit_K": null,
+ "interpolated_um": 183.21658391329694,
+ "how": "helium-exclusion film (steel_criteria.json)",
+ "run_um": 183.0
+}

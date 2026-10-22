@@ -1,0 +1,202 @@
+[
+ {
+  "label": "cold/d1_f1",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=1 skin_factor=1 --out=results/skin_sweep/single/cold/d1_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 08:49:19",
+  "end": "2026-10-22 08:49:55",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d1_f0.75",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=1 skin_factor=0.75 --out=results/skin_sweep/single/cold/d1_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 08:49:57",
+  "end": "2026-10-22 08:50:35",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d1_f0.5",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=1 skin_factor=0.5 --out=results/skin_sweep/single/cold/d1_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 08:50:38",
+  "end": "2026-10-22 08:51:16",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d1_f0.25",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=1 skin_factor=0.25 --out=results/skin_sweep/single/cold/d1_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 08:51:18",
+  "end": "2026-10-22 08:51:56",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d3_f1",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=3 skin_factor=1 --out=results/skin_sweep/single/cold/d3_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 08:51:58",
+  "end": "2026-10-22 08:52:34",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d3_f0.75",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=3 skin_factor=0.75 --out=results/skin_sweep/single/cold/d3_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 08:52:36",
+  "end": "2026-10-22 08:53:14",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d3_f0.5",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=3 skin_factor=0.5 --out=results/skin_sweep/single/cold/d3_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 08:53:16",
+  "end": "2026-10-22 08:53:56",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d3_f0.25",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=3 skin_factor=0.25 --out=results/skin_sweep/single/cold/d3_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 08:53:58",
+  "end": "2026-10-22 08:54:40",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d10_f1",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=10 skin_factor=1 --out=results/skin_sweep/single/cold/d10_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 08:54:42",
+  "end": "2026-10-22 08:55:18",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d10_f0.75",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=10 skin_factor=0.75 --out=results/skin_sweep/single/cold/d10_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 08:55:20",
+  "end": "2026-10-22 08:56:00",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d10_f0.5",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=10 skin_factor=0.5 --out=results/skin_sweep/single/cold/d10_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 08:56:02",
+  "end": "2026-10-22 08:56:42",
+  "returncode": 0
+ },
+ {
+  "label": "cold/d10_f0.25",
+  "command": "python scripts/run_w_single.py Experimental Prototype Demo skin_um=10 skin_factor=0.25 --out=results/skin_sweep/single/cold/d10_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 08:56:44",
+  "end": "2026-10-22 08:57:28",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/ref_noskin",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 --out=results/skin_sweep/single/Demo_hot/ref_noskin",
+  "git": "0694a93",
+  "start": "2026-10-22 08:57:30",
+  "end": "2026-10-22 08:57:46",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d1_f1",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=1 skin_factor=1 --out=results/skin_sweep/single/Demo_hot/d1_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 08:57:48",
+  "end": "2026-10-22 08:58:06",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d1_f0.75",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=1 skin_factor=0.75 --out=results/skin_sweep/single/Demo_hot/d1_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 08:58:08",
+  "end": "2026-10-22 08:58:26",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d1_f0.5",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=1 skin_factor=0.5 --out=results/skin_sweep/single/Demo_hot/d1_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 08:58:28",
+  "end": "2026-10-22 08:58:46",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d1_f0.25",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=1 skin_factor=0.25 --out=results/skin_sweep/single/Demo_hot/d1_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 08:58:48",
+  "end": "2026-10-22 08:59:08",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d3_f1",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=3 skin_factor=1 --out=results/skin_sweep/single/Demo_hot/d3_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 08:59:10",
+  "end": "2026-10-22 08:59:28",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d3_f0.75",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=3 skin_factor=0.75 --out=results/skin_sweep/single/Demo_hot/d3_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 08:59:30",
+  "end": "2026-10-22 08:59:48",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d3_f0.5",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=3 skin_factor=0.5 --out=results/skin_sweep/single/Demo_hot/d3_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 08:59:50",
+  "end": "2026-10-22 09:00:10",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d3_f0.25",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=3 skin_factor=0.25 --out=results/skin_sweep/single/Demo_hot/d3_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 09:00:12",
+  "end": "2026-10-22 09:00:34",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d10_f1",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=10 skin_factor=1 --out=results/skin_sweep/single/Demo_hot/d10_f1",
+  "git": "0694a93",
+  "start": "2026-10-22 09:00:36",
+  "end": "2026-10-22 09:00:52",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d10_f0.75",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=10 skin_factor=0.75 --out=results/skin_sweep/single/Demo_hot/d10_f0.75",
+  "git": "0694a93",
+  "start": "2026-10-22 09:00:54",
+  "end": "2026-10-22 09:01:14",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d10_f0.5",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=10 skin_factor=0.5 --out=results/skin_sweep/single/Demo_hot/d10_f0.5",
+  "git": "0694a93",
+  "start": "2026-10-22 09:01:16",
+  "end": "2026-10-22 09:01:36",
+  "returncode": 0
+ },
+ {
+  "label": "Demo_hot/d10_f0.25",
+  "command": "python scripts/run_w_single.py Demo T_init=920.9 skin_um=10 skin_factor=0.25 --out=results/skin_sweep/single/Demo_hot/d10_f0.25",
+  "git": "0694a93",
+  "start": "2026-10-22 09:01:38",
+  "end": "2026-10-22 09:02:00",
+  "returncode": 0
+ }
+]

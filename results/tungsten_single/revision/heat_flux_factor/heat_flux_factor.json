@@ -1,0 +1,50 @@
+{
+ "note": "Heat-flux factor of the ion load from the paper's own ion power history (revision of 21 Oct 2026), beside the 44.4 MW m^-2 s^1/2 of Gonzalez-Arrabal et al. (2020), with the design-rule cycle count of\nMitteau et al. (2024), N = exp(100 / F_HF), for each.\n\nThe ion energy arriving at the tungsten wall is that of the production source term (ife_wall.ions.IonSpectrumSource,\nARIES spectra in the production construction of ife_wall.ions, time of flight), and the absorbed part removes the\nTRIM backscattered energy of each\ncomponent (srim.SrimStopping, as in the deposition).  Two forms:\n  * window form: F = E_abs(t10..t90) / sqrt(t90 - t10), with t10 and t90 the times by which 10 % and 90 % of the\n    absorbed ion energy has arrived;\n  * peak form:   F = q_max sqrt(t90 - t10), with q_max the peak absorbed ion power density.\nThe x-rays (20 ns) are not included, as in the ion fluences of Gonzalez-Arrabal et al.  The absorbed energy is\nevaluated on the time grid of Table 2 (scripts/diag_power_density.py: 1001 logarithmic times from the first to the\nlast ion arrival), so that the peak power is the same interval average as the Table 2 peak.",
+ "scenarios": {
+  "Experimental": {
+   "incident_ion_J_m2": 17207.08834606308,
+   "absorbed_ion_J_m2": 17119.67228646958,
+   "t10_us": 0.210221558075171,
+   "t90_us": 1.7762413407519597,
+   "window_us": 1.5660197826767888,
+   "peak_absorbed_power_W_m2": 122393794878.36584,
+   "t_peak_us": 0.38497861052909604,
+   "F_HF_window_MW_m2_s05": 10.944270332593648,
+   "F_HF_peak_MW_m2_s05": 153.16446648615883,
+   "F_HF_GA2020": 9.7,
+   "cycles_window": 9294.714632761867,
+   "cycles_peak": 1.9210904118171634,
+   "cycles_GA2020": 30009.772287416297
+  },
+  "Prototype": {
+   "incident_ion_J_m2": 25454.27270127675,
+   "absorbed_ion_J_m2": 25324.95900365324,
+   "t10_us": 0.2732880254977223,
+   "t90_us": 2.3091137429775492,
+   "window_us": 2.035825717479827,
+   "peak_absorbed_power_W_m2": 139273776602.60504,
+   "t_peak_us": 0.500472193687825,
+   "F_HF_window_MW_m2_s05": 14.199349202167555,
+   "F_HF_peak_MW_m2_s05": 198.71911775824285,
+   "F_HF_GA2020": 14.4,
+   "cycles_window": 1144.3319412261797,
+   "cycles_peak": 1.6540434171339495,
+   "cycles_GA2020": 1037.3705201325338
+  },
+  "Demo": {
+   "incident_ion_J_m2": 78399.1599199324,
+   "absorbed_ion_J_m2": 78000.87373125198,
+   "t10_us": 0.27328802549772235,
+   "t90_us": 2.30911374297755,
+   "window_us": 2.035825717479828,
+   "peak_absorbed_power_W_m2": 428963231936.0237,
+   "t_peak_us": 0.500472193687825,
+   "F_HF_window_MW_m2_s05": 43.73399554267606,
+   "F_HF_peak_MW_m2_s05": 612.0548826953883,
+   "F_HF_GA2020": 44.4,
+   "cycles_window": 9.840935158128325,
+   "cycles_peak": 1.1774888067526088,
+   "cycles_GA2020": 9.509128692776075
+  }
+ }
+}

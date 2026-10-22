@@ -1,0 +1,515 @@
+{
+ "Demo": {
+  "rows": [
+   {
+    "delta_um": 17.78279410038923,
+    "n_shots": 390,
+    "max_n_shots": 600,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 3916.239423120018,
+     "ion_direct": 24030.534606003544,
+     "conducted_from_Li_avg": 26260.656480235884,
+     "to_coolant_avg": 35499.68861187118,
+     "vaporized_avg": 23375.464893930992,
+     "removed_with_film_avg": 4755.44502648454,
+     "xray_share_of_steel_load": 0.07224543547482555
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.04689410834101026,
+    "first_shot_peak_K": 1115.6493510189846,
+    "last_shot_peak_K": 1211.5000001116866,
+    "peak_K": 1211.5000001116866,
+    "first_shot_above_925K": 1,
+    "pass": false,
+    "last_preshot_front_K": 795.382821951605,
+    "last_preshot_back_K": 657.5366693775717,
+    "fit_peak_steel": {
+     "T_inf_K": 1213.6183982245348,
+     "tau_shots": 106.69464404192533,
+     "fitted_shots": [
+      131,
+      390
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 799.492126033546,
+     "tau_shots": 105.93039387300709,
+     "fitted_shots": [
+      131,
+      390
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 0.0007565204263724619,
+    "vaporized_last_shot_kg_m2": 0.0008445305441124318,
+    "vaporized_max_shot_kg_m2": 0.0008445305441124318,
+    "removed_with_film_total_J_m2": 1854623.5603289704,
+    "energy_rel_residual": -6.298413185668584e-13,
+    "max_abs_rel_residual_per_shot": 9.880167204099669e-13,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 38.50451158170001,
+     "xray_in_Fe": 3916.239423120018,
+     "ion_in_Li": 54368.62531392885,
+     "ion_in_Fe": 24030.534606003544
+    },
+    "wall_s": 5856.198584318161
+   },
+   {
+    "delta_um": 31.622776601683796,
+    "n_shots": 370,
+    "max_n_shots": 600,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 3898.615756060266,
+     "ion_direct": 17920.265386268635,
+     "conducted_from_Li_avg": 29652.759372662757,
+     "to_coolant_avg": 33106.54653403575,
+     "vaporized_avg": 22138.22406374005,
+     "removed_with_film_avg": 8714.260346949732,
+     "xray_share_of_steel_load": 0.07574298617750008
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.04563697642786716,
+    "first_shot_peak_K": 907.077373159045,
+    "last_shot_peak_K": 1005.6983374055598,
+    "peak_K": 1005.6983374055598,
+    "first_shot_above_925K": 9,
+    "pass": false,
+    "last_preshot_front_K": 782.7482715227856,
+    "last_preshot_back_K": 652.70750926162,
+    "fit_peak_steel": {
+     "T_inf_K": 1007.8285096019598,
+     "tau_shots": 101.32611069124995,
+     "fitted_shots": [
+      124,
+      370
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 786.5347413762199,
+     "tau_shots": 100.72040102512862,
+     "fitted_shots": [
+      124,
+      370
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 0.0007452158541071175,
+    "vaporized_last_shot_kg_m2": 0.000786308361176713,
+    "vaporized_max_shot_kg_m2": 0.000786308361176713,
+    "removed_with_film_total_J_m2": 3224276.328371401,
+    "energy_rel_residual": 3.130699525469239e-13,
+    "max_abs_rel_residual_per_shot": 5.333682318904098e-13,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 56.12823227471065,
+     "xray_in_Fe": 3898.615756060266,
+     "ion_in_Li": 60478.89453366375,
+     "ion_in_Fe": 17920.265386268635
+    },
+    "wall_s": 5009.429975032806
+   },
+   {
+    "delta_um": 56.23413251903491,
+    "n_shots": 320,
+    "max_n_shots": 600,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 3874.452141289544,
+     "ion_direct": 15198.843748286474,
+     "conducted_from_Li_avg": 27457.438517525217,
+     "to_coolant_avg": 28205.920908275777,
+     "vaporized_avg": 21672.288946299126,
+     "removed_with_film_avg": 14095.36229963525,
+     "xray_share_of_steel_load": 0.08326651600620877
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.048878725747983715,
+    "first_shot_peak_K": 781.131229604216,
+    "last_shot_peak_K": 871.3164921738476,
+    "peak_K": 871.3164921738476,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 759.1165055859557,
+    "last_preshot_back_K": 651.1802923682746,
+    "fit_peak_steel": {
+     "T_inf_K": 873.4671415503444,
+     "tau_shots": 90.95969635840014,
+     "fitted_shots": [
+      107,
+      320
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 762.7750314036491,
+     "tau_shots": 90.46434573567115,
+     "fitted_shots": [
+      107,
+      320
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 0.0007430553212119057,
+    "vaporized_last_shot_kg_m2": 0.0007580820659601195,
+    "vaporized_max_shot_kg_m2": 0.0007580820659601195,
+    "removed_with_film_total_J_m2": 4510515.93588328,
+    "energy_rel_residual": 8.198868951819655e-15,
+    "max_abs_rel_residual_per_shot": 7.409904514965843e-13,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 80.29194240821691,
+     "xray_in_Fe": 3874.452141289544,
+     "ion_in_Li": 63200.31617164592,
+     "ion_in_Fe": 15198.843748286474
+    },
+    "wall_s": 4021.969805955887
+   },
+   {
+    "delta_um": 100.0,
+    "n_shots": 260,
+    "max_n_shots": 600,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 3842.1582274205634,
+     "ion_direct": 13544.033574788238,
+     "conducted_from_Li_avg": 22572.308914986013,
+     "to_coolant_avg": 22008.614908473905,
+     "vaporized_avg": 21529.338928474852,
+     "removed_with_film_avg": 20766.11980627971,
+     "xray_share_of_steel_load": 0.09615371343918362
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.04979857924400676,
+    "first_shot_peak_K": 707.2252694067357,
+    "last_shot_peak_K": 796.1413878422969,
+    "peak_K": 796.1413878422969,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 728.204253067967,
+    "last_preshot_back_K": 640.9881639072006,
+    "fit_peak_steel": {
+     "T_inf_K": 798.8610150060786,
+     "tau_shots": 76.39565019242035,
+     "fitted_shots": [
+      87,
+      260
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 731.3660407060834,
+     "tau_shots": 76.14063351199295,
+     "fitted_shots": [
+      87,
+      260
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 0.0007427741017365725,
+    "vaporized_last_shot_kg_m2": 0.000747552122235845,
+    "vaporized_max_shot_kg_m2": 0.000747552122235845,
+    "removed_with_film_total_J_m2": 5399191.149632724,
+    "energy_rel_residual": 2.9663812273886056e-13,
+    "max_abs_rel_residual_per_shot": 1.1439542561375634e-12,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 112.58602582050992,
+     "xray_in_Fe": 3842.1582274205634,
+     "ion_in_Li": 64855.126345144155,
+     "ion_in_Fe": 13544.033574788238
+    },
+    "wall_s": 2738.6007997989655
+   },
+   {
+    "delta_um": 1000.0,
+    "n_shots": 100,
+    "max_n_shots": 600,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 3596.1479857664676,
+     "ion_direct": 3550.12431144963,
+     "conducted_from_Li_avg": 4881.337367507004,
+     "to_coolant_avg": 3451.3162997175464,
+     "vaporized_avg": 21464.58516922205,
+     "removed_with_film_avg": 48325.37777738366,
+     "xray_share_of_steel_load": 0.2989910785277598
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.012209768489975027,
+    "first_shot_peak_K": 646.125363222897,
+    "last_shot_peak_K": 667.1032963272961,
+    "peak_K": 667.1032963272961,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 625.6474836635539,
+    "last_preshot_back_K": 607.4844075462091,
+    "fit_peak_steel": {
+     "T_inf_K": 667.365411717746,
+     "tau_shots": 32.03219041729265,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 625.9666707966862,
+     "tau_shots": 32.02196156474117,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 0.0007427509341088932,
+    "vaporized_last_shot_kg_m2": 0.0007427799276578106,
+    "vaporized_max_shot_kg_m2": 0.0007427799276578106,
+    "removed_with_film_total_J_m2": 4832537.777738366,
+    "energy_rel_residual": 3.3406148705735073e-13,
+    "max_abs_rel_residual_per_shot": 6.403599087550485e-13,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 358.59974309273576,
+     "xray_in_Fe": 3596.1479857664676,
+     "ion_in_Li": 74849.03560848278,
+     "ion_in_Fe": 3550.12431144963
+    },
+    "wall_s": 1159.713484287262
+   }
+  ],
+  "min_delta_um_multishot": 44.68160798322279,
+  "grid_bracket_um": [
+   31.622776601683796,
+   56.23413251903491
+  ]
+ },
+ "Prototype": {
+  "rows": [
+   {
+    "delta_um": 10.0,
+    "n_shots": 100,
+    "max_n_shots": 100,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 1275.5817294306057,
+     "ion_direct": 9580.464210754404,
+     "conducted_from_Li_avg": 15426.00380244965,
+     "to_coolant_avg": 22814.696493969543,
+     "vaporized_avg": 294.6428511977072,
+     "removed_with_film_avg": 159.78117874203787,
+     "xray_share_of_steel_load": 0.048534332060157434
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.00020169184366144086,
+    "first_shot_peak_K": 963.8874921946574,
+    "last_shot_peak_K": 968.923406894812,
+    "peak_K": 968.923406894812,
+    "first_shot_above_925K": 1,
+    "pass": false,
+    "last_preshot_front_K": 608.9831439243814,
+    "last_preshot_back_K": 603.0682244659464,
+    "fit_peak_steel": {
+     "T_inf_K": 968.9242623917321,
+     "tau_shots": 11.522553487311173,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 608.9846743455822,
+     "tau_shots": 11.524397392108327,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 1.0904871248463847e-05,
+    "vaporized_last_shot_kg_m2": 1.1338619494805123e-05,
+    "vaporized_max_shot_kg_m2": 1.1338619494805123e-05,
+    "removed_with_film_total_J_m2": 15978.117874203786,
+    "energy_rel_residual": 3.792231346122463e-13,
+    "max_abs_rel_residual_per_shot": 1.7381513865782524e-12,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 8.426031783473046,
+     "xray_in_Fe": 1275.5817294306057,
+     "ion_in_Li": 15873.808490522346,
+     "ion_in_Fe": 9580.464210754404
+    },
+    "wall_s": 622.5128481388092
+   },
+   {
+    "delta_um": 17.78279410038923,
+    "n_shots": 100,
+    "max_n_shots": 100,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 1271.506306207798,
+     "ion_direct": 7802.121625325825,
+     "conducted_from_Li_avg": 17116.22379540734,
+     "to_coolant_avg": 22736.28290765921,
+     "vaporized_avg": 255.44088715274594,
+     "removed_with_film_avg": 289.721014450985,
+     "xray_share_of_steel_load": 0.04854958017573752
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.00019420717108510467,
+    "first_shot_peak_K": 829.2656398601084,
+    "last_shot_peak_K": 834.2368208942207,
+    "peak_K": 834.2368208942207,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 608.9491924986335,
+    "last_preshot_back_K": 602.9972653940861,
+    "fit_peak_steel": {
+     "T_inf_K": 834.2376340210448,
+     "tau_shots": 11.469905125169445,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 608.9506555756171,
+     "tau_shots": 11.470425613951708,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 9.641001817600186e-06,
+    "vaporized_last_shot_kg_m2": 9.854382620904148e-06,
+    "vaporized_max_shot_kg_m2": 9.854382620904148e-06,
+    "removed_with_film_total_J_m2": 28972.101445098502,
+    "energy_rel_residual": 4.171454479206961e-13,
+    "max_abs_rel_residual_per_shot": 2.8317921562116312e-12,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 12.501464799253249,
+     "xray_in_Fe": 1271.506306207798,
+     "ion_in_Li": 17652.151075950926,
+     "ion_in_Fe": 7802.121625325825
+    },
+    "wall_s": 559.0982239246368
+   },
+   {
+    "delta_um": 31.622776601683796,
+    "n_shots": 100,
+    "max_n_shots": 100,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 1265.784336383203,
+     "ion_direct": 5818.267982554751,
+     "conducted_from_Li_avg": 18892.887874576365,
+     "to_coolant_avg": 22554.386333072973,
+     "vaporized_avg": 239.01871265078177,
+     "removed_with_film_avg": 516.5095679015442,
+     "xray_share_of_steel_load": 0.04872722987980056
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.00018082996353364756,
+    "first_shot_peak_K": 736.7305713155199,
+    "last_shot_peak_K": 741.764102588555,
+    "peak_K": 741.764102588555,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 608.8719748671273,
+    "last_preshot_back_K": 602.9113546930944,
+    "fit_peak_steel": {
+     "T_inf_K": 741.7648663338408,
+     "tau_shots": 11.371741399111253,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 608.8733188875528,
+     "tau_shots": 11.372135063732683,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 9.110990966009135e-06,
+    "vaporized_last_shot_kg_m2": 9.223037092096799e-06,
+    "vaporized_max_shot_kg_m2": 9.223037092096799e-06,
+    "removed_with_film_total_J_m2": 51650.956790154414,
+    "energy_rel_residual": 4.337119691843609e-13,
+    "max_abs_rel_residual_per_shot": 4.021898625046886e-12,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 18.223452037243717,
+     "xray_in_Fe": 1265.784336383203,
+     "ion_in_Li": 19636.004718721997,
+     "ion_in_Fe": 5818.267982554751
+    },
+    "wall_s": 546.6965706348419
+   },
+   {
+    "delta_um": 56.23413251903491,
+    "n_shots": 100,
+    "max_n_shots": 100,
+    "status": "ok",
+    "steel_load_J_m2_per_shot": {
+     "xray_direct": 1257.9390069121896,
+     "ion_direct": 4934.689528664439,
+     "conducted_from_Li_avg": 19387.45127217077,
+     "to_coolant_avg": 22214.868288351456,
+     "vaporized_avg": 238.07336734463576,
+     "removed_with_film_avg": 909.9135936782878,
+     "xray_share_of_steel_load": 0.049176508297335324
+    },
+    "converged": true,
+    "preshot_front_rise_K_per_shot": 0.0001586809391180092,
+    "first_shot_peak_K": 680.4377920350709,
+    "last_shot_peak_K": 685.4755324052854,
+    "peak_K": 685.4755324052854,
+    "first_shot_above_925K": null,
+    "pass": true,
+    "last_preshot_front_K": 608.7288786314325,
+    "last_preshot_back_K": 603.2037641547,
+    "fit_peak_steel": {
+     "T_inf_K": 685.4762007482851,
+     "tau_shots": 11.19988520047929,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "fit_preshot_front": {
+     "T_inf_K": 608.7300310492233,
+     "tau_shots": 11.198485223679201,
+     "fitted_shots": [
+      34,
+      100
+     ],
+     "label": "EXTRAPOLATION: exponential approach fitted to the last two thirds of the run"
+    },
+    "vaporized_first_shot_kg_m2": 9.085685658458665e-06,
+    "vaporized_last_shot_kg_m2": 9.18460104925591e-06,
+    "vaporized_max_shot_kg_m2": 9.18460104925591e-06,
+    "removed_with_film_total_J_m2": 90991.35936782879,
+    "energy_rel_residual": 5.987023321134857e-13,
+    "max_abs_rel_residual_per_shot": 2.254630650828056e-12,
+    "deposition_per_shot_J_m2": {
+     "xray_in_Li": 26.068812470200296,
+     "xray_in_Fe": 1257.9390069121896,
+     "ion_in_Li": 20519.583172612314,
+     "ion_in_Fe": 4934.689528664439
+    },
+    "wall_s": 534.8743937015533
+   }
+  ],
+  "min_delta_um_multishot": 12.06504424034297,
+  "grid_bracket_um": [
+   10.0,
+   17.78279410038923
+  ]
+ }
+}

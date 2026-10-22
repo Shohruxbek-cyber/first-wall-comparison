@@ -1,0 +1,116 @@
+{
+ "eps_L_recomputed_over_table": {
+  "H": 0.999989689357632,
+  "D": 1.0000214156434444,
+  "T": 0.9999792741973357,
+  "3He": 0.9999774819131144,
+  "4He": 1.000019255649052,
+  "N": 0.9999879143042268,
+  "W": 0.9999993156527095
+ },
+ "scenarios": {
+  "Experimental": {
+   "sputtered_atoms_m2_per_shot_by_species": {
+    "Protons": 3751411545161.652,
+    "Deuterons": 446302727202506.44,
+    "Tritons": 890483221958744.2,
+    "3He": 4573248579760.669,
+    "4He": 168654480635739.12
+   },
+   "sourced_total_atoms_m2": 1513765089921912.2,
+   "sourced_nm_per_shot": 2.4005837421878997e-05,
+   "share_from_ions_above_20keV_extrapolated": 0.9541775280632075,
+   "ESTIMATED_proxy_atoms_m2": {
+    "12C": [
+     26112845193992.13,
+     745648742584148.2
+    ],
+    "Au": [
+     128152010440836.34,
+     128152010440836.34
+    ]
+   },
+   "with_proxies_nm_per_shot_range": [
+    2.6452225615750193e-05,
+    3.786288760482072e-05
+   ],
+   "shots_to_erode_1mm_sourced": 41656534718.03474,
+   "shots_to_erode_1mm_with_proxies_range": [
+    26411086508.697227,
+    37804002374.92983
+   ]
+  },
+  "Prototype": {
+   "sputtered_atoms_m2_per_shot_by_species": {
+    "Protons": 5549425362665.166,
+    "Deuterons": 660211134914950.4,
+    "Tritons": 1317282872720036.0,
+    "3He": 6765160620947.735,
+    "4He": 249488876680087.47
+   },
+   "sourced_total_atoms_m2": 2239297470298686.8,
+   "sourced_nm_per_shot": 3.551159381934763e-05,
+   "share_from_ions_above_20keV_extrapolated": 0.9541775280632077,
+   "ESTIMATED_proxy_atoms_m2": {
+    "12C": [
+     38628469221881.84,
+     1103030684296077.2
+    ],
+    "Au": [
+     189573979942065.6,
+     189573979942065.6
+    ]
+   },
+   "with_proxies_nm_per_shot_range": [
+    3.913051126590264e-05,
+    5.6010188764527684e-05
+   ],
+   "shots_to_erode_1mm_sourced": 28159817469.391483,
+   "shots_to_erode_1mm_with_proxies_range": [
+    17853894479.87933,
+    25555505605.45257
+   ],
+   "full_power_years_to_erode_1mm_sourced": 892.2629109439633,
+   "full_power_years_with_proxies_range": [
+    565.7127528478875,
+    809.7435236201702
+   ]
+  },
+  "Demo": {
+   "sputtered_atoms_m2_per_shot_by_species": {
+    "Protons": 17092230117008.71,
+    "Deuterons": 2033450295538047.2,
+    "Tritons": 4057231247977711.0,
+    "3He": 20836694712519.027,
+    "4He": 768425740174669.5
+   },
+   "sourced_total_atoms_m2": 6897036208519955.0,
+   "sourced_nm_per_shot": 0.00010937570896359069,
+   "share_from_ions_above_20keV_extrapolated": 0.9541775280632075,
+   "ESTIMATED_proxy_atoms_m2": {
+    "12C": [
+     118975685203396.1,
+     3397334507631918.0
+    ],
+    "Au": [
+     583887858221562.1,
+     583887858221562.1
+    ]
+   },
+   "with_proxies_nm_per_shot_range": [
+    0.00012052197469898013,
+    0.00017251138139474527
+   ],
+   "shots_to_erode_1mm_sourced": 9142797879.67256,
+   "shots_to_erode_1mm_with_proxies_range": [
+    5796718986.973808,
+    8297242079.692394
+   ],
+   "full_power_years_to_erode_1mm_sourced": 28.969575030648162,
+   "full_power_years_with_proxies_range": [
+    18.367297170385957,
+    26.290374143512025
+   ]
+  }
+ }
+}

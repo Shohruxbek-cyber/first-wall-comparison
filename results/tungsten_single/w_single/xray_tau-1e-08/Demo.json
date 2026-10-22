@@ -1,0 +1,152 @@
+{
+ "scenario": "Demo",
+ "yield_MJ": 154.0,
+ "R_m": 6.5,
+ "T_init_K": 600.0,
+ "options": {
+  "xray_tau": 1e-08,
+  "xray_mode": "pe+incoh",
+  "depth_mode": "projected",
+  "stretch": true,
+  "normalize_ions": true,
+  "ion_spectra": "conserving",
+  "alpha_evap": 1.0,
+  "w_lv": "raffray_table",
+  "k_scale": 1.0,
+  "h": null,
+  "w_thickness": 0.001,
+  "steel_thickness": 0.01,
+  "dx0": 1e-09,
+  "k_irr": 1.0,
+  "skin_um": 0.0,
+  "skin_factor": 1.0,
+  "T_init": null,
+  "trim_multilayer": false,
+  "w_material": "W_pure",
+  "alloy_k_proxy": null,
+  "vapor_shielding": false,
+  "vapor_f_rr": 0.0,
+  "vapor_stopping_factor": 1.0,
+  "vapor_tau_rr": 0.0,
+  "neutron_heating": false,
+  "neutron_steel_factor": 1.0,
+  "grid_growth": 1.05,
+  "grid_growth_steel": 1.15,
+  "steel_k": null
+ },
+ "k_irr": 1.0,
+ "skin_um": 0.0,
+ "skin_factor": 1.0,
+ "T_init": null,
+ "k_status": "undamaged (Tolias 2017)",
+ "skin_status": "no separate skin",
+ "peak_surface_T_K": 3026.7850598006717,
+ "t_peak_us": 2.1542054349072437,
+ "melt_depth_um": 0.0,
+ "ablated_nm_per_shot": 3.3779151223301044e-07,
+ "above_6000K_extrapolated": false,
+ "ledger_J_m2": {
+  "incident": 82354.48985946752,
+  "deposited": 81956.20338776572,
+  "not_absorbed": 398.2864717019437,
+  "vaporized": 2.8991073643199693e-05
+ },
+ "energy_rel_residual": 1.5443926563737016e-12,
+ "newton_to_50us": {
+  "steps_accepted": 3286,
+  "steps_rejected": 6,
+  "iters_total_accepted": 9995,
+  "iters_in_rejected_attempts": 25,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 3.0325688568319185e-07,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "pre_shot2_surface_T_K": 610.1301641100946,
+ "energy_rel_residual_full_cycle": 2.056290107176453e-12,
+ "newton_full_cycle": {
+  "steps_accepted": 4454,
+  "steps_rejected": 6,
+  "iters_total_accepted": 13149,
+  "iters_in_rejected_attempts": 25,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 3.39265702227176e-11,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "diagnostics": {
+  "d_1300_um": 17.234075379815526,
+  "d_1800_um": 8.011011604156353,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 37.35035734436207,
+    "time_above_900K_us": 66.58694141978168,
+    "peak_K": 2969.603345973885,
+    "time_avg_K": 617.6791036701997
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 37.34223901419185,
+    "time_above_900K_us": 66.560061458491,
+    "peak_K": 2860.0781108404435,
+    "time_avg_K": 617.6769524503009
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 37.30920927253961,
+    "time_above_900K_us": 66.52604282039471,
+    "peak_K": 2651.148512028196,
+    "time_avg_K": 617.671660272295
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 37.15671905650612,
+    "time_above_900K_us": 66.38888703408291,
+    "peak_K": 2300.3392376059733,
+    "time_avg_K": 617.659799774825
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 37.02677581554459,
+    "time_above_900K_us": 66.28452654449117,
+    "peak_K": 2155.302338333191,
+    "time_avg_K": 617.6536520790598
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 600.0,
+    "peak_K": 3026.7850598006717,
+    "time_avg_K": 617.6800769189576
+   },
+   "5um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 2155.302338333191,
+    "time_avg_K": 617.6536520790598
+   },
+   "50um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 875.4669745747245,
+    "time_avg_K": 617.3843737111392
+   },
+   "500um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 629.5549767993193,
+    "time_avg_K": 614.8803109176255
+   },
+   "interface": {
+    "pre_shot_K": 600.0,
+    "peak_K": 617.4256808651795,
+    "time_avg_K": 612.5939574388912
+   }
+  },
+  "cycle_s": 0.1,
+  "max_near_surface_gradient_K_per_um": 360.7283112979079,
+  "elastic_stress_proxy_MPa": 5256.92997337494,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction"
+ },
+ "wall_s": 23.352063417434692,
+ "git": "a9d4d2e",
+ "run_date": "2026-10-21 23:43"
+}

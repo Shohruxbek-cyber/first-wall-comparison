@@ -1,0 +1,38 @@
+{
+ "note": "Neutron displacement rate in tungsten (revision of 21 Oct 2026): the HAPL figure used in the\nhelium model (Sharafat et al. 2005, Sec. 3.2: of the order of 1e-6 dpa/s at 5 Hz for the 154 MJ target at 6.5 m,\nmaterial not stated; 2e-7 dpa per shot, Table I.3) against the tungsten-specific values of Gilbert et al. (2013),\n4.5 dpa/fpy (EFF-1.1, NJOY) and 14.5 dpa/fpy (FISPACT-II, TENDL-2011) in the first-wall armour of the 3 GWth CCFE\n2009 magnetic-fusion DEMO model (Section 2.3 of that paper; its neutron wall load is not given there, so the\nvalues are converted per full-power year, not scaled), and the time for the neutrons alone to bring tungsten to\n0.1 dpa at 10 Hz (Demo).  Also the neutron wall load of each scenario (109 MJ of neutrons per 154 MJ shot,\nRaffray 2005, scaled by yield, as in scripts/diag_power_density.py) and the HAPL per-shot rate scaled with the\nneutron energy per unit wall area, which the helium model does not do (it uses 2e-7 dpa per shot everywhere).",
+ "HAPL_dpa_per_shot": 2e-07,
+ "HAPL_dpa_per_fpy_at_10Hz": 63.115199999999994,
+ "HAPL_shots_to_0.1dpa": 500000.00000000006,
+ "HAPL_hours_to_0.1dpa_at_10Hz": 13.888888888888891,
+ "Gilbert2013_W": {
+  "EFF-1.1": {
+   "dpa_per_fpy": 4.5,
+   "dpa_per_Demo_shot_at_10Hz": 1.4259639516313028e-08,
+   "ratio_HAPL_to_this": 14.025599999999999,
+   "days_to_0.1dpa_at_10Hz": 8.116666666666667
+  },
+  "TENDL-2011": {
+   "dpa_per_fpy": 14.5,
+   "dpa_per_Demo_shot_at_10Hz": 4.594772733034198e-08,
+   "ratio_HAPL_to_this": 4.352772413793103,
+   "days_to_0.1dpa_at_10Hz": 2.5189655172413796
+  }
+ },
+ "scenarios": {
+  "Experimental": {
+   "neutron_energy_J_m2_per_shot": 45059.45142082231,
+   "neutron_wall_load_MW_m2": 0.045059451420822315,
+   "HAPL_rate_scaled_per_shot": 4.3896103896103896e-08
+  },
+  "Prototype": {
+   "neutron_energy_J_m2_per_shot": 66655.99322606852,
+   "neutron_wall_load_MW_m2": 0.06665599322606852,
+   "HAPL_rate_scaled_per_shot": 6.493506493506494e-08
+  },
+  "Demo": {
+   "neutron_energy_J_m2_per_shot": 205300.45913629103,
+   "neutron_wall_load_MW_m2": 2.0530045913629102,
+   "HAPL_rate_scaled_per_shot": 2e-07
+  }
+ }
+}

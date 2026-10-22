@@ -1,0 +1,78 @@
+{
+ "tungsten": {
+  "Demo single shot": {
+   "peak_surface_K": 3026.862757912932,
+   "preshot2_surface_K": 610.1302047528462
+  },
+  "Experimental single shot": {
+   "peak_surface_K": 868.1755176637932,
+   "preshot2_surface_K": null
+  },
+  "Prototype single shot": {
+   "peak_surface_K": 1370.7778295463681,
+   "preshot2_surface_K": 601.2735247193169
+  },
+  "Demo repeated shots": {
+   "n_shots": 120,
+   "converged": true,
+   "last_preshot_K": 737.6233746789923,
+   "last_shot_peak_K": 3153.169684145374,
+   "max_interface_T_K": 751.6880190108058,
+   "last_shot_interface_T_K": 751.6880190108058
+  },
+  "Prototype repeated shots": {
+   "n_shots": 100,
+   "converged": true,
+   "last_preshot_K": 603.4167644384768,
+   "last_shot_peak_K": 1374.3162747367562,
+   "max_interface_T_K": 609.0546509429378,
+   "last_shot_interface_T_K": 609.0546509429378
+  }
+ },
+ "lithium": {
+  "Prototype": {
+   "single_shot_min_film_um": 11.809082554670962,
+   "repeated_runs": [
+    {
+     "delta_um": 10.0,
+     "n_shots": 100,
+     "converged": true,
+     "last_shot_peak_steel_K": 966.0322418392991,
+     "max_peak_steel_K": 966.0322418392997,
+     "last_preshot_steel_front_K": 603.8318164096376
+    },
+    {
+     "delta_um": 17.78279410038923,
+     "n_shots": 100,
+     "converged": true,
+     "last_shot_peak_steel_K": 831.391434514239,
+     "max_peak_steel_K": 831.391434514239,
+     "last_preshot_steel_front_K": 603.8304892011911
+    }
+   ],
+   "repeated_min_film_um": 11.917587420390124
+  },
+  "Demo": {
+   "single_shot_min_film_um": 30.09660135875881,
+   "repeated_runs": [
+    {
+     "delta_um": 31.622776601683796,
+     "n_shots": 120,
+     "converged": true,
+     "last_shot_peak_steel_K": 961.1934716665212,
+     "max_peak_steel_K": 961.1934716665212,
+     "last_preshot_steel_front_K": 701.6874937691763
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "n_shots": 110,
+     "converged": true,
+     "last_shot_peak_steel_K": 833.8016441334274,
+     "max_peak_steel_K": 833.8016441334274,
+     "last_preshot_steel_front_K": 693.9568757422912
+    }
+   ],
+   "repeated_min_film_um": 37.24155893965546
+  }
+ }
+}

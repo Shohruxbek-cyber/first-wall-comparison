@@ -1,0 +1,9 @@
+scenario,threshold,old_100pct_all_He_arithmetic,old_100pct_burn_only_arithmetic,new_value,new_label,new_lower_bound,time_new
+Prototype,1e+18,30.34,55.78,30.68,computed,30.68,31 s
+Prototype,1e+19,303.4,557.8,308.2,computed,308.2,5 min
+Prototype,1e+21,3.034e+04,5.578e+04,3.093e+04,extrapolated lower bound,3.093e+04,8.6 h
+Prototype,1e+22,3.034e+05,5.578e+05,3.094e+05,extrapolated lower bound,3.094e+05,3.6 d
+Demo,1e+18,9.851,18.11,10.55,computed,10.55,1 s
+Demo,1e+19,98.51,181.1,131.3,computed,131.3,13 s
+Demo,1e+21,9851,1.811e+04,3.699e+04,extrapolated lower bound,3.699e+04,62 min
+Demo,1e+22,9.851e+04,1.811e+05,3.765e+05,extrapolated lower bound,3.765e+05,10.5 h

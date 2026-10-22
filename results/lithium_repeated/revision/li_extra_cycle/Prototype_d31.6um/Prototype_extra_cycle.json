@@ -1,0 +1,59 @@
+{
+ "source_run": "runs/li_multi/Prototype_d31.6um",
+ "scenario": "Prototype",
+ "delta_um": 31.622776601683796,
+ "shot_number": 101,
+ "shot_period_s": 1.0,
+ "preshot_front_K": 608.8720884296594,
+ "peak_front_K": 741.7641671469906,
+ "peak_steel_K": 741.7641671469906,
+ "stored_last_shot_peak_steel_K": 741.764102588555,
+ "time_mean_front_K": 610.4449011050907,
+ "time_above_K_s": {
+  "925": 0.0,
+  "873": 0.0
+ },
+ "energy_per_shot_J_m2": {
+  "deposited": 26738.28048969945,
+  "to_coolant": 25913.30290421052,
+  "vaporized_latent": 205.18324149831824,
+  "vaporized_sensible": 34.15364835592345,
+  "removed_with_film": 581.201551013779,
+  "incident": 26738.470735889394,
+  "passed_through": 0.1902462102316136,
+  "through_interface_Li_steel": 18833.682851586025,
+  "removed_with_film_at_shot_start": 581.2015510137808,
+  "absorbed": 26738.28048969945,
+  "stored_change": 585.6406956836581
+ },
+ "fractions_of_absorbed": {
+  "vapor_latent": 0.007673763523326126,
+  "vapor_sensible": 0.0012773315161040617,
+  "film_replacement": 0.021736683899238794,
+  "to_coolant": 0.9691461989933593,
+  "conducted_Li_to_steel": 0.7043715043247243
+ },
+ "time_mean_heat_flux_into_steel_W_m2": {
+  "to_coolant": 25913.30290421052,
+  "conducted_from_film": 18833.682851586025
+ },
+ "peak_Li_surface_K": 1444.8972065953228,
+ "peak_Li_cell_K": 1445.0351167777908,
+ "depth_of_Li_peak_um_at_its_max": 0.10635835350160397,
+ "evaporated_kg_m2": 9.22303882851781e-06,
+ "n_steps": 3842,
+ "first_steel_cell_index_at_end": 107,
+ "steel_face_pulse": {
+  "swing_K": 132.8920787173313,
+  "t_peak_front_s": 2.0092864915703352e-05,
+  "F_worst_window_MW_m2_s05": 9.410320052753873,
+  "worst_window_s": [
+   2.1681666187879883e-08,
+   5.412780304980715e-07
+  ],
+  "E_in_per_shot_J_m2": 25917.735170807224,
+  "F_square_pulse_equivalent_MW_m2_s05": 1.5824918503265621,
+  "steel_k_rho_c_at_preshot_front": 180548919.33707657,
+  "note": "pulsed-load indicator only: no pulsed (thermal-fatigue) design rule for steel was found; the tungsten rule N = exp(100/F) of Mitteau et al. does not apply to steel"
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "note": "Mean W/steel interface temperature at periodic steady state for a lower steel conductivity (revision of\n21 Oct 2026): the heat balance of Section 2.7, extended to neutron heating, exactly as in\nscripts/diag_heat_balance_neutron.py, evaluated at k_s = 33 (the BM2005 value of the baseline) and 29 W/(m K),\nfor Prototype and Demo, without and with neutron heating of the steel at 0.5 and 1 times the W value.",
+ "Prototype": {
+  "q_xray_ion_W_m2": 26609.156944079758,
+  "cases": {
+   "no neutrons": {
+    "mean_interface_K_k33": 610.7242965865534,
+    "mean_interface_K_k29": 611.8364870544355,
+    "change_K": 1.112190467882101
+   },
+   "steel factor 0.5": {
+    "mean_interface_K_k33": 612.8809278340938,
+    "mean_interface_K_k29": 614.1831059527785,
+    "change_K": 1.3021781186847647
+   },
+   "steel factor 1": {
+    "mean_interface_K_k33": 614.5141431036726,
+    "mean_interface_K_k29": 615.9520266872165,
+    "change_K": 1.4378835835439077
+   }
+  }
+ },
+ "Demo": {
+  "q_xray_ion_W_m2": 819562.033877659,
+  "cases": {
+   "no neutrons": {
+    "mean_interface_K_k33": 930.3083348658444,
+    "mean_interface_K_k29": 964.5638012766138,
+    "change_K": 34.255466410769486
+   },
+   "steel factor 0.5": {
+    "mean_interface_K_k33": 996.7325772900867,
+    "mean_interface_K_k29": 1036.8396633455795,
+    "change_K": 40.1070860554928
+   },
+   "steel factor 1": {
+    "mean_interface_K_k33": 1047.035607593117,
+    "mean_interface_K_k29": 1091.322421966269,
+    "change_K": 44.28681437315208
+   }
+  }
+ }
+}

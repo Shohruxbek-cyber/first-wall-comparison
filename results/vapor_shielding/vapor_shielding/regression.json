@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "git": "0694a93",
+  "run_date": "2026-10-22 07:03",
+  "command": "python scripts/run_vapor_shielding.py --workers=1",
+  "wall_s_total": 1985.5734107494354,
+  "workers": 1
+ },
+ "li_Demo_31.6um": {
+  "peak_Li_surface_K": {
+   "production": 2218.194282220553,
+   "rerun": 2218.194282220553,
+   "identical": true
+  },
+  "peak_substrate_K": {
+   "production": 907.077373159045,
+   "rerun": 907.077373159045,
+   "identical": true
+  },
+  "vaporized_kg_m2": {
+   "production": 0.0007451822561389213,
+   "rerun": 0.0007451822561389213,
+   "identical": true
+  }
+ },
+ "w_Demo": {
+  "production": 3026.862757912932,
+  "rerun": 3026.862757912932,
+  "identical": true
+ },
+ "all_identical": true
+}

@@ -1,0 +1,58 @@
+{
+ "scenario": "Demo",
+ "case": "surface_0p1",
+ "shots_done": 300,
+ "grid": "production",
+ "cycle": "runs\\he_retention\\thermal\\Demo_T920.9_ss.npz",
+ "last": {
+  "shot": 300.0,
+  "He_retained": 1.9276714337913786e+19,
+  "He_mobile": 1705956908096.683,
+  "He_trapped": 1.9276712631956877e+19,
+  "He_clusters": 0.0,
+  "He_surface": 1.1178943367973554e+19,
+  "He_in": 3.045565770588698e+19,
+  "He_cons_err": 364544.0,
+  "V_free": 1.0467513396937554e+20,
+  "V_He": 5.326541827873093e+18,
+  "I": 4044509774709.674,
+  "V_surface": 8.31840810923003e+19,
+  "V_prod": 7.413972430373338e+21
+ },
+ "params": {
+  "K": 7,
+  "D0_He": 2.95e-08,
+  "Em_He": 0.13,
+  "D0_V": 1.11e-06,
+  "Em_V": 1.71,
+  "D0_I": 8.77e-08,
+  "Em_I": 0.009,
+  "r_c": 4.3706151052994416e-10,
+  "r_iv": 2.946822476393799e-10,
+  "nu": 10000000000000.0,
+  "Eb": [
+   4.05,
+   3.11,
+   2.88,
+   2.41,
+   2.21,
+   2.27,
+   2.45
+  ],
+  "sink_He": 0.0,
+  "sink_V": 5000000000000.0,
+  "sink_I": 6000000000000.0,
+  "surface_factor": 0.1,
+  "ann_hev": true,
+  "trap_full": false,
+  "level2": null
+ },
+ "sim": {},
+ "wall_s": 299.05848717689514,
+ "P": 0.1,
+ "source_summary": {
+  "He_incident_per_shot": 1.036619903577432e+17,
+  "He_implanted_per_shot": 1.015161082666942e+17,
+  "displacements_per_m2_per_shot": 1.2101460484818029e+19
+ }
+}

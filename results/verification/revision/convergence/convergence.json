@@ -1,0 +1,184 @@
+{
+ "baseline": {
+  "w_single": {
+   "peak_surface_K": 3026.862757912932,
+   "evaporated_nm": 3.3805630542995857e-07,
+   "cells": 308
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9344572991072,
+   "peak_surface_K": 3317.4865886098164,
+   "peak_interface_K": 933.8563445160023,
+   "cells": 308
+  },
+  "li_31.6um": {
+   "peak_steel_K": 907.077373159045,
+   "evaporated_kg_m2": 0.0007451822561389213,
+   "cells": 161
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.6493510189846,
+   "evaporated_kg_m2": 0.0007564869555242316,
+   "cells": 151
+  },
+  "li_min_film_um": 30.09660135875877,
+  "wall_s": 42.38175010681152
+ },
+ "dx0_half": {
+  "w_single": {
+   "peak_surface_K": 3026.8595982148668,
+   "evaporated_nm": 3.381113367414875e-07,
+   "cells": 322
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9950083271142,
+   "peak_surface_K": 3317.4925383403424,
+   "peak_interface_K": 933.889386966042,
+   "cells": 322
+  },
+  "li_31.6um": {
+   "peak_steel_K": 907.1067500873638,
+   "evaporated_kg_m2": 0.0007451082594855166,
+   "cells": 175
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.7113559273535,
+   "evaporated_kg_m2": 0.0007564272647391804,
+   "cells": 165
+  },
+  "li_min_film_um": 30.099274140168166,
+  "wall_s": 50.136067628860474
+ },
+ "dx0_double": {
+  "w_single": {
+   "peak_surface_K": 3026.855683260326,
+   "evaporated_nm": 3.380386948365844e-07,
+   "cells": 293
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.9063031874097,
+   "preshot_next_K": 920.9950095956164,
+   "peak_surface_K": 3317.483032529355,
+   "peak_interface_K": 933.8893901909225,
+   "cells": 293
+  },
+  "li_31.6um": {
+   "peak_steel_K": 907.0423649275964,
+   "evaporated_kg_m2": 0.0007453360500137199,
+   "cells": 147
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.5862340252495,
+   "evaporated_kg_m2": 0.0007566313124016029,
+   "cells": 137
+  },
+  "li_min_film_um": 30.093492513418504,
+  "wall_s": 39.59460735321045
+ },
+ "growth_1.025": {
+  "w_single": {
+   "peak_surface_K": 3026.689613232617,
+   "evaporated_nm": 3.374323407610502e-07,
+   "cells": 544
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9938014515441,
+   "peak_surface_K": 3317.316123129802,
+   "peak_interface_K": 933.8836050430721,
+   "cells": 544
+  },
+  "li_31.6um": {
+   "peak_steel_K": 906.795639901557,
+   "evaporated_kg_m2": 0.0007456984427057185,
+   "cells": 266
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.1618353771955,
+   "evaporated_kg_m2": 0.0007569139464399007,
+   "cells": 249
+  },
+  "li_min_film_um": 30.071716135645225,
+  "wall_s": 45.81659126281738
+ },
+ "growth_1.10": {
+  "w_single": {
+   "peak_surface_K": 3027.5509096047003,
+   "evaporated_nm": 3.407652639867795e-07,
+   "cells": 176
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9900745463408,
+   "peak_surface_K": 3318.1835863790275,
+   "peak_interface_K": 933.9060464251593,
+   "cells": 176
+  },
+  "li_31.6um": {
+   "peak_steel_K": 907.7363867063488,
+   "evaporated_kg_m2": 0.000744155579146523,
+   "cells": 96
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1116.8627431486636,
+   "evaporated_kg_m2": 0.000755459368453119,
+   "cells": 91
+  },
+  "li_min_film_um": 30.155200608477166,
+  "wall_s": 39.96463346481323
+ },
+ "dt_half": {
+  "w_single": {
+   "peak_surface_K": 3026.3725567839874,
+   "evaporated_nm": 3.368225295845933e-07,
+   "cells": 308
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9144385657142,
+   "peak_surface_K": 3317.0105097161336,
+   "peak_interface_K": 933.8789195534445,
+   "cells": 308
+  },
+  "li_31.6um": {
+   "peak_steel_K": 907.2502927694873,
+   "evaporated_kg_m2": 0.0007456387567674677,
+   "cells": 161
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.8016410488299,
+   "evaporated_kg_m2": 0.0007569502093347112,
+   "cells": 151
+  },
+  "li_min_film_um": 30.110822412937114,
+  "wall_s": 76.53567361831665
+ },
+ "dt_double": {
+  "w_single": {
+   "peak_surface_K": 3027.7988408863284,
+   "evaporated_nm": 3.4034866642047063e-07,
+   "cells": 308
+  },
+  "w_cycle": {
+   "preshot_start_K": 920.906303187411,
+   "preshot_next_K": 920.9732188429392,
+   "peak_surface_K": 3318.418852170023,
+   "peak_interface_K": 933.8121818944767,
+   "cells": 308
+  },
+  "li_31.6um": {
+   "peak_steel_K": 906.7651366090245,
+   "evaporated_kg_m2": 0.0007443538133539733,
+   "cells": 161
+  },
+  "li_17.8um": {
+   "peak_steel_K": 1115.3863867607504,
+   "evaporated_kg_m2": 0.0007556502251321508,
+   "cells": 151
+  },
+  "li_min_film_um": 30.0710340850224,
+  "wall_s": 27.304625988006592
+ }
+}

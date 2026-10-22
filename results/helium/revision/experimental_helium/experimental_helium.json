@@ -1,0 +1,39 @@
+{
+ "note": "Experimental-scenario helium counts for Table 4 (revision of 21 Oct 2026), from outputs that\nalready exist: the implanted helium per shot (runs/he_retention/results/sources.json, full retention) and the\n425-shot retention-model run of Appendix I (runs/he_retention/Experimental_baseline/totals.csv; each shot from\n300 K, the Experimental scenario being single shots).  Shot counts interpolated linearly between shots, as for\nPrototype and Demo.  Also the count for burn 4He alone and the helium per shot that 1e3 shots to 1e19 m^-2 imply,\nfor the comparison with Gonzalez-Arrabal et al. (2020).",
+ "He_implanted_per_shot_m2": 2.2280808178014692e+16,
+ "He_implanted_burn_per_shot_m2": 1.2118302301948054e+16,
+ "model_shots_run": 500,
+ "full_retention_shots_to_1e+18": 44.881675386745506,
+ "burn_He_only_shots_to_1e+18": 82.51980971288751,
+ "model_shots_to_1e+18": 45.26069866611634,
+ "full_retention_shots_to_1e+19": 448.8167538674551,
+ "burn_He_only_shots_to_1e+19": 825.198097128875,
+ "model_shots_to_1e+19": 452.20882932685316,
+ "He_per_shot_for_1e3_shots_to_1e19": 1e+16,
+ "peak_local_He": {
+  "1": {
+   "appm": 0.20601568035101392,
+   "depth_um": 0.3788971570550827
+  },
+  "10": {
+   "appm": 2.4252616702041934,
+   "depth_um": 0.0026321125
+  },
+  "100": {
+   "appm": 56.25713422232142,
+   "depth_um": 0.0005
+  },
+  "300": {
+   "appm": 234.12834498172737,
+   "depth_um": 0.0005
+  },
+  "425": {
+   "appm": 355.30122009663114,
+   "depth_um": 0.0005
+  },
+  "500": {
+   "appm": 429.5588092264784,
+   "depth_um": 0.0005
+  }
+ }
+}

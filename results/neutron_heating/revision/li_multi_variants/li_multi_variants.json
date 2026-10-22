@@ -1,0 +1,233 @@
+{
+ "note": "repeated-shot minimum Li film (Demo, 10 Hz, T_Li = 600 K, coolant 600 K, h = 10 kW m-2 K-1) for the variants of 20 Oct 2026; rule as scripts/li_multi_summary.py; 873 K = Li/steel compatibility limit applied to the peak",
+ "groups": {
+  "production (no neutron heating, no vapor shielding)": {
+   "rows": [
+    {
+     "delta_um": 17.78279410038923,
+     "folder": "runs/li_multi/Demo_d17.8um",
+     "n_shots": 390,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 1211.5000001116866,
+     "last_shot_peak_K": 1211.5000001116866,
+     "last_preshot_front_K": 795.382821951605,
+     "vaporized_last_shot_kg_m2": 0.0008445305441124318,
+     "energy_rel_residual": -6.298413185668584e-13
+    },
+    {
+     "delta_um": 31.622776601683796,
+     "folder": "runs/li_multi/Demo_d31.6um",
+     "n_shots": 370,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 1005.6983374055598,
+     "last_shot_peak_K": 1005.6983374055598,
+     "last_preshot_front_K": 782.7482715227856,
+     "vaporized_last_shot_kg_m2": 0.000786308361176713,
+     "energy_rel_residual": 3.130699525469239e-13
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "folder": "runs/li_multi/Demo_d56.2um",
+     "n_shots": 320,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 871.3164921738476,
+     "last_shot_peak_K": 871.3164921738476,
+     "last_preshot_front_K": 759.1165055859557,
+     "vaporized_last_shot_kg_m2": 0.0007580820659601195,
+     "energy_rel_residual": 8.198868951819655e-15
+    },
+    {
+     "delta_um": 100.0,
+     "folder": "runs/li_multi/Demo_d100um",
+     "n_shots": 260,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 796.1413878422969,
+     "last_shot_peak_K": 796.1413878422969,
+     "last_preshot_front_K": 728.204253067967,
+     "vaporized_last_shot_kg_m2": 0.000747552122235845,
+     "energy_rel_residual": 2.9663812273886056e-13
+    },
+    {
+     "delta_um": 1000.0,
+     "folder": "runs/li_multi/Demo_d1000um",
+     "n_shots": 100,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 667.1032963272961,
+     "last_shot_peak_K": 667.1032963272961,
+     "last_preshot_front_K": 625.6474836635539,
+     "vaporized_last_shot_kg_m2": 0.0007427799276578106,
+     "energy_rel_residual": 3.3406148705735073e-13
+    }
+   ],
+   "min_film_um_925K": 44.68160798322279,
+   "bracket_um_925K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_925K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_925K": 0.0007693580425442371,
+   "min_film_um_873K": 55.830054520958605,
+   "bracket_um_873K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_873K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_873K": 0.0007584356791198323
+  },
+  "neutron heating, steel factor 0.5": {
+   "rows": [
+    {
+     "delta_um": 31.622776601683796,
+     "folder": "results/neutron/li_multi_Demo_d31.6um_steel0.5",
+     "n_shots": 380,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 1026.1904002175647,
+     "last_shot_peak_K": 1026.1904002175647,
+     "last_preshot_front_K": 819.0734556620265,
+     "vaporized_last_shot_kg_m2": 0.0008376563521828584,
+     "energy_rel_residual": 7.457862994903673e-13
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "folder": "results/neutron/li_multi_Demo_d56.2um_steel0.5",
+     "n_shots": 350,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 891.2223475678517,
+     "last_shot_peak_K": 891.2223475678517,
+     "last_preshot_front_K": 792.8121787916713,
+     "vaporized_last_shot_kg_m2": 0.0007805027961237943,
+     "energy_rel_residual": 4.972756990466837e-13
+    },
+    {
+     "delta_um": 100.0,
+     "folder": "results/neutron/li_multi_Demo_d100um_steel0.5",
+     "n_shots": 290,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 820.3815644498738,
+     "last_shot_peak_K": 820.3815644498738,
+     "last_preshot_front_K": 756.1120228176794,
+     "vaporized_last_shot_kg_m2": 0.0007540224615617541,
+     "energy_rel_residual": 6.350190729092896e-13
+    }
+   ],
+   "min_film_um_925K": 48.68935100360443,
+   "bracket_um_925K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_925K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_925K": 0.0007948062769396188,
+   "min_film_um_873K": 65.20897961523838,
+   "bracket_um_873K": [
+    56.23413251903491,
+    100.0
+   ],
+   "bracket_converged_873K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_873K": 0.0007736912697845261
+  },
+  "neutron heating, steel factor 1": {
+   "rows": [
+    {
+     "delta_um": 31.622776601683796,
+     "folder": "results/neutron/li_multi_Demo_d31.6um_steel1",
+     "n_shots": 380,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 1044.9622083212118,
+     "last_shot_peak_K": 1044.9622083212118,
+     "last_preshot_front_K": 851.9852970252309,
+     "vaporized_last_shot_kg_m2": 0.0009384271384244025,
+     "energy_rel_residual": 2.5523269334830653e-13
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "folder": "results/neutron/li_multi_Demo_d56.2um_steel1",
+     "n_shots": 360,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 910.1567915743852,
+     "last_shot_peak_K": 910.1567915743852,
+     "last_preshot_front_K": 824.5040062590487,
+     "vaporized_last_shot_kg_m2": 0.0008277385552452055,
+     "energy_rel_residual": 1.1586715852528199e-14
+    },
+    {
+     "delta_um": 100.0,
+     "folder": "results/neutron/li_multi_Demo_d100um_steel1",
+     "n_shots": 300,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 843.9794307604733,
+     "last_shot_peak_K": 843.9794307604733,
+     "last_preshot_front_K": 783.048365567844,
+     "vaporized_last_shot_kg_m2": 0.0007672666672760287,
+     "energy_rel_residual": 1.6776211338119344e-13
+    }
+   ],
+   "min_film_um_925K": 52.780427146751116,
+   "bracket_um_925K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_925K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_925K": 0.0008399262977715346,
+   "min_film_um_873K": 77.69055308378738,
+   "bracket_um_873K": [
+    56.23413251903491,
+    100.0
+   ],
+   "bracket_converged_873K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_873K": 0.0007937852317861665
+  },
+  "vapor shielding, f_rr = 0, s = 1": {
+   "rows": [
+    {
+     "delta_um": 31.622776601683796,
+     "folder": "results/vapor_shielding/multi/Demo_d31.6um_frr0_s1",
+     "n_shots": 360,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 991.7969237459538,
+     "last_shot_peak_K": 991.7969237459538,
+     "last_preshot_front_K": 778.0890802042751,
+     "vaporized_last_shot_kg_m2": 0.0006232090652586453,
+     "energy_rel_residual": 7.674919690363761e-13
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "folder": "results/vapor_shielding/multi/Demo_d56.2um_frr0_s1",
+     "n_shots": 320,
+     "converged": true,
+     "status": "ok",
+     "peak_K": 863.0628194074241,
+     "last_shot_peak_K": 863.0628194074241,
+     "last_preshot_front_K": 755.1735771301154,
+     "vaporized_last_shot_kg_m2": 0.0006005805333332281,
+     "energy_rel_residual": 3.8244829477760997e-13
+    }
+   ],
+   "min_film_um_925K": 42.63033837344381,
+   "bracket_um_925K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_925K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_925K": 0.00061146768305638,
+   "min_film_um_873K": 53.79007144985677,
+   "bracket_um_873K": [
+    31.622776601683796,
+    56.23413251903491
+   ],
+   "bracket_converged_873K": true,
+   "vaporized_last_shot_at_min_film_kg_m2_873K": 0.0006023272640029536
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "scenario": "Demo",
+ "n_shots": 990,
+ "rep_Hz": 10.0,
+ "options": {
+  "xray_tau": 2e-08,
+  "xray_mode": "pe+incoh",
+  "depth_mode": "projected",
+  "stretch": true,
+  "normalize_ions": true,
+  "ion_spectra": "conserving",
+  "alpha_evap": 1.0,
+  "w_lv": "raffray_table",
+  "k_scale": 1.0,
+  "h": null,
+  "w_thickness": 0.001,
+  "steel_thickness": 0.01,
+  "dx0": 1e-09,
+  "k_irr": 1.0,
+  "skin_um": 0.0,
+  "skin_factor": 1.0,
+  "T_init": null,
+  "trim_multilayer": false,
+  "w_material": "W_pure",
+  "alloy_k_proxy": null,
+  "vapor_shielding": false,
+  "vapor_f_rr": 0.0,
+  "vapor_stopping_factor": 1.0,
+  "vapor_tau_rr": 0.0,
+  "neutron_heating": true,
+  "neutron_steel_factor": 0.5,
+  "grid_growth": 1.05,
+  "grid_growth_steel": 1.15,
+  "steel_k": null
+ },
+ "k_irr": 1.0,
+ "skin_um": 0.0,
+ "skin_factor": 1.0,
+ "T_init": null,
+ "k_status": "undamaged (Tolias 2017)",
+ "skin_status": "no separate skin",
+ "first_shot_peak_K": 3026.862757912932,
+ "last_shot_peak_K": 3376.0393787545704,
+ "last_preshot_K": 985.9428438965247,
+ "preshot_rise_per_shot_last10pct_K": 0.0493314344179991,
+ "converged": true,
+ "convergence_criterion": "pre-shot rise < 0.05 K/shot over the last 10 % of shots (min 100 shots)",
+ "max_n_shots": 1200,
+ "max_interface_T_K": 999.2556777386282,
+ "last_shot_interface_T_K": 999.2556777386282,
+ "last_shot_melt_depth_um": 0.0,
+ "max_melt_depth_um": 0.0,
+ "last_shot_ablated_nm": 1.1840568765804159e-05,
+ "cum_ablated_nm": 0.006812362418866419,
+ "energy_rel_residual": -3.5864661072509694e-06,
+ "wall_s_this_session": 4370.556717157364,
+ "newton_this_session": {
+  "steps_accepted": 2071847,
+  "steps_rejected": 2426,
+  "iters_total_accepted": 5747315,
+  "iters_in_rejected_attempts": 9737,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 3.5623470691967526e-10,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "diagnostics_last_shot": {
+  "d_1300_um": 41.06281317423486,
+  "d_1800_um": 13.350200218747847,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 27581.928255567193,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 3318.209957818313,
+    "time_avg_K": 998.5329695451006
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 27581.918771609784,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 3206.473631059679,
+    "time_avg_K": 998.5307562796576
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 27581.882025570678,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2994.6135262851,
+    "time_avg_K": 998.5252805478378
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 27581.73667063642,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2643.7068047152816,
+    "time_avg_K": 998.5129059678135
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 27581.627836253105,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2500.599202866495,
+    "time_avg_K": 998.5064410189683
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 985.9428438965247,
+    "peak_K": 3376.0393787545704,
+    "time_avg_K": 998.5339664425924
+   },
+   "5um": {
+    "pre_shot_K": 985.9428072108403,
+    "peak_K": 2500.599202866495,
+    "time_avg_K": 998.5064410189683
+   },
+   "50um": {
+    "pre_shot_K": 985.9391758577631,
+    "peak_K": 1251.2830811973824,
+    "time_avg_K": 998.2094466470863
+   },
+   "500um": {
+    "pre_shot_K": 985.5772797623424,
+    "peak_K": 1014.4402090289298,
+    "time_avg_K": 995.0533078779922
+   },
+   "interface": {
+    "pre_shot_K": 984.4826776706324,
+    "peak_K": 999.2556777386282,
+    "time_avg_K": 991.4456317516614
+   }
+  },
+  "cycle_s": 0.1,
+  "max_near_surface_gradient_K_per_um": 359.18955905116525,
+  "elastic_stress_proxy_MPa": 5080.969816449842,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction"
+ }
+}

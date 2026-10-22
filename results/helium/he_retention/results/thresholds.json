@@ -1,0 +1,170 @@
+{
+ "Prototype": {
+  "damage_low_1e18": {
+   "threshold": 1e+18,
+   "old_all_He": 30.340012561439956,
+   "old_burn_only": 55.78339136591194,
+   "new": {
+    "value": 30.680940444543662,
+    "kind": "computed",
+    "lower": 30.680940444543662,
+    "upper": 30.680940444543662,
+    "label": "computed"
+   },
+   "time_new": "31 s",
+   "time_new_lower": "31 s",
+   "time_new_upper": "31 s",
+   "time_old_all": "30 s",
+   "time_old_burn": "56 s"
+  },
+  "damage_high_1e19": {
+   "threshold": 1e+19,
+   "old_all_He": 303.40012561439954,
+   "old_burn_only": 557.8339136591194,
+   "new": {
+    "value": 308.2081355647822,
+    "kind": "computed",
+    "lower": 308.2081355647822,
+    "upper": 308.2081355647822,
+    "label": "computed"
+   },
+   "time_new": "5 min",
+   "time_new_lower": "5 min",
+   "time_new_upper": "5 min",
+   "time_old_all": "5 min",
+   "time_old_burn": "9 min"
+  },
+  "blister_low_1e21": {
+   "threshold": 1e+21,
+   "old_all_He": 30340.012561439955,
+   "old_burn_only": 55783.391365911935,
+   "new": {
+    "value": 30934.739194389887,
+    "kind": "extrapolated",
+    "lower": 30934.739194389887,
+    "upper": 31228.246762274288,
+    "inc_late": 3.2324849568541948e+16,
+    "fit": {
+     "inc_inf": 3.0268622516415524e+16,
+     "A": 2795677979583755.0,
+     "p": 0.0500000000000071,
+     "max_rel_residual": 0.0001529595854270065
+    },
+    "label": "extrapolated lower bound"
+   },
+   "time_new": "8.6 h",
+   "time_new_lower": "8.6 h",
+   "time_new_upper": "8.7 h",
+   "time_old_all": "8.4 h",
+   "time_old_burn": "15.5 h"
+  },
+  "blister_high_1e22": {
+   "threshold": 1e+22,
+   "old_all_He": 303400.12561439956,
+   "old_burn_only": 557833.9136591194,
+   "new": {
+    "value": 309358.30868127354,
+    "kind": "extrapolated",
+    "lower": 309358.30868127354,
+    "upper": 314155.2306480047,
+    "inc_late": 3.2324849568541948e+16,
+    "fit": {
+     "inc_inf": 3.0268622516415524e+16,
+     "A": 2795677979583755.0,
+     "p": 0.0500000000000071,
+     "max_rel_residual": 0.0001529595854270065
+    },
+    "label": "extrapolated lower bound"
+   },
+   "time_new": "3.6 d",
+   "time_new_lower": "3.6 d",
+   "time_new_upper": "3.6 d",
+   "time_old_all": "3.5 d",
+   "time_old_burn": "6.5 d"
+  }
+ },
+ "Demo": {
+  "damage_low_1e18": {
+   "threshold": 1e+18,
+   "old_all_He": 9.850653429038944,
+   "old_burn_only": 18.11149070321816,
+   "new": {
+    "value": 10.55093139018924,
+    "kind": "computed",
+    "lower": 10.55093139018924,
+    "upper": 10.55093139018924,
+    "label": "computed"
+   },
+   "time_new": "1 s",
+   "time_new_lower": "1 s",
+   "time_new_upper": "1 s",
+   "time_old_all": "1 s",
+   "time_old_burn": "2 s"
+  },
+  "damage_high_1e19": {
+   "threshold": 1e+19,
+   "old_all_He": 98.50653429038944,
+   "old_burn_only": 181.11490703218158,
+   "new": {
+    "value": 131.31795153397044,
+    "kind": "computed",
+    "lower": 131.31795153397044,
+    "upper": 131.31795153397044,
+    "label": "computed"
+   },
+   "time_new": "13 s",
+   "time_new_lower": "13 s",
+   "time_new_upper": "13 s",
+   "time_old_all": "10 s",
+   "time_old_burn": "18 s"
+  },
+  "blister_low_1e21": {
+   "threshold": 1e+21,
+   "old_all_He": 9850.653429038945,
+   "old_burn_only": 18111.490703218158,
+   "new": {
+    "value": 36991.240753354235,
+    "kind": "extrapolated",
+    "lower": 36991.240753354235,
+    "upper": 185421.21488292384,
+    "inc_late": 2.6507568547622264e+16,
+    "fit": {
+     "inc_inf": 2034814544818.3752,
+     "A": 6.954674124965624e+17,
+     "p": 0.44875798347900736,
+     "max_rel_residual": 0.006979767831932345
+    },
+    "label": "extrapolated lower bound"
+   },
+   "time_new": "62 min",
+   "time_new_lower": "62 min",
+   "time_new_upper": "5.2 h",
+   "time_old_all": "16 min",
+   "time_old_burn": "30 min"
+  },
+  "blister_high_1e22": {
+   "threshold": 1e+22,
+   "old_all_He": 98506.53429038943,
+   "old_burn_only": 181114.9070321816,
+   "new": {
+    "value": 376516.91183974675,
+    "kind": "extrapolated",
+    "lower": 376516.91183974675,
+    "upper": 11810786.20477974,
+    "inc_late": 2.6507568547622264e+16,
+    "fit": {
+     "inc_inf": 2034814544818.3752,
+     "A": 6.954674124965624e+17,
+     "p": 0.44875798347900736,
+     "max_rel_residual": 0.006979767831932345
+    },
+    "label": "extrapolated lower bound"
+   },
+   "time_new": "10.5 h",
+   "time_new_lower": "10.5 h",
+   "time_new_upper": "13.7 d",
+   "time_old_all": "2.7 h",
+   "time_old_burn": "5.0 h"
+  }
+ }
+}

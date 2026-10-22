@@ -1,0 +1,94 @@
+{
+ "reference": "results\\baseline_pureW\\w_single",
+ "candidate": "results\\skin_sweep\\regression_check",
+ "keys": [
+  "peak_surface_T_K",
+  "t_peak_us",
+  "melt_depth_um",
+  "ablated_nm_per_shot",
+  "energy_rel_residual",
+  "pre_shot2_surface_T_K",
+  "energy_rel_residual_full_cycle",
+  "diagnostics",
+  "ledger_J_m2"
+ ],
+ "csv_files": [
+  "history",
+  "maxT_profile",
+  "He_layer"
+ ],
+ "scenarios": {
+  "Experimental": {
+   "peak_surface_T_K": true,
+   "t_peak_us": true,
+   "melt_depth_um": true,
+   "ablated_nm_per_shot": true,
+   "energy_rel_residual": true,
+   "diagnostics": true,
+   "ledger_J_m2": true,
+   "history_csv": true,
+   "maxT_profile_csv": true,
+   "He_layer_csv": true,
+   "newton": {
+    "steps_accepted": 2486,
+    "steps_rejected": 4,
+    "iters_total_accepted": 6572,
+    "iters_in_rejected_attempts": 17,
+    "iters_max_per_step": 5,
+    "last_step_final_update_K": 2.700192082467601e-10,
+    "tol_T_K": 1e-06,
+    "max_iter": 60
+   }
+  },
+  "Prototype": {
+   "peak_surface_T_K": true,
+   "t_peak_us": true,
+   "melt_depth_um": true,
+   "ablated_nm_per_shot": true,
+   "energy_rel_residual": true,
+   "pre_shot2_surface_T_K": true,
+   "energy_rel_residual_full_cycle": true,
+   "diagnostics": true,
+   "ledger_J_m2": true,
+   "history_csv": true,
+   "maxT_profile_csv": true,
+   "He_layer_csv": true,
+   "newton": {
+    "steps_accepted": 2573,
+    "steps_rejected": 4,
+    "iters_total_accepted": 6833,
+    "iters_in_rejected_attempts": 16,
+    "iters_max_per_step": 4,
+    "last_step_final_update_K": 1.617566553598271e-08,
+    "tol_T_K": 1e-06,
+    "max_iter": 60
+   }
+  },
+  "Demo": {
+   "peak_surface_T_K": true,
+   "t_peak_us": true,
+   "melt_depth_um": true,
+   "ablated_nm_per_shot": true,
+   "energy_rel_residual": true,
+   "pre_shot2_surface_T_K": true,
+   "energy_rel_residual_full_cycle": true,
+   "diagnostics": true,
+   "ledger_J_m2": true,
+   "history_csv": true,
+   "maxT_profile_csv": true,
+   "He_layer_csv": true,
+   "newton": {
+    "steps_accepted": 3305,
+    "steps_rejected": 5,
+    "iters_total_accepted": 9994,
+    "iters_in_rejected_attempts": 21,
+    "iters_max_per_step": 4,
+    "last_step_final_update_K": 2.8462828687123136e-07,
+    "tol_T_K": 1e-06,
+    "max_iter": 60
+   }
+  }
+ },
+ "bit_identical": true,
+ "git": "0694a93"
+}

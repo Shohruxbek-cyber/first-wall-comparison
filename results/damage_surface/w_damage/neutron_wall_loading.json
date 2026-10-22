@@ -1,0 +1,12 @@
+{
+ "Demo": {
+  "neutron_wall_loading_MW_m2": 2.059408458895602,
+  "basis": "0.71 x yield x rep / (4 pi R^2); neutron share 71 % from GA2020 Sec. II"
+ },
+ "Prototype": {
+  "neutron_wall_loading_MW_m2": 0.06686391100310396,
+  "basis": "0.71 x yield x rep / (4 pi R^2); neutron share 71 % from GA2020 Sec. II"
+ },
+ "W_dpa_per_MWyr_m2": "MISSING (needs a neutronics calculation)",
+ "context": "estimate by comparison with tokamak conditions: about 0.3 dpa within days; GA2020 Table I: HiPER Demo fatigue-limited life ~1e6 shots = 28 h"
+}

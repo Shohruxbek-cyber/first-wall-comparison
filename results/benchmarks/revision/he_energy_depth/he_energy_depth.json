@@ -1,0 +1,17 @@
+{
+ "note": "Energy-weighted mean depth at which the burn and debris helium deposit their energy in Demo tungsten, and the\nenergy-weighted mean energy of the burn alphas (revision of 22 Oct 2026; Appendices D and H).\n\nProduction deposition (ife_wall.ions.IonSpectrumSource with the projected depth model) of the 4He bins of each\ngroup alone, on the mesh of the Demo tungsten case, weighted with the deposited energy per cell.  For both the\nproduction spectra and the spectra used before 22 Oct 2026 (\"normalized\").  No solver is run.",
+ "spectra": {
+  "conserving": {
+   "burn_4He_energy_weighted_mean_deposition_depth_um": 1.7269402412078885,
+   "debris_4He_energy_weighted_mean_deposition_depth_um": 0.31304699676673814,
+   "burn_4He_energy_weighted_mean_energy_MeV": 2.4187840767918614,
+   "burn_4He_number_mean_energy_MeV": 2.09212819521666
+  },
+  "normalized": {
+   "burn_4He_energy_weighted_mean_deposition_depth_um": 1.80282273435658,
+   "debris_4He_energy_weighted_mean_deposition_depth_um": 0.2335507322355491,
+   "burn_4He_energy_weighted_mean_energy_MeV": 2.4970082060603076,
+   "burn_4He_number_mean_energy_MeV": 2.076075475631512
+  }
+ }
+}

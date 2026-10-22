@@ -1,0 +1,155 @@
+{
+ "note": "Helium-exclusion films for the steel behind the lithium film, exactly (revision of 21 Oct 2026).\n\nThe helium reaching the steel per shot is a step function of the film thickness: a helium sub-bin of\nife_wall.he.sources.split_bins (24 sub-bins per energy bin) reaches the steel when its projected range in lithium\n(srim.SrimStopping, projected mode, as in ife_wall.he.steel) exceeds the areal mass of the film.  Sorting the\nsub-bins by range gives the film at which the per-shot fluence first falls to a level exactly, where the fine grid\nof scripts/steel_behind_film.py interpolates between grid points.  Levels: 1e12 and 1e13 He m^-2 per shot, i.e.\n1e6 shots to 1e18 and 1e19 m^-2 with all helium retained, and one full-power year (3.16e8 shots at 10 Hz for Demo,\n3.16e7 at 1 Hz for Prototype) to the same fluences.  Also the film that stops every burn helium ion, and the\nsub-bin that sets each film.  Production spectra (ife_wall.ions.DEFAULT_ION_SPECTRA); \"sensitivity_spectra\" repeats\nthe films with the earlier normalized spectra and with the tilt-only and stretch-only conserving spectra (revision\nof 22 Oct 2026).",
+ "Li_density_kg_m3": 502.0,
+ "ion_spectra": "conserving",
+ "scenarios": {
+  "Experimental": {
+   "film_um": {
+    "1e6_shots_to_1e18": 164.2952666130579,
+    "1e6_shots_to_1e19": 132.4328602979609
+   },
+   "film_stopping_all_He_um": 683.5267550574198,
+   "film_stopping_all_burn_He_um": 683.5267550574198,
+   "He_per_m2_per_shot": 2.2751787494102084e+16,
+   "set_by": {
+    "1e6_shots_to_1e18": "burn 4He 7.71 MeV",
+    "1e6_shots_to_1e19": "burn 4He 6.74 MeV"
+   }
+  },
+  "Prototype": {
+   "film_um": {
+    "1e6_shots_to_1e18": 173.42535746954692,
+    "1e6_shots_to_1e19": 139.701715918445,
+    "1fpy_1Hz_to_1e18": 204.52141021598408,
+    "1fpy_1Hz_to_1e19": 183.21658391329694
+   },
+   "film_stopping_all_He_um": 683.5267550574198,
+   "film_stopping_all_burn_He_um": 683.5267550574198,
+   "He_per_m2_per_shot": 3.365649037589065e+16,
+   "set_by": {
+    "1e6_shots_to_1e18": "burn 4He 7.98 MeV",
+    "1e6_shots_to_1e19": "burn 4He 6.97 MeV",
+    "1fpy_1Hz_to_1e18": "burn 4He 8.83 MeV",
+    "1fpy_1Hz_to_1e19": "burn 4He 8.25 MeV"
+   }
+  },
+  "Demo": {
+   "film_um": {
+    "1e6_shots_to_1e18": 183.21658391329694,
+    "1e6_shots_to_1e19": 155.64622183352006,
+    "1fpy_10Hz_to_1e18": 235.26932280513486,
+    "1fpy_10Hz_to_1e19": 204.52141021598408
+   },
+   "film_stopping_all_He_um": 683.5267550574198,
+   "film_stopping_all_burn_He_um": 683.5267550574198,
+   "He_per_m2_per_shot": 1.0366199035774323e+17,
+   "set_by": {
+    "1e6_shots_to_1e18": "burn 4He 8.25 MeV",
+    "1e6_shots_to_1e19": "burn 4He 7.46 MeV",
+    "1fpy_10Hz_to_1e18": "burn 3He 8.56 MeV",
+    "1fpy_10Hz_to_1e19": "burn 4He 8.83 MeV"
+   }
+  }
+ },
+ "sensitivity_spectra": {
+  "normalized": {
+   "Experimental": {
+    "film_um": {
+     "1e6_shots_to_1e18": 153.66450403963285,
+     "1e6_shots_to_1e19": 125.4080778072414
+    },
+    "film_stopping_all_He_um": 683.52675505742,
+    "film_stopping_all_burn_He_um": 683.52675505742,
+    "He_per_m2_per_shot": 2.711291668587075e+16
+   },
+   "Prototype": {
+    "film_um": {
+     "1e6_shots_to_1e18": 160.17544606535122,
+     "1e6_shots_to_1e19": 130.28142723360105,
+     "1fpy_1Hz_to_1e18": 296.20727187346233,
+     "1fpy_1Hz_to_1e19": 181.53641752324853
+    },
+    "film_stopping_all_He_um": 683.52675505742,
+    "film_stopping_all_burn_He_um": 683.52675505742,
+    "He_per_m2_per_shot": 4.0107864919927144e+16
+   },
+   "Demo": {
+    "film_um": {
+     "1e6_shots_to_1e18": 181.53641752324853,
+     "1e6_shots_to_1e19": 141.4253800332612,
+     "1fpy_10Hz_to_1e18": 661.3815688141304,
+     "1fpy_10Hz_to_1e19": 431.88096052473946
+    },
+    "film_stopping_all_He_um": 683.52675505742,
+    "film_stopping_all_burn_He_um": 683.52675505742,
+    "He_per_m2_per_shot": 1.2353222395337565e+17
+   }
+  },
+  "conserving_tilt": {
+   "Experimental": {
+    "film_um": {
+     "1e6_shots_to_1e18": 164.2952666130579,
+     "1e6_shots_to_1e19": 132.4328602979609
+    },
+    "film_stopping_all_He_um": 683.5267550574198,
+    "film_stopping_all_burn_He_um": 683.5267550574198,
+    "He_per_m2_per_shot": 2.2751787494102084e+16
+   },
+   "Prototype": {
+    "film_um": {
+     "1e6_shots_to_1e18": 173.42535746954692,
+     "1e6_shots_to_1e19": 139.701715918445,
+     "1fpy_1Hz_to_1e18": 204.52141021598408,
+     "1fpy_1Hz_to_1e19": 183.21658391329694
+    },
+    "film_stopping_all_He_um": 683.5267550574198,
+    "film_stopping_all_burn_He_um": 683.5267550574198,
+    "He_per_m2_per_shot": 3.3656490375890656e+16
+   },
+   "Demo": {
+    "film_um": {
+     "1e6_shots_to_1e18": 183.21658391329694,
+     "1e6_shots_to_1e19": 155.64622183352006,
+     "1fpy_10Hz_to_1e18": 235.26932280513486,
+     "1fpy_10Hz_to_1e19": 204.52141021598408
+    },
+    "film_stopping_all_He_um": 683.5267550574198,
+    "film_stopping_all_burn_He_um": 683.5267550574198,
+    "He_per_m2_per_shot": 1.0366199035774322e+17
+   }
+  },
+  "conserving_stretch": {
+   "Experimental": {
+    "film_um": {
+     "1e6_shots_to_1e18": 180.56051269337118,
+     "1e6_shots_to_1e19": 145.96117602270095
+    },
+    "film_stopping_all_He_um": 706.1842943555467,
+    "film_stopping_all_burn_He_um": 706.1842943555467,
+    "He_per_m2_per_shot": 2.275178749410208e+16
+   },
+   "Prototype": {
+    "film_um": {
+     "1e6_shots_to_1e18": 190.76981841835715,
+     "1e6_shots_to_1e19": 153.42743816838893,
+     "1fpy_1Hz_to_1e18": 238.29714858086408,
+     "1fpy_1Hz_to_1e19": 212.9913936222246
+    },
+    "film_stopping_all_He_um": 706.1842943555467,
+    "film_stopping_all_burn_He_um": 706.1842943555467,
+    "He_per_m2_per_shot": 3.365649037589066e+16
+   },
+   "Demo": {
+    "film_um": {
+     "1e6_shots_to_1e18": 212.9913936222246,
+     "1e6_shots_to_1e19": 170.95271213292773,
+     "1fpy_10Hz_to_1e18": 238.29714858086408,
+     "1fpy_10Hz_to_1e19": 238.29714858086408
+    },
+    "film_stopping_all_He_um": 706.1842943555467,
+    "film_stopping_all_burn_He_um": 706.1842943555467,
+    "He_per_m2_per_shot": 1.0366199035774323e+17
+   }
+  }
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "note": "Partial film renewal in Demo (revision of 22 Oct 2026): the minimum films and the\nevaporation against the renewed fraction of the film per shot.\n\nReads the repeated-shot runs with partial renewal, results/revision/li_renewal/Demo_d<film>um_r<fraction>/Demo.json\n(scripts/run_li_multi.py renew=<fraction>: the retained lithium keeps its heat, the film temperature is carried\nforward), and, as the fully renewed case, the production runs runs/li_multi/Demo_d<film>um/Demo.json.  Computed:\nfractions 0.03 and 0.3 at 31.6, 56.2 and 100 um (chosen on 22 Oct 2026); intermediate fractions and\nPrototype are not computed.  The minimum films for the 925 K and 873 K limits are interpolated as in Section 2.7\n(linearly in temperature, logarithmically in thickness) between the computed films; a limit not crossed inside\n31.6-100 um is reported as below or above that range.",
+ "cases": {
+  "1 (full renewal, production)": {
+   "runs": [
+    {
+     "delta_um": 31.622776601683796,
+     "n_shots": 370,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 1005.6983374055598,
+     "preshot_front_K": 782.7482715227856,
+     "swing_K": 222.9500658827742,
+     "evaporated_kg_m2_per_shot": 0.000786308361176713,
+     "film_T_after_renewal_K": null,
+     "energy_rel_residual": 3.130699525469239e-13,
+     "source": "runs/li_multi/Demo_d31.6um/Demo.json"
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "n_shots": 320,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 871.3164921738476,
+     "preshot_front_K": 759.1165055859557,
+     "swing_K": 112.19998658789189,
+     "evaporated_kg_m2_per_shot": 0.0007580820659601195,
+     "film_T_after_renewal_K": null,
+     "energy_rel_residual": 8.198868951819655e-15,
+     "source": "runs/li_multi/Demo_d56.2um/Demo.json"
+    },
+    {
+     "delta_um": 100.0,
+     "n_shots": 260,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 796.1413878422969,
+     "preshot_front_K": 728.204253067967,
+     "swing_K": 67.93713477432993,
+     "evaporated_kg_m2_per_shot": 0.000747552122235845,
+     "film_T_after_renewal_K": null,
+     "energy_rel_residual": 2.9663812273886056e-13,
+     "source": "runs/li_multi/Demo_d100um/Demo.json"
+    }
+   ],
+   "minimum_film": {
+    "925K": {
+     "film_um": 44.68160798322281,
+     "between_um": [
+      31.622776601683796,
+      56.23413251903491
+     ]
+    },
+    "873K": {
+     "film_um": 55.830054520958655,
+     "between_um": [
+      31.622776601683796,
+      56.23413251903491
+     ]
+    }
+   }
+  },
+  "0.03": {
+   "runs": [
+    {
+     "delta_um": 31.622776601683796,
+     "n_shots": 400,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 1068.8987409136605,
+     "preshot_front_K": 804.2293505838928,
+     "swing_K": 264.6693903297677,
+     "evaporated_kg_m2_per_shot": 0.0009842127158258829,
+     "film_T_after_renewal_K": 785.8201931569411,
+     "energy_rel_residual": -6.050199854208852e-14,
+     "source": "results/revision/li_renewal/Demo_d31.6um_r0.03/Demo.json"
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "n_shots": 400,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 957.1063486977467,
+     "preshot_front_K": 803.0833289523312,
+     "swing_K": 154.02301974541558,
+     "evaporated_kg_m2_per_shot": 0.0009858275178766251,
+     "film_T_after_renewal_K": 790.1113675628187,
+     "energy_rel_residual": -7.295297049405654e-13,
+     "source": "results/revision/li_renewal/Demo_d56.2um_r0.03/Demo.json"
+    },
+    {
+     "delta_um": 100.0,
+     "n_shots": 390,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 891.5778823935677,
+     "preshot_front_K": 801.0331630116762,
+     "swing_K": 90.54471938189158,
+     "evaporated_kg_m2_per_shot": 0.000983320212100125,
+     "film_T_after_renewal_K": 791.1864566973888,
+     "energy_rel_residual": -5.61756632631644e-13,
+     "source": "results/revision/li_renewal/Demo_d100um_r0.03/Demo.json"
+    }
+   ],
+   "minimum_film": {
+    "925K": {
+     "film_um": 74.55728442011034,
+     "between_um": [
+      56.23413251903491,
+      100.0
+     ]
+    },
+    "873K": {
+     "film_um": null,
+     "note": "above 100 um (no computed film passes)"
+    }
+   }
+  },
+  "0.3": {
+   "runs": [
+    {
+     "delta_um": 31.622776601683796,
+     "n_shots": 390,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 1050.2994269452474,
+     "preshot_front_K": 798.0613747496699,
+     "swing_K": 252.23805219557755,
+     "evaporated_kg_m2_per_shot": 0.000921351415868854,
+     "film_T_after_renewal_K": 730.596206860119,
+     "energy_rel_residual": 4.214697094700444e-13,
+     "source": "results/revision/li_renewal/Demo_d31.6um_r0.3/Demo.json"
+    },
+    {
+     "delta_um": 56.23413251903491,
+     "n_shots": 380,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 930.0406356819734,
+     "preshot_front_K": 789.5989917265586,
+     "swing_K": 140.44164395541486,
+     "evaporated_kg_m2_per_shot": 0.0009016419663212538,
+     "film_T_after_renewal_K": 728.4808019959681,
+     "energy_rel_residual": 1.445441252231834e-13,
+     "source": "results/revision/li_renewal/Demo_d56.2um_r0.3/Demo.json"
+    },
+    {
+     "delta_um": 100.0,
+     "n_shots": 350,
+     "converged": true,
+     "status": "ok",
+     "peak_steel_K": 851.6049781018226,
+     "preshot_front_K": 775.0804874319185,
+     "swing_K": 76.52449066990403,
+     "evaporated_kg_m2_per_shot": 0.0008783876002501079,
+     "film_T_after_renewal_K": 720.416475743078,
+     "energy_rel_residual": 2.433004259314163e-14,
+     "source": "results/revision/li_renewal/Demo_d100um_r0.3/Demo.json"
+    }
+   ],
+   "minimum_film": {
+    "925K": {
+     "film_um": 58.35339770211414,
+     "between_um": [
+      56.23413251903491,
+      100.0
+     ]
+    },
+    "873K": {
+     "film_um": 85.4686990312793,
+     "between_um": [
+      56.23413251903491,
+      100.0
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "xray_pulse_s": 2e-08,
+ "scenarios": {
+  "Experimental": {
+   "yield_MJ": 20.0,
+   "R_m": 5.0,
+   "rep_Hz": null,
+   "xray_energy_J_m2": 868.1178714103381,
+   "ion_energy_J_m2": 17207.08834606308,
+   "total_energy_J_m2": 18075.206217473416,
+   "xray_power_during_pulse_MW_m2": 43405.893570516906,
+   "ion_peak_power_MW_m2": 122402.69418923487,
+   "t_ion_peak_us": 0.38497861052909604,
+   "ion_10_90_window_us": [
+    0.21053389615372328,
+    1.7837416027023851
+   ],
+   "ion_mean_power_10_90_MW_m2": 8750.065626775946,
+   "average_over_1s_MW_m2": 0.018075206217473418,
+   "average_note": "one shot in that second (single-shot scenario)",
+   "neutron_energy_J_m2": 45059.45142082231,
+   "neutron_wall_load_MW_m2": 0.045059451420822315,
+   "neutron_heating_W_J_m3_per_shot": 877922.077922078,
+   "neutron_heating_W_MW_m3_average": 0.877922077922078
+  },
+  "Prototype": {
+   "yield_MJ": 50.0,
+   "R_m": 6.5,
+   "rep_Hz": 1.0,
+   "xray_energy_J_m2": 1284.1980346306777,
+   "ion_energy_J_m2": 25454.27270127675,
+   "total_energy_J_m2": 26738.470735907427,
+   "xray_power_during_pulse_MW_m2": 64209.90173153388,
+   "ion_peak_power_MW_m2": 139283.90326495055,
+   "t_ion_peak_us": 0.500472193687825,
+   "ion_10_90_window_us": [
+    0.2736940649998402,
+    2.318864083513101
+   ],
+   "ion_mean_power_10_90_MW_m2": 9956.833894829251,
+   "average_over_1s_MW_m2": 0.026738470735907426,
+   "average_note": "repetition rate x energy per shot",
+   "neutron_energy_J_m2": 66655.99322606852,
+   "neutron_wall_load_MW_m2": 0.06665599322606852,
+   "neutron_heating_W_J_m3_per_shot": 1298701.2987012987,
+   "neutron_heating_W_MW_m3_average": 1.2987012987012987
+  },
+  "Demo": {
+   "yield_MJ": 154.0,
+   "R_m": 6.5,
+   "rep_Hz": 10.0,
+   "xray_energy_J_m2": 3955.3299466624876,
+   "ion_energy_J_m2": 78399.1599199324,
+   "total_energy_J_m2": 82354.48986659489,
+   "xray_power_during_pulse_MW_m2": 197766.4973331244,
+   "ion_peak_power_MW_m2": 428994.42205604835,
+   "t_ion_peak_us": 0.500472193687825,
+   "ion_10_90_window_us": [
+    0.27369406499984034,
+    2.318864083513103
+   ],
+   "ion_mean_power_10_90_MW_m2": 30667.048396074064,
+   "average_over_1s_MW_m2": 0.8235448986659489,
+   "average_note": "repetition rate x energy per shot",
+   "neutron_energy_J_m2": 205300.45913629103,
+   "neutron_wall_load_MW_m2": 2.0530045913629102,
+   "neutron_heating_W_J_m3_per_shot": 4000000.0,
+   "neutron_heating_W_MW_m3_average": 40.0
+  }
+ }
+}

@@ -1,0 +1,507 @@
+{
+ "dpa_arc": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.8653716219496894e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 0.9701631890463206,
+  "retained_fraction_at_N": 0.6124858541360635,
+  "last_increment_fraction": 0.4646263011469017,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.598953617639557,
+    "kind": "computed",
+    "lower": 10.598953617639557,
+    "upper": 10.598953617639557
+   },
+   "damage_high_1e19": {
+    "value": 134.8445750464908,
+    "kind": "computed",
+    "lower": 134.8445750464908,
+    "upper": 134.8445750464908
+   },
+   "blister_low_1e21": {
+    "value": 21040.810903227797,
+    "kind": "extrapolated",
+    "lower": 21040.810903227797,
+    "upper": null,
+    "inc_late": 4.731475005289117e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 211256.3354476728,
+    "kind": "extrapolated",
+    "lower": 211256.3354476728,
+    "upper": null,
+    "inc_late": 4.731475005289117e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.043701747176497e+20
+ },
+ "Eb_high": {
+  "shots": 600,
+  "N_compare": 300,
+  "retained_at_N": 2.2303654711815148e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.159993243597558,
+  "retained_fraction_at_N": 0.7323310550880692,
+  "last_increment_fraction": 0.478380108093777,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.47445404973358,
+    "kind": "computed",
+    "lower": 10.47445404973358,
+    "upper": 10.47445404973358
+   },
+   "damage_high_1e19": {
+    "value": 121.65676041293821,
+    "kind": "computed",
+    "lower": 121.65676041293821,
+    "upper": 121.65676041293821
+   },
+   "blister_low_1e21": {
+    "value": 20077.402973910728,
+    "kind": "extrapolated",
+    "lower": 20077.402973910728,
+    "upper": null,
+    "inc_late": 4.933907019494605e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 202488.62321863067,
+    "kind": "extrapolated",
+    "lower": 202488.62321863067,
+    "upper": null,
+    "inc_late": 4.933907019494605e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.4204068661501012e+20
+ },
+ "Eb_low": {
+  "shots": 600,
+  "N_compare": 300,
+  "retained_at_N": 1.7440740866791238e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 0.9070774198318448,
+  "retained_fraction_at_N": 0.572663374410247,
+  "last_increment_fraction": 0.3134777736209089,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.574715312614737,
+    "kind": "computed",
+    "lower": 10.574715312614737,
+    "upper": 10.574715312614737
+   },
+   "damage_high_1e19": {
+    "value": 142.1186922302575,
+    "kind": "computed",
+    "lower": 142.1186922302575,
+    "upper": 142.1186922302575
+   },
+   "blister_low_1e21": {
+    "value": 30768.708794154743,
+    "kind": "extrapolated",
+    "lower": 30768.708794154743,
+    "upper": 220032.61782774958,
+    "inc_late": 3.221345101374423e+16,
+    "fit": {
+     "inc_inf": 43265397.015924454,
+     "A": 4.864641700856536e+17,
+     "p": 0.42433815757826776,
+     "max_rel_residual": 0.01301591565462551
+    }
+   },
+   "blister_high_1e22": {
+    "value": 310155.10536992206,
+    "kind": "extrapolated",
+    "lower": 310155.10536992206,
+    "upper": 11910936.928076062,
+    "inc_late": 3.221345101374423e+16,
+    "fit": {
+     "inc_inf": 43265397.015924454,
+     "A": 4.864641700856536e+17,
+     "p": 0.42433815757826776,
+     "max_rel_residual": 0.01301591565462551
+    }
+   }
+  },
+  "V_free_per_m2": 1.4169147839437608e+20
+ },
+ "Em_He_high": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 2.1133677347655655e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.0991437615228492,
+  "retained_fraction_at_N": 0.6939132478709238,
+  "last_increment_fraction": 0.5599988184467866,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.420200298626607,
+    "kind": "computed",
+    "lower": 10.420200298626607,
+    "upper": 10.420200298626607
+   },
+   "damage_high_1e19": {
+    "value": 122.69255884815304,
+    "kind": "computed",
+    "lower": 122.69255884815304,
+    "upper": 122.69255884815304
+   },
+   "blister_low_1e21": {
+    "value": 17470.502779443817,
+    "kind": "extrapolated",
+    "lower": 17470.502779443817,
+    "upper": null,
+    "inc_late": 5.700859987770559e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 175341.42083929322,
+    "kind": "extrapolated",
+    "lower": 175341.42083929322,
+    "upper": null,
+    "inc_late": 5.700859987770559e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.047794335691631e+20
+ },
+ "Em_He_low": {
+  "shots": 600,
+  "N_compare": 300,
+  "retained_at_N": 1.829241853614273e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 0.9513724178909428,
+  "retained_fraction_at_N": 0.6006256414657303,
+  "last_increment_fraction": 0.3503751940978337,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.620838389561897,
+    "kind": "computed",
+    "lower": 10.620838389561897,
+    "upper": 10.620838389561897
+   },
+   "damage_high_1e19": {
+    "value": 136.92427408580292,
+    "kind": "computed",
+    "lower": 136.92427408580292,
+    "upper": 136.92427408580292
+   },
+   "blister_low_1e21": {
+    "value": 27566.372763179803,
+    "kind": "extrapolated",
+    "lower": 27566.372763179803,
+    "upper": 140969.8113469569,
+    "inc_late": 3.5965923292141364e+16,
+    "fit": {
+     "inc_inf": 172024890519.50003,
+     "A": 4.219866994912501e+17,
+     "p": 0.3852298407101715,
+     "max_rel_residual": 0.012413759389735046
+    }
+   },
+   "blister_high_1e22": {
+    "value": 277803.2407811495,
+    "kind": "extrapolated",
+    "lower": 277803.2407811495,
+    "upper": 5923582.181777648,
+    "inc_late": 3.5965923292141364e+16,
+    "fit": {
+     "inc_inf": 172024890519.50003,
+     "A": 4.219866994912501e+17,
+     "p": 0.3852298407101715,
+     "max_rel_residual": 0.012413759389735046
+    }
+   }
+  },
+  "V_free_per_m2": 1.4183364041695876e+20
+ },
+ "level2": {
+  "shots": 400,
+  "N_compare": 300,
+  "retained_at_N": 1.9230532660116496e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.0001628990741251,
+  "retained_fraction_at_N": 0.6314293820780656,
+  "last_increment_fraction": 0.4370676933342648,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.551177805442212,
+    "kind": "computed",
+    "lower": 10.551177805442212,
+    "upper": 10.551177805442212
+   },
+   "damage_high_1e19": {
+    "value": 131.31271956981132,
+    "kind": "computed",
+    "lower": 131.31271956981132,
+    "upper": 131.31271956981132
+   },
+   "blister_low_1e21": {
+    "value": 22247.541340178304,
+    "kind": "extrapolated",
+    "lower": 22247.541340178304,
+    "upper": null,
+    "inc_late": 4.468080194407598e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 223676.33420886286,
+    "kind": "extrapolated",
+    "lower": 223676.33420886286,
+    "upper": null,
+    "inc_late": 4.468080194407598e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.1919054045726987e+20
+ },
+ "surface_0p1": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.9276714337913786e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.0025647670601139,
+  "retained_fraction_at_N": 0.6329436232857207,
+  "last_increment_fraction": 0.4856269366845422,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.531532585008224,
+    "kind": "computed",
+    "lower": 10.531532585008224,
+    "upper": 10.531532585008224
+   },
+   "damage_high_1e19": {
+    "value": 130.9340712763934,
+    "kind": "computed",
+    "lower": 130.9340712763934,
+    "upper": 130.9340712763934
+   },
+   "blister_low_1e21": {
+    "value": 20132.192983504145,
+    "kind": "extrapolated",
+    "lower": 20132.192983504145,
+    "upper": null,
+    "inc_late": 4.94510761607566e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 202130.25447649596,
+    "kind": "extrapolated",
+    "lower": 202130.25447649596,
+    "upper": null,
+    "inc_late": 4.94510761607566e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.0467513396937554e+20
+ },
+ "T_m50": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.9818292225175654e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.0307317512706795,
+  "retained_fraction_at_N": 0.6507249919000452,
+  "last_increment_fraction": 0.5055401902722163,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.503353549402586,
+    "kind": "computed",
+    "lower": 10.503353549402586,
+    "upper": 10.503353549402586
+   },
+   "damage_high_1e19": {
+    "value": 128.00932989423023,
+    "kind": "computed",
+    "lower": 128.00932989423023,
+    "upper": 128.00932989423023
+   },
+   "blister_low_1e21": {
+    "value": 19342.02713496576,
+    "kind": "extrapolated",
+    "lower": 19342.02713496576,
+    "upper": null,
+    "inc_late": 5.147465135027426e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 194185.367767948,
+    "kind": "extrapolated",
+    "lower": 194185.367767948,
+    "upper": null,
+    "inc_late": 5.147465135027426e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.0804249536870744e+20
+ },
+ "T_p50": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.8626801038879474e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 0.9687633544420897,
+  "retained_fraction_at_N": 0.611605586594562,
+  "last_increment_fraction": 0.4631628347474188,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.60564133055853,
+    "kind": "computed",
+    "lower": 10.60564133055853,
+    "upper": 10.60564133055853
+   },
+   "damage_high_1e19": {
+    "value": 135.04532662294005,
+    "kind": "computed",
+    "lower": 135.04532662294005,
+    "upper": 135.04532662294005
+   },
+   "blister_low_1e21": {
+    "value": 21106.12955224022,
+    "kind": "extrapolated",
+    "lower": 21106.12955224022,
+    "upper": null,
+    "inc_late": 4.716750400390806e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 211915.4630131396,
+    "kind": "extrapolated",
+    "lower": 211915.4630131396,
+    "upper": null,
+    "inc_late": 4.716750400390806e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 9.628012268845104e+19
+ },
+ "T_rising": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.993661589772722e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 1.0368856602372114,
+  "retained_fraction_at_N": 0.6546095853687288,
+  "last_increment_fraction": 0.47763226492726985,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.333104408481917,
+    "kind": "computed",
+    "lower": 10.333104408481917,
+    "upper": 10.333104408481917
+   },
+   "damage_high_1e19": {
+    "value": 122.57691427348627,
+    "kind": "computed",
+    "lower": 122.57691427348627,
+    "upper": 122.57691427348627
+   },
+   "blister_low_1e21": {
+    "value": 20438.61493035561,
+    "kind": "extrapolated",
+    "lower": 20438.61493035561,
+    "upper": null,
+    "inc_late": 4.866587833828584e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 205373.1174464569,
+    "kind": "extrapolated",
+    "lower": 205373.1174464569,
+    "upper": null,
+    "inc_late": 4.866587833828584e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 1.0824544390249603e+20
+ },
+ "xi_low": {
+  "shots": 300,
+  "N_compare": 300,
+  "retained_at_N": 1.4230935024380236e+19,
+  "baseline_at_N": 1.9227400534371615e+19,
+  "ratio_to_baseline": 0.7401382729267271,
+  "retained_fraction_at_N": 0.4672659094106803,
+  "last_increment_fraction": 0.3032225133769058,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.816147759116014,
+    "kind": "computed",
+    "lower": 10.816147759116014,
+    "upper": 10.816147759116014
+   },
+   "damage_high_1e19": {
+    "value": 174.23698432418882,
+    "kind": "computed",
+    "lower": 174.23698432418882,
+    "upper": 174.23698432418882
+   },
+   "blister_low_1e21": {
+    "value": 32203.76519627398,
+    "kind": "extrapolated",
+    "lower": 32203.76519627398,
+    "upper": null,
+    "inc_late": 3.0898204613502704e+16,
+    "fit": null
+   },
+   "blister_high_1e22": {
+    "value": 323482.8253416309,
+    "kind": "extrapolated",
+    "lower": 323482.8253416309,
+    "upper": null,
+    "inc_late": 3.0898204613502704e+16,
+    "fit": null
+   }
+  },
+  "V_free_per_m2": 4.70216760401143e+19
+ },
+ "_N_s": 300,
+ "_baseline": {
+  "retained_at_Ns": 1.9227400534371615e+19,
+  "retained_fraction": 0.6313242767289565,
+  "shots_to": {
+   "damage_low_1e18": {
+    "value": 10.55093139018924,
+    "kind": "computed",
+    "lower": 10.55093139018924,
+    "upper": 10.55093139018924
+   },
+   "damage_high_1e19": {
+    "value": 131.31795153397044,
+    "kind": "computed",
+    "lower": 131.31795153397044,
+    "upper": 131.31795153397044
+   },
+   "blister_low_1e21": {
+    "value": 36991.240753354235,
+    "kind": "extrapolated",
+    "lower": 36991.240753354235,
+    "upper": 185421.21488292384,
+    "inc_late": 2.6507568547622264e+16,
+    "fit": {
+     "inc_inf": 2034814544818.3752,
+     "A": 6.954674124965624e+17,
+     "p": 0.44875798347900736,
+     "max_rel_residual": 0.006979767831932345
+    }
+   },
+   "blister_high_1e22": {
+    "value": 376516.91183974675,
+    "kind": "extrapolated",
+    "lower": 376516.91183974675,
+    "upper": 11810786.20477974,
+    "inc_late": 2.6507568547622264e+16,
+    "fit": {
+     "inc_inf": 2034814544818.3752,
+     "A": 6.954674124965624e+17,
+     "p": 0.44875798347900736,
+     "max_rel_residual": 0.006979767831932345
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "scenario": "Demo",
+ "n_shots": 600,
+ "rep_Hz": 10.0,
+ "options": {
+  "xray_tau": 2e-08,
+  "xray_mode": "pe+incoh",
+  "depth_mode": "projected",
+  "stretch": true,
+  "normalize_ions": true,
+  "ion_spectra": "conserving",
+  "alpha_evap": 1.0,
+  "w_lv": "raffray_table",
+  "k_scale": 1.0,
+  "h": null,
+  "w_thickness": 0.001,
+  "steel_thickness": 0.01,
+  "dx0": 1e-09,
+  "k_irr": 1.0,
+  "skin_um": 0.0,
+  "skin_factor": 1.0,
+  "T_init": null,
+  "trim_multilayer": false,
+  "w_material": "W_pure",
+  "alloy_k_proxy": null,
+  "vapor_shielding": false,
+  "vapor_f_rr": 0.0,
+  "vapor_stopping_factor": 1.0,
+  "vapor_tau_rr": 0.0,
+  "neutron_heating": false,
+  "neutron_steel_factor": 1.0,
+  "grid_growth": 1.05,
+  "grid_growth_steel": 1.15,
+  "steel_k": 29.0
+ },
+ "k_irr": 1.0,
+ "skin_um": 0.0,
+ "skin_factor": 1.0,
+ "T_init": null,
+ "k_status": "undamaged (Tolias 2017)",
+ "skin_status": "no separate skin",
+ "first_shot_peak_K": 3026.862757912932,
+ "last_shot_peak_K": 3345.5984236102777,
+ "last_preshot_K": 952.7327064245316,
+ "preshot_rise_per_shot_last10pct_K": 0.048689505676225826,
+ "converged": true,
+ "convergence_criterion": "pre-shot rise < 0.05 K/shot over the last 10 % of shots (min 100 shots)",
+ "max_n_shots": 600,
+ "max_interface_T_K": 965.8542768037562,
+ "last_shot_interface_T_K": 965.8542768037562,
+ "last_shot_melt_depth_um": 0.0,
+ "max_melt_depth_um": 0.0,
+ "last_shot_ablated_nm": 8.939654665807168e-06,
+ "cum_ablated_nm": 0.0035192367904698825,
+ "energy_rel_residual": -6.424083528302898e-08,
+ "wall_s_this_session": 13183.534578084946,
+ "newton_this_session": {
+  "steps_accepted": 2671162,
+  "steps_rejected": 3855,
+  "iters_total_accepted": 7763876,
+  "iters_in_rejected_attempts": 15491,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 3.488566883186504e-10,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "diagnostics_last_shot": {
+  "d_1300_um": 37.075636495528826,
+  "d_1800_um": 12.685504310803239,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 2819.0364223415654,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 3287.832958842262,
+    "time_avg_K": 965.0054312947549
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 2819.025997983462,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 3176.274823886091,
+    "time_avg_K": 965.0032232482102
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 2818.9874136427666,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2964.7103911189283,
+    "time_avg_K": 964.9977625772862
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 2818.838821460608,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2613.7235959259724,
+    "time_avg_K": 964.985429762099
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 2818.72832972691,
+    "time_above_900K_us": 99999.99999999431,
+    "peak_K": 2470.3525989856153,
+    "time_avg_K": 964.9789905384985
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 952.7327064245316,
+    "peak_K": 3345.5984236102777,
+    "time_avg_K": 965.0064261748705
+   },
+   "5um": {
+    "pre_shot_K": 952.7326706983115,
+    "peak_K": 2470.3525989856153,
+    "time_avg_K": 964.9789905384985
+   },
+   "50um": {
+    "pre_shot_K": 952.7291343341832,
+    "peak_K": 1217.6370665347856,
+    "time_avg_K": 964.6843627238326
+   },
+   "500um": {
+    "pre_shot_K": 952.3766592565796,
+    "peak_K": 980.1399661320189,
+    "time_avg_K": 961.597218219604
+   },
+   "interface": {
+    "pre_shot_K": 951.3115380230981,
+    "peak_K": 965.8542768037562,
+    "time_avg_K": 958.1519180052277
+   }
+  },
+  "cycle_s": 0.1,
+  "max_near_surface_gradient_K_per_um": 358.10495302532786,
+  "elastic_stress_proxy_MPa": 5099.516217293579,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction"
+ }
+}

@@ -1,0 +1,11 @@
+# Eckstein (2007), "Sputtering Yields", in R. Behrisch & W. Eckstein (eds), Sputtering by Particle Bombardment, Topics Appl. Phys. 110, Springer, Table 8 (printed p. 142), W target rows.
+# Fit of TRIM.SP yields at normal incidence to Eq. (2) (printed p. 38): Y = q s_n^KrC(eps) (E0/Eth - 1)^mu / (lambda + (E0/Eth - 1)^mu), eps = E0/eps_L.
+# eps_L column = "epsilon" in the table (eV). Transcribed 2026-09-27 and checked against the printed page.
+ion,target,lambda,q,mu,Eth_eV,eps_L_eV,Esb_eV,Esb_over_gamma
+H,W,1.0087,0.0075,1.2046,457.42,9.86986e3,8.68,399.36
+D,W,0.3583,0.0183,1.4410,228.84,9.92326e3,8.68,202.85
+T,W,0.2870,0.0419,1.5802,153.8842,9.97718e3,8.68,136.48
+3He,W,0.2424,0.0884,1.2439,164.3474,2.02666e4,8.68,136.48
+4He,W,0.1692,0.1151,1.7121,120.56,2.03728e4,8.68,104.13
+N,W,0.0921,1.4389,2.0225,45.3362,7.90505e4,8.68,32.98
+W,W,2.2697,18.6006,3.1273,24.9885,1.99860e6,8.68,8.68

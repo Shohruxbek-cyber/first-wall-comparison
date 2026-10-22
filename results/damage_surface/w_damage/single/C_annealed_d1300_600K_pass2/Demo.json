@@ -1,0 +1,152 @@
+{
+ "scenario": "Demo",
+ "yield_MJ": 154.0,
+ "R_m": 6.5,
+ "T_init_K": 600.0,
+ "options": {
+  "xray_tau": 2e-08,
+  "xray_mode": "pe+incoh",
+  "depth_mode": "projected",
+  "stretch": true,
+  "normalize_ions": true,
+  "ion_spectra": "conserving",
+  "alpha_evap": 1.0,
+  "w_lv": "raffray_table",
+  "k_scale": 1.0,
+  "h": null,
+  "w_thickness": 0.001,
+  "steel_thickness": 0.01,
+  "dx0": 1e-09,
+  "k_irr": 0.5,
+  "skin_um": 19.0875,
+  "skin_factor": 1.0,
+  "T_init": null,
+  "trim_multilayer": false,
+  "w_material": "W_pure",
+  "alloy_k_proxy": null,
+  "vapor_shielding": false,
+  "vapor_f_rr": 0.0,
+  "vapor_stopping_factor": 1.0,
+  "vapor_tau_rr": 0.0,
+  "neutron_heating": false,
+  "neutron_steel_factor": 1.0,
+  "grid_growth": 1.05,
+  "grid_growth_steel": 1.15,
+  "steel_k": null
+ },
+ "k_irr": 0.5,
+ "skin_um": 19.0875,
+ "skin_factor": 1.0,
+ "T_init": null,
+ "k_status": "SOURCED (conductivity about halved after irradiation: Reza et al. 2020; Saito et al. 2026)",
+ "skin_status": "annealed skin: ASSUMPTION (defects heal each shot)",
+ "peak_surface_T_K": 3029.2848126225513,
+ "t_peak_us": 2.1550703803469706,
+ "melt_depth_um": 0.0,
+ "ablated_nm_per_shot": 3.4703612450520273e-07,
+ "above_6000K_extrapolated": false,
+ "ledger_J_m2": {
+  "incident": 82354.48985946781,
+  "deposited": 81956.20338776571,
+  "not_absorbed": 398.2864717019452,
+  "vaporized": 2.978766311737596e-05
+ },
+ "energy_rel_residual": 1.8016730609592956e-12,
+ "newton_to_50us": {
+  "steps_accepted": 3282,
+  "steps_rejected": 6,
+  "iters_total_accepted": 9915,
+  "iters_in_rejected_attempts": 25,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 5.5422567386345455e-08,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "pre_shot2_surface_T_K": 610.9341177607374,
+ "energy_rel_residual_full_cycle": 2.31108471073385e-12,
+ "newton_full_cycle": {
+  "steps_accepted": 4450,
+  "steps_rejected": 6,
+  "iters_total_accepted": 13081,
+  "iters_in_rejected_attempts": 25,
+  "iters_max_per_step": 4,
+  "last_step_final_update_K": 1.2494443392101704e-10,
+  "tol_T_K": 1e-06,
+  "max_iter": 60
+ },
+ "diagnostics": {
+  "d_1300_um": 20.08760286103152,
+  "d_1800_um": 8.430773128910596,
+  "He_layer": [
+   {
+    "depth_um": 0.5,
+    "time_above_1000K_us": 66.18897301668984,
+    "time_above_900K_us": 124.58082695181871,
+    "peak_K": 2972.263253614491,
+    "time_avg_K": 621.7002828763625
+   },
+   {
+    "depth_um": 1.0,
+    "time_above_1000K_us": 66.18087047355388,
+    "time_above_900K_us": 124.55739271779545,
+    "peak_K": 2862.864116723361,
+    "time_avg_K": 621.6981314994246
+   },
+   {
+    "depth_um": 2.0,
+    "time_above_1000K_us": 66.14788863600398,
+    "time_above_900K_us": 124.52335680029724,
+    "peak_K": 2654.459460557355,
+    "time_avg_K": 621.6928384590395
+   },
+   {
+    "depth_um": 4.0,
+    "time_above_1000K_us": 65.99601294020995,
+    "time_above_900K_us": 124.38635965049036,
+    "peak_K": 2305.7897365951876,
+    "time_avg_K": 621.6809737521426
+   },
+   {
+    "depth_um": 5.0,
+    "time_above_1000K_us": 65.86771956043718,
+    "time_above_900K_us": 124.28161562125716,
+    "peak_K": 2162.5696068207703,
+    "time_avg_K": 621.6748222799317
+   }
+  ],
+  "depth_table": {
+   "surface": {
+    "pre_shot_K": 600.0,
+    "peak_K": 3029.2848126225513,
+    "time_avg_K": 621.7012561434123
+   },
+   "5um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 2162.5696068207703,
+    "time_avg_K": 621.6748222799317
+   },
+   "50um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 879.8439186189609,
+    "time_avg_K": 621.2209371431053
+   },
+   "500um": {
+    "pre_shot_K": 600.0,
+    "peak_K": 629.4404673836506,
+    "time_avg_K": 616.24917081804
+   },
+   "interface": {
+    "pre_shot_K": 600.0,
+    "peak_K": 614.8393451797613,
+    "time_avg_K": 611.7795987198026
+   }
+  },
+  "cycle_s": 0.1,
+  "max_near_surface_gradient_K_per_um": 360.4749528520351,
+  "elastic_stress_proxy_MPa": 5262.344966961741,
+  "elastic_stress_proxy_note": "fully constrained E*alpha*dT/(1-nu), dT = peak - pre-shot surface T; E, alpha, nu: ITER-MPH polynomials (BM2005 App. A) at the pre-shot T; elastic upper-bound proxy, no plasticity, no fracture prediction"
+ },
+ "wall_s": 13.386236190795898,
+ "git": "0694a93",
+ "run_date": "2026-10-22 08:48"
+}

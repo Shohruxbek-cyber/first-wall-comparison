@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.npz binary
+*.pdf binary
+# SRIM inputs and TRIM summaries are kept byte for byte (their checksums are in data/srim_SHA256SUMS.txt)
+data/srim/** -text

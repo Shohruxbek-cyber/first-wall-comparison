@@ -1,0 +1,48 @@
+{
+ "note": "Benchmark ratios as ratios of temperature rises (revision of 21 Oct 2026): Tables 3 and E.2\ncompared the Blanchard-Martin and Raffray peaks as ratios of Celsius temperatures; this gives the ratios of the\nrises above each calculation's initial temperature instead.\n\n  * Blanchard and Martin (2005): initial temperature 400 C (\"400 C was used as the initial condition for the\n    thermal analyses\"), the same in validation/bm2005.py; their finite-element peaks 2554 / 1393 / 849 C at the\n    surface, 10 and 25 um, as stored with the benchmark (runs/validation/bm2005.json, targets_C).\n  * Raffray (2005): coolant 500 C (Fig. 7 caption), the initial temperature of validation/raffray2005.py; his\n    digitized 100 um trace starts at 501.5 C (data/raffray2005_fig7_DIGITIZED.json); his peaks read by eye from\n    Fig. 7, ~2915 C at the surface and ~1525 C at 10 um.",
+ "Blanchard_Martin": {
+  "surface": {
+   "reference_C": 2554.0,
+   "this_work_C": 2459.9627232430244,
+   "initial_C": 400.0,
+   "ratio_C": 0.9631803928124606,
+   "ratio_K": 0.9667377830122295,
+   "ratio_of_rises": 0.9563429541518219
+  },
+  "10 um": {
+   "reference_C": 1393.0,
+   "this_work_C": 1436.924751361175,
+   "initial_C": 400.0,
+   "ratio_C": 1.031532484824964,
+   "ratio_K": 1.0263630233539447,
+   "ratio_of_rises": 1.0442343921059163
+  },
+  "25 um": {
+   "reference_C": 849.0,
+   "this_work_C": 893.4641381159823,
+   "initial_C": 400.0,
+   "ratio_C": 1.052372365272064,
+   "ratio_K": 1.0396240592754822,
+   "ratio_of_rises": 1.099029260837377
+  }
+ },
+ "Raffray": {
+  "surface": {
+   "reference_C": 2915.0,
+   "this_work_C": 2894.5416110063975,
+   "initial_C": 500.0,
+   "ratio_C": 0.9929816847363284,
+   "ratio_K": 0.9935829904510132,
+   "ratio_of_rises": 0.9915286173939534
+  },
+  "10 um": {
+   "reference_C": 1525.0,
+   "this_work_C": 1548.7725330386475,
+   "initial_C": 500.0,
+   "ratio_C": 1.0155885462548508,
+   "ratio_K": 1.0132205505873522,
+   "ratio_of_rises": 1.023192715159656
+  },
+  "digitized_100um_first_point_C": 501.5
+ }
+}

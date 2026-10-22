@@ -1,0 +1,206 @@
+{
+ "started": "2026-10-22 08:37:49",
+ "f_He": [
+  0.5,
+  0.25
+ ],
+ "jobs": {
+  "A_kirr1.0_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.25
+  },
+  "A_kirr0.85_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.24
+  },
+  "A_kirr0.75_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "A_kirr0.6_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "A_kirr0.5_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "A_kirr0.4_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.28
+  },
+  "A_kirr1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.23
+  },
+  "A_kirr0.85_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "A_kirr0.75_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "A_kirr0.6_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.25
+  },
+  "A_kirr0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.25
+  },
+  "C_annealed_d1300_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.28
+  },
+  "C_annealed_d1800_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.3
+  },
+  "C_annealed_d1300_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.29
+  },
+  "C_annealed_d1800_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.27
+  },
+  "C_annealed_d1300_600K_pass2_Demo": {
+   "returncode": 0,
+   "minutes": 0.29
+  },
+  "C_annealed_d1800_600K_pass2_Demo": {
+   "returncode": 0,
+   "minutes": 0.28
+  },
+  "C_annealed_d1300_hot_pass2_Demo": {
+   "returncode": 0,
+   "minutes": 0.28
+  },
+  "C_annealed_d1800_hot_pass2_Demo": {
+   "returncode": 0,
+   "minutes": 0.28
+  },
+  "A_kirr0.4_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.25
+  },
+  "A_kirr1.0_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.2
+  },
+  "A_kirr0.85_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.75_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.6_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.5_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.2
+  },
+  "A_kirr0.4_600K_Prototype": {
+   "returncode": 0,
+   "minutes": 0.2
+  },
+  "A_kirr1.0_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.18
+  },
+  "A_kirr0.85_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.75_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.6_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.5_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.21
+  },
+  "A_kirr0.4_hot_Prototype": {
+   "returncode": 0,
+   "minutes": 0.23
+  },
+  "D_Heskin_f0.5_bulk1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.3
+  },
+  "D_Heskin_f0.5_bulk0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.36
+  },
+  "D_Heskin_f0.25_bulk1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.34
+  },
+  "D_Heskin_f0.25_bulk0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.37
+  },
+  "D_Heskin_Saito_f0.7_bulk1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.29
+  },
+  "D_Heskin_Saito_f0.7_bulk0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.34
+  },
+  "D_Heskin_Saito_f0.45_bulk1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.31
+  },
+  "E_worst_Saito_f0.45_bulk0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.35
+  },
+  "G_mesh_dx0.5nm_kirr0.5_600K_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "T_trimfix_kirr0.5_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.26
+  },
+  "T_trimfix_kirr1.0_hot_Demo": {
+   "returncode": 0,
+   "minutes": 0.23
+  }
+ },
+ "C_skin_1300_600K_um": 17.234075379815526,
+ "C_skin_1800_600K_um": 8.872529346266798,
+ "C_skin_1300_hot_um": 33.47561248947973,
+ "C_skin_1800_hot_um": 12.685504310803239,
+ "C_selfconsistent_1300_600K": {
+  "skin_um_used": 17.234075379815526,
+  "crossing_um_in_skin_run": 19.087457005286755,
+  "moved_pct": 10.75416919460559
+ },
+ "C_selfconsistent_1800_600K": {
+  "skin_um_used": 8.872529346266798,
+  "crossing_um_in_skin_run": 9.826696164005345,
+  "moved_pct": 10.754169194605389
+ },
+ "C_selfconsistent_1300_hot": {
+  "skin_um_used": 33.47561248947973,
+  "crossing_um_in_skin_run": 37.075636495528826,
+  "moved_pct": 10.754169194605367
+ },
+ "C_selfconsistent_1800_hot": {
+  "skin_um_used": 12.685504310803239,
+  "crossing_um_in_skin_run": 14.049724907576007,
+  "moved_pct": 10.754169194605613
+ },
+ "finished": "2026-10-22 08:49:01"
+}

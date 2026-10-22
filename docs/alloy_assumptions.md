@@ -1,0 +1,50 @@
+# Alloy study: assumptions and their status (13 October 2026)
+
+This note belongs to Section 4.6 and Appendix H of the paper (tungsten grades). Every item below is either sourced (reference in `src/ife_wall/alloys.py`, key in `REFS`; full citations in `refs/tungsten_alloys.bib`) or an explicit assumption of this study. Nothing here changes a pure-W result: `Options()` defaults to `w_material="W_pure"`, and the regression against `results/baseline_pureW/` is reported in `results/alloys/regression_W_pure.json` (bit-identical in every key and CSV); the two published benchmarks, rerun with the alloy code on 13 October 2026, were identical except in wall time. The paths are those the scripts write to; `reproduce.py` collects the outputs under `results/tungsten_grades/`.
+
+## How an alloy enters the model
+
+1. **Thermal conductivity only.** A grade is a multiplier on the Tolias 2017 pure-W conductivity k(T) (`Grade.k_factor`); density and specific heat are those of pure W unless a source gives otherwise (none did). The wrapper is applied in `scenarios._w_material` exactly like the existing `k_scale` option, before it, so `k_scale`, `k_irr` and `skin_factor` stack as before. For `W_pure` the factor is 1.0 and no wrapper is created.
+2. **No microstructural mechanism.** Potassium bubbles and oxide particles are not modelled; grain size, texture, hardening, cracking and fracture are outside the model. "Recrystallization" below is a thermal bookkeeping on the computed temperature history, not a state that feeds back into the properties.
+3. **Unsourced conductivity refuses to run.** `W_ODS_La2O3` has `k_factor = None` (TODO_SOURCE). It runs only with `Options(alloy_k_proxy=<factor>)`; the run is labelled "PROXY" in its JSON (`thermal_status`) and a warning is recorded. The proxy band used is 0.8–1.0 (Assumption A3).
+4. **Literature-only grades** (`W_ODS_Y2O3`, `W_3Re`) have `runnable = False` and cannot be run even with a proxy.
+5. **Everything the solver needs besides k** (melting point, latent heat, vapour pressure and heat of vaporization, photon and ion stopping tables, emissivity) is recorded per grade in the registry as a pure-W assumption, with a note; see the table below.
+
+## Assumptions (A) and sourced values (S)
+
+| id | item | value | status |
+|---|---|---|---|
+| S1 | K-doped W conductivity | factor 1.0 on pure W | SOURCED: Nogami 2021 ("almost no effect", citing Fukuda 2018); Ma 2022a (within 1 % of ITER-W, RT to high T, laser flash) |
+| A1 | K-doped W density, specific heat | pure W | ASSUMPTION (ppm-level doping; Ma 2022a relative density 99.5 %) |
+| S2 | Recrystallization onset T_rx (1 h isochronal anneal, hardness drop) | pure W plate 1523 K (1250 °C); K-doped plate 1623 K (1350 °C); W-3%Re-1%La2O3 plate 1823 K (1550 °C) | SOURCED: Nogami 2021 (hot-rolled plates, high (H) or low (L) deformation). The La2O3 value is for a plate that also contains 3 % Re (the W-3%Re (L) plate without oxide gave 1673 K), so the oxide contribution is about +150 K; **no value for W-1%La2O3 without Re was found** |
+| A2 | T_rx applies to the armor regardless of processing route and thickness | — | ASSUMPTION; the same study gives 1673 K for a pure-W rod and 1873 K for a K-doped rod, and Shi 2024 gives 1861 K for W-0.5%Re-K: the ±100 K sensitivity is a lower bound on the processing scatter. Result: ±100 K moves every shot count by a factor of 4–5, which equals the W-K gain |
+| A3 | W-1%La2O3 conductivity | proxy factors 1.0, 0.9, 0.8 | NOT SOURCED. Qualitative statements only: sintered W-1%La2O3 is below the >140 W/m/K of W-Nd2O3/CeO2 at RT (Ding 2016 citing Liu 2012); "large dispersed particles such as La2O3 can reduce thermal diffusivity and conductivity and introduce anisotropy" (Nogami 2026, abstract); Zhu 2014 compared it with pure W but the number is not in the abstract. A further literature search on 14 Oct 2026 (including the Plansee tungsten page, which gives 164 W/m/K at 20 °C for pure W only) found no measured value either; a Lu2O3-doped W study reports conductivity falling with oxide content over 300–1100 K, a different dopant. The band 0.8–1.0 is a sensitivity range chosen by this study, not a measurement. Result: at 0.8 the converged Demo peak is 3677 K, 18 K below melting, within the model's 0.5–0.8 % conservative bias, so melting is neither established nor excluded |
+| A4 | W-1%La2O3 density, specific heat, melting point, latent heat, vapour pressure, stopping tables | pure W | ASSUMPTION (1 wt% oxide: rule-of-mixtures change below 1 %); the oxide phase itself (melting or decomposition below the W melting point, evaporation) is not represented (TODO_SOURCE) |
+| S3 | Activation energy for recrystallization Q | 322–350 kJ/mol, mid 336 | SOURCED (abstract only): Shah 2021 FED 173, 112827, JMAK model fitted to tungsten monoblocks. Applied to all grades (**no alloy-specific Q found**). Result: the range moves the shot counts by a factor of 0.55–1.8 |
+| A5 | Arrhenius-equivalent time | t_eq = ∫ exp[−Q/R (1/T − 1/T_rx)] dt; onset when the cumulative t_eq reaches 1 h | ASSUMPTION: isokinetic (additive) process with a single Q, no incubation, no dependence on strain or purity; the 1 h criterion is the anneal duration of the isochronal tests that define T_rx (Nogami 2021). The trapezoid rule is used on the integrand between accepted solver steps (checked in `tests/test_alloys.py` against the exact constant-temperature value). The extrapolation from 1250–1550 °C data to microsecond excursions at 3400–3700 K is large and is the main caveat of the indicator |
+| A6 | "Shots to onset" | 3600 s / t_eq per shot (surface or depth) | follows from A5; it is an indicator, not a prediction of hardness or ductility loss. Demo, converged state: pure W 1.6e3 shots, W-K 8.2e3, ODS 5.6e4–1.3e5 |
+| S4 | DBTT values | per grade, per test type (tensile, bending, Charpy, fracture toughness), recrystallized and irradiated shifts | SOURCED: Nogami 2021, Terentyev 2022, Linsmeier 2017, Shah 2020, Lied 2021 (see registry). Values range from 173 K (K-doped foil) to 1273 K (K-doped rod Charpy) for the same material class, so "the" DBTT is test- and product-dependent |
+| A7 | DBTT diagnostic | the pre-shot (inter-shot minimum) temperature is compared with each DBTT entry (±50 K band = "near") | ASSUMPTION/definition: an indicator only. The model has no stress or fracture state, no neutron-irradiation hardening, and no gradient through the armor other than the computed temperature profile. Result: the Demo inter-shot wall (921 K) is above every un-irradiated plate value and below the rod Charpy values |
+| S5 | Thermal-shock cracking thresholds | W-K rolled plate 0.44–0.55 GW/m² (1 ms, 100 shots, RT); SPS pure W < 0.37 GW/m² | SOURCED (Ma 2022a; Huang 2019 and Pintsuk 2010 cited via Ma 2022a). Not used by the model: the IFE pulses are 20 ns x-rays and µs ions, not ms electron-beam pulses; listed for context only |
+| A8 | Helium damage-fluence threshold of the alloys | factor on the GA2020 range 1e18–1e19 m⁻² | NOT SOURCED (`he_threshold_factor = None`). The option is implemented in the summary as a pure scaling rule (shots ∝ factor) and is OFF by default; the "on" column is shown only with a user-supplied factor labelled as illustrative. Plasma-exposure literature for the alloys is qualitative (W-K: more D retention than pure W when undamaged, 13.6 against 11.8e20 m⁻², less after 0.05–0.5 dpa of ion pre-damage, no clear blistering advantage, Ma 2023 full text; W-La2O3: larger blisters and higher D retention than pure W at 500 K, Sun 2022; He at 5 keV, 600 °C: loops, no bubbles observed in irradiations to 5e21 m⁻², Ding 2020) and does not give a pulsed He damage fluence |
+| A9 | Hot start temperatures | Demo 921.1 K, Prototype 609.5 K | the converged pre-shot surface temperatures of the pure-W multi-shot baselines (runs/w_multi/baseline). They are used for every grade because the inter-shot temperature is set by the steel and the coolant: in the heat balance of Section 2.7 of the paper, 1 mm of W contributes 1e-5 m² K/W against 3e-4 for the steel and 1e-4 for the coolant film. The ODS proxy-0.8 multi-shot run (`results/alloys/multi/Demo_W_ODS_La2O3_p0.8`) checks this directly |
+| A10 | Everything else | identical to the published pure-W model | loads, meshes, boundary conditions, evaporation, time stepping, convergence criteria and the Li film model are unchanged |
+| A11 | Sputtering of the alloys | pure-W Eckstein yields | ASSUMPTION; no alloy yields found; the sputtering numbers are order-of-magnitude in any case (Section 4.4 of the paper) |
+| A12 | Multi-shot runs with the alloy option | production script `run_w_multi.py` unchanged, options passed on the command line | the W-K Prototype run is a bit-for-bit identity check against runs/w_multi/baseline/Prototype (sourced k factor 1.0 creates no wrapper) |
+
+## What the registry does NOT contain (TODO_SOURCE)
+
+The registry function `alloys.unsourced()` lists every flagged row (44 of 101 rows on 13 Oct 2026). The gaps that matter for the model:
+
+- k(T) of W-1%La2O3 (WL10) and of W-Y2O3; k(T) of W-3%Re (qualitative: lower, Fukuda 2018 via Nogami 2021).
+- T_rx of W-La2O3 without Re; T_rx and DBTT of W-Y2O3.
+- Any alloy-specific pulsed-helium damage threshold, blister threshold or fuzz threshold.
+- Irradiated thermal conductivity of the alloys (the existing `k_irr` option remains available and unsourced for alloys).
+- Vapour pressure, emissivity and stopping data of the alloys (pure W assumed; emissivity is not needed because radiative cooling is not modelled).
+
+## Limits stated in the code
+
+- `diagnostics.RxSpec` docstring: isokinetic Arrhenius-equivalent time, single Q, no incubation.
+- `alloys.conductivity_factor`: raises for unsourced or literature-only grades without a proxy; warns when a proxy is used or overrides a sourced factor.
+- `alloys.dbtt_regime`: indicator with a ±50 K band; not a fracture model.
+- `scripts/run_alloy_study.py`: the "shots to onset" and "recrystallized depth after N shots" columns are derived from one cycle at a fixed inter-shot state; they assume every later shot repeats that cycle.

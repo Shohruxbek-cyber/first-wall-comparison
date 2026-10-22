@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it, and the paper, using these metadata."
+type: software
+title: "ife_wall: code for the paper 'Comparative analysis of tungsten armor and a liquid-lithium film as first walls for the HiPER laser-fusion chamber: thermal response, vapor shielding and helium transmission to the steel'"
+authors:
+  - family-names: Bozorov
+    given-names: Shohruxbek
+    affiliation: "independent study"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/Shohruxbek-cyber/first-wall-comparison"
+# doi: the Zenodo DOI of this release, once it exists (left blank until then)
+preferred-citation:
+  type: article
+  title: "Comparative analysis of tungsten armor and a liquid-lithium film as first walls for the HiPER laser-fusion chamber: thermal response, vapor shielding and helium transmission to the steel"
+  authors:
+    - family-names: Bozorov
+      given-names: Shohruxbek
+      affiliation: "independent study"
+  year: 2026
