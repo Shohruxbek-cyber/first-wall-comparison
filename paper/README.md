@@ -1,5 +1,5 @@
 # Paper
 
-The source of the paper (Markdown files and `references.json`) and its final PDF will be added here when the
-paper is accepted. The `article` stage of `reproduce.py` then builds the PDF from them, with the figures of the
-`figures` stage; until then that stage has nothing to do.
+The paper and its supplementary material are on arXiv (link to follow). Their source and PDF are not part
+of this repository, so the `article` stage of `reproduce.py` has nothing to do; every calculated table and figure
+in them comes from the other stages.

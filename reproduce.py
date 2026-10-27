@@ -6,7 +6,7 @@
     python reproduce.py --check STAGE ...   compare results/STAGE/ with the committed version (git)
 
 Each stage runs its commands in a fresh work copy, work/STAGE/ (the run scripts write into the
-folders runs/ and results/ of that copy, as listed in Appendix J of the paper), takes the small
+folders runs/ and results/ of that copy, as listed in Supplementary Section S8), takes the small
 outputs into results/STAGE/, and prints how long it took.  Outputs of other stages that a stage
 reads are copied in from results/ first, so every stage can run on its own.  At most --jobs
 calculations (default 4) run at the same time.  The third-party data tables must be installed
@@ -70,7 +70,7 @@ def stage_list():
     S = []
 
     S.append(dict(name="verification", title="Verification",
-                  produces="Table C.1; Table C.2; Appendix C (energy ledger, surface cell)",
+                  produces="Supplementary Tables S1, S2; Supplementary Fig. S1",
                   contains="analytical and conservation tests (pytest) and their curves, the grid and time-step "
                            "convergence study on a 600-shot Demo run, and the surface-cell check",
                   steps=[cmd("record_he_Prototype", "scripts/record_he_thermal.py", "Prototype", "converged",
@@ -91,8 +91,7 @@ def stage_list():
                           ("lithium_repeated", "results/revision/steel_behind_film/*")]))
 
     S.append(dict(name="benchmarks", title="Benchmarks",
-                  produces="Table 2; Table 3; Table E.2; Section 2.3 and Appendix D (particle count of the ion spectra, "
-                           "ion arrival, depth model, helium deposition depths)",
+                  produces="Tables 2, 3; Section 2.3; Supplementary Table S5; Supplementary Fig. S2",
                   contains="power densities, the source term against Garoz et al., SRIM against NIST, the depth model "
                            "against TRIM, the Blanchard-Martin and Raffray benchmarks, lithium ranges against "
                            "Hassanein and Morozov, ion arrival times, the particle count of the ion spectra and the "
@@ -117,7 +116,7 @@ def stage_list():
                   inputs=[]))
 
     S.append(dict(name="tungsten_single", title="Tungsten, single shots",
-                  produces="Sections 4.1, 4.3 and 4.4 (erosion, helium count at full retention); Appendix D (TRIM profiles)",
+                  produces="Sections 4.1, 4.3, 4.4; Figs. 1, 3",
                   contains="single shots of the three scenarios, the ten sensitivity variants, the TRIM-profile case, "
                            "the pure-tungsten reference run used by later regression checks, sputtering, the "
                            "helium fluence per shot, the heat-flux factors and the steel-conductivity check",
@@ -136,7 +135,7 @@ def stage_list():
                   inputs=[]))
 
     S.append(dict(name="tungsten_repeated", title="Tungsten, repeated shots",
-                  produces="Table 4; Table H.1; Section 4.2 (without neutron heating); the converged pre-shot state",
+                  produces="Table 4; Fig. 2; Supplementary Table S9",
                   contains="600 Demo shots and 100 Prototype shots to the quasi-steady state, the converged pre-shot "
                            "state that starts the hot single shots and the helium cycles, the runs with other coolant "
                            "coefficients and with a steel conductivity of 29 W/m/K, the heat balance and the "
@@ -155,7 +154,7 @@ def stage_list():
                   inputs=[("tungsten_single", "runs/w_single/baseline/*")]))
 
     S.append(dict(name="damage_surface", title="Damaged conductivity and surface layer",
-                  produces="Table H.4; Section 4.5",
+                  produces="Section 4.5; Fig. 4; Supplementary Table S12",
                   contains="single shots and 600-shot Demo runs with a reduced conductivity and a helium-damaged layer, "
                            "the surface-layer sweep with its regression check, and the erosion lifetimes",
                   steps=[cmd("damage_single", "scripts/run_damage_study.py", "--skip-multi", "--workers", "4", w=4),
@@ -189,7 +188,7 @@ def stage_list():
                           ("lithium_single", "runs/deposition/*")]))
 
     S.append(dict(name="lithium_single", title="Lithium, single shots",
-                  produces="Sections 5.1 and 5.2; the lithium hand estimate (Appendix E)",
+                  produces="Sections 5.1, 5.2; Figs. 5, 6; Supplementary Fig. S4",
                   contains="the absorbed fractions, film-thickness scans of the three scenarios with their sensitivity "
                            "variants, the summary tables and the energy-balance estimate",
                   steps=[cmd("deposition", "scripts/deposition_profiles.py")]
@@ -208,7 +207,7 @@ def stage_list():
                           ("tungsten_repeated", "runs/w_multi/baseline/*")]))
 
     S.append(dict(name="lithium_repeated", title="Lithium, repeated shots",
-                  produces="Table 5; Table E.3; Sections 5.2 and 5.3; Fig. E.1",
+                  produces="Table 5; Section 5.3; Fig. 7; Supplementary Table S6; Supplementary Fig. S3",
                   contains="600 Demo shots and 100 Prototype shots for nine film thicknesses, the minimum films and the "
                            "compatibility limit, helium and displacements in the steel and the helium-exclusion films, "
                            "the direct runs at the minimum and helium films, the bounding runs with the latent heat "
@@ -242,7 +241,7 @@ def stage_list():
                           ("tungsten_single", "runs/source_term/he_shot_count.json")]))
 
     S.append(dict(name="tungsten_grades", title="Tungsten grades",
-                  produces="Table H.2; Table H.3; Section 4.6",
+                  produces="Supplementary Tables S10, S11; Supplementary Figs. S5, S6",
                   contains="single shots of pure W, W-K and ODS W-La2O3 (with the conductivity band), 600 Demo and 100 "
                            "Prototype shots of the grades, the recrystallization and DBTT indicators",
                   steps=[cmd("alloy_single", "scripts/run_alloy_study.py", "single"),
@@ -264,7 +263,7 @@ def stage_list():
                           ("lithium_repeated", "runs/li_multi/summary.*")]))
 
     S.append(dict(name="vapor_shielding", title="Vapor shielding",
-                  produces="Table D.2; Section 6; Appendix D (vapor model)",
+                  produces="Section 6; Fig. 8; Supplementary Table S4",
                   contains="the time-coupled shielding cases on the Demo and Prototype films, the static bound, the "
                            "tungsten column, the ionization estimate, larger stopping factors and two 600-shot runs "
                            "with shielding",
@@ -289,7 +288,7 @@ def stage_list():
 
     neutron_li = [(i, t, f) for i, t in ((6, "d31.6um"), (7, "d56.2um"), (8, "d100um")) for f in ("0.5", "1")]
     S.append(dict(name="neutron_heating", title="Neutron heating and coolant position",
-                  produces="Sections 4.2 and 5.3 (with neutron heating); Section 7.5; Appendix C (rounding of short steps); Appendix H",
+                  produces="Sections 4.2, 5.3, 7.5",
                   contains="the heat balance with neutron heating, the neutron-heated tungsten and lithium runs (Demo "
                            "continued from the 600-shot run of the verification stage), the coolant 3.5 mm behind the "
                            "surface, the minimum films with and without neutron heating, the drift left at the last "
@@ -358,7 +357,7 @@ def stage_list():
              ("vapor_shielding", "results/vapor_shielding/multi/*/*"),
              ("vapor_shielding", "results/revision/li_direct_variants/*/*/*")]
     S.append(dict(name="lithium_films", title="Lithium, minimum films and partial renewal",
-                  produces="Table 5 (minima with direct runs, steel at the films, stopping distance); Section 5.4",
+                  produces="Table 5; Section 5.4",
                   contains="the minimum films from the grid and direct runs of every variant, helium and displacements "
                            "in the steel at the chosen films, the viscous stopping distance, and six 600-shot Demo runs "
                            "with 3 % and 30 % of the film renewed per shot",
@@ -376,8 +375,7 @@ def stage_list():
                   inputs=li_in))
 
     S.append(dict(name="helium", title="Helium retention model",
-                  produces="Tables S1.4-S1.6 and Supplementary Material S1; Table 4 and Section 4.4 (model counts); "
-                           "Appendix I",
+                  produces="Table 4; Supplementary Tables S16–S18",
                   contains="the temperature cycles from the converged pre-shot state, 1450 Demo, 450 Prototype and 500 "
                            "Experimental shots of the baseline model, the path-length count, ten sensitivity cases, the "
                            "rising-temperature case, the verification tests, the comparison with experiment, stopping "
@@ -418,15 +416,14 @@ def stage_list():
                           ("tungsten_single", "runs/source_term/he_shot_count.json")]))
 
     S.append(dict(name="figures", title="Figures",
-                  produces="Figs. 1-8, C.1, D.1, E.1, H.1-H.3",
+                  produces="Figs. 1–8; Supplementary Figs. S1–S6",
                   contains="the fourteen figures of the paper, drawn from the outputs of the stages above",
                   steps=[cmd("figures", "scripts/make_article_figures.py")],
                   outputs=["docs/figures/article/*.png"],
                   inputs=["*"]))
 
     S.append(dict(name="article", title="Article",
-                  produces="the PDF; Tables 1, A.1, B.1, B.2, D.1, E.1, F.1, G.1, J.1, S1.1-S1.3 (text and inputs, no "
-                           "calculation)",
+                  produces="Tables 1, A.1, B.1, B.2, C.1; Supplementary Tables S3, S7, S8, S13–S15, S19",
                   contains="the PDF built from the paper source in paper/ and the figures of the figures stage",
                   steps=[cmd("article", "scripts/make_article.py")],
                   outputs=["docs/article/*.pdf"],

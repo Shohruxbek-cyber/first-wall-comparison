@@ -53,7 +53,8 @@ XI_ARC_10KEV = (1 - ARC_C) * (10e3 / (2 * ARC_ED / 0.8)) ** ARC_B + ARC_C   # = 
 XI_BASE = 1.0                                             # NRT dpa = Frenkel pairs (baseline); low case xi = XI_ARC_10KEV
 
 # --- neutrons (minor; Sharafat2005 Sec. 3.2, Gilbert2013/Stork2014)
-NEUTRON_DPA_PER_SHOT = 2e-7        # 1e-6 dpa/s at 5 Hz, HAPL 154 MJ at 6.5 m (Sharafat2005; material not stated)
+NEUTRON_DPA_PER_SHOT = 2e-7        # 1e-6 dpa/s at 5 Hz, HAPL 154 MJ at 6.5 m (Sharafat2005; material not stated);
+                                   # simulate.FastSimulation scales it by Y/154 MJ x (6.5 m/R)^2 (neutron.fluence_scale)
 NEUTRON_HE_PER_DPA = 0.3           # appm He per dpa, W DEMO first wall (derived from Gilbert2013, Stork2014); 0.14-0.9
 
 # --- Level 2 (He self-trapping and trap mutation): sensitivity case only

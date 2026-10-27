@@ -153,6 +153,17 @@ def check(fid, what, value, quoted):
     CHECKS.append((fid, what, f"{value:.6g}", quoted, _agrees(value, quoted)))
 
 
+def _agrees_up(v, quoted):
+    """True if the quoted number is v rounded UP at its printed precision (a minimum thickness, 27 Oct 2026)."""
+    q = quoted.strip()
+    dec = len(q.split(".")[1]) if "." in q else 0
+    return abs(np.ceil(v * 10 ** dec - 1e-9) / 10 ** dec - float(q)) < 0.5 * 10 ** -dec
+
+
+def check_min(fid, what, value, quoted):
+    CHECKS.append((fid, what, f"{value:.6g}", quoted, _agrees_up(value, quoted)))
+
+
 def check_true(fid, what, cond, shown=""):
     CHECKS.append((fid, what, shown, "", bool(cond)))
 
@@ -286,10 +297,11 @@ def label_line(fid, axes, y, variants, xs=(0.02, 0.98, 0.5, 0.3, 0.7), draw=True
     return False
 
 
-def tornado(ax, labels, vals, annot):
-    """Horizontal bars sorted by magnitude (largest on top), as in scripts/make_summary.py; increase in
-    vermillion, decrease in blue; the value of each bar printed at its end."""
-    order = sorted(range(len(vals)), key=lambda i: abs(vals[i]), reverse=True)
+def tornado(ax, labels, vals, annot, order=None):
+    """Horizontal bars sorted by magnitude (largest on top), as in scripts/make_summary.py, or in a given
+    order; increase in vermillion, decrease in blue; the value of each bar printed at its end."""
+    if order is None:
+        order = sorted(range(len(vals)), key=lambda i: abs(vals[i]), reverse=True)
     n = len(order)
     y = np.arange(n)[::-1]
     v = np.array([vals[i] for i in order])
@@ -387,14 +399,14 @@ def fig2():
     axa.set_ylabel("Pre-shot temperature (K)")
     axa.legend(loc="lower right")
     letter(axa, "a")
-    lo, hi, gap = 965.0, 3100.0, 28.0
+    lo, hi, gap = 965.0, 2980.0, 28.0  # the upper part starts below the first-shot peak (3027 K)
     axb.set_yscale("function", functions=broken_scale(lo, hi, gap))
     axb.plot(n, peak, color=C["blue"], ls="-", label="Surface")
     axb.plot(n, itf, color=C["green"], ls="-.", label="W/steel interface")
     ref_line(axb, T_LIMIT)
     axb.set_ylim(580, 3480)
-    axb.yaxis.set_major_locator(FixedLocator([600, 700, 800, 900, 3200, 3300, 3400]))
-    axb.yaxis.set_minor_locator(FixedLocator([650, 750, 850, 950, 3150, 3250, 3350, 3450]))
+    axb.yaxis.set_major_locator(FixedLocator([600, 700, 800, 900, 3000, 3200, 3400]))
+    axb.yaxis.set_minor_locator(FixedLocator([650, 750, 850, 950, 3100, 3300]))
     axb.yaxis.set_major_formatter(FuncFormatter(lambda v, p: f"{v:.0f}"))
     axb.yaxis.set_minor_formatter(NullFormatter())
     mark_break(axb, lo, hi)
@@ -405,10 +417,10 @@ def fig2():
     axb.set_ylabel("Peak temperature in the shot (K)")
     axb.legend(loc="lower right")
     letter(axb, "b")
-    label_line(F, [axb], T_LIMIT, ["Steel limit 925 K"])
+    label_line(F, [axb], T_LIMIT, ["Steel limit 925 K"], xs=(0.3, 0.5, 0.7, 0.98))  # clear of the break mark
     check(F, "shots in the run", n[-1], "600")
     check(F, "pre-shot surface, shot 600 (K)", pre[-1], "921")
-    check(F, "pre-shot surface, shot 600 (K), Fig. 4 caption", pre[-1], "920.9")
+    check(F, "pre-shot surface, shot 600 (K), Fig. 4 caption", pre[-1], "921")
     check(F, "pre-shot rise over the last 60 shots (K/shot)", (pre[-1] - pre[-60]) / 59, "0.035")
     check(F, "peak surface, last shot (K)", peak[-1], "3317")
     check(F, "peak interface, shot 600 (K)", itf[-1], "934")
@@ -419,11 +431,16 @@ def fig2():
 
 
 # ------------------------------------------------------------------------------------------ Fig. 3
-W_CASES = [("normalize_ions-false", "raw ion tables"), ("k_scale-0.85", "conductivity ×0.85"),
-           ("k_scale-1.15", "conductivity ×1.15"), ("depth_mode-csda", "CSDA depth model"),
-           ("xray_tau-1e-10", "x-ray pulse 0.1 ns"), ("xray_tau-1e-08", "x-ray pulse 10 ns"),
-           ("xray_tau-5e-08", "x-ray pulse 50 ns"), ("alpha_evap-0.1", "evaporation coefficient 0.1"),
-           ("w_lv-raffray_slope", r"heat of vaporization 4630 kJ kg$^{-1}$")]
+# labels "baseline -> changed value" (presentation review, 27 Oct 2026); the baselines are the RunOptions defaults of
+# src/ife_wall/scenarios.py (checked against the baseline run below): conserving spectra, k_scale 1, projected
+# depth, xray_tau 20 ns, alpha_evap 1, w_lv "raffray_table" = 4009 kJ/kg (src/ife_wall/library.py, W_LV)
+W_CASES = [("normalize_ions-false", "ion spectra: production → raw tables"), ("k_scale-0.85", r"$k$: ×1 → ×0.85"),
+           ("k_scale-1.15", r"$k$: ×1 → ×1.15"), ("depth_mode-csda", "depth: projected → CSDA"),
+           ("xray_tau-1e-10", "x-ray pulse: 20 → 0.1 ns"), ("xray_tau-1e-08", "x-ray pulse: 20 → 10 ns"),
+           ("xray_tau-5e-08", "x-ray pulse: 20 → 50 ns"), ("alpha_evap-0.1", r"$\alpha$: 1 → 0.1"),
+           ("w_lv-raffray_slope", r"$L_\mathrm{v}$: 4009 → 4630 kJ kg$^{-1}$")]
+W_BASE = {"xray_tau": 2e-08, "k_scale": 1.0, "depth_mode": "projected", "alpha_evap": 1.0, "w_lv": "raffray_table",
+          "normalize_ions": True, "ion_spectra": "conserving"}
 # left out: runs/w_single/stretch-false ("no H-isotope depth stretch", a null case)
 
 
@@ -439,18 +456,23 @@ def fig3():
     F = "fig3"
     b = jload(F, "runs/w_single/baseline/Demo.json")
     T0, A0 = b["peak_surface_T_K"], b["ablated_nm_per_shot"]
+    check_true(F, "baseline options as the labels state", all(b["options"][k] == v for k, v in W_BASE.items()),
+               str({k: b["options"][k] for k in W_BASE}))
     labs, dT, lr, ratio = [], [], [], []
     for tag, lab in W_CASES:
         j = jload(F, f"runs/w_single/{tag}/Demo.json")
+        changed = {k: j["options"][k] for k in W_BASE if j["options"][k] != b["options"][k]}
+        check_true(F, f"{tag}: exactly one input changed", len(changed) == 1, str(changed))
         labs.append(lab)
         dT.append(j["peak_surface_T_K"] - T0)
         ratio.append(j["ablated_nm_per_shot"] / A0)
         lr.append(np.log10(ratio[-1]))
+    order = sorted(range(len(dT)), key=lambda i: abs(dT[i]), reverse=True)  # (b) keeps the order of (a)
     fig, (a1, a2) = plt.subplots(2, 1, figsize=(W1, 112 * MM), layout="constrained")
-    tornado(a1, labs, dT, lambda i: _dT_txt(dT[i]))
-    a1.set_xlabel(f"Change in peak surface temperature (K)\nfrom the baseline of {T0:.0f} K")
+    tornado(a1, labs, dT, lambda i: _dT_txt(dT[i]), order)
+    a1.set_xlabel(f"Peak surface temperature change (K)\nfrom the baseline of {T0:.0f} K")
     letter(a1, "a")
-    tornado(a2, labs, lr, lambda i: _ratio_txt(ratio[i]))
+    tornado(a2, labs, lr, lambda i: _ratio_txt(ratio[i]), order)
     a2.set_xlabel("log$_{10}$ of the evaporated-depth ratio\nto the baseline of " + sci_tex(A0) + " nm")
     letter(a2, "b")
     d = dict(zip([t for t, _ in W_CASES], dT))
@@ -460,6 +482,10 @@ def fig3():
     check(F, "conductivity ×0.85 (K)", d["k_scale-0.85"], "180")
     check(F, "conductivity ×1.15 (K)", d["k_scale-1.15"], "-148")
     check(F, "CSDA depth model (K)", d["depth_mode-csda"], "-40")
+    r = dict(zip([t for t, _ in W_CASES], ratio))
+    check(F, "raw ion tables, evaporated-depth ratio (Section 4.3)", r["normalize_ions-false"], "133")
+    check(F, "conductivity ×0.85, evaporated-depth ratio (Section 4.3)", r["k_scale-0.85"], "6.6")
+    check(F, "evaporation coefficient 0.1, evaporated-depth ratio (Section 4.3)", r["alpha_evap-0.1"], "0.10")
     small = [abs(d[t]) for t in ("xray_tau-1e-10", "xray_tau-1e-08", "xray_tau-5e-08", "alpha_evap-0.1", "w_lv-raffray_slope")]
     check_true(F, "x-ray pulse, evaporation coefficient, heat of vaporization: |change| < 1 K", max(small) < 1, f"max {max(small):.2f} K")
     return fig
@@ -506,12 +532,11 @@ def fig4():
     axs[0].set_ylabel("Peak surface temperature (K)")
     fig.supxlabel(r"Conductivity factor $\varphi$ of the surface layer", fontsize=FS_LAB)
     h, lab = axs[0].get_legend_handles_labels()
-    leg = fig.legend(h, lab, loc="outside upper center", ncols=len(h))
+    leg = axs[0].legend(h, lab, loc="upper left")  # one legend, inside panel (a), as in Fig. 5 (presentation review, 27 Oct 2026)
     if not label_line(F, axs[2:], T_MELT, ["Melting point 3695 K", "Melting point\n3695 K", "Melting\n3695 K"],
                       xs=(0.03, 0.97, 0.5)):
         leg.remove()  # fall back to a legend entry for the melting point
-        fig.legend(h + [Line2D([], [], color="k", ls="--", lw=0.8)], lab + ["Melting point 3695 K"],
-                   loc="outside upper center", ncols=len(h) + 1)
+        axs[0].legend(h + [Line2D([], [], color="k", ls="--", lw=0.8)], lab + ["Melting point 3695 K"], loc="upper left")
     # numbers quoted in Section 4.5 and in the caption
     P = lambda sc, st, d, f: res[(sc, st, d, f)]["peak_surface_T_K"]  # noqa: E731
     M = lambda sc, st, d, f: res[(sc, st, d, f)]["melt_depth_um"]  # noqa: E731
@@ -519,7 +544,7 @@ def fig4():
     check(F, "no layer, Prototype (K)", P("Prototype", "cold", 0, 1.0), "1371")
     check(F, "no layer, Demo from 600 K (K)", P("Demo", "cold", 0, 1.0), "3027")
     check(F, "no layer, Demo from 920.9 K (K)", P("Demo", "hot", 0, 1.0), "3317")
-    check(F, "hot start temperature (K)", res[("Demo", "hot", 0, 1.0)]["T_init_K"], "920.9")
+    check(F, "hot start temperature (K)", res[("Demo", "hot", 0, 1.0)]["T_init_K"], "921")  # Fig. 4 caption and Section 4.2 print 921 K (presentation review, 27 Oct 2026)
     check(F, "Demo 600 K, d = 1 µm, phi = 0.25 (K)", P("Demo", "cold", 1.0, 0.25), "3562")
     check(F, "Demo 600 K, d = 3 µm, phi = 0.5 (K)", P("Demo", "cold", 3.0, 0.5), "3564")
     melts = [M("Demo", "cold", 3.0, 0.25), M("Demo", "cold", 10.0, 0.5), M("Demo", "cold", 10.0, 0.25)]
@@ -529,8 +554,8 @@ def fig4():
     check(F, "Demo hot, d = 10 µm, phi = 0.25 (K)", P("Demo", "hot", 10.0, 0.25), "4102")
     check(F, "Demo hot, d = 10 µm, phi = 0.25, melt depth (µm)", M("Demo", "hot", 10.0, 0.25), "1.8")
     pre2 = [res[("Demo", "cold", d, f)]["pre_shot2_surface_T_K"] for d in D_UM for f in PHI]
-    check_true(F, "pre-shot temperature of the second Demo shot is 610.1 K for every d and phi",
-               all(_agrees(v, "610.1") for v in pre2), f"{min(pre2):.3f}-{max(pre2):.3f} K")
+    check_true(F, "pre-shot temperature of the second Demo shot is 610 K for every d and phi",
+               all(_agrees(v, "610") for v in pre2), f"{min(pre2):.3f}-{max(pre2):.3f} K")
     check(F, "Prototype d = 1 µm, phi = 0.25 (K)", P("Prototype", "cold", 1.0, 0.25), "1522")
     above = {(d, f) for d in D_UM for f in PHI[1:] if P("Prototype", "cold", d, f) > 1523.0}
     check_true(F, "Prototype above 1523 K exactly for phi<=0.5 at d>=3",
@@ -594,7 +619,7 @@ def fig6():
     axs[0].set_ylim(0, 1.0)
     axs[0].yaxis.set_minor_locator(MultipleLocator(0.05))
     axs[0].set_ylabel("Absorbed fraction of the threat energy")
-    axs[1].set_ylim(560, 1500)
+    axs[1].set_ylim(560, 1850)  # the Demo 5.6 µm film peaks at 1791 K
     axs[1].yaxis.set_minor_locator(MultipleLocator(50))
     axs[1].set_ylabel("Peak steel temperature (K)")
     axs[1].legend(loc="upper right")
@@ -614,8 +639,8 @@ def fig6():
     check(F, "Demo, 31.6 µm: peak steel (K)", D[k(31.6)]["peak_substrate_K"], "907")
     check_true(F, "Demo films of 3.2 µm and less stopped (missing in b, c)",
                all(r["status"] != "ok" for r in rows["Demo"] if r["delta_um"] <= 3.2) and D[k(5.6)]["status"] == "ok")
-    for s, q in (("Demo", "30.1"), ("Prototype", "11.8"), ("Experimental", "7.1")):
-        check(F, f"{s}: minimum film for 925 K (µm)", crossing_delta(rows[s]), q)
+    for s, q in (("Demo", "30.1"), ("Prototype", "11.9"), ("Experimental", "7.2")):
+        check_min(F, f"{s}: minimum film for 925 K (µm)", crossing_delta(rows[s]), q)
     for s, q in (("Demo", "7.4e-4"), ("Prototype", "8.9e-6"), ("Experimental", "8.0e-7")):
         check(F, f"{s}: thick-film evaporation, median over >= 100 µm (kg m-2)",
               float(np.median([r["vaporized_kg_m2"] for r in rows[s] if r["delta_um"] >= 100])), q)
@@ -675,7 +700,7 @@ def fig7():
     check(F, "31.6 µm: rise of the evaporated mass per shot (%)", 100 * (r31[-1, 5] / r31[0, 5] - 1), "6")
     mrows = [{"delta_um": d, "peak_substrate_K": float(r[:, 2].max()), "status": j["status"],
               "substrate_pass": bool(r[:, 2].max() <= T_LIMIT and j["status"] == "ok")} for d, j, r in runs]
-    check(F, "multi-shot minimum film (µm)", crossing_delta(mrows), "44.7")
+    check_min(F, "multi-shot minimum film (µm)", crossing_delta(mrows), "44.7")
     return fig
 
 
@@ -684,9 +709,9 @@ VS_CASES = [((0.0, 1.0, 0.0), "frr0_s1"), ((0.5, 1.0, 0.0), "frr0.5_s1"), ((1.0,
             ((0.0, 2.0, 0.0), "frr0_s2"), ((0.5, 2.0, 0.0), "frr0.5_s2"), ((1.0, 2.0, 0.0), "frr1_s2"),
             ((1.0, 1.0, 3e-4), "frr1_s1_tau300us")]
 TABLE6 = {  # Table D.2 (Appendix D): thick-film evaporation (kg m-2), ratio, peak steel at 31.6 µm (K), minimum film (µm)
-    "frr0_s1": ("5.87e-4", "0.79", "895", "29.0"), "frr0.5_s1": ("6.74e-4", "0.91", "898", "29.3"),
-    "frr1_s1": ("7.78e-4", "1.05", "901", "29.5"), "frr0_s2": ("4.89e-4", "0.66", "888", "28.3"),
-    "frr0.5_s2": ("6.23e-4", "0.84", "893", "28.7"), "frr1_s2": ("7.99e-4", "1.08", "896", "29.1"),
+    "frr0_s1": ("5.87e-4", "0.79", "895", "29.1"), "frr0.5_s1": ("6.74e-4", "0.91", "898", "29.3"),
+    "frr1_s1": ("7.78e-4", "1.05", "901", "29.5"), "frr0_s2": ("4.89e-4", "0.66", "888", "28.4"),
+    "frr0.5_s2": ("6.23e-4", "0.84", "893", "28.8"), "frr1_s2": ("7.99e-4", "1.08", "896", "29.2"),
     "frr1_s1_tau300us": ("5.89e-4", "0.79", "896", "29.1")}
 
 
@@ -719,22 +744,23 @@ def fig8():
         check(F, f"{tag}: thick-film evaporation (kg m-2)", thick, q[0])
         check(F, f"{tag}: ratio to no shielding", thick / thick0, q[1])
         check(F, f"{tag}: peak steel, 31.6 µm (K)", r31["peak_substrate_K"], q[2])
-        check(F, f"{tag}: minimum film (µm)", crossing_delta(rows_all), q[3])
+        check_min(F, f"{tag}: minimum film (µm)", crossing_delta(rows_all), q[3])
     check(F, "no shielding: thick-film evaporation (kg m-2)", thick0, "7.43e-4")
     check(F, "no shielding: peak steel, 31.6 µm (K)", T31["none"], "907")
-    check(F, "no shielding: minimum film (µm)", crossing_delta(base), "30.1")
-    dT = [T31["none"] - v for k, v in T31.items() if k != "none"]
-    check(F, "lowering of the peak steel at 31.6 µm, smallest (K)", min(dT), "6.5")
-    check(F, "same, largest (K)", max(dT), "19.0")
+    check_min(F, "no shielding: minimum film (µm)", crossing_delta(base), "30.1")
+    # S2 quotes the lowering as the difference of the peaks printed in Table S4 (whole kelvin, 27 Oct 2026)
+    dT = [round(T31["none"]) - round(v) for k, v in T31.items() if k != "none"]
+    check(F, "lowering of the peak steel at 31.6 µm, smallest, from the printed peaks (K)", min(dT), "6")
+    check(F, "same, largest (K)", max(dT), "19")
     for ax, L in zip((a1, a2), "ab"):
         ax.set_xscale("log")
-        ax.set_xlim(8, 1250)
+        ax.set_xlim(5, 1250)  # from the thinnest film every case completes (5.6 µm)
         plain_log(ax.xaxis)
         letter(ax, L)
     a1.set_ylabel(r"Evaporated mass per shot (10$^{-4}$ kg m$^{-2}$)")
     a1.yaxis.set_minor_locator(MultipleLocator(0.25))
     a2.set_ylabel("Peak steel temperature (K)")
-    a2.set_ylim(600, 1500)
+    a2.set_ylim(600, 1850)
     a2.yaxis.set_minor_locator(MultipleLocator(50))
     a2.set_xlabel(r"Lithium film thickness $\delta$ (µm)")
     ref_line(a2, T_LIMIT)
@@ -758,7 +784,7 @@ def fig_c1():
     a.set_xscale("log")
     a.set_yscale("log")
     a.set_xlabel("Time (s)")
-    a.set_ylabel(r"Surface temperature rise $T_\mathrm{s}-T_\mathrm{i}$ (K)")
+    a.set_ylabel(r"Surface temperature rise $T_\mathrm{surf}-T_\mathrm{init}$ (K)")  # Table S1 symbols (27 Oct 2026)
     a.legend(loc="upper left")
     cols = (C["blue"], C["orange"], C["green"], C["vermillion"])
     for i, tk in enumerate(z["b_times_s"]):
@@ -769,7 +795,7 @@ def fig_c1():
     b.set_xlim(1e-3, 30)
     plain_log(b.xaxis)
     b.set_xlabel("Depth (µm)")
-    b.set_ylabel(r"Temperature rise $T-T_\mathrm{i}$ (K)")
+    b.set_ylabel(r"Temperature rise $T-T_\mathrm{init}$ (K)")
     b.legend(loc="upper right", handlelength=1.5, borderaxespad=0.3)  # narrower: clear of the 0.1 ns markers
     c.plot(z["c_t_s"], z["c_X_mm"], ls="none", marker="o", mfc="none", ms=3, color=C["blue"], label="Solver")
     c.plot(z["c_t_exact_s"], z["c_X_exact_mm"], color="k", lw=0.9, label="Neumann solution")
@@ -870,7 +896,14 @@ def fig_e1():
     F = "figE1"
     sb = jload(F, "results/revision/steel_behind_film/steel_behind_film.json")
     crit = jload(F, "results/revision/steel_behind_film/steel_criteria.json")
-    minima = {"Experimental": 7.2095, "Prototype": 12.208, "Demo": 44.79}  # Table 5 (925 K, repeated; Exp. single shot)
+    # the 925 K minima of Table 5, read from the saved outputs (repeated shots; Experimental single shot)
+    minima = {"Experimental": crossing_delta(jload(F, "runs/li_scan/T600K/Experimental.json")["rows"]),
+              "Prototype": jload(F, "results/revision/li_compatibility/li_compatibility.json")[
+                  "Prototype"]["repeated_shot_min_film_um"]["925 K"],
+              "Demo": jload(F, "results/revision/li_direct/minima_direct.json")[
+                  "minima"]["production_and_direct"]["925K"]["delta_um"]}
+    for s, q in (("Experimental", "7.2"), ("Prototype", "12.1"), ("Demo", "44")):
+        check_min(F, f"{s}: 925 K minimum film marked (µm)", minima[s], q)
     fig, ax = plt.subplots(figsize=(W1, 66 * MM), layout="constrained")
     for s in SCEN:
         g = sb["scenarios"][s]["fine_grid"]
@@ -890,10 +923,10 @@ def fig_e1():
     ax.set_xlabel(r"Lithium film thickness $\delta$ (µm)")
     ax.set_ylabel(r"Helium reaching the steel (m$^{-2}$ per shot)")
     ax.legend(loc="upper right")
-    check(F, "Demo film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Demo"]["film_um"]["1e6_shots_to_1e18"], "183")
-    check(F, "Prototype film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Prototype"]["film_um"]["1e6_shots_to_1e18"], "173")
-    check(F, "Experimental film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Experimental"]["film_um"]["1e6_shots_to_1e18"], "164")
-    check(F, "film that stops every helium ion (mm)", crit["scenarios"]["Demo"]["film_stopping_all_He_um"] / 1e3, "0.68")
+    check_min(F, "Demo film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Demo"]["film_um"]["1e6_shots_to_1e18"], "184")
+    check_min(F, "Prototype film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Prototype"]["film_um"]["1e6_shots_to_1e18"], "174")
+    check_min(F, "Experimental film for 1e6 shots to 1e18 m-2 (um)", crit["scenarios"]["Experimental"]["film_um"]["1e6_shots_to_1e18"], "165")
+    check_min(F, "film that stops every helium ion (mm)", crit["scenarios"]["Demo"]["film_stopping_all_He_um"] / 1e3, "0.69")
     return fig
 
 
@@ -928,13 +961,13 @@ def fig_h1():
     a2.set_xlabel(f"log$_{{10}}$ of the minimum-film ratio\nto the baseline of {d0:.1f} µm")
     letter(a2, "b")
     check(F, "baseline thick-film evaporation (kg m-2)", v0, "7.43e-4")
-    check(F, "baseline minimum film (µm)", d0, "30.1")
+    check_min(F, "baseline minimum film (µm)", d0, "30.1")
     mins = dict(zip([t for t, _ in LI_CASES], [x * d0 for x in rd]))
-    check(F, "minimum film, evaporation coefficient 0.1 (µm)", mins["T600K_alpha_evap-0.1"], "35")
+    check_min(F, "minimum film, evaporation coefficient 0.1 (µm)", mins["T600K_alpha_evap-0.1"], "36")
     allv = [v0] + [x * v0 for x in rv]
     alld = [d0] + list(mins.values())
-    check(F, "Table 5 range of the minimum film, low end (µm)", min(alld), "24")
-    check(F, "Table 5 range of the minimum film, high end (µm)", max(alld), "79")
+    check_min(F, "Table 5 range of the minimum film, low end (µm)", min(alld), "24")
+    check_min(F, "Table 5 range of the minimum film, high end (µm)", max(alld), "79")
     check(F, "Table 5 range of the evaporated mass, low end (kg m-2)", min(allv), "4.2e-4")
     check(F, "Table 5 range of the evaporated mass, high end (kg m-2)", max(allv), "9.5e-4")
     return fig

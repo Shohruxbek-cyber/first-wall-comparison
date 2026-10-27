@@ -99,7 +99,7 @@ def main():
     last = {c: float(v) for c, v in zip(COLS, rows[-1])}
     meta = dict(scenario=a.scenario, case=a.case, shots_done=sim.shot_no, grid=a.grid, cycle=cyc, last=last,
                 params={k: (v.tolist() if hasattr(v, "tolist") else v) for k, v in vars(params).items() if k != "extra"},
-                sim=sim_kw, wall_s=time.time() - t0, P=sim.P,
+                sim=sim_kw, wall_s=time.time() - t0, P=sim.P, neutron_scale=sim.neutron_scale,
                 source_summary=dict(He_incident_per_shot=sim.src.he_per_shot_incident(),
                                     He_implanted_per_shot=sim.src.he_per_shot_implanted(),
                                     displacements_per_m2_per_shot=sim.src.displacements_per_m2()))

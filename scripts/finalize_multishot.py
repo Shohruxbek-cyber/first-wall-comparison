@@ -5,7 +5,7 @@ undamaged 600-shot baseline (runs/w_multi/baseline), the single-shot worst case 
 the extra-shot histories (runs/w_damage/multi/<run>_extra_shot, from run_extra_shot.py).
 
 For each run: stopping shot, convergence, final pre-shot rise; last-shot peak surface, pre-shot
-and max interface T vs the 925 K limit and vs the undamaged 934.09 K; melt depth at the first and
+and max interface T vs the 925 K limit and vs the undamaged baseline; melt depth at the first and
 last shot; W evaporated per shot, per full-power year (10 Hz, 3.15e8 shots) and years to lose
 1 mm; an exponential fit of the last 200 shots when the pre-shot T has not settled; and whether
 the two runs have the same pre-shot and interface temperatures.
@@ -29,11 +29,12 @@ D = ROOT / "runs" / "w_damage"
 LIMIT = 925.0
 W_TM = 3695.0
 SHOTS_PER_FPY = 3.15e8  # 10 Hz x 3.15e7 s
-BASE_IF = 934.09  # undamaged 600-shot max interface T (runs/w_multi/baseline/Demo.json)
 EVAP_LABEL = ("evaporation only, at full availability; melt-layer loss (splashing, melt motion) is not "
               "modelled and could be larger")
 RUNS = {"kirr0.5_conv": "uniform k × 0.5", "Heskin_conv": "He-bubble skin (5 µm, × 0.25) + bulk × 0.5"}
 BASELINE = ROOT / "runs" / "w_multi" / "baseline"
+# undamaged max interface T, read from the baseline run (was the constant 934.09 K of the earlier spectra)
+BASE_IF = json.loads((BASELINE / "Demo.json").read_text(encoding="utf-8"))["max_interface_T_K"]
 WORST = D / "single" / "E_worst_Saito_f0.45_bulk0.5_hot" / "Demo.json"
 
 
@@ -79,7 +80,7 @@ def analyse(tag, label):
            "final_preshot_rise_K_per_shot": m["preshot_rise_per_shot_last10pct_K"],
            "last_shot_peak_surface_T_K": float(r[-1, 2]), "last_shot_preshot_T_K": float(r[-1, 1]),
            "max_interface_T_K": float(r[:, 3].max()), "last_shot_interface_T_K": float(r[-1, 3]),
-           "interface_minus_925K": float(r[:, 3].max() - LIMIT), "interface_minus_undamaged_934.09K": float(r[:, 3].max() - BASE_IF),
+           "interface_minus_925K": float(r[:, 3].max() - LIMIT), "interface_minus_undamaged_K": float(r[:, 3].max() - BASE_IF),
            "melt_depth_first_shot_um": float(r[0, 6]), "melt_depth_last_shot_um": float(r[-1, 6]),
            "evaporation_last_shot": evap(float(r[-1, 7])), "cum_evaporated_nm": float(r[-1, 5]),
            "energy_rel_residual": m["energy_rel_residual"]}
@@ -149,7 +150,7 @@ def to_md(R):
     row("last-shot peak surface T (K)", lambda x: f"{x['last_shot_peak_surface_T_K']:.0f}")
     row("last-shot pre-shot surface T (K)", lambda x: f1(x["last_shot_preshot_T_K"]))
     row("max interface T (K)", lambda x: f"{f1(x['max_interface_T_K'])} ({x['interface_minus_925K']:+.1f} vs 925 K; "
-                                        f"{x['interface_minus_undamaged_934.09K']:+.1f} vs undamaged 934.09 K)")
+                                        f"{x['interface_minus_undamaged_K']:+.1f} vs undamaged {BASE_IF:.2f} K)")
     row("melt depth, first / last shot (µm)", lambda x: f"{x['melt_depth_first_shot_um']:.3f} / {x['melt_depth_last_shot_um']:.3f}")
     row("W evaporated, last shot (nm/shot)", lambda x: f"{x['evaporation_last_shot']['nm_per_shot']:.2e}")
     row("W evaporated per full-power year (nm)", lambda x: f"{x['evaporation_last_shot']['nm_per_full_power_year']:.3g}")

@@ -1,5 +1,5 @@
 {
- "note": "Surface pressure state of the Demo lithium film (revision of 21 Oct 2026), from the recorded\nextra cycles of the repeated-shot runs (scripts/li_extra_cycle.py) and the paper's own lithium vapor-pressure law\n(Davison 1968, Eq. 9, as in ife_wall.library: log10 p[Pa] = 10.015 - 8064.5/T):\n\n  * saturation pressure at the peak surface temperature;\n  * recoil pressure of evaporation into vacuum, p_r = (1 + gamma) n1 k T1 = (1 + 5/3) x 0.31 x 0.67 p_sat\n    = 0.554 p_sat, from the state at the sonic point that Anisimov (1968) derives (T1 = 0.67 T0, n1 = 0.31 n0,\n    gamma = 5/3), and its impulse over the 10-90 % debris-ion arrival (1.18-2.43 us, Appendix E) and the shot;\n  * the hottest liquid below the surface, its depth, and the boiling point at the recoil pressure (the same law\n    inverted);\n  * the limit of superheat estimated as the van der Waals spinodal at low pressure, T_sp = 27/32 T_c, for the\n    critical-temperature estimates tabulated by Zaghloul and Hassanein (arXiv:2001.03557, Table 1 and their own\n    3495 K, corrected to 3084 K in the same version).\nThe film model is static: these are the loads on the film, not its response.",
+ "note": "Surface pressure state of the Demo lithium film (revision of 21 Oct 2026), from the recorded\nextra cycles of the repeated-shot runs (scripts/li_extra_cycle.py) and the paper's own lithium vapor-pressure law\n(Davison 1968, Eq. 9, as in ife_wall.library: log10 p[Pa] = 10.015 - 8064.5/T):\n\n  * saturation pressure at the peak surface temperature;\n  * recoil pressure of evaporation into vacuum, p_r = (1 + gamma) n1 k T1 = (1 + 5/3) x 0.31 x 0.67 p_sat\n    = 0.554 p_sat, from the state at the sonic point that Anisimov (1968) derives (T1 = 0.67 T0, n1 = 0.31 n0,\n    gamma = 5/3), and its impulse over the 10-90 % debris-ion arrival of the source term in use (read from\n    runs/source_term/source_term_checks.json, Demo debris_t10_t50_t90_us; until 23 Oct 2026 the window of the\n    earlier spectra, 1.18-2.43 us, was written here as a constant) and over the shot;\n  * the hottest liquid below the surface, its depth, and the boiling point at the recoil pressure (the same law\n    inverted);\n  * the limit of superheat estimated as the van der Waals spinodal at low pressure, T_sp = 27/32 T_c, for the\n    critical-temperature estimates tabulated by Zaghloul and Hassanein (arXiv:2001.03557, Table 1 and their own\n    3495 K, corrected to 3084 K in the same version).\nThe film model is static: these are the loads on the film, not its response.",
  "recoil_factor": 0.5538666666666667,
  "spinodal_K": {
   "Dillon et al. 1966": 2719.40625,
@@ -18,7 +18,7 @@
    "t_peak_surface_us": 2.0835609766045753,
    "p_sat_at_peak_Pa": 2394320.6591156153,
    "recoil_at_peak_Pa": 1326134.4023955022,
-   "impulse_debris_window_Pa_s": 0.940807915556492,
+   "impulse_debris_window_Pa_s": 1.1390132197138263,
    "impulse_shot_Pa_s": 1.6181796826572408,
    "peak_liquid_K": 2483.3036256306855,
    "depth_of_peak_liquid_um": 2.2817448192551057,
@@ -32,7 +32,7 @@
    "t_peak_surface_us": 2.0835610335230266,
    "p_sat_at_peak_Pa": 2394320.672255995,
    "recoil_at_peak_Pa": 1326134.4096735206,
-   "impulse_debris_window_Pa_s": 0.9408079722189551,
+   "impulse_debris_window_Pa_s": 1.1390132700254143,
    "impulse_shot_Pa_s": 1.6244605919108488,
    "peak_liquid_K": 2483.3036257441318,
    "depth_of_peak_liquid_um": 2.2817448179261146,
@@ -46,7 +46,7 @@
    "t_peak_surface_us": 2.0868498115017076,
    "p_sat_at_peak_Pa": 2395012.2654917985,
    "recoil_at_peak_Pa": 1326517.4601137242,
-   "impulse_debris_window_Pa_s": 0.9413194273837048,
+   "impulse_debris_window_Pa_s": 1.1394598970388838,
    "impulse_shot_Pa_s": 1.6392006778549653,
    "peak_liquid_K": 2483.2931258323297,
    "depth_of_peak_liquid_um": 2.2816542733909686,

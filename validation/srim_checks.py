@@ -42,7 +42,9 @@ cmp = []
 for ion, prog in (("p", "PSTAR"), ("he4", "ASTAR")):
     s = SrimTable(ion, "W")
     n = np.genfromtxt(ROOT / "data" / f"{prog.lower()}_074.csv", delimiter=",", skip_header=2)
-    for E_MeV in (0.01, 0.1, 1.0, 3.5, 10.0):
+    # every NIST grid energy from 0.01 to 10 MeV (the paper quotes the extremes over this full grid)
+    for E_MeV in n[(n[:, 0] >= 0.01 - 1e-12) & (n[:, 0] <= 10.0 + 1e-12), 0]:
+        E_MeV = float(E_MeV)
         E = E_MeV * 1e6 * EV
         nSe = np.interp(E_MeV, n[:, 0], n[:, 1]) * 1e6 * EV * 0.1  # MeV cm2/g -> J m2/kg
         nSn = np.interp(E_MeV, n[:, 0], n[:, 2]) * 1e6 * EV * 0.1

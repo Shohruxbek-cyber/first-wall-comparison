@@ -1,6 +1,6 @@
 {
- "git": "0694a93",
- "date": "2026-10-22 16:38",
+ "git": "06a81df",
+ "date": "2026-10-27 12:13",
  "regression_W_pure": {
   "reference": "results\\baseline_pureW\\w_single",
   "keys": [
@@ -1797,39 +1797,6 @@
     "grid_growth": 1.05,
     "grid_growth_steel": 1.15,
     "steel_k": null
-   }
-  },
-  "Demo_W_ODS_La2O3_p0.8_uninterrupted": {
-   "scenario": "Demo",
-   "n_shots": 550,
-   "converged": true,
-   "last_preshot_K": 920.0755051064097,
-   "last_shot_peak_K": 3675.7182219331607,
-   "max_interface_T_K": 931.5986922389798,
-   "max_melt_depth_um": 0.0,
-   "cum_ablated_nm": 0.04888898698532768,
-   "preshot_rise_per_shot_last10pct_K": 0.04831510301141019,
-   "energy_rel_residual": -6.354781717910743e-08,
-   "options": {
-    "xray_tau": 2e-08,
-    "xray_mode": "pe+incoh",
-    "depth_mode": "projected",
-    "stretch": true,
-    "normalize_ions": true,
-    "alpha_evap": 1.0,
-    "w_lv": "raffray_table",
-    "k_scale": 1.0,
-    "h": null,
-    "w_thickness": 0.001,
-    "steel_thickness": 0.01,
-    "dx0": 1e-09,
-    "k_irr": 1.0,
-    "skin_um": 0.0,
-    "skin_factor": 1.0,
-    "T_init": null,
-    "trim_multilayer": false,
-    "w_material": "W_ODS_La2O3",
-    "alloy_k_proxy": 0.8
    }
   },
   "Prototype_W_K": {

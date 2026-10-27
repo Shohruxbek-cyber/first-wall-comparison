@@ -2,7 +2,7 @@
 
 Code and results for the paper *Comparative analysis of tungsten armor and a liquid-lithium film as first walls for
 the HiPER laser-fusion chamber: thermal response, vapor shielding and helium transmission to the steel* (S. Bozorov,
-2026; arXiv number to follow). The Python package
+2026; the paper and its supplementary material are on arXiv, link to follow). The Python package
 `ife_wall` models a 1 mm tungsten armor and a thin flowing lithium film on steel under the x-rays and ions of the
 HiPER scenarios: one-dimensional heat conduction with melting and evaporation, vapor shielding, neutron heating and
 helium retention. `reproduce.py` reruns every calculation of the paper in stages.
@@ -63,9 +63,18 @@ Each stage runs in `work/STAGE/` (at most 4 calculations at once; `--jobs N` cha
   file's docstring says what it does.
 - `validation/`: the published benchmarks and SRIM checks; `tests/`: the test suite.
 - `data/`: input data and checksums (`data/README.md`).
-- `results/`: the outputs of the stages. The full run folders (time histories, checkpoints) will be in the Zenodo
-  archive of this release.
-- `docs/`, `refs/`: notes and references of the tungsten-grade study; `paper/`: the paper, once accepted.
+- `results/`: the outputs of the stages. The full run folders (time histories, checkpoints) are not included in this
+  archive because of their size; they are available from the author on request.
+- `docs/`, `refs/`: notes and references of the tungsten-grade study; `paper/`: a note on the paper (on arXiv,
+  link to follow).
+
+## Code availability
+
+The code (the Python package `ife_wall` with its run scripts, tests and validation scripts) and the outputs behind
+every table and figure of the paper are archived at Zenodo, https://doi.org/10.5281/zenodo.23577155 (all versions),
+and developed in this repository under the MIT licence. The third-party input data (NIST stopping-power and
+attenuation tables, CXRO photoabsorption data and SRIM-2012 stopping and range tables) are not redistributed;
+`fetch_data.py` retrieves or checks them. To cite the code, use `CITATION.cff`.
 
 ## License
 

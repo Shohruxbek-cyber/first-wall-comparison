@@ -107,7 +107,7 @@ class FastSimulation:
 
     def __init__(self, scen_name, params, cycle_path=None, edges=None, xi=1.0, dpa_kind="nrt", Ed=None,
                  T_offset=0.0, T_const=None, P=None, neutron=True, sources=None, n_slices=40, n_sub=6,
-                 he_scale=1.0, rtol=1e-3, atol=1e-9, neutron_scale=1.0, path_element="projected"):
+                 he_scale=1.0, rtol=1e-3, atol=1e-9, neutron_scale=None, path_element="projected"):
         from .grid import make_grid
         from . import constants as C
         self.edges = make_grid() if edges is None else edges
@@ -126,6 +126,11 @@ class FastSimulation:
         self.te = s.t_edges
         self.xi, self.rtol, self.atol = xi, rtol, atol
         self.fm.set_sources(self.te, s.G_He / N_W * 1e6 * he_scale, xi * s.G_dpa * 1e6)
+        if neutron_scale is None:  # the per-shot dose is for 154 MJ at 6.5 m: scale it with the neutron fluence at the wall
+            from ..neutron import fluence_scale
+            from ..scenarios import SCENARIOS
+            neutron_scale = fluence_scale(SCENARIOS[scen_name])
+        self.neutron_scale = neutron_scale
         if neutron:
             dpa_n = C.NEUTRON_DPA_PER_SHOT * neutron_scale
             self.fm.bgV[:] = xi * dpa_n * 1e6 / self.P

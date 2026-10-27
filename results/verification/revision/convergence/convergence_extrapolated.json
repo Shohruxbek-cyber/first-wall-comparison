@@ -39,7 +39,7 @@
    "growth": {
     "order_used": 2.0,
     "error_of_baseline": -0.07912553658252364,
-    "flag": "observed order -0.09357353829764695 replaced by the nominal 2.0; grid settings start from an interpolated state (upper bound)"
+    "flag": "non-monotonic changes: observed order -0.09357353829764695 replaced by the nominal 2.0; grid settings start from an interpolated state (upper bound)"
    },
    "time step": {
     "order_used": 0.9532753367679544,
@@ -71,9 +71,9 @@
   "baseline": 933.8563445160023,
   "errors": {
    "growth": {
-    "order_used": 0.8664878136056721,
-    "error_of_baseline": -0.0603750800519691,
-    "flag": "grid settings start from an interpolated state (upper bound)"
+    "order_used": 2.0,
+    "error_of_baseline": -0.03634736942634239,
+    "flag": "non-monotonic changes: observed order 0.8664878136056721 replaced by the nominal 2.0; grid settings start from an interpolated state (upper bound)"
    },
    "time step": {
     "order_used": 0.9680974335838818,
@@ -81,8 +81,8 @@
     "flag": null
    }
   },
-  "extrapolated": 933.9629022921183,
-  "extrapolated_minus_baseline": 0.1065577761160349
+  "extrapolated": 933.9388745814928,
+  "extrapolated_minus_baseline": 0.08253006549040817
  },
  "Li 31.6 um, peak steel": {
   "baseline": 907.077373159045,

@@ -23,6 +23,12 @@ YIELD_REF, R_REF = 154e6, 6.5
 MN_MEV, EN_MEV, C = 939.565, 14.1, 2.99792458e8
 
 
+def fluence_scale(scen):
+    """Neutron fluence at the wall of a scenario relative to the reference target and chamber (154 MJ at 6.5 m),
+    Y/154 MJ x (6.5 m/R)^2: exactly 1 for Demo."""
+    return scen.yield_J / YIELD_REF * (R_REF / scen.R) ** 2
+
+
 def neutron_arrival(R):
     """Time of flight of 14.1 MeV neutrons over R [s]."""
     gamma = 1.0 + EN_MEV / MN_MEV

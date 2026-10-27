@@ -5,16 +5,18 @@ title: "ife_wall: code for the paper 'Comparative analysis of tungsten armor and
 authors:
   - family-names: Bozorov
     given-names: Shohruxbek
-    affiliation: "independent study"
-version: "1.0.0"
+    affiliation: "Independent researcher, Chust, Uzbekistan"
+    orcid: "https://orcid.org/0009-0005-5165-093X"
+version: "1.1.0"
 license: MIT
 repository-code: "https://github.com/Shohruxbek-cyber/first-wall-comparison"
-doi: "10.5281/zenodo.23577156"
+doi: "10.5281/zenodo.23577155"
 preferred-citation:
   type: article
   title: "Comparative analysis of tungsten armor and a liquid-lithium film as first walls for the HiPER laser-fusion chamber: thermal response, vapor shielding and helium transmission to the steel"
   authors:
     - family-names: Bozorov
       given-names: Shohruxbek
-      affiliation: "independent study"
+      affiliation: "Independent researcher, Chust, Uzbekistan"
+      orcid: "https://orcid.org/0009-0005-5165-093X"
   year: 2026

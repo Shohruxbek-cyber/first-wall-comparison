@@ -5,8 +5,9 @@ estimates the error of the baseline by Richardson's rule with the observed order
     e = (f_base - f_fine) / (1 - 2**-p),
 and the extrapolated value f_base - e_growth - e_time (the two errors taken as additive).  The
 surface-cell refinement changes every quantity by less than 0.04 K or 0.03 % without a
-systematic trend and is not extrapolated.  An observed order outside 0.5-3 is replaced by the
-nominal order of the scheme (1 in time, 2 in space) and flagged.  For the quasi-steady tungsten
+systematic trend and is not extrapolated.  An observed order outside 0.5-3, or one obtained from
+non-monotonic changes (the halved and the doubled setting moving the quantity the same way), is
+replaced by the nominal order of the scheme (1 in time, 2 in space) and flagged.  For the quasi-steady tungsten
 cycle the grid settings start from a state interpolated onto the new cells, which shifts the
 pre-shot and interface temperatures of all of them by 0.03-0.06 K; their growth estimate is
 therefore flagged as an upper bound.
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / "results" / "revision" / "convergence"
 NOMINAL = {"growth": 2.0, "time step": 1.0}
 FINE = {"growth": "growth_1.025", "time step": "dt_half"}
+COARSE = {"growth": "growth_1.10", "time step": "dt_double"}
 
 if __name__ == "__main__":
     summ = json.loads((D / "convergence_summary.json").read_text(encoding="utf-8"))
@@ -32,7 +34,10 @@ if __name__ == "__main__":
         for kind, fine in FINE.items():
             p = orders.get(kind)
             flag = None
-            if p is None or not 0.5 <= p <= 3.0:
+            if (vals[COARSE[kind]] - base) * (base - vals[fine]) < 0:
+                flag = f"non-monotonic changes: observed order {p} replaced by the nominal {NOMINAL[kind]}"
+                p = NOMINAL[kind]
+            elif p is None or not 0.5 <= p <= 3.0:
                 flag = f"observed order {p} replaced by the nominal {NOMINAL[kind]}"
                 p = NOMINAL[kind]
             e = (base - vals[fine]) / (1.0 - 2.0 ** -p)

@@ -1,6 +1,6 @@
 """Experimental-scenario helium counts for Table 4 (revision of 21 Oct 2026), from outputs that
 already exist: the implanted helium per shot (runs/he_retention/results/sources.json, full retention) and the
-425-shot retention-model run of Appendix I (runs/he_retention/Experimental_baseline/totals.csv; each shot from
+500-shot retention-model run of Supplementary Section S7 (runs/he_retention/Experimental_baseline/totals.csv; each shot from
 300 K, the Experimental scenario being single shots).  Shot counts interpolated linearly between shots, as for
 Prototype and Demo.  Also the count for burn 4He alone and the helium per shot that 1e3 shots to 1e19 m^-2 imply,
 for the comparison with Gonzalez-Arrabal et al. (2020).

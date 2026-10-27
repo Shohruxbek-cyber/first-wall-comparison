@@ -1,4 +1,4 @@
-# Alloy study: summary (2026-10-22 16:38, commit 0694a93)
+# Alloy study: summary (2026-10-27 12:13, commit 06a81df)
 
 W_pure regression against results/baseline_pureW: **bit-identical** (keys: peak_surface_T_K, t_peak_us, melt_depth_um, ablated_nm_per_shot, energy_rel_residual, pre_shot2_surface_T_K, energy_rel_residual_full_cycle, diagnostics, ledger_J_m2; history, max-T profile and He-layer CSVs).
 
@@ -72,7 +72,6 @@ W_pure regression against results/baseline_pureW: **bit-identical** (keys: peak_
 | run | scenario | shots | converged | last pre-shot surface (K) | last peak (K) | max interface (K) | max melt (µm) | cum. evaporation (nm) | residual |
 |---|---|---|---|---|---|---|---|---|---|
 | Demo_W_ODS_La2O3_p0.8 | Demo | 550 | True | 919.8 | 3557 | 931 | 0.000 | 2.06e-02 | -6.1e-08 |
-| Demo_W_ODS_La2O3_p0.8_uninterrupted | Demo | 550 | True | 920.1 | 3676 | 932 | 0.000 | 4.89e-02 | -6.4e-08 |
 | Prototype_W_K | Prototype | 100 | True | 609.5 | 1381 | 615 | 0.000 | 1.20e-22 | -1.7e-07 |
 | Prototype_W_ODS_La2O3_p0.8 | Prototype | 100 | True | 609.5 | 1467 | 615 | 0.000 | 8.92e-21 | -6.3e-08 |
 

@@ -74,3 +74,12 @@ def test_He_conservation_two_shots():
         sim.shot()
     sn = sim.snapshot()
     assert abs(sn["He_cons_err"]) / sn["He_in"] < 1e-10
+
+
+def test_neutron_dose_scaled_to_the_scenario():
+    """The per-shot neutron dose (154 MJ at 6.5 m) scales with the neutron fluence at the wall; Demo keeps it exactly."""
+    from ife_wall.neutron import fluence_scale
+    from ife_wall.scenarios import SCENARIOS
+    assert fluence_scale(SCENARIOS["Demo"]) == 1.0
+    assert abs(fluence_scale(SCENARIOS["Prototype"]) - 50 / 154) < 1e-15
+    assert abs(fluence_scale(SCENARIOS["Experimental"]) - 20 / 154 * (6.5 / 5.0) ** 2) < 1e-15
