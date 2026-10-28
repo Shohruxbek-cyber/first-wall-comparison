@@ -20,3 +20,11 @@ preferred-citation:
       affiliation: "Independent researcher, Chust, Uzbekistan"
       orcid: "https://orcid.org/0009-0005-5165-093X"
   year: 2026
+  url: "https://arxiv.org/abs/2610.37047"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.37047"
+      description: "arXiv identifier"
+    - type: url
+      value: "https://arxiv.org/abs/2610.37047"
+      description: "arXiv abstract page"
